@@ -1,0 +1,223 @@
+var sizes={
+    windowWidth: window.innerWidth,
+    windowHeight: window.innerHeight
+}
+
+$(function(){
+
+    
+    addHtmlChanged('calendarnavigation_overview');
+    
+    $(window).on('resize', function(){
+        sizes.windowWidth = window.innerWidth;
+        sizes.windowHeight = window.innerHeight;
+    });
+
+	$(document).on('click','.view a',function(e){
+        e.preventDefault();
+        
+        
+        $.ajax({
+            type: "POST",
+            url: window.location.protocol+"//"+window.location.host+window.location.pathname+$(this).attr('href'),
+            success: function(results){
+                $('.module_event.module .eventOverview').replaceWith($(results).find('.module_event.module .eventOverview'));
+            }
+        });
+    });
+    
+    
+    $(document).on('click','.areas a',function(e){
+        e.preventDefault();
+        $('body').removeClass('navopen');
+        $.ajax({
+            type: "POST",
+            url: /*window.location.protocol+"//"+window.location.host+window.location.pathname+*/$(this).attr('href'),
+            success: function(results){
+                $('.module_event.moduledetail').replaceWith($(results).find('.module_event.moduledetail'));
+                //console.log($(results).find('ul.areas'));
+                $('ul.areas.desktop').replaceWith($(results).find('ul.areas.desktop'));
+                $('#nav').find('ul.areas').replaceWith($(results).find('#nav').find('ul.areas'));
+            }
+        });
+    });
+
+    $('.filterBtn').on('click', function(){
+        $('.filterBtn').removeClass('active');
+        $(this).addClass('active')
+    });
+
+    if(sizes.windowWidth < 720){
+        
+        $('#content .eventGrid li > a').each(function(){
+            $(this).replaceWith($(this).children());
+        })
+    }
+    
+    setTimeout(function(){
+        if(window.location.search.length > 0){
+            var result = null,
+            tmp = [];
+            var items = location.search.substr(1).split("&");
+            for (var index = 0; index < items.length; index++) {
+                tmp = items[index].split("=");
+                if (tmp[0] === "filter") result = decodeURIComponent(tmp[1]);
+            }
+            $('.filtercats').find('li[data-id="'+result+'"]').find('button').click();
+        }
+    },1000);
+
+
+
+    if ($('.eventOverview').hasClass('overview_kachel') && window.innerWidth < 720) {
+        console.log('t');
+                
+        setTimeout(() => {
+            gsap.registerPlugin(Flip);
+            
+        }, 1000);
+
+        const eventGridHeight = $('.eventGrid').height();
+
+        $('.eventItem').on('click', function(e){
+            e.preventDefault();         
+          
+            if($(this).hasClass('active')){
+                window.location.href = $(this).attr('data-href');
+            }else{
+              
+                $('.eventGrid').css('height', (eventGridHeight + window.outerWidth + 200).toString() + 'px')
+    
+                const state = Flip.getState($('.eventItem'))
+    
+                $('.eventItem').removeClass('active')
+                $(this).addClass('active')
+    
+                Flip.from(state, {
+                    // duration: 50,
+                    absolute: true
+                })
+            }
+
+        });
+
+
+    }
+
+    $('.switchView.calendar').on('click', function(){
+        styleEventOverviewCalendar();
+    });
+
+    $(document).on('click', 'td.hasEvents', function () {
+		$('tr.infos:not("' + `.${$(this).attr('id')}` + '")').css('display', 'none');
+		$(`.${$(this).attr('id')}`).slideToggle();
+	});
+
+    $(document).on('click', '.filtercats li', function(){
+        $('.filtercats li').removeClass('active');
+        $(this).addClass('active');
+        if ($(this).hasClass('showAll')) {
+            $('.filterItem').removeClass('none')
+            $('.noEventsFound').addClass('none')
+        }else{
+            if ($(`.filterItem.${$(this).attr('data-id')}`).length == 0) {
+                $('.filterItem').addClass('none');
+                $('.noEventsFound').removeClass('none')
+                
+            } else {
+                $('.filterItem').addClass('none');            
+                $(`.filterItem.${$(this).attr('data-id')}`).removeClass('none');
+                $('.noEventsFound').addClass('none')
+            }
+
+
+        }        
+    })
+
+    $(document).off('click', 'td.HasEvents').on('click', '.eventcalendar.type2 td.hasEvents', function () {               
+		$('tr.infos:not("' + `.${$(this).attr('id')}` + '")').css('display', 'none');
+        $('tr.infos').removeClass('active');
+        $(`tr.infos.${$(this).attr('id')}`).addClass('active');
+		$(`.${$(this).attr('id')}`).slideToggle();
+	});
+
+});
+
+function styleEventOverviewCalendar(){
+    if (sizes.windowWidth >= 1024) {     
+        var maxTdHeight = 0;
+        setTimeout(() => {            
+            $('.eventcalendar td').each(function(){
+                var tdHeight = $(this).height();
+                if(tdHeight > maxTdHeight){
+                    maxTdHeight = tdHeight;
+                    
+                }
+            });
+
+            $('.eventcalendar td').css('height', maxTdHeight + 20 + 'px');
+
+        }, 100);
+             
+
+    }
+}
+
+function calendarnavigation_overview() {
+    $("body.module_event:not(.init)").each(function(){
+        $('body.module_event').addClass("init");
+        $(document).on('click', '.changemonth_overview', function (e) {
+            e.preventDefault();
+
+            var componentOptions = {};
+            componentOptions["componentcollection"] = "module";
+            componentOptions["componentname"] = "module_event";
+            if ($('body').attr("data-site") != undefined) {
+                componentOptions["_site_id"] = $('body').attr("data-site");
+            }
+
+            if ($('body').attr("data-lang") != undefined) {
+                componentOptions["_language_id"] = $('body').attr("data-lang");
+            }
+
+            if ($('body').attr("data-nid") != undefined) {
+                componentOptions["_navigation_id"] = $('body').attr("data-nid");
+            }
+
+            componentOptions["calendar"] = 1;
+
+            var caldate = $(this).attr('data-month');
+            caldate = caldate.replace("-","");
+            componentOptions['caldate'] = caldate;
+
+
+
+            //console.log(componentOptions);
+            var calendar = createComponent(componentOptions, "div");
+            //console.log(calendar);
+            //$('.module_event.module.overview').parents('.content').css("min-height", $('.module_event.module.overview').parents('.content').outerHeight() + "px");
+            $('.placeholder').append(calendar);
+            //$('.module_event.module.overview').parents('.content').css("min-height","auto");
+            htmlChanged();
+            
+            var intrvl = setInterval(function(){    
+                if(completed == 1){
+                   getshoplinks();
+                    clearInterval(intrvl);
+                }
+            },500);
+            //setTimeout(getshoplinks, 2000);
+
+            setTimeout(function () {
+                //$('.module_event.module.overview').parents('.content').css("min-height","auto");
+                //console.log($('.module_event.module.overview').find('.eventCalendar'));
+                //console.log($('.placeholder').find('.eventCalendar'));
+                $('.module_event.module.overview').find('.eventCalendarWrap').replaceWith($('.placeholder').find('.eventCalendarWrap').parent().html());
+                $('.placeholder').empty();
+                styleEventOverviewCalendar();
+                
+            }, 1000);
+
+        });
+    });
+}

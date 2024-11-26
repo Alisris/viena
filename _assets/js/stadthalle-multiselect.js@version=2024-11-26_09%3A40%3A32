@@ -1,0 +1,76 @@
+$(function(){
+	$(".stadthalle-multiselect:not(.stadthalle-multiselect-initialized)").each(function(){
+		var ms_select = $(this);
+		var ms_containerclass = ms_select.attr("data-multiselect-containerclass") ? ms_select.attr("data-multiselect-containerclass") : "";
+		var ms_name = ms_select.attr("data-multiselect-name") ? ms_select.attr("data-multiselect-name") : "Select";
+		
+		ms_select.wrap( "<div class='stadthalle-multiselect-container " + ms_containerclass + "'></div>" );
+		var ms_container = ms_select.parent();
+		
+		ms_container.append('<div class="stadthalle-multiselect-displayer"></div>');
+		var ms_displayer = ms_container.find(".stadthalle-multiselect-displayer");
+		ms_container.append('<div class="stadthalle-multiselect-options"><div class="stadthalle-multiselect-optionsinner"></div></div>');
+		var ms_options = ms_container.find(".stadthalle-multiselect-options");
+		var ms_optionsinner = ms_container.find(".stadthalle-multiselect-optionsinner");
+		
+		ms_displayer.on("click", function(){
+			ms_container.toggleClass("stadthalle-multiselect-open");
+			$(this).siblings('.stadthalle-multiselect-options').slideToggle();
+		});
+		
+		ms_select.children("option").each(function() {
+			var ms_option_ = $(this);
+			ms_optionsinner.append('<div class="stadthalle-multiselect-option" data-value="'+ms_option_.attr("value")+'"><div class="stadthalle-multiselect-optioninner"><span class="stadthalle-multiselect-indicator"></span><span class="stadthalle-multiselect-optiontext">'+ms_option_.html()+'</span></div></div>');
+			ms_optionsinner.children().last().on("click", function(){
+				if(ms_option_.attr("data-multiselect-all") == 1) {
+					ms_select.find("option").prop('selected', false);
+				}
+				ms_option_.prop('selected', !ms_option_.prop('selected'));
+				ms_select.trigger("change");
+			});
+		});
+		
+		ms_select.on("change", function(){
+			//if no option is selected and there is an option for "all" then select that one
+			if(ms_select.find("option:selected").length == 0 && ms_select.find('option[data-multiselect-all="1"]').length == 1) {
+				ms_select.find('option[data-multiselect-all="1"]').prop('selected', true);
+			}
+			
+			var ms_selectedcount = 0;
+			var ms_displayertext = ms_name;
+			ms_select.children("option").each(function() {
+				var ms_option = ms_options.find('[data-value="'+$(this).attr("value")+'"]');
+				if($(this).is(':selected')) {
+					if($(this).attr("data-multiselect-all") != "1") {
+						ms_selectedcount++;
+						if(ms_displayertext == ms_name) {
+							ms_displayertext = "";
+						}
+						if(ms_displayertext.length > 0) {
+							ms_displayertext += ", ";
+						}
+						ms_displayertext += $(this).html();
+					}
+					ms_option.addClass("stadthalle-multiselect-active");
+				}
+				else {
+					ms_option.removeClass("stadthalle-multiselect-active");
+				}
+			});
+			ms_container.attr("data-multiselect-count", ms_selectedcount);
+			if(ms_selectedcount > 0) {
+				ms_container.addClass("stadthalle-multiselect-active");
+				if(ms_select.find('option[data-multiselect-all="1"]').length > 0 && ms_select.find('option[data-multiselect-all="1"]').prop('selected')) {
+					ms_select.find('option[data-multiselect-all="1"]').prop('selected', false);
+					ms_select.trigger("change");
+				}
+			}
+			else {
+				ms_container.removeClass("stadthalle-multiselect-active");
+			}
+			ms_displayer.html(ms_displayertext);
+		});
+			
+		ms_select.trigger("change");
+	});
+});

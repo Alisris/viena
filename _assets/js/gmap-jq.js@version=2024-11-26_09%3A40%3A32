@@ -1,0 +1,428 @@
+/* gMap
+*/
+
+gMapLoader = function(){
+	var ifunc = [];
+	var lang;
+	var script;
+	var init = false;
+	var loaded = false;
+  function check(cl){
+	    		
+		if(loaded) {
+			cl.create();
+		} else {
+			ifunc.push(cl);			
+			if(!init) {
+				init = true;
+				load();
+			}
+		}
+	}
+  function load(){
+		lang = $('html').attr('lang');
+		$("body").append('<script id="googlemaploader" src="https://maps.googleapis.com/maps/api/js?callback=gMapLoader.init&locale='+lang+'&language='+lang+'&key=AIzaSyBQhhrftJT-HBI9r0psYNSwNkupqvU7bkU" type="text/javascript"></script>');
+	}
+  function funcInit(){
+		loaded = true;
+		$.each(ifunc, function(index, cl) {
+			cl.create();	
+		});
+	}
+  return{
+		check:check,
+		init:funcInit
+  }
+}();
+
+var gMap = {
+	options: {
+		id : 'googlemap',
+		cssclass : 'gmap',
+		icons: {
+			base: {
+				imagepath : "/_assets/content/icon-googlemaps.png",
+// Defines an image to be used as the icon or shadow for a Marker. 'origin' and 'size' are used to select a segment of a sprite image and 'anchor' overrides the position of the anchor point from its default bottom middle position.
+				size : [24, 38], 
+				origin : [0, 0],
+				anchor : [12, 36] 
+//				shadowSize : [34, 39], //
+//				windowanchor : [7,33] //
+			}
+		},
+		markers: [
+			{lat:48.1994714,lng:16.3621676,info:'<strong>vbw Vereinigte Bühnen Wien GmbH</strong><br />Linke Wienzeile 6<br />1060 Wien',iconset:'base'}
+		],		
+		route: true, // false, true oder nummer welchen markers - beginnend mit null
+		fixzoom : false, // false oder true - erzwingt unter 'zoom' angegeben wert auch bei automatischer Ausschnittwahl mehrere Marker
+		center: false,
+		zoom: 17,		
+		map: {
+			backgroundColor: '#ffffff',
+			disableDoubleClickZoom: false, 
+			keyboardShortcuts: true,
+			draggable: true,
+      		mapTypeControl: true,
+			mapTypeControlOptions: {
+				style: 'DEFAULT'
+				// DEFAULT | DROPDOWN_MENU | HORIZONTAL_BAR
+//				,position: 'TOP_RIGHT'
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#ControlPosition
+			},
+      		mapTypeId: 'ROADMAP',   
+			// HYBRID | ROADMAP | SATELLITE | TERRAIN http://code.google.com/apis/maps/documentation/javascript/reference.html#MapTypeId
+      		zoomControl: true,
+			zoomControlOptions : {
+				style: 'DEFAULT'
+				// ANDROID | DEFAULT | SMALL | ZOOM_PAN http://code.google.com/apis/maps/documentation/javascript/reference.html#NavigationControlStyle
+//				,position: 'TOP_LEFT'
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#ControlPosition
+			},
+			scaleControl : true,
+			scaleControlOptions: {
+//				position: 'BOTTOM_LEFT'
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#ControlPosition
+			},
+			streetViewControl: false,
+			streetViewControlOptions: {
+//				position: 'TOP_LEFT'
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#StreetViewControlOptions
+			},
+			rotateControl: false,
+			rotateControlOptions: {
+//				position:
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#RotateControlOptions
+			},
+			panControl: false,
+			panControlOptions: {
+//				position:
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#PanControlOptions
+			},
+			overviewMapControl: false,
+			overviewMapControlOptions: {
+				opened: false // boolean
+				// http://code.google.com/apis/maps/documentation/javascript/reference.html#OverviewMapControlOptions
+			},
+			scrollwheel : false
+    	}
+	},
+	initialize: function(options) {
+				
+	  	this.options = $.extend( {}, this.options, options );	
+
+		this.container = $("#"+this.options.id);
+		if(this.container.length < 1) { return false; }
+
+		this.mop = this.options.map;
+		this.mop.center = this.options.center;
+		this.mop.zoom = this.options.zoom;		
+		
+		gMapLoader.check(this);
+		
+	},
+	create: function(){
+		
+		var opt = this.options;
+		this.mop.mapTypeId = google.maps.MapTypeId[this.mop.mapTypeId];		
+		this.mop.mapTypeControlOptions.style = this.mop.mapTypeControlOptions.style ? google.maps.MapTypeControlStyle[this.mop.mapTypeControlOptions.style] : google.maps.MapTypeControlStyle.DEFAULT;
+		this.mop.mapTypeControlOptions.position = this.mop.mapTypeControlOptions.position ? google.maps.ControlPosition[this.mop.mapTypeControlOptions.position] : google.maps.ControlPosition.TOP_RIGHT;
+		this.mop.zoomControlOptions.style = this.mop.zoomControlOptions.style ? google.maps.ZoomControlStyle[this.mop.zoomControlOptions.style] : google.maps.ZoomControlStyle.DEFAULT;
+		this.mop.zoomControlOptions.position = this.mop.zoomControlOptions.position ? google.maps.ControlPosition[this.mop.zoomControlOptions.position] : google.maps.ControlPosition.TOP_LEFT;
+		this.mop.scaleControlOptions.position = this.mop.scaleControlOptions.position ? google.maps.ControlPosition[this.mop.scaleControlOptions.position] : google.maps.ControlPosition.BOTTOM_LEFT;
+		this.mop.streetViewControlOptions.position = this.mop.streetViewControlOptions.position ? google.maps.ControlPosition[this.mop.streetViewControlOptions.position] : google.maps.ControlPosition.TOP_LEFT;
+		this.mop.rotateControlOptions.position = this.mop.rotateControlOptions.position ? google.maps.ControlPosition[this.mop.rotateControlOptions.position] : google.maps.ControlPosition.TOP_LEFT;
+		this.mop.panControlOptions.position = this.mop.panControlOptions.position ? google.maps.ControlPosition[this.mop.panControlOptions.position] : google.maps.ControlPosition.TOP_LEFT;
+		this.container.addClass(opt.cssclass);
+		this.setupUserIcons();
+		if(!this.mop.center) {
+			this.mop.center = [];
+			this.mop.center[0] = opt.markers[0].lat;
+			this.mop.center[1] = opt.markers[0].lng;
+		}
+		this.mop.center  = new google.maps.LatLng(this.mop.center[0],this.mop.center[1]);			
+		this.map = new google.maps.Map(this.container[0], this.mop);
+		
+		this.setupUserMarkers();
+		if(typeof this.bounds != 'undefined') {
+			if (opt.fixzoom && this.mop.zoom) {		
+				this.map.panToBounds(this.bounds);
+				this.map.setZoom(this.mop.zoom);
+			} else {
+				this.map.fitBounds(this.bounds);
+			}
+		}		
+		if(opt.route === false) {
+			opt.route = -1;
+		}
+		if(opt.route >= 0) {
+			if(opt.route === true) {
+				opt.route = 0;
+			}	
+			if(opt.markers[opt.route].lat && opt.markers[opt.route].lng) {
+				GDirection.initialize(this.map,this.container,opt.markers[opt.route].lat,opt.markers[opt.route].lng);
+			}
+		}		
+	},
+	setupUserIcons: function() {
+		var icons = this.options.icons;		
+		$.each(icons, function(it) {
+			var vars = icons[it];			
+			var size = vars.size ? new google.maps.Size(vars.size[0],vars.size[1]) : null ;
+			var origin = vars.origin ? new google.maps.Point(vars.origin[0],vars.origin[1]) : null ;
+			var windowanchor = vars.windowanchor ? new google.maps.Point(vars.windowanchor[0],vars.windowanchor[1]) : null ;
+			vars.icon = new google.maps.MarkerImage(vars.imagepath,size,origin,windowanchor);
+			if(vars.shadowpath) {
+				var shadowSize = vars.shadowSize ? new google.maps.Size(vars.shadowSize[0],vars.shadowSize[1]) : null ;
+				vars.shadow = new google.maps.MarkerImage(vars.shadowpath,shadowSize,origin,windowanchor);
+			}
+		});	
+	},
+	setupUserMarkers: function() {
+		this.infowindow = new google.maps.InfoWindow();	// nur ein Infowindow, damit immer nur eines offen.
+		var cl = this;	
+		$.each(this.options.markers,function(index,mark){	
+			mark.position = new google.maps.LatLng(mark.lat,mark.lng);
+			if(typeof cl.bounds !='undefined') { this.bounds.extend(mark.position); }
+			cl.createMarker(mark);
+		});
+  	},
+  	createMarker: function(mark) {
+		var map = this.map;
+		mark.map = map;				
+		var icon = this.options.icons[mark.iconset];
+		
+		if(typeof icon != 'undefined') {
+		  mark  = $.extend( {}, mark, icon );
+		}
+		
+		var marker = new google.maps.Marker(mark);	
+		marker.infowindow = this.infowindow;
+		google.maps.event.addListener(marker, 'click', function(ev) {
+			this.infowindow.close(); 
+			this.infowindow.setContent('<div class="gmapInfoWindow">'+this.info+'</div>');
+		  	this.infowindow.open(this.map,this);
+		});
+	}
+};
+var GDirection = {
+	geoinfo: false,
+	geoaccuracy: 500000, //in metern
+	idform: 'GDform',
+	idirection : 'GDirection',
+	idgeo : 'GDform-geoinfo',
+	lang : {
+		de : {
+				locale : 'de_AT',
+				legend : 'Anfahrtsplan',
+				info : 'Geben Sie Ihren momentanen Standort ein und erstellen Sie Ihren persönlichen Anfahrtsplan.',
+				placeholder : 'Strasse Hausnummer, PLZ Ort',
+				button : 'Anfahrtsplan erstellen',
+				error: 'Fehler. Bitte überprüfen Sie Ihre Angaben.',
+				NOT_FOUND: 'Die angegebene Adresse konnte nicht gefunden werden. Entweder sie ist relativ neu, oder fehlerhaft.'
+		},
+		en : {		
+				locale : 'en_US',
+				legend : 'Route planner',
+				info : 'Please fill in your address to calculate route.',
+				placeholder : 'street, zip-code, city',
+				button : 'go',
+				error: 'An unknown error occurred.',
+				NOT_FOUND: 'No corresponding geographic location could be found for one of the specified addresses. GDirection may be due to the fact that the address is relatively new, or it may be incorrect.'
+		},
+		it : {		
+				locale : 'it_IT',
+				legend : 'descrizione f di un viaggio',
+				info : 'Inserisci il tuo indirizzo per calcolare il percorso.',
+				placeholder : 'Indirizzo, CAP, Città',
+				button : 'crea',
+				error: 'AÈ verificato un errore. Si prega di verificare i vostri dati.',
+				NOT_FOUND: 'indirizzo specificato non è stato trovato.'
+		}		
+	},
+	template : '<form id="#{id}"><fieldset><legend>#{legend}</legend><label class="full" id="GDform-info" for="GDform-standpunkt">#{info}</label><ol class="tarn"><li class="gdformstandpunkt"><input id="GDform-standpunkt" name="standpunkt" aria-required="true" placeholder="#{placeholder}" /></li><li class="gdformbtn"><button type="submit" class="button"><span class="iconwrap"><img src="/_assets/content/icon-route.png" alt="" width="20" height="20" class="vmiddle" /></span>#{button}</button></li></ol></fieldset></form><div id="#{idirect}" class="c"></div>',	
+	errortemplate: '<div class="error">#{msg}</div>',
+	georequested: false,
+	initialize: function(map,mapcontainer,tolat,tolng) {
+				
+		this.dService = new google.maps.DirectionsService();
+		this.dDisplay = new google.maps.DirectionsRenderer();
+    	this.dDisplay.setMap(map);
+		this.to = tolat+','+tolng;
+		var lang = $('html').attr('lang');	
+		
+		if(lang == "de") {
+			this.txt = this.lang.de;
+		} else if (lang == "it") {
+			this.txt = this.lang.it;
+		}	else {
+			this.txt = this.lang.en;
+		}
+		if($("#"+this.idform).length < 1) {
+			var form = $.tmpl(this.template, {id:this.idform, legend:this.txt.legend, info:this.txt.info, placeholder:this.txt.placeholder, button:this.txt.button, idirect:this.idirection});
+			mapcontainer.after(form);
+		}
+		this.direction = $("#"+this.idirection);
+    	this.dDisplay.setPanel(this.direction[0]);
+		this.form = $("#"+this.idform);
+		var cl = this;
+		this.form.on('submit', function(ev) {
+			ev.preventDefault();
+			cl.setDirections($('#GDform-standpunkt').val());
+		});
+		this.direction.attr('tabindex','-1');
+		
+		$("#GDform-standpunkt").on("click, focus",function(e){
+			if(!cl.georequested){
+				cl.geoLocation();
+			}
+		});
+	
+	},
+	geoLocation: function() {
+		this.georequested = true;
+		geoLocation.get("address",this.geoaccuracy,this);
+	},
+	setLocation: function(georesult) {
+		var input = $('#GDform-standpunkt');
+		this.geoinfo = $("#"+this.idgeo);			
+		if(georesult == false) {
+			//extendInputs();			
+		}else if(georesult == 'noaccuracy') { //no accuracy
+			//extendInputs();			
+			if(this.geoinfo.length < 1) {
+				var error = geoLocation.tplerror(this.idgeo,'GDform-standpunkt');					
+				input.before(error);
+			}
+			this.geoinfo = $("#"+this.idgeo);
+			this.geoinfo.focus();														 
+		} else { //success
+			input.val(georesult);													
+			if(this.geoinfo.length < 1) {
+				var info = geoLocation.tplinfo(this.idgeo,'GDform-standpunkt');					
+				input.before(info);
+			}
+			this.geoinfo = $("#"+this.idgeo);
+			this.geoinfo.focus();
+		}
+
+	},
+	setDirections: function(fromAddress) {
+		var request = {
+			origin: fromAddress, 
+			destination:this.to,
+			travelMode: google.maps.DirectionsTravelMode.TRANSIT
+		};
+		var cl = this;
+		this.dService.route(request, function(response, status) {
+			cl.removeGeoinfo();
+			if (status == google.maps.DirectionsStatus.OK) {
+				cl.dDisplay.setDirections(response);
+				cl.requestLoad();
+			} else {
+				cl.requestErrors(status);
+			}
+		}.bind(this));
+	},
+	removeGeoinfo: function (){
+		if(this.geoinfo) {
+			this.geoinfo.remove();
+			this.geoinfo = false;
+		}
+	},
+	requestErrors: function (status){
+		if(this.txt[status]) {
+			this.error(this.txt[status]);
+		} else {
+			this.error(this.txt.error);
+		}
+	},
+	requestLoad: function (){ 
+		this.direction.removeClass('error-msg').html('');
+		this.direction.focus();					
+	},
+	error: function (msg) {
+		this.direction.addClass('error-msg').html($.tmpl(this.errortemplate, {msg:msg}));
+		this.direction.focus();					
+	}
+}
+geoLocation = function(){
+	var lang = 'de';
+	var langtxt = {
+		de : {
+				geoinfo : 'Der von Ihrem Browser übergebene Standort wurde für den Anfahrtsplan vorausgefüllt.',
+				geoinfoError : 'Der von Ihrem Browser übergebene Standort ist für einen Anfahrtsplan zu ungenau.'
+		},
+		en : {		
+				geoinfo : 'The position your browser identified has been prefilled.',
+				geoinfoError : 'The position your browser identified is imprecise.'
+		},
+		it : {		
+				geoinfo : 'Il sito dato è stato riempito.',
+				geoinfoError : 'La posizione del tuo browser identificati è imprecisa.'
+		}		
+	};
+	var txt;
+	var result;
+	var geotemplate = '<label id="#{id}" class="full info" for="#{fori}">#{geoinfo}</label>';
+  	function setLanguage(){
+		lang = $('html').attr('lang');				
+		if(lang == "de") {
+			txt = langtxt.de;
+		} else if (lang == "it") {
+			txt = langtxt.it;
+		}	else {
+			txt = langtxt.en;
+		}
+	}
+  	function getTemplateError(id,input){	
+		return $.tmpl(geotemplate, {id:id,fori:input,geoinfo:txt.geoinfoError});
+	}
+ 	function getTemplateInfo(id,input){		
+		return $.tmpl(geotemplate, {id:id,fori:input,geoinfo:txt.geoinfo});
+	}
+  	function getLocation(format,accuracy,cl){
+		setLanguage();		
+		if (navigator.geolocation) { // browser unterstützt Geolocation
+			var geocoder = new google.maps.Geocoder();
+			if (geocoder) {
+				navigator.geolocation.getCurrentPosition(
+					function (position) { // position konnte ermittelt werden (zustimmung durch user)
+						if(parseFloat(position.coords.accuracy) > accuracy) { // Positionbestimmung nicht genau genug
+							cl.setLocation("noaccuracy");		
+						} else {
+							var lat = parseFloat(position.coords.latitude);
+							var lng = parseFloat(position.coords.longitude);
+							var latlng = new google.maps.LatLng(lat, lng);				 
+							geocoder.geocode({'latLng': latlng, 'language':lang}, function(results, status) {
+								if (status == google.maps.GeocoderStatus.OK) { // zur Position konnte Adresse zugeordnet werden
+									if(format === "address") { // es wird nur die Adresse zurückgegeben
+										if (results[0]) { 
+											cl.setLocation(results[0].formatted_address);										
+										}	else { // Keine Adresse im JSON
+											cl.setLocation(false);		
+										}
+									} else { // es wird das komplette JSON zurückgegeben
+										cl.setLocation(results);										
+									}
+								} else { // zur Position konnte keine Adresse zugeordnet werden
+									cl.setLocation("noaccuracy");	
+								}
+							});	
+						}
+					},				
+					function () { // positon konnte nicht ermittelt werden (technisch und/oder ablehnung durch user)
+						cl.setLocation(false);		
+					},  
+					{timeout: 5000}
+				);
+			}
+		}	else { // browser unterstützt keine Geolocation
+			cl.setLocation(false);		
+		}
+	}
+  	return{
+   	 	get:getLocation,
+		tplerror: getTemplateError,
+		tplinfo: getTemplateInfo
+  	}
+}();

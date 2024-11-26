@@ -1,0 +1,81 @@
+.ecat-wrap, .emonth-wrap{margin-bottom: 10px}
+
+.stadthalle-multiselect { display: none; }
+
+.stadthalle-multiselect-container { display: inline-block; vertical-align: top; width: 100%; position: relative; }
+
+.stadthalle-multiselect-options { 
+	display: none;
+	z-index: 5;
+	padding: 5px 0;
+	background-color: var(--grey);
+}
+.stadthalle-multiselect-optionsinner { max-height: 70vh; overlfow: auto; }
+
+.stadthalle-multiselect-option { position:relative; cursor: pointer; padding: 0 16px; }
+.stadthalle-multiselect-displayer { 
+	 border-bottom: 2px solid var(--darkgrey);
+	 padding: 5px 25px 10px 0;
+	 cursor: pointer;
+	position: relative;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.stadthalle-multiselect-open .stadthalle-multiselect-displayer{border-color: var(--red);}
+.stadthalle-multiselect-displayer::before { 
+	content:'';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -8px;
+	border: 2px solid var(--red);
+	border-right: 0px;
+	border-bottom: 0px;
+	-webkit-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	transform: rotate(225deg);
+	transition: all 0.2s ease-in-out;
+}
+.stadthalle-multiselect-container.stadthalle-multiselect-open .stadthalle-multiselect-displayer::before { 
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin-top: -4px;
+}
+
+.stadthalle-multiselect-indicator { 
+	margin: 7px 10px 7px 0px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid var(--darkgrey);
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+.stadthalle-multiselect-indicator::before { 
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 12px;
+	height: 12px;
+	background: url("https://www.musicalvienna.at/_assets/css/icon/check-white.svg") center no-repeat;
+	background-size: contain;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+}
+.stadthalle-multiselect-option.stadthalle-multiselect-active .stadthalle-multiselect-indicator{
+	background-color: var(--red);
+	border-color: var(--red);
+}
+.stadthalle-multiselect-option.stadthalle-multiselect-active .stadthalle-multiselect-indicator::before { visibility: visible; }
+.stadthalle-multiselect-optiontext { display: inline-block; vertical-align: middle; width: calc(100% - 42px); }
+.stadthalle-multiselect-option.stadthalle-multiselect-active .stadthalle-multiselect-optiontext, .stadthalle-multiselect-optiontext:hover{color: red}
+
+

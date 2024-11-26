@@ -1,0 +1,839 @@
+<!DOCTYPE html><html  lang="en"><head><script type="text/javascript" src="../../../_component/resources/jquery.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/htmlChange.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/components.js.php@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_custom/custom_func.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/collection_content/extracontent/extracontent.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/swiper8.0.7.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/gmap-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_component/collection_content/WTuser/WTuser.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)WTuser" ></script><script type="text/javascript" src="../../../_component/collection_content/footer/footer.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)footer" ></script><script type="text/javascript" src="../../../_component/collection_module/module_event/module_event.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsapFlipPlugin.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsap-3.12.5.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/stadthalle-multiselect.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_component/collection_content/navigation/navigation.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)navigation" ></script><script type="text/javascript" src="../../../_component/collection_content/page/page.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/click-visible-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/tab-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.template.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.lazyload.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.touchSwipe.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/respond.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/modernizr-2.8.3.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/slidenav.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/echonet.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page (content)footer (content)extracontent" ></script><link href="../../../_component/resources/components.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="BasicDependencyStack" ><link href="../../../_component/collection_content/extracontent/extracontent.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)extracontent" ><link href="../../../_component/collection_content/WTuser/WTuser.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)WTuser" ><link href="../../../_component/collection_content/footer/footer.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)footer" ><link href="../../../_component/collection_module/module_event/module_event.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_assets/css/stadthalle-multiselect.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_component/collection_content/navigation/navigation_main.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/navigation/navigation.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/page/page.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page" ><link href="../../../_assets/css/form1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/print1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="print" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/basics1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/responsive1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/basics-tmp.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" >
+	 <title>Musicals and Events - MusicalVienna</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="">
+    <meta name="expires" content="3600" />
+    <meta name="revisit-after" content="5 days" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="icon" href="../../../_assets/content/favicon.ico" type="image/ico" />
+	<meta charset="UTF-8">
+	  
+  
+	
+    <!-- TRUENDO Privacy Center -->    
+	 <script data-accessibility="true" id="truendoAutoBlock" type="text/javascript" src=https://cdn.priv.center/pc/truendo_cmp.pid.js data-siteid="4398b4cb-8669-4dd1-bd26-08a984506b42"></script>
+	 <!-- End TRUENDO Privacy Center --> 
+	  
+	  	
+  
+<link rel="alternate" href="https://musicalvienna.at/en-us/schedule/100018" hreflang="en-us" />
+		
+  
+<link rel="alternate" href="https://musicalvienna.at/en-gb/schedule/100018" hreflang="en-gb" />
+			<link rel="canonical" href="https://musicalvienna.at/en/schedule/100018" />
+			  
+
+      
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500,
+});
+dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    //console.log(dataLayer);
+</script>
+<script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
+
+      // Load Tag Manager script.
+      var gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NJ5CZF';
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+        //console.log(firstScript);    
+        
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<!-- End Matomo -->
+    
+      
+<style>
+     :root {
+                                    
+                                    --font1: AkkuratSubBlack; 
+        --font2: AkkuratWebRegular; 
+        
+        --color1: #000000;; /* Farbe für Navigationspunkte & Buttons */
+        --color2: #FFFFFF;; /* Farbe für Verlauf */
+        --color3: #FFFFFF;; /* Farbe für Überschriften auf dunklem Hintergrund */
+        --color4: #FFFFFF;; /* Farbe für Umrandungen & Pfeilchen */
+        --color5: #FFFFFF;; /* Hintergrundfarbe statt weiß im Lightmode (dunkle schrift) */
+        --color6: #FFFFFF;; /* Farbe für Buttonbeschriftung */
+        --color7: #000000;; /* Farbe für Blockquotes */
+    } 
+
+
+	.button:not(.nobtn), 
+	button:not(.nobtn), 
+	[class*="button"]:not(.nobtn), 
+	[class*="Button"]:not(.nobtn), 
+	.enetButton:not(.nobtn), 
+	.utilities .cart span, 
+	.utilities .user.active::after,
+	 #nav .nav__list > .nav__element.active, 
+	 #nav .nav__list > .nav__element:hover { 
+		background-color: var(--color1);
+		color: var(--color6);
+	}
+	blockquote::before, blockquote::after, .bq::before, .bq::after{
+		color: var(--color7);
+	}
+
+	p > a:not([class*="button"]):not([class*="Button"]){ color: var(--color1) !important;}
+
+	.eventCustomNav a:hover, .eventCustomNav a:focus, .eventCustomNav a.active{ color: var(--color1); }
+	.dark { background-image: linear-gradient(15deg, var(--color2) 0%, #101010 40%, #101010 100%); }
+	.dark h1, .dark h2 { color: var(--color3); }
+	ul.merch li { border-color: var(--color4); }
+	.arrowSlider::after, .arrowSlider::before { background-color: var(--color4); }
+	.light, .eventAnchorNav, #nav, #nav .nav__sub-list, #nav > .navigation { background-color: var(--color5); }
+	.extracontent.hasSwiper.light::before { background-image: linear-gradient(90deg, var(--color5), transparent); }
+	.extracontent.hasSwiper.light::after { background-image: linear-gradient(90deg,transparent, var(--color5)); }
+
+	.eventCustomNav a, h1, h2, h3, h4, [class*="button"]:not(.nobtn), [class*="Button"]:not(.nobtn) { font-family: var(--font1) }
+	h5, h6, .h7, p, p a { font-family: var(--font2); }
+
+	.btnLikeHeadline.time, .buy .time{ background-color: var(--color1);}
+	.ticketcount .buy::before{ background-color: var(--color1); }
+
+	.viewlist .view.active, .viewlist .view:focus, .viewlist .view:hover{ background-color: var(--color1); border-color: var(--color1) !important; }
+
+	.module_event #content *:not(td):not(.view) {
+		border-color: var(--color4);
+	}
+	
+	table.wysiwygtable tbody tr:nth-child(odd){
+		background-color: color-mix(in srgb,var(--color4),#fff 50%);
+	}
+	table.wysiwygtable tbody tr:nth-child(even){
+		background-color: var(--color4);
+	}
+
+	#footer{
+		background-image: repeating-linear-gradient(200deg, #101010 0%, #101010 15%, var(--color2) 45%, #101010 70%);
+	}
+
+	@media only screen and (min-width: 1024px){
+		#footer{
+			background-image: linear-gradient(200deg, #101010 55%, var(--color2) 100%);
+		}
+	} 
+
+</style>
+      
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-dowhenconsent="googletagmanager" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5CZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      
+      <script type="text/javascript" src="../../../_assets/js/index.html@f=gaec-tracking.js&amp;recache=0"></script>
+      
+              <script type="text/javascript" src="../../../_component/resources/jquery.js"></script>
+          <script type="text/javascript" src="../../../_assets/js/magnificpopup-v1.1.0.js"></script>    
+        <script type="text/javascript" src="../../../_assets/js/magnificpopup.js"></script>
+      <script type="text/javascript" src="../../../_assets/js/jquery.autocomplete.min.js"></script>    
+        </head>
+    <body id="MusicalVienna" class="en module_event size4 default nohelp   module_event_detail " data-lang="en" data-site="1" data-nid="100013">
+    <div class="genericload none"><img src='../../../assets/content/icons/icon-spinner.svg' width='60' height='60' /></div>
+    <div id="parent" class="parent cfix">
+      <header id="header" class="header relative" role="banner">
+        <div class="inner">
+            
+			<div class="utilities desktop">
+                <div class="langnav">
+                    <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">language</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002  de">
+                        <a href="../../../de/spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner ">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012 active en">
+                        <a href="JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner active">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                </div>
+				<button class="nobtn toMainsearch">
+					<img src="../../../_assets/css/icon/search.svg" alt="search">
+				</button>
+				<a href="../../account/basket.html" class="cart nobtn">
+					<img src="../../../_assets/css/icon/cart.svg" alt="shopping cart">
+									</a>
+				<a href="JESUS-CHRIST-SUPERSTAR-2023.html#myaccountbox" class="user nobtn ">
+					<img src="../../../_assets/css/icon/user.svg" alt="User">
+				</a>
+			</div>
+			<a href="../../home.html" title="Zur Startseite" accesskey="0" role="banner" class="url toLandingpage">
+				<img id="logo" src="../../../_media/_site_logo/1_WeAreMusicalLogo_2Lines.svg" alt="Logo" />
+			</a>
+                        <div class="eventCustomNavWrap">
+								<ul class="areas desktop tarn flex-jc-start eventCustomNav">
+				    														</ul>
+			</div>
+            			<button  id="navanchor" class="nobtn" type="button" aria-label="open menu" aria-expanded="false" aria-controls="menu" data-menutxt="menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			 <div id="nav" class="cfix noem fromTop" aria-describedby="Navigation">
+                <div class="utilities mobile">
+                    <div class="langnav">
+                        <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">language</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002  de">
+                        <a href="../../../de/spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner ">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012 active en">
+                        <a href="JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner active">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                    </div>
+					<div>
+						<button class="nobtn toMainsearch">
+							<img src="../../../_assets/css/icon/search.svg" alt="search">
+						</button>
+						<a href="../../account/basket.html" class="cart nobtn">
+							<img src="../../../_assets/css/icon/cart.svg" alt="shopping cart"></a>
+						<a href="JESUS-CHRIST-SUPERSTAR-2023.html#myaccountbox" class="user nobtn ">
+							<img src="../../../_assets/css/icon/user.svg" alt="Login User">
+						</a>
+					</div>
+				</div>
+								<div class="eventCustomNav mobile">
+										<ul class="areas tarn">
+																							</ul>
+				</div>
+								<div  class="navigation">
+                            <nav class="nav cfix">
+            <h2 class="nav__headline none">Hauptnavigation</h2>
+            <div class="nav__container" role="navigation">
+                <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="nav__element relative nav__element_depth0  n100013 active m58 subNavElement ">
+
+    <a href="../to-the-schedule.html" class="navigation_link nav__inner relative active">Musicals and Events
+		                <span data-navigation-id="100013" class="nav__element_opener active"></span>
+            	</a>
+          <a href="JESUS-CHRIST-SUPERSTAR-2023.html#" data-navigation-id="110" class="nav__element_opener active"><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100013">
+                <li class="nav__element relative nav__element_depth1  n100124  m3 ">
+
+    <a href="../to-the-schedule.html" class="navigation_link nav__inner relative ">Schedule
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100055  m122 ">
+
+    <a href="../archive.html" class="navigation_link nav__inner relative ">Archive
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100119  m117 ">
+
+    <a href="../vouchers.html" class="navigation_link nav__inner relative ">Vouchers
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100118  m123 ">
+
+    <a href="../../souvenirs.html" class="navigation_link nav__inner relative ">Souvenirs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100082  m49 ">
+
+    <a href="../../musicalclub.html" class="navigation_link nav__inner relative ">Musicalclub
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100060  m49 ">
+
+    <a href="../../creative-development.html" class="navigation_link nav__inner relative ">VBW Productions
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100084  m49 subNavElement ">
+
+    <a href="../../vbw-junges-musical.html" class="navigation_link nav__inner relative ">VBW JUNGES MUSICAL
+		                <span data-navigation-id="100084" class="nav__element_opener "></span>
+            	</a>
+          <a href="JESUS-CHRIST-SUPERSTAR-2023.html#" data-navigation-id="431" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100084">
+                <li class="nav__element relative nav__element_depth1  n100167  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-freizeit.html" class="navigation_link nav__inner relative ">For leisure time
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100168  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-schule.html" class="navigation_link nav__inner relative ">For the school
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100169  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-den-nachwuchs.html" class="navigation_link nav__inner relative ">For the next generation
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100170  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-zu-hause.html" class="navigation_link nav__inner relative ">For at home
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100086  m49 subNavElement ">
+
+    <a href="../../about-us.html" class="navigation_link nav__inner relative ">About us
+		                <span data-navigation-id="100086" class="nav__element_opener "></span>
+            	</a>
+          <a href="JESUS-CHRIST-SUPERSTAR-2023.html#" data-navigation-id="433" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100086">
+                <li class="nav__element relative nav__element_depth1  n100089  m49 ">
+
+    <a href="../../about-us/raimund-theater.html" class="navigation_link nav__inner relative ">Raimund Theater
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100091  m49 ">
+
+    <a href="../../theatres/ronacher.html" class="navigation_link nav__inner relative ">Ronacher
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100088  m49 ">
+
+    <a href="../../about-us/orchestra.html" class="navigation_link nav__inner relative ">Orchestra
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100092  m3 ">
+
+    <a href="https://www.musicalvienna.at/en/about-us/team" class="navigation_link nav__inner relative ">Team
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100122  m3 ">
+
+    <a href="../../about-us/press.html" class="navigation_link nav__inner relative ">Press
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100085  m49 ">
+
+    <a href="../../sales.html" class="navigation_link nav__inner relative ">B2B &amp; Groups
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100083  m49 ">
+
+    <a href="../../partners.html" class="navigation_link nav__inner relative ">Partners
+		    	</a>
+         </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+				<div class="navAd empty">
+                    				</div>
+			 </div>
+            <form id="mainsearch" action="https://www.musicalvienna.at/en/search" method="get" aria-describedby="stichwortsuche-head" role="search" class=" none">
+                            <fieldset class="relative m0">
+								<button class="nobtn" type="submit" title="Suchen"><img src="../../../_assets/css/icon/search.svg" alt="Suchen"></button>
+                                <label for="suchbegriff" class="none">Search terms</label>
+                                <input class="mainsearch-input m0" type="search" id="suchbegriff" value="" title="Enter search terms" placeholder="enter a search term..." name="words" aria-required="true" required="">
+                                <a href="JESUS-CHRIST-SUPERSTAR-2023.html#" class="clearInput tdn" title="hide search"><img src="../../../_assets/css/icon/close.svg" alt="x"></a>
+                            </fieldset>
+                            <input type="hidden" name="search" value="1">
+                        </form>
+        </div>
+        </header>
+      
+	  <div id="content" role="main" class="cfix content">
+                      
+		<div  class="module_event module_event_detail detail module"><div  class="module_event module_event_detail moduledetail"><div class="eventAnchorNav"><ul class="tarn flex-jc-start"><li><a class="tdn" href="JESUS-CHRIST-SUPERSTAR-2023.html#Info_100482">Info</a></li><li><a class="tdn" href="JESUS-CHRIST-SUPERSTAR-2023.html#Cast_100481">Cast</a></li><li><a class="tdn" href="JESUS-CHRIST-SUPERSTAR-2023.html#Leading Team_100480">Leading Team</a></li><li><a class="tdn" href="JESUS-CHRIST-SUPERSTAR-2023.html#Fotos_100479">Photos</a></li></ul></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Header_100483"   data-id="100483" data-type="extracontent_header"><div class="extracontent_header "><!-- <canvas></canvas><script src="/_assets/js/feenstaub.js"></script> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/original/100513.webp"><source src="../../../_media/image/100513_1920x1080px_JCS23_70__11_24.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/100513_1920x1080px_JCS23_70__11_24.jpg" 
+     alt="Jesus Christ Superstar 2023 © VBW"
+			  loading="lazy" 
+	 
+
+ title="Jesus Christ Superstar 2023 © VBW" 
+
+
+
+
+
+
+	/></picture></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Info_100482"   data-id="100482" data-type="extracontent_textonly"><div class="extracontent_textonly setContentWidth extracontent-inner"><div class="setBlockTextWidth"><h1>JESUS CHRIST SUPERSTAR - THE ROCK-MUSICAL IN CONCERT</h1><h2>THE BIG VBW EASTER CONCERT HIGHLIGHT 2023</h2><p><br /><strong>From 31 March to 10 April 2023, Vereinigte Bühnen Wien present the world-famous cult rock opera by Andrew Lloyd Webber and Tim Rice as an impressive concert experience at the Raimund Theater!</strong></p><p> </p><p><strong>JESUS CHRIST SUPERSTAR</strong> has been thrilling people all over the world for over four decades. The highly emotional and electrifying score by <strong>Andrew Lloyd Webber</strong> and <strong>Tim Rice</strong> has lost none of its relevance to this day.&nbsp; The "Rock-Musical in Concert" returned to the <strong>Raimund Theater</strong> at Easter in the legendary VBW concert version sung in English. An absolute concert highlight with a large orchestra and musical star <strong>Drew Sarich</strong> in the role of "Jesus".</p><p> </p><p><strong>JESUS CHRIST SUPERSTAR</strong> tells the last seven days of Jesus' life in a unique way from Judas' point of view. It is about&nbsp;the Last Supper, Herod's judgement and Judas' betrayal, which leads to the Way of the Cross and finally to his death.</p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Cast_100481"   data-id="100481" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">Cast</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Drew Sarich</h4><p class="cast-title mt0 small">Jesus</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Drew Sarich</h2><h6 class="cast-title mt0 mb20">Jesus</h6><p>Drew Sarich was born in St. Louis, Missouri and came to Europe in 1999 for the role of <em>Quasimodo </em>in the world premiere of Disney&#39;s THE HUNCHBACK&nbsp;OF NOTRE DAME. Since his debut at the Raimund Theater as <em>Berger </em>in HAIR, he has also been seen at VBW as <em>Captain&nbsp;Sun</em>&nbsp;in BARBARELLA, <em>Crown Prince Rudolf</em> in RUDOLF - AFFAIRE MAYERLING, <em>Curtis</em> in SISTER ACT, <em>The Phantom</em> in LOVE NEVER DIES and <em>Che </em>in EVITA. He embodied both <em>Jesus</em> and <em>Judas </em>in numerous productions of JESUS CHRIST SUPERSTAR, the title roles in JEKYLL &amp; HYDE in Cologne and DRACULA in St. Gallen and was seen in HEDWIG AND THE ANGRY INCH in Berlin and as <em>Cousin Kevin </em>in THE WHO&#39;S TOMMY at the Musical Sommer Amstetten. On Broadway he created the role of <em>Armand </em>in Elton John&#39;s LESTAT and Off-Broadway he starred in JAQUES BREL IS ALIVE AND WELL AND LIVING IN PARIS. As J<em>ean Valjean</em>, Drew Sarich was seen on both the West End and Broadway in LES MIS&Eacute;RABLES. In Vienna and Berlin Drew Sarich played <em>Count von Krolock</em> in DANCE OF THE VAMPIRES and in Hamburg he created the title role in ROCKY - THE MUSICAL. At the Volksoper Wien he was seen as <em>Antonio Vivaldi</em> in the world premiere of VIVALDI - DIE F&Uuml;NFTE JAHRESZEIT, for which he was awarded the German Musical Prize in the category &quot;Best Actor&quot; and the Kronen Zeitung Readers&#39; Prize in 2017. Drew Sarich was also seen as <em>Molina </em>in KUSS DER SPINNENFRAU at B&uuml;hne Baden. Most recently he played VIVALDI again and was seen in the role of <em>Robert Baker</em> in Leonard Bernstein&#39;s WONDERFUL TOWN at the Volksoper Wien. He was <em>Daddy Brubeck</em> in SWEET CHARITY and in the premiere series of INTO THE WOODS as <em>Wolf</em> and <em>Cinderella&#39;s Prince</em> at the Volksoper Wien.&nbsp;He recently embodied <em>Guido Contini</em> in the concert version of the musical production NEUN (NINE) at B&uuml;hne Baden. His three albums &quot;Silent Symphony&quot;, &quot;Let Him Go&quot; and &quot;Hunting For Heaven&quot; are available on Spotify and Apple Music.</p><ul class="socialmedia tarn"><li><a href="https://www.drew-sarich.com/" rel="extern" title="Website Sarich (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Alex Melcher</h4><p class="cast-title mt0 small">Judas</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Alex Melcher</h2><h6 class="cast-title mt0 mb20">Judas</h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21209.jpg" alt="Nienke Latten &copy; VBW/ Sandra Kosel" title="Nienke Latten &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Nienke Latten</h4><p class="cast-title mt0 small">Maria Magdalena</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Nienke Latten</h2><h6 class="cast-title mt0 mb20">Maria Magdalena</h6><p>Nienke Latten comes from Voorburg in the Netherlands. Since early childhood, her great passion has been dance and acting. In 2012, at the age of 17, she was accepted for a preparatory year at the Tilburg Conservatory, where she began her regular studies just one year later, graduating with a Bachelor&#39;s degree in May 2017. In Tilburg she received - among many other subjects - intensive singing lessons from Edward Hoepelman and could already be seen as <em>Maria </em>in WEST SIDE STORY during her training. After her training, Nienke Latten took on the lead role of <em>Tessa </em>in the Dutch and Belgian touring production of DER GESTIEFELTE KATER. From 2018 to 2021, she appeared as <em>Jasmine </em>in Disney&#39;s ALADDIN in Hamburg and Stuttgart. Most recently, she was on stage as Mira in ONE - DE MUSICAL in Amsterdam.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Dennis Kozeluh</h4><p class="cast-title mt0 small">Kaiphas</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Dennis Kozeluh</h2><h6 class="cast-title mt0 mb20">Kaiphas</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Thomas Hohler</h4><p class="cast-title mt0 small">Simon</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Thomas Hohler</h2><h6 class="cast-title mt0 mb20">Simon</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Raphael Gross</h4><p class="cast-title mt0 small">Peter</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Raphael Gross</h2><h6 class="cast-title mt0 mb20">Peter</h6><p>Raphael Gro&szlig; was born in North Rhine-Westphalia in Germany. His musical education started in early childhood and he had his first piano lesson at the age of five. In the following years, he sang in the children&rsquo;s choir of the Gospel Project-Ruhr, where he gained his first stage experience as a soloist. He began his vocal training at the age of 9, and since 2011 has been taking lessons under the tutelage of Prof. Michael David Mills (Folkwang University of the Arts, Essen). Even before attending stage school, Raphael took acting and singing lessons, and attended the summer school at the Laine Theatre Arts College in London. As a teenager, Raphael appeared in various stage productions and galas, but also gained a variety of TV experience, including an appearance on &ldquo;Dein Song&rdquo; (2010/2011; KiKa/ZDF). The show&rsquo;s compilation album took him to fourth place in the German charts. Although passionate about performing, Raphael has also always worked on his own musical projects. At the age of 17, he composed the entire score for the musical DIE SCHREIBMASCHINE &ndash; DAS ERBE DES RUPERT BLOOMFIELD, in which he also played the lead role at venues including the KatiElli Theater in Datteln. He has been a student of Musicals at the Music and Arts Private University of the City of Vienna since 2015. He has also won a song contest held in honour of the Austrian composer Walter Jurmann, and in Vienna he has appeared as <em>Rex</em> in GRIMM! at the Renaissance Theater, directed by Werner Sobotka.</p><ul class="socialmedia tarn"><li><a href="https://facebook.com/grossraphi" rel="extern" title="Raphael Groß Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/raphigross/" rel="extern" title="Raphael Groß Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/19960.jpg" alt="James Park &copy; VBW/ Sandra Kosel" title="James Park &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">James Park</h4><p class="cast-title mt0 small">Pontius Pilatus</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">James Park</h2><h6 class="cast-title mt0 mb20">Pontius Pilatus</h6><p>James Park was born in Korea and studied classical singing at the Robert Schumann Musikhochschule Düsseldorf. After graduating, he became a member of the Opera Studio Niederrhein of the Theater Krefeld-Mönchengladbach and participated in various opera and musical productions. These include DER ROSENKAVALIER, PETER GRIMES, DER BARBIER VON SEVILLA, HOFFMANNS ERZÄHLUNGEN, the operetta premiere of WÄR NUR DIE SEHNSUCHT NICHT SO GROSS, the baroque opera pastiche THE GODS MUST BE CRAZY, the crime musical DAS GEHEIMNIS DES EDWIN DROOD, LEND ME A TENOR! (OTELLO DARF NICHT PLATZEN) and MY FAIR LADY. For the production DER GOLDENE DRACHE at Theater Krefeld, James was nominated as NRW's best young singer for his role of <em>Junger Asiat</em> by Opernwelt critic Regine Müller in "Welt am Sonntag," and last season he made his debut in the same role at the Semperoper Dresden. In addition to his operatic career, he can be heard as a soloist in concert, ensembles and choral formations. Most recently, he appeared at the Raimund Theater as <em>Thuy </em>in MISS SAIGON.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/100032.jpg" alt="Timo Verse &copy; Marco Sommer" title="Timo Verse &copy; Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Timo Verse</h4><p class="cast-title mt0 small">Annas</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Timo Verse</h2><h6 class="cast-title mt0 mb20">Annas</h6><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/timo.verse" rel="extern" title="Verse Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/timo_verse/" rel="extern" title="Verse Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Christian Rey Marbella</h4><p class="cast-title mt0 small">Herodes</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Christian Rey Marbella</h2><h6 class="cast-title mt0 mb20">Herodes</h6><p>Christian Rey Marbella is a musical performer, singer and dancer. He has performed in numerous musical productions in Asia, the UK and the USA, including <em>Engineer </em>and <em>Thuy </em>in MISS SAIGON, <em>Luntha </em>in THE KING AND I and <em>Apostle Peter</em> in JESUS CHRIST SUPERSTAR. His other engagements include Disney&#39;s BEAUTY AND THE BEAST, CINDERELLA, SHOWBOAT and THE FULL MONTY. Christian Rey Marbella has also appeared in several original Filipino musicals, such as CALAMBA JOE as the national hero <em>Dr. Jos&eacute; Rizal</em>, 1896 - THE MUSICAL as <em>Emilio Jacinto</em> and the demon <em>Ravana </em>in the revival of RAMAHARI, 2012, and the Ballet Philippines 50th Anniversary Season.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/chuckmarbella" rel="extern" title="Instagram Marbella (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://twitter.com/chuckmarbella" rel="extern" title="Twitter Marbella (Twitter)" class="noextern"><img width="24" height="19" class="vmiddle" alt="" src="https://www.musicalvienna.at/_assets/css/icon/X_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21784.jpg" alt="Kaj-Louis Lucke &copy; VBW/ Marco Sommer" title="Kaj-Louis Lucke &copy; VBW/ Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Kaj-Louis Lucke</h4><p class="cast-title mt0 small">Priester</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Kaj-Louis Lucke</h2><h6 class="cast-title mt0 mb20">Priester</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Peter Kratochvil</h4><p class="cast-title mt0 small">Priester</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Peter Kratochvil</h2><h6 class="cast-title mt0 mb20">Priester</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Florian Resetarits</h4><p class="cast-title mt0 small">Priester</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Florian Resetarits</h2><h6 class="cast-title mt0 mb20">Priester</h6><p>Florian Resetarits was born in Burgenland, Austria, and trained at the Music and Arts Private University of the City of Vienna, where he graduated with a Masters degree in 2017. He has been performing at festivals and in cabarets and concerts since he was a child. He has a permanent contract with the Festspiele Musical G&uuml;ssing, where his roles have included the <em>MC</em> in CABARET, <em>Jekyll </em>and<em> Hyde</em> in JEKYLL UND HYDE, <em>Ch&eacute;</em> in EVITA, <em>Billy</em> in CAROUSEL, <em>Marius</em> in LES MIS&Egrave;RABLES and <em>Fred Graham</em> in KISS ME KATE. As part of his university course, he appeared in SMILES OF A SUMMER NIGHT, ANYTHING GOES and THE PIRATES OF PENZANCE. At the Schlossfestival Wilfersdorf he played <em>Frank Rex </em>in the operetta SEASON IN SALZBURG and <em>Armand Brissard</em> in THE COUNT OF LUXEMBOURG. In the summer of 2013, he made his debut at the Leh&aacute;r Festival Bad Ischl playing <em>Rudolph</em> in HALLO, DOLLY! and <em>Pista</em> in WHERE THE LARK SINGS, followed by <em>Gaston</em> in GIGI in 2014, <em>Freddy</em> in MY FAIR LADY in 2015, and <em>Dr Blind</em> in DIE FLEDERMAUS in 2016. A very versatile artist, he has also been a soloist at the Schubert Festival, held in the house where Schubert was born, has sung in concerts with the Pannonian Philharmonic, conducted by Prof. Alois Hochstrasser, and played the blacksmith in the chamber opera DER KLEINE SCHMIED VON RUHLA in the 2014 and 2015 seasons in Th&uuml;ringen. From the autumn of 2016 until January 2017, he played <em>Fridolin Weber/Thorwart</em> in the VBW production of MOZART! in Duisburg and China.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/florianrestarits/" rel="extern" title="Resetarits Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/florianresetarits/" rel="extern" title="Resetarits Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="http://www.florianresetarits.com/" rel="extern" title="Resetarits Website (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Katharina Gorgi</h4><p class="cast-title mt0 small">Soul Girl</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Katharina Gorgi</h2><h6 class="cast-title mt0 mb20">Soul Girl</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Veronica Appeddu</h4><p class="cast-title mt0 small">Soul Girl</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Veronica Appeddu</h2><h6 class="cast-title mt0 mb20">Soul Girl</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Sophia Gorgi</h4><p class="cast-title mt0 small">Soul Girl</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Sophia Gorgi</h2><h6 class="cast-title mt0 mb20">Soul Girl</h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/262.jpg" alt="Anna Carina Buchegger &copy; Jan Frankl" title="Anna Carina Buchegger &copy; Jan Frankl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Anna Carina Buchegger</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Anna Carina Buchegger</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/ACBuchegger/" rel="extern" title="Buchegger Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/annacarinabuchegger" rel="extern" title="Buchegger Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/100014.jpg" alt="Jev Davis &copy; Marco Sommer" title="Jev Davis &copy; Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Jev Davis</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Jev Davis</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/jevdavis/" rel="extern" title="Instagram Davis (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.jevdavis.com" rel="extern" title="Website Davis (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Peter Knauder</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Peter Knauder</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/peterknauder/" rel="extern" title="Instagram Knauder (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/1436.jpg" alt="Shane Landers &copy; VBW/ Sandra Kosel" title="Shane Landers &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Shane Landers</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Shane Landers</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Shane Landers received his training at Laine Theatre Arts in London. His engagements have taken him to German-speaking countries, where he has appeared on stage as GI and Swing/Cross Swing in MISS SAIGON, as <em>Big Deal</em> in WEST SIDE STORY at the Staatstheater Nuremberg and as Swing in GHOST - DAS MUSICAL at the Stage Palladium Theater and in the ensemble at the Theater des Westens. Furthermore he was engaged as Cross Swing in DANCE OF THE VAMPIRES at the Theater des Westens, in the ensemble in ICH WAR NOCH NIEMALS IN NEW YORK on the Stage Entertainment Tour as well as at the Theater an der Elbe, as Spirit of Fosse in CHICAGO at the Theater des Westens and at the Deutsches Theater Munich. He was also Dance Captain of the production ALL MALE HMS PINAFORE and PIPE DREAM in London.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/smrpflanders" rel="extern" title="Facebook Landers (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/smrpflanders/" rel="extern" title="Instagram Landers (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Maria Pambori</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Maria Pambori</h2><h6 class="cast-title mt0 mb20">Ensemble</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Lilly Rottensteiner</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Lilly Rottensteiner</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Lilly Rottensteiner was born and raised in Styria and graduated with distinction from the Music and Arts University of the City of Vienna. Lilly made her professional debut at the Staatstheater am G&auml;rtnerplatz in the role of <em>Baroness Bomburst</em> in CHITTY CHITTY BANG BANG. Since then, she has appeared on the stage of the G&auml;rtnerplatztheater as <em>Mrs. Segstrom</em> in A LITTLE NIGHT MUSIC, as <em>Herta and Luise</em> in DREI M&Auml;NNER IM SCHNEE and as Flower Girl and Maid in MY FAIR LADY. At the VBW she was part of the ensemble of the semi-concertante productions of JESUS CHRIST SUPERSTAR at the Raimund Theater and of ELISABETH in the courtyard of Sch&ouml;nbrunn Palace. Most recently she played <em>Sara </em>in the world premiere of LIZZY CARBON UND DER KLUB DER VERLIERER at the Theater der Jugend.&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Steven Seale</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Steven Seale</h2><h6 class="cast-title mt0 mb20">Ensemble</h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/159.jpg" alt="Rebecca Soumagné &copy; Christian Ariel Heredia" title="Rebecca Soumagné &copy; Christian Ariel Heredia" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Rebecca Soumagné</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Rebecca Soumagné</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/rebeccaanitasoumagne/" rel="extern" title="Soumagné Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/1032.jpg" alt="Ariane Swoboda 2016 &copy; VBW/ Sandra Kosel" title="Ariane Swoboda 2016 &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Ariane Swoboda</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Ariane Swoboda</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Ariane Swoboda graduated from the Musik und Kunst Privatuniversit&auml;t der Stadt Wien and the Studio Theater an der Wien. For 30 years she has appeared in VBW productions, including GREASE, DIE SCH&Ouml;NE UND DAS BIEST, ELISABETH, TANZ DER VAMPIRE, JEKYLL &amp; HYDE, THE PRODUCERS, EVITA, JESUS CHRIST SUPERSTAR and I AM FROM AUSTRIA. She has also participated in numerous municipal theater productions - especially in St. Gallen, Bregenz, Klagenfurt, Baden and at the Graz Opera - including ARTUS - EXCALIBUR, DER MANN VON LA MANCHA, ANATEVKA, HELLO, DOLLY!, HAIRSPRAY, SWEET CHARITY, XANADU, WEST SIDE STORY and ANYTHING GOES. She has appeared in various revues at the Kabarett Simpl. For several years she has been teaching song interpretation and has written the book &quot;Mein Audition-Journal&quot; as a guide for students.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/ariane.swoboda" rel="extern" title="Swoboda Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/ariane.swoboda" rel="extern" title="Swoboda Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.arianeswoboda.com/" rel="extern" title="Swoboda Webseite (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/20031.jpg" alt="Yuri Yoshimura &copy; Jan Frankl" title="Yuri Yoshimura &copy; Jan Frankl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Yuri Yoshimura</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Yuri Yoshimura</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/yuriyoshimuraofficial/" rel="extern" title="Instagram Yoshimura (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.facebook.com/yuriyoshimuraofficial" rel="extern" title="Facebook Yoshimura (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21787.jpg" alt="Anna Zagler &copy; VBW/ Marco Sommer" title="Anna Zagler &copy; VBW/ Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Anna Zagler</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Anna Zagler</h2><h6 class="cast-title mt0 mb20">Ensemble</h6></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the left"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the right"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Leading Team_100480"   data-id="100480" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">Leading Team</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/4667.jpg" alt="Herbert Pichler &copy; VBW/Maria Frodl" title="Herbert Pichler &copy; VBW/Maria Frodl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Herbert Pichler</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Herbert Pichler</h2><h6 class="cast-title mt0 mb20"></h6><p>Herbert Pichler graduated from the University of Music and Performing Arts in Graz. He has been working as an artist in Vienna since 1989 and also teaches at the Institute for Popular Music at the University of Music and Performing Arts Vienna. He was musical director of, among others, MISS SAIGON, BARBARELLA, HAIR, MAMMA MIA! and BODYGUARD (all VBW), the new version of CABARET with Maria Bill (Volkstheater Wien) and the TV show &quot;Ein Saitensprung&quot; with Rainhard Fendrich. He has worked as a conductor for productions such as DER BAUER ALS MILLION&Auml;R (Landestheater Linz), &quot;Musical!- Die Show&quot; (ORF 2007) and I AM FROM AUSTRIA (VBW). Since the first season of the ORF show &quot;Dancing Stars&quot; he has also been the conductor of the Star Orchestra. Other examples of his varied musical activities include orchestral projects with Thomas Quasthoff, the mdw project CUBE, musical direction of the Nestroy Theater Prize, collaboration with the Mozarteum Chamber Orchestra and several projects with Herbert Pixner and the Tonk&uuml;nstler Orchestra. As an arranger and musician, Herbert Pichler has worked on CD productions and TV shows with artists* such as Nina Hagen, Marianne Faithful and Chaka Khan, with whom he worked on the opening of the Vienna Festival in 2005, as well as with The Supremes, Harry Belafonte, Patricia Kaas, Placido Domingo, the Vienna Symphony Orchestra, the Vienna Radio Symphony Orchestra, Jos. Carreras, Luciano Pavarotti, Dave Stewart, Jim Steinman, Simply Red, Gloria Gaynor and many musical stars.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0"></h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0"></h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Alex Balga</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Alex Balga</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Pascale-Sabine Chevroton</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Pascale-Sabine Chevroton</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Elisabeth Blutsch</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Elisabeth Blutsch</h2><h6 class="cast-title mt0 mb20"></h6><p>Biography follows</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Andrew Voller</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Andrew Voller</h2><h6 class="cast-title mt0 mb20"></h6><p>Andrew Voller began his career programming Vari-Lite&rsquo;s moving lights and in this capacity worked on productions of DANCE OF THE VAMPIRES (Vienna, Stuttgart, Hamburg), THE HUNCHBACK OF NOTRE DAME (Berlin), SING TO THE DAWN (Singapore) and BOMBAY DREAMS (London), as well as the opening ceremony for the Millennium Dome in London and the Eurovision Song Contest in 2001, 2009 and 2010. His design work includes INTO THE WOODS (Guildford School of Acting), SHREK - THE MUSICAL (tour of Germany), MOEDER, IK WIL BIJ DE REVUE (Utrecht), RENT (Guildford School of Acting), LIFT (Soho Theatre, London), SATURDAY NIGHT FEVER (tour of Holland, Milan), KEIN PARDON &ndash; DAS MUSICAL (D&uuml;sseldorf), HINTERM HORIZONT (Berlin), ALL SHOOK UP &ndash; LOVE ME TENDER (tour of Holland) and GREASE (St. Gallen). For the VBW, he was lighting designer for the gala WE ARE MUSICAL, as well as&nbsp; LOVE NEVER DIES, THE PHANTOM OF THE OPERA and the new versions of ELISABETH, REBECCA, ROMEO &amp; JULIET and HAIR. In Amstetten, he has created the lighting design for numerous productions, including THE WHO&rsquo;S TOMMY, THE WILD PARTY, FOOTLOOSE, JESUS CHRIST SUPERSTAR, CARMEN CUBANA, ROCKVILLE, HAIR and AIDA. He was also lighting designer for Hans Klok&rsquo;s magic shows FASTER THAN MAGIC (European tour) and THE BEAUTY OF MAGIC (Las Vegas). Andrew Voller also designed the lighting for ICH WILL SPASS! and BUDDY &ndash; THE BUDDY HOLLY STORY in Essen, as well as for the German tours of SATURDAY NIGHT FEVER, MIAMI NIGHTS and ICH WAR NOCH NIEMALS IN NEW YORK (previously seen in Hamburg, Vienna, Stuttgart, Zurich and Oberhausen) and most recently for EVITA at the Ronacher.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Patrick Polly</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Patrick Polly</h2><h6 class="cast-title mt0 mb20"></h6><p>Patrick Polly gained his first experience at ORF and then worked as a freelance sound engineer. He has been working at the Ronacher since 2008 and took over as head of sound engineering there in 2011. As FOH operator he supervised various productions at Vereinigte B&uuml;hnen Wien, including THE PRODUCERS, TANZ DER VAMPIRE, NAT&Uuml;RLICH BLOND and MARY POPPINS. In the same capacity he toured internationally with WIEN MUSICAL CONCERT II and in Japan with ELISABETH IN CONCERT. He has also served as Assistant Sound Designer on SISTER ACT and ICH WAR NOCH NIEMALS IN NEW YORK, and as Associate Sound Designer on LOVE NEVER DIES and DER BESUCH DER ALTEN DAME. Since 2002 he has been supporting the association &quot;Tonvoll&quot; in all sound-related matters on a voluntary basis.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Nicole Panagl</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Nicole Panagl</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Sam Madwar</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Sam Madwar</h2><h6 class="cast-title mt0 mb20"></h6></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the left"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the right"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Fotos_100479"   data-id="100479" data-type="extracontent_image"><div class="extracontent_image setContentWidth gallery-swiper-container extracontent-inner"><h3 class="tcenter">JESUS CHRIST SUPERSTAR Szenenfotos 2023</h3><ul class="images tarn flex-jc-start swiper-wrapper"><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21867.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 001" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21867_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer__2_.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21867.webp"><source src="/_media/image/21867_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer__2_.jpg"><img 
+		 
+	
+
+	src="/_media/image/21867_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer__2_.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 001 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 001 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21868.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 002" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21868_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21868.webp"><source src="/_media/image/21868_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21868_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 002 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 002 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21869.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 003" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21869_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Nienke_Latten__Maria_Magdalena___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21869.webp"><source src="/_media/image/21869_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Nienke_Latten__Maria_Magdalena___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21869_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Nienke_Latten__Maria_Magdalena___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 003 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 003 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21870.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 004" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21870_JESUS_CHRIST_SUPERSTAR_Christian_Rey_Marbella__Herodes__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21870.webp"><source src="/_media/image/21870_JESUS_CHRIST_SUPERSTAR_Christian_Rey_Marbella__Herodes__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21870_JESUS_CHRIST_SUPERSTAR_Christian_Rey_Marbella__Herodes__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 004 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 004 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21871.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 005" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21871_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21871.webp"><source src="/_media/image/21871_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21871_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 005 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 005 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21872.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 006" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21872_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__James_Park__Pontius_Pilatus___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21872.webp"><source src="/_media/image/21872_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__James_Park__Pontius_Pilatus___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21872_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__James_Park__Pontius_Pilatus___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 006 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 006 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21873.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 007" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21873_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Nienke_Latten__Maria_Magdalena__Alex_Melcher__Judas___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21873.webp"><source src="/_media/image/21873_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Nienke_Latten__Maria_Magdalena__Alex_Melcher__Judas___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21873_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Nienke_Latten__Maria_Magdalena__Alex_Melcher__Judas___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 007 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 007 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21874.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 008" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21874_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21874.webp"><source src="/_media/image/21874_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21874_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 008 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 008 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21875.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 009" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21875_JESUS_CHRIST_SUPERSTAR_Katharina_Gorgi__Soul_Girl__Alex_Melcher__Judas__Sophia_Gorgi__Soul_Girl___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21875.webp"><source src="/_media/image/21875_JESUS_CHRIST_SUPERSTAR_Katharina_Gorgi__Soul_Girl__Alex_Melcher__Judas__Sophia_Gorgi__Soul_Girl___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21875_JESUS_CHRIST_SUPERSTAR_Katharina_Gorgi__Soul_Girl__Alex_Melcher__Judas__Sophia_Gorgi__Soul_Girl___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 009 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 009 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21876.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 010" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21876_JESUS_CHRIST_SUPERSTAR_Nienke_Latten__Maria_Magdalena__Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21876.webp"><source src="/_media/image/21876_JESUS_CHRIST_SUPERSTAR_Nienke_Latten__Maria_Magdalena__Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21876_JESUS_CHRIST_SUPERSTAR_Nienke_Latten__Maria_Magdalena__Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 010 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 010 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21877.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 011" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21877_JESUS_CHRIST_SUPERSTAR_Timo_Verse__Annas__Alex_Melcher__Judas__Dennis_Kozeluh__Kaiphas___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21877.webp"><source src="/_media/image/21877_JESUS_CHRIST_SUPERSTAR_Timo_Verse__Annas__Alex_Melcher__Judas__Dennis_Kozeluh__Kaiphas___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21877_JESUS_CHRIST_SUPERSTAR_Timo_Verse__Annas__Alex_Melcher__Judas__Dennis_Kozeluh__Kaiphas___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 011 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 011 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the left"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the right"> --></div></div></div><!-- data-caldate="202501" --></div></div></div>
+	  </div>
+		
+		
+</div>
+<footer id="footer" role="contentinfo">
+	<div class="inner">
+		
+	<div class="relative">
+		<a href="https://vbw.at/de/home" aria-describedby="Vereinigte B&uuml;hnen Wien"><img src="../../../_assets/content/logos/Vbw_Logo.svg" alt="Vereinigte B&uuml;hnen Wien" class="vbwFooterLogo"></a>
+		<div class="getTickets">
+			<h6 class="mb0">Order your tickets by phone:</h6>
+			<h2 class="mt0"><a href="tel:+43 1 58885 - 111" class="tdn">+43 1 58885 - 111</a></h2>
+		</div>
+		 	<div  data-componentname="footer"  class="customFooter"><!--div class="footer-inner"--><!--ul  data-componentname="footer"  class="footer-block-info"--><div class="meta-list-item Follow us"><h4 class="uppercase">Follow us</h4><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.facebook.com/Musicalvienna">FACEBOOK</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.instagram.com/musicalviennavbw/">INSTAGRAM</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.youtube.com/user/musicalviennaVBW">YOUTUBE</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.tiktok.com/@musicalviennavbw">TIKTOK</a></span></p><p class="h7"> </p></div><div class="meta-list-item "><h4><a href="../to-the-schedule.html">SCHEDULE</a></h4><h4><a href="../vouchers.html">VOUCHERS</a></h4><h4><a href="../../souvenirs.html">Souvenirs</a></h4><h4><a href="../../musicalclub.html">MUSICALCLUB</a></h4><h4><a href="https://www.vbw-international.at/">VBW International</a></h4><div> </div></div><div class="meta-list-item "><h4><a href="../../about-us.html">ABOUT US</a></h4><div><h4><a href="../../about-us/raimund-theater.html">RAIMUND THEATER</a></h4><h4><a href="../../theatres/ronacher.html">Ronacher</a></h4></div><h4><a href="../../news.1.html">NEWS</a></h4><h4><a href="https://vbw.at/de/unternehmen/jobs">JOBS</a></h4><div> </div></div><div class="meta-list-item "></div><!--/ul--><!--/div--></div>
+			<div class="footerSponsorWrap">
+				<div class="footerMainSponsor">
+					<p class="oWhite">main sponsor</p>
+					<a href="https://www.wienerstaedtische.at" rel="extern" title="Wiener Städtische - Vienna Insurance Group"><img src="../../../_assets/content/logos/logo-wiener-staedtische.png" alt="Wiener St&auml;dische" class="WienerStdFooterLogo"></a>
+				</div>
+				<ul class="footerSponsor tarn">
+					<li><a href="https://www.wienholding.at" rel="extern" title="W!ienhold!ing"><img src="../../../_assets/content/logos/logo-wienholding-50jahre.jpg" alt="Wiener St&auml;dische" class=""></a></li>
+					<li><a href="https://www.wien.gv.at/kultur/abteilung" rel="extern" title="Wien Kultur"><img src="../../../_assets/content/logos/logo-wienkultur.png" alt="Wien Kultur" class="logo-wienkultur"></a></li>
+				</ul>
+			</div>
+			<div class="meta">
+				<div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Metanavigation unten</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100056  en">
+                        <a href="../../legal-notice.html" class="navigation_link nav__inner ">Legal Notice</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100057  en">
+                        <a href="../../terms-and-conditions.html" class="navigation_link nav__inner ">Terms &amp; Conditions</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100058  en">
+                        <a href="../../privacy-policy.html" class="navigation_link nav__inner ">Privacy Policy</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100059  en">
+                        <a href="../../contact-us.html" class="navigation_link nav__inner ">Contact us</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100061  en">
+                        <a href="../../help.html" class="navigation_link nav__inner ">Help</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+			</div>
+	</div>
+</div>
+</footer>
+<div id="mynlregister" class="overlaybox none nocontent">
+
+    <div class="relative">
+		<a href="JESUS-CHRIST-SUPERSTAR-2023.html#" class="closenlreg">close</a>
+			<iframe id="nlregisteriframe" data-regsrc="https://profile.musicalvienna.at/en/nlregister" data-editsrc="https://profile.musicalvienna.at/en/nlverwaltung" frameBorder="0" rel="nofollow"></iframe>
+	</div>
+
+</div>
+<div class="accountbox_wrap none">
+    <div class="accountbox">
+        <a href="JESUS-CHRIST-SUPERSTAR-2023.html" class="closeaccountbox" title="close"><img src="../../../_assets/css/icon/close.svg" alt="X"></a>
+                <div class="loginoptions m0">
+                <iframe id="loginiframe" data-src="https://www.musicalvienna.at/en/account/login" frameBorder="0" rel="nofollow"></iframe>
+        </div>
+            </div>
+</div>
+
+
+    </body>
+</html>

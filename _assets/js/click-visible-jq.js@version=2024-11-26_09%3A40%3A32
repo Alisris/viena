@@ -1,0 +1,188 @@
+/* clickVisible 
+* @author: mario corradini // corradini@echonet.at
+* @version: 0.1 2014-01-07
+* @depencies: jquery
+* aria example: http://www.oaa-accessibility.org/example/15/
+* @usage:
+
+$("#clicklist").clickVisible({ 
+	selection: 'a.click', 
+	containerclass : 'cc',
+	activeclass: 'active',
+	inactiveclass: 'inactive',
+	marginbottom: '0 0 10px 0',
+	focuslinks: false
+});
+
+*/
+
+(function ( $ ) {
+
+	var ClickVisible = function(element, opts){
+		
+		var container = $(element);
+		var obj = this;
+					
+		var stat = true;
+		var clicks;
+		
+		var options = {
+			selection: 'a.click', 
+			containerclass : 'cc',
+			activeclass: 'active',
+			inactiveclass: 'inactive',
+			marginbottom: '0 0 10px 0',
+			duration: 500,
+			focuslinks: true
+		};
+				
+		var initialize = function() {
+		
+			options = $.extend( {}, options, opts );
+
+			container.addClass('cvready');
+		
+			_enableClicks();
+			
+		};
+		
+		var _enableClicks = function() {
+			
+			clicks = container.find(options.selection);						
+			clicks.each(function(index, clk) {
+							
+				clk = $(clk);
+							
+				if(clk.attr('href')) {
+					
+					var clkID = clk.attr('href').split("#")[1];
+					
+					if($("#"+clkID).length > 0) {
+						
+						clk.id = 'button'+clkID;
+						clk.attr('role', 'button');
+						clk.attr('aria-controls', clkID);
+						clk.attr('id', clk.id);
+						
+						clk.listitem = clk.parent('h2');
+						clk.container = $("#"+clkID);
+						clk.container.attr('role', 'region');
+						
+						clk.data({
+							"id" : clk.id,
+							"listitem" : clk.listitem,
+							"container" : clk.container
+						});
+							
+						if(!options.focuslinks) { 
+							clk.container.attr('tabindex','-1');
+						}
+						
+						clk.containerheight = clk.container.height();
+						
+						if(clk.listitem.hasClass(options.activeclass)) {
+							clk.container.show();
+							_ariaVisible(clk);
+						} else {
+							clk.container.hide();
+							_ariaHidden(clk);
+						}
+						
+						clk.on("click touchstart", function(event){
+							event.preventDefault();
+							_toggle(clk); 
+						});
+						
+					}					
+				}
+				
+			});
+			
+		};
+		
+		var _toggle = function( clk ){			
+		
+			if(stat) {
+				stat = false;
+				if (clk.container.hasClass('active')) {
+					_fade(clk);
+				} else {
+					_appear(clk);	
+				}
+			}
+		
+		};
+		var _appear = function( clk ){
+			
+			clk.container.slideDown( options.duration, function() { 
+				clk.container.css("overflow",'visible')
+				clk.container.css("margin",options.marginbottom);
+				_ariaVisible(clk);
+				//clk.container.focus();
+			});
+			
+		};
+		var _fade = function( clk ){
+			
+			clk.container.slideUp( options.duration, function() { 
+				clk.container.removeClass(options.activeclass).addClass(options.inactiveclass);
+				clk.container.css("overflow",'hidden')
+				clk.container.css("margin",'0');
+				_ariaHidden(clk);
+			});		
+	 	  	
+		};
+		var _ariaVisible = function(el){
+			
+			el.listitem.removeClass(options.inactiveclass).addClass(options.activeclass);
+			el.container.removeClass(options.inactiveclass).addClass(options.activeclass);
+			el.container.find('a').attr('tabindex','0');
+			el.container.attr('aria-expanded','true');
+			stat = true;		
+		
+		};
+		
+		var _ariaHidden = function(el){
+		
+			el.listitem.removeClass(options.activeclass).addClass(options.inactiveclass);
+			el.container.find('a').attr('tabindex','-1');
+			el.container.attr('aria-expanded','false');
+			stat = true;
+		
+		};
+		
+		this.showAll = function() {
+				
+			clicks.each(function( index, clk ) {
+				
+				clk = $(clk);
+				
+				clk.id = clk.data('id');
+				clk.listitem = clk.data('listitem');
+				clk.container = clk.data('container'); 
+								
+				if(clk.attr('href')) {
+					var clkID = clk.attr('href').split("#")[1];
+					if($("#"+clkID).length > 0) {
+						var clkContainer = $("#"+clkID);
+						clk.listitem.removeClass(options.inactiveclass).addClass(options.activeclass);
+						clkContainer.show();		
+						_ariaVisible(clk);					
+					}
+				}
+			});
+		};	
+		
+		initialize();			
+	};
+
+	$.fn.clickVisible = function(options) {
+		return this.each(function(){
+      		var element = $(this);	
+			if (element.data('clkl')) return;
+			var clickVisible = new ClickVisible(this, options);
+			element.data('clkl', clickVisible);						
+		});		
+	};
+	
+}(jQuery));

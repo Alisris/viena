@@ -1,0 +1,40 @@
+$(function(){
+function checkdatalayerpushscrollitoview() {
+$('[data-datalayerpush-scrollitoview]:not([data-datalayerpush-alreadysent="1"])').each(function(){
+if(isScrolledIntoView(this)){
+var json_string = $(this).attr("data-datalayerpush-scrollitoview");
+pushdatalayer(json_string);
+$(this).attr("data-datalayerpush-alreadysent", 1);
+}
+});
+};
+function pushdatalayer(json_string, callback = function(){}) {
+if(json_string.length == 0) {
+return;
+}
+var json_object = JSON.parse(json_string);
+if(json_object) {
+console.log("dataLayer push triggered gaec-tracking");
+console.log(json_object);
+console.log(JSON.stringify(json_object));
+json_object["eventCallback"] = callback;
+dataLayer.push(json_object);
+}
+};
+$('body').on('click', 'a[data-datalayerpush]', function(event) {
+var href = $(this).attr('href');
+var callback = function(){ document.location = href; }
+var json_string = $(this).attr("data-datalayerpush");
+pushdatalayer(json_string, callback);
+});
+$('body').on('click', 'a[data-datalayerpush-nofollow]', function(event) {
+var json_string = $(this).attr("data-datalayerpush-nofollow");
+pushdatalayer(json_string);
+});
+if($('[data-datalayerpush-scrollitoview]').length > 0) {
+setTimeout(checkdatalayerpushscrollitoview, 2000); // delay needed because if images are not loaded more things are in view
+$(window).scroll(function() {
+checkdatalayerpushscrollitoview();
+});
+}
+});

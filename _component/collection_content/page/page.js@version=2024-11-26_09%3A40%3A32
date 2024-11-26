@@ -1,0 +1,64 @@
+$(function(){
+
+    //addHtmlChanged('getutilities');
+    $('.clearInput').on('click', function(){
+        $('#suchbegriff').val('');
+    });
+    
+    $(document).on('click', function(e){
+        
+        // if(e.target != document.getElementById('suchbegriff')){
+        //     $('#mainsearch').addClass('none')
+        // }
+        if(e.target == document.querySelector('.toMainsearch:not(.active) img')){
+            $('#mainsearch').removeClass('none')
+            $('body').removeClass('navopen')
+            
+        }
+    })
+
+    $('.toMainsearch').on('click', function(e){
+        $('body').removeClass('navopen');
+        $('#mainsearch').removeClass('none')
+        
+    });
+
+    $('.clearInput').on('click', function(){
+        $('#mainsearch').addClass('none')
+    })
+
+    $('.closeaccountbox').on('click', function(e){
+        e.preventDefault();
+        $('.accountbox_wrap').addClass('none');
+    })
+
+});
+
+function getutilities(){
+    $(document).on('click','.utilities .user, .focuslogin.basketbtn',function(e){
+        e.preventDefault();
+        $('.accountbox_wrap').removeClass('none');
+        if($('.accountbox').length ==0 ){
+           /*var componentOptions = {};
+            componentOptions["componentcollection"] = "content";
+            componentOptions["componentname"] = "WTuser";
+            if($('body').attr("data-site") != undefined){
+                componentOptions["_site_id"] = $('body').attr("data-site");   
+            }
+
+            if($('body').attr("data-lang") != undefined){
+                componentOptions["_language_id"] = $('body').attr("data-lang");   
+            }
+
+            if($('body').attr("data-nid") != undefined){
+                componentOptions["_navigation_id"] = $('body').attr("data-nid");   
+            }
+
+            var user = createComponent(componentOptions, "div");
+           $('body').append(user);
+            htmlChanged();
+            $(this).addClass('open');*/
+           $("#loginiframe").attr("src", $("#loginiframe").attr("data-src"));
+        }
+   });
+}

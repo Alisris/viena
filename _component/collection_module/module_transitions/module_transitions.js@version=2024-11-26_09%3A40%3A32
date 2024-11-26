@@ -1,0 +1,21 @@
+$(function(){
+    if ($('.article-swiper-container').length > 0) {
+		initArticlesSwiper();
+	}
+});
+    
+function initArticlesSwiper(){
+    var mySwiper = new Swiper('.article-swiper-container', {
+        spaceBetween: 0,
+        autoHeight: false,
+        grabCursor: true,
+        slidesPerView: 'auto',
+        mousewheel:{
+            invert: false
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+}

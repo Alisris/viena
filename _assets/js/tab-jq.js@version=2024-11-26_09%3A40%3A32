@@ -1,0 +1,161 @@
+/* tabVisible 
+* @author: mario corradini // corradini@echonet.at
+* @version: 0.1 2014-01-14
+* @depencies: jquery
+* aria example: http://www.oaa-accessibility.org/example/15/
+* @usage:
+
+$("#clicklist").tabVisible({ 
+	selection: 'a.click', 
+	tablist: 'ul.tablist',
+	containerclass : 'cc',
+	activeclass: 'active',
+	inactiveclass: 'inactive'
+});
+
+*/
+
+(function ( $ ) {
+
+	var TabVisible = function(element, opts){
+		
+		var container = $(element);
+		var obj = this;
+					
+		var stat = true;
+		var activeTab = 0;
+		
+		var clicks;
+		
+		var options = {
+			selection: 'a.click', 
+			tablist: 'ul.tablist',
+			containerclass : 'cc',
+			activeclass: 'active',
+			inactiveclass: 'inactive'
+		};
+				
+		var initialize = function() {
+		
+			options = $.extend( {}, options, opts );
+					
+			clicks = container.find(options.selection);
+			if(clicks.length <= 0) {return false;}
+			
+			container.addClass('cvready');
+			container.attr('role', 'tablist');
+			
+			_enableClicks();
+		};
+		
+		var _enableClicks = function() {
+			
+			
+			
+			var length = clicks.length;
+			var html = $('html');
+			
+			if(html.hasClass('ie7')) {
+				
+				var modulus = length % 3;
+				if(modulus > 0) {
+					var pos = modulus-1;
+					modulus = 3 - modulus;
+					for (var i = 0;i < modulus; i++) {
+						$(clicks[pos]).parent('li').after('<li class="ietab"></li>');
+					}
+				}
+			}
+			
+			clicks.each(function(index, clk) {		
+				clk = $(clk);
+				if(clk.attr('href')) {
+					var clkID = clk.attr('href').split("#")[1];
+
+					if($("#"+clkID).length > 0) {
+						clk.attr('role', 'tab');
+						clk.listitem = clk.parent('li');
+						clk.container = $("#"+clkID);
+						clk.container.attr('role', 'tabpanel');
+						clk.nr = index;	
+						
+						clk.data({
+							"nr" : clk.nr,
+							"listitem" : clk.listitem,
+							"container" : clk.container
+						});
+						
+						if(clk.hasClass(options.activeclass)) {
+							_show(clk);
+						} else {
+							_hide(clk);
+						}
+						if(index+3 > (length-1)) {
+							clk.addClass('lastrow');
+						}
+						if(index == 0 && length == 1) { // wenn nur ein Tab keine Lastrow CSS Klasse, da sonst kein zwiter Tab der nachfolgenden COntent nach unten schiebt
+							clk.listitem.addClass('onlyrow');
+						}
+						
+						clk.on("click touchstart", function(event){
+							event.preventDefault();
+							_toggle(clk); 
+						});
+						
+					}
+				}
+			});
+		};
+		var _toggle = function(clk) {
+			if(stat) {
+				if (!clk.container.hasClass('active')) {
+					stat = false;
+					_hideAll();
+					_show(clk);			
+				}
+			}	
+		};
+		var _show = function(el) {
+			el.container.show();
+			activeTab = el.nr;
+			el.listitem.removeClass(options.inactiveclass).addClass(options.activeclass);
+			el.attr('aria-selected','true');
+			el.attr('tabindex','0');
+			el.find('a').attr('tabindex','-1');
+			el.container.attr('aria-hidden','false');
+			el.container.focus();
+			stat = true;		
+			$(window).trigger('scroll');
+		};
+		var _hide = function(el) {
+			el.container.hide();
+			el.listitem.removeClass(options.activeclass).addClass(options.inactiveclass);
+			el.attr('aria-selected','false');
+			el.attr('tabindex','-1');
+			el.find('a').attr('tabindex','0');
+			el.container.attr('aria-hidden','true');
+			stat = true;
+		};
+		var _hideAll = function() {
+			clicks.each(function(index, clk) {	
+				clk = $(clk);
+				clk.nr = clk.data('nr');
+				clk.listitem = clk.data('listitem');
+				clk.container = clk.data('container');
+				_hide(clk);
+			});
+		};
+		
+		initialize();			
+	};
+
+	$.fn.tabVisible = function(options) {
+		return this.each(function(){
+      		var element = $(this);	
+			if (element.data('tabs')) return;
+			var tabVisible = new TabVisible(this, options);
+			element.data('tabs', tabVisible);						
+		});		
+	};
+	
+}(jQuery));

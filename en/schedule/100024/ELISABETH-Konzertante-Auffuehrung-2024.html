@@ -1,0 +1,711 @@
+<!DOCTYPE html><html  lang="en"><head><script type="text/javascript" src="../../../_component/resources/jquery.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/htmlChange.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/components.js.php@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_custom/custom_func.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/collection_content/extracontent/extracontent.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/swiper8.0.7.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/gmap-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_component/collection_content/WTuser/WTuser.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)WTuser" ></script><script type="text/javascript" src="../../../_component/collection_content/footer/footer.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)footer" ></script><script type="text/javascript" src="../../../_component/collection_module/module_event/module_event.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsapFlipPlugin.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsap-3.12.5.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/stadthalle-multiselect.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_component/collection_content/navigation/navigation.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)navigation" ></script><script type="text/javascript" src="../../../_component/collection_content/page/page.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/click-visible-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/tab-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.template.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.lazyload.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.touchSwipe.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/respond.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/modernizr-2.8.3.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/slidenav.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/echonet.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page (content)footer (content)extracontent" ></script><link href="../../../_component/resources/components.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="BasicDependencyStack" ><link href="../../../_component/collection_content/extracontent/extracontent.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)extracontent" ><link href="../../../_component/collection_content/WTuser/WTuser.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)WTuser" ><link href="../../../_component/collection_content/footer/footer.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)footer" ><link href="../../../_component/collection_module/module_event/module_event.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_assets/css/stadthalle-multiselect.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_component/collection_content/navigation/navigation_main.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/navigation/navigation.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/page/page.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page" ><link href="../../../_assets/css/form1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/print1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="print" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/basics1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/responsive1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" ><link href="../../../_assets/css/basics-tmp.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (module)module_event (content)footer (content)WTuser (content)extracontent" >
+	 <title>Musicals and Events - MusicalVienna</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="">
+    <meta name="expires" content="3600" />
+    <meta name="revisit-after" content="5 days" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="icon" href="../../../_assets/content/favicon.ico" type="image/ico" />
+	<meta charset="UTF-8">
+	  
+  
+	
+    <!-- TRUENDO Privacy Center -->    
+	 <script data-accessibility="true" id="truendoAutoBlock" type="text/javascript" src=https://cdn.priv.center/pc/truendo_cmp.pid.js data-siteid="4398b4cb-8669-4dd1-bd26-08a984506b42"></script>
+	 <!-- End TRUENDO Privacy Center --> 
+	  
+	  	
+  
+<link rel="alternate" href="https://musicalvienna.at/en-us/schedule/100024" hreflang="en-us" />
+		
+  
+<link rel="alternate" href="https://musicalvienna.at/en-gb/schedule/100024" hreflang="en-gb" />
+			<link rel="canonical" href="https://musicalvienna.at/en/schedule/100024" />
+			  
+
+      
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500,
+});
+dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    //console.log(dataLayer);
+</script>
+<script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
+
+      // Load Tag Manager script.
+      var gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NJ5CZF';
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+        //console.log(firstScript);    
+        
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<!-- End Matomo -->
+    
+      
+<style>
+     :root {
+                                    
+                                    --font1: AkkuratWebBlack; 
+        --font2: AkkuratWebRegular; 
+        
+        --color1: #000000;; /* Farbe für Navigationspunkte & Buttons */
+        --color2: #FFFFFF;; /* Farbe für Verlauf */
+        --color3: #FFFFFF;; /* Farbe für Überschriften auf dunklem Hintergrund */
+        --color4: #FFFFFF;; /* Farbe für Umrandungen & Pfeilchen */
+        --color5: #FFFFFF;; /* Hintergrundfarbe statt weiß im Lightmode (dunkle schrift) */
+        --color6: #FFFFFF;; /* Farbe für Buttonbeschriftung */
+        --color7: #000000;; /* Farbe für Blockquotes */
+    } 
+
+
+	.button:not(.nobtn), 
+	button:not(.nobtn), 
+	[class*="button"]:not(.nobtn), 
+	[class*="Button"]:not(.nobtn), 
+	.enetButton:not(.nobtn), 
+	.utilities .cart span, 
+	.utilities .user.active::after,
+	 #nav .nav__list > .nav__element.active, 
+	 #nav .nav__list > .nav__element:hover { 
+		background-color: var(--color1);
+		color: var(--color6);
+	}
+	blockquote::before, blockquote::after, .bq::before, .bq::after{
+		color: var(--color7);
+	}
+
+	p > a:not([class*="button"]):not([class*="Button"]){ color: var(--color1) !important;}
+
+	.eventCustomNav a:hover, .eventCustomNav a:focus, .eventCustomNav a.active{ color: var(--color1); }
+	.dark { background-image: linear-gradient(15deg, var(--color2) 0%, #101010 40%, #101010 100%); }
+	.dark h1, .dark h2 { color: var(--color3); }
+	ul.merch li { border-color: var(--color4); }
+	.arrowSlider::after, .arrowSlider::before { background-color: var(--color4); }
+	.light, .eventAnchorNav, #nav, #nav .nav__sub-list, #nav > .navigation { background-color: var(--color5); }
+	.extracontent.hasSwiper.light::before { background-image: linear-gradient(90deg, var(--color5), transparent); }
+	.extracontent.hasSwiper.light::after { background-image: linear-gradient(90deg,transparent, var(--color5)); }
+
+	.eventCustomNav a, h1, h2, h3, h4, [class*="button"]:not(.nobtn), [class*="Button"]:not(.nobtn) { font-family: var(--font1) }
+	h5, h6, .h7, p, p a { font-family: var(--font2); }
+
+	.btnLikeHeadline.time, .buy .time{ background-color: var(--color1);}
+	.ticketcount .buy::before{ background-color: var(--color1); }
+
+	.viewlist .view.active, .viewlist .view:focus, .viewlist .view:hover{ background-color: var(--color1); border-color: var(--color1) !important; }
+
+	.module_event #content *:not(td):not(.view) {
+		border-color: var(--color4);
+	}
+	
+	table.wysiwygtable tbody tr:nth-child(odd){
+		background-color: color-mix(in srgb,var(--color4),#fff 50%);
+	}
+	table.wysiwygtable tbody tr:nth-child(even){
+		background-color: var(--color4);
+	}
+
+	#footer{
+		background-image: repeating-linear-gradient(200deg, #101010 0%, #101010 15%, var(--color2) 45%, #101010 70%);
+	}
+
+	@media only screen and (min-width: 1024px){
+		#footer{
+			background-image: linear-gradient(200deg, #101010 55%, var(--color2) 100%);
+		}
+	} 
+
+</style>
+      
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-dowhenconsent="googletagmanager" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5CZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      
+      <script type="text/javascript" src="../../../_assets/js/index.html@f=gaec-tracking.js&amp;recache=0"></script>
+      
+              <script type="text/javascript" src="../../../_component/resources/jquery.js"></script>
+          <script type="text/javascript" src="../../../_assets/js/magnificpopup-v1.1.0.js"></script>    
+        <script type="text/javascript" src="../../../_assets/js/magnificpopup.js"></script>
+      <script type="text/javascript" src="../../../_assets/js/jquery.autocomplete.min.js"></script>    
+        </head>
+    <body id="MusicalVienna" class="en module_event size4 default nohelp   module_event_detail " data-lang="en" data-site="1" data-nid="100013">
+    <div class="genericload none"><img src='../../../assets/content/icons/icon-spinner.svg' width='60' height='60' /></div>
+    <div id="parent" class="parent cfix">
+      <header id="header" class="header relative" role="banner">
+        <div class="inner">
+            
+			<div class="utilities desktop">
+                <div class="langnav">
+                    <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">language</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002  de">
+                        <a href="../../../de/spielplan/100024/ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner ">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012 active en">
+                        <a href="ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner active">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                </div>
+				<button class="nobtn toMainsearch">
+					<img src="../../../_assets/css/icon/search.svg" alt="search">
+				</button>
+				<a href="../../account/basket.html" class="cart nobtn">
+					<img src="../../../_assets/css/icon/cart.svg" alt="shopping cart">
+									</a>
+				<a href="ELISABETH-Konzertante-Auffuehrung-2024.html#myaccountbox" class="user nobtn ">
+					<img src="../../../_assets/css/icon/user.svg" alt="User">
+				</a>
+			</div>
+			<a href="../../home.html" title="Zur Startseite" accesskey="0" role="banner" class="url toLandingpage">
+				<img id="logo" src="../../../_media/_site_logo/1_WeAreMusicalLogo_2Lines.svg" alt="Logo" />
+			</a>
+                        <div class="eventCustomNavWrap">
+								<ul class="areas desktop tarn flex-jc-start eventCustomNav">
+				    														</ul>
+			</div>
+            			<button  id="navanchor" class="nobtn" type="button" aria-label="open menu" aria-expanded="false" aria-controls="menu" data-menutxt="menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			 <div id="nav" class="cfix noem fromTop" aria-describedby="Navigation">
+                <div class="utilities mobile">
+                    <div class="langnav">
+                        <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">language</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002  de">
+                        <a href="../../../de/spielplan/100024/ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner ">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012 active en">
+                        <a href="ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner active">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                    </div>
+					<div>
+						<button class="nobtn toMainsearch">
+							<img src="../../../_assets/css/icon/search.svg" alt="search">
+						</button>
+						<a href="../../account/basket.html" class="cart nobtn">
+							<img src="../../../_assets/css/icon/cart.svg" alt="shopping cart"></a>
+						<a href="ELISABETH-Konzertante-Auffuehrung-2024.html#myaccountbox" class="user nobtn ">
+							<img src="../../../_assets/css/icon/user.svg" alt="Login User">
+						</a>
+					</div>
+				</div>
+								<div class="eventCustomNav mobile">
+										<ul class="areas tarn">
+																							</ul>
+				</div>
+								<div  class="navigation">
+                            <nav class="nav cfix">
+            <h2 class="nav__headline none">Hauptnavigation</h2>
+            <div class="nav__container" role="navigation">
+                <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="nav__element relative nav__element_depth0  n100013 active m58 subNavElement ">
+
+    <a href="../to-the-schedule.html" class="navigation_link nav__inner relative active">Musicals and Events
+		                <span data-navigation-id="100013" class="nav__element_opener active"></span>
+            	</a>
+          <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" data-navigation-id="110" class="nav__element_opener active"><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100013">
+                <li class="nav__element relative nav__element_depth1  n100124  m3 ">
+
+    <a href="../to-the-schedule.html" class="navigation_link nav__inner relative ">Schedule
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100055  m122 ">
+
+    <a href="../archive.html" class="navigation_link nav__inner relative ">Archive
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100119  m117 ">
+
+    <a href="../vouchers.html" class="navigation_link nav__inner relative ">Vouchers
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100118  m123 ">
+
+    <a href="../../souvenirs.html" class="navigation_link nav__inner relative ">Souvenirs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100082  m49 ">
+
+    <a href="../../musicalclub.html" class="navigation_link nav__inner relative ">Musicalclub
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100060  m49 ">
+
+    <a href="../../creative-development.html" class="navigation_link nav__inner relative ">VBW Productions
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100084  m49 subNavElement ">
+
+    <a href="../../vbw-junges-musical.html" class="navigation_link nav__inner relative ">VBW JUNGES MUSICAL
+		                <span data-navigation-id="100084" class="nav__element_opener "></span>
+            	</a>
+          <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" data-navigation-id="431" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100084">
+                <li class="nav__element relative nav__element_depth1  n100167  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-freizeit.html" class="navigation_link nav__inner relative ">For leisure time
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100168  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-schule.html" class="navigation_link nav__inner relative ">For the school
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100169  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-den-nachwuchs.html" class="navigation_link nav__inner relative ">For the next generation
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100170  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-zu-hause.html" class="navigation_link nav__inner relative ">For at home
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100086  m49 subNavElement ">
+
+    <a href="../../about-us.html" class="navigation_link nav__inner relative ">About us
+		                <span data-navigation-id="100086" class="nav__element_opener "></span>
+            	</a>
+          <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" data-navigation-id="433" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100086">
+                <li class="nav__element relative nav__element_depth1  n100089  m49 ">
+
+    <a href="../../about-us/raimund-theater.html" class="navigation_link nav__inner relative ">Raimund Theater
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100091  m49 ">
+
+    <a href="../../theatres/ronacher.html" class="navigation_link nav__inner relative ">Ronacher
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100088  m49 ">
+
+    <a href="../../about-us/orchestra.html" class="navigation_link nav__inner relative ">Orchestra
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100092  m3 ">
+
+    <a href="https://www.musicalvienna.at/en/about-us/team" class="navigation_link nav__inner relative ">Team
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100122  m3 ">
+
+    <a href="../../about-us/press.html" class="navigation_link nav__inner relative ">Press
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100085  m49 ">
+
+    <a href="../../sales.html" class="navigation_link nav__inner relative ">B2B &amp; Groups
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100083  m49 ">
+
+    <a href="../../partners.html" class="navigation_link nav__inner relative ">Partners
+		    	</a>
+         </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+				<div class="navAd empty">
+                    				</div>
+			 </div>
+            <form id="mainsearch" action="https://www.musicalvienna.at/en/search" method="get" aria-describedby="stichwortsuche-head" role="search" class=" none">
+                            <fieldset class="relative m0">
+								<button class="nobtn" type="submit" title="Suchen"><img src="../../../_assets/css/icon/search.svg" alt="Suchen"></button>
+                                <label for="suchbegriff" class="none">Search terms</label>
+                                <input class="mainsearch-input m0" type="search" id="suchbegriff" value="" title="Enter search terms" placeholder="enter a search term..." name="words" aria-required="true" required="">
+                                <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" class="clearInput tdn" title="hide search"><img src="../../../_assets/css/icon/close.svg" alt="x"></a>
+                            </fieldset>
+                            <input type="hidden" name="search" value="1">
+                        </form>
+        </div>
+        </header>
+      
+	  <div id="content" role="main" class="cfix content">
+                      
+		<div  class="module_event module_event_detail detail module"><div  class="module_event module_event_detail moduledetail"><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Header_100513"   data-id="100513" data-type="extracontent_header"><div class="extracontent_header "><!-- <canvas></canvas><script src="/_assets/js/feenstaub.js"></script> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/original/100530.webp"><source src="../../../_media/image/100530_1920x1080px_ELI-Konzert24_70__11_24.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/100530_1920x1080px_ELI-Konzert24_70__11_24.jpg" 
+     alt="Elisabeth Konzertant - Ehrenhof Schönbrunn 2024 © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Elisabeth Konzertant - Ehrenhof Schönbrunn 2024 © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Info_100514"   data-id="100514" data-type="extracontent_textonly"><div class="extracontent_textonly setContentWidth extracontent-inner"><div class="setBlockTextWidth"><p>Due to its great popularity, the VBW's successful production of ELISABETH took place for the fourth and unfortunately last time as a major concert highlight in the courtyard of Schönbrunn Palace. <strong>From June 27 to 29, 2024</strong>, the most successful German-language musical of all time was presented one last time as an exceptional concert experience in front of the famous historical setting of the Schönbrunn Palace.</p><p>The dramatic and moving story of the life, work and suffering of Empress Elisabeth will again be brought to the stage next summer with a top-class ensemble and the orchestra of Vereinigte Bühnen Wien in a large cast.</p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Trailer_100503"   data-id="100503" data-type="extracontent_video"><div class="extracontent_video setContentWidth extracontent-inner"><ul class="videos tarn mb30 desktop "><li><div class="video-container"><iframe  src="https://cdn.priv.center/pc/placeholder/en/embedded.html"  data-src="https://player.vimeo.com/video/821178482?autoplay=0" data-trucookiecontrol="add_features" truendo="true" title="ELISABETH - Konzertante Aufführung 2023" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0" ></iframe></div></li></ul><div class="tcenter"></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Fotos_100517"   data-id="100517" data-type="extracontent_image"><div class="extracontent_image setContentWidth gallery-swiper-container extracontent-inner"><h3 class="tcenter">ELISABETH - Konzertante Aufführung 2024</h3><ul class="images tarn flex-jc-start swiper-wrapper"><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22934.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 001" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22934_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_001.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22934.webp"><source src="/_media/image/22934_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_001.jpg"><img 
+		 
+	
+
+	src="/_media/image/22934_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_001.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 001 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 001 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22935.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 002" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22935_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_003.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22935.webp"><source src="/_media/image/22935_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_003.jpg"><img 
+		 
+	
+
+	src="/_media/image/22935_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_003.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 002 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 002 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22936.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 003" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22936_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_005.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22936.webp"><source src="/_media/image/22936_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_005.jpg"><img 
+		 
+	
+
+	src="/_media/image/22936_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_005.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 003 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 003 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22937.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 004" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22937_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_009.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22937.webp"><source src="/_media/image/22937_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_009.jpg"><img 
+		 
+	
+
+	src="/_media/image/22937_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_009.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 004 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 004 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22938.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 005" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22938_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_010.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22938.webp"><source src="/_media/image/22938_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_010.jpg"><img 
+		 
+	
+
+	src="/_media/image/22938_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_010.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 005 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 005 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22939.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 006" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22939_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_011.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22939.webp"><source src="/_media/image/22939_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_011.jpg"><img 
+		 
+	
+
+	src="/_media/image/22939_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_011.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 006 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 006 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22940.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 007" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22940_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_013.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22940.webp"><source src="/_media/image/22940_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_013.jpg"><img 
+		 
+	
+
+	src="/_media/image/22940_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_013.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 007 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 007 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the left"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the right"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Cast_100515"   data-id="100515" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">CAST</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/16.jpg" alt="Annemieke van Dam &copy; Nadine Poncioni" title="Annemieke van Dam &copy; Nadine Poncioni" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Annemieke van Dam</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Annemieke van Dam</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="http://www.annemiekevandam.de/" rel="extern" title="Annemieke Van Dam Webseite (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/annemiekevandamofficial" rel="extern" title="Annemieke Van Dam Instagram Profil (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Gino Emnes</h4><p class="cast-title mt0 small">THE DEATH</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Gino Emnes</h2><h6 class="cast-title mt0 mb20">THE DEATH</h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/gino.emnes/" rel="extern" title="Instagram Emnes (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Riccardo Greco</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Riccardo Greco</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Armin Kahl</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Armin Kahl</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Helen Schneider</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Helen Schneider</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Moritz Mausser</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Moritz Mausser</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Hans Neblung</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Hans Neblung</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Bettina Mönch</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Bettina Mönch</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Frederik Paap</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Frederik Paap</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Niklas Petzer</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Niklas Petzer</h2><h6 class="cast-title mt0 mb20"></h6></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the left"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the right"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Cast_100516"   data-id="100516" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Kristine Emde</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Kristine Emde</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Florine Schnitzel</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Florine Schnitzel</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/614.jpg" alt="Livia Wrede &copy; VBW/ Marco Sommer" title="Livia Wrede &copy; VBW/ Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Livia Wrede</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Livia Wrede</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/liviawrede" rel="extern" title="Wrede Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Amelie Polak</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Amelie Polak</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Caroline Zins</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Caroline Zins</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Janis Irene</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Janis Irene</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21185.jpg" alt="Bianca Basler &copy; Bianca Basler" title="Bianca Basler &copy; Bianca Basler" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Bianca Basler</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Bianca Basler</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Esther Ardoin</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Esther Ardoin</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/20015.jpg" alt="Arvid Assarsson &copy; Arvid Assarsson" title="Arvid Assarsson &copy; Arvid Assarsson" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Arvid Assarsson</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Arvid Assarsson</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/arvantaa/" rel="extern" title="Instagram Assarsson (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Jonathan Kügler</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Jonathan Kügler</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/207.jpg" alt="Robert David Marx &copy; VBW/ Sandra Kosel" title="Robert David Marx &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Robert David Marx</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Robert David Marx</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/robertdavidmarx/" rel="extern" title="Marx Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/178.jpg" alt="Maximilian Klakow &copy; VBW/ Sandra Kosel" title="Maximilian Klakow &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Maximilian Klakow</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Maximilian Klakow</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/mklakow" rel="extern" title="Facebook Klakow (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/1432.jpg" alt="Gerben Grimmius &copy; Svetlana Gradwohl" title="Gerben Grimmius &copy; Svetlana Gradwohl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Gerben Grimmius</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Gerben Grimmius</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="http://gerbengrimmius.com/" rel="extern" title="Website Grimmius (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.facebook.com/gerben.grimmius" rel="extern" title="Grimmius Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/gerbengrimmius" rel="extern" title="Grimmius Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Konstantin Zander</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Konstantin Zander</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Michael Souschek</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Michael Souschek</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Carl van Wegberg</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Carl van Wegberg</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Ivo Giacomozzi</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Ivo Giacomozzi</h2><h6 class="cast-title mt0 mb20"></h6></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/159.jpg" alt="Rebecca Soumagné &copy; Christian Ariel Heredia" title="Rebecca Soumagné &copy; Christian Ariel Heredia" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Rebecca Soumagné</h4><p class="cast-title mt0 small"></p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="close"></button><h2 class="m0">Rebecca Soumagné</h2><h6 class="cast-title mt0 mb20"></h6><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/rebeccaanitasoumagne/" rel="extern" title="Soumagné Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the left"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="slide to the right"> --></div></div></div><!-- data-caldate="202501" --></div></div></div>
+	  </div>
+		
+		
+</div>
+<footer id="footer" role="contentinfo">
+	<div class="inner">
+		
+	<div class="relative">
+		<a href="https://vbw.at/de/home" aria-describedby="Vereinigte B&uuml;hnen Wien"><img src="../../../_assets/content/logos/Vbw_Logo.svg" alt="Vereinigte B&uuml;hnen Wien" class="vbwFooterLogo"></a>
+		<div class="getTickets">
+			<h6 class="mb0">Order your tickets by phone:</h6>
+			<h2 class="mt0"><a href="tel:+43 1 58885 - 111" class="tdn">+43 1 58885 - 111</a></h2>
+		</div>
+		 	<div  data-componentname="footer"  class="customFooter"><!--div class="footer-inner"--><!--ul  data-componentname="footer"  class="footer-block-info"--><div class="meta-list-item Follow us"><h4 class="uppercase">Follow us</h4><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.facebook.com/Musicalvienna">FACEBOOK</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.instagram.com/musicalviennavbw/">INSTAGRAM</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.youtube.com/user/musicalviennaVBW">YOUTUBE</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.tiktok.com/@musicalviennavbw">TIKTOK</a></span></p><p class="h7"> </p></div><div class="meta-list-item "><h4><a href="../to-the-schedule.html">SCHEDULE</a></h4><h4><a href="../vouchers.html">VOUCHERS</a></h4><h4><a href="../../souvenirs.html">Souvenirs</a></h4><h4><a href="../../musicalclub.html">MUSICALCLUB</a></h4><h4><a href="https://www.vbw-international.at/">VBW International</a></h4><div> </div></div><div class="meta-list-item "><h4><a href="../../about-us.html">ABOUT US</a></h4><div><h4><a href="../../about-us/raimund-theater.html">RAIMUND THEATER</a></h4><h4><a href="../../theatres/ronacher.html">Ronacher</a></h4></div><h4><a href="../../news.1.html">NEWS</a></h4><h4><a href="https://vbw.at/de/unternehmen/jobs">JOBS</a></h4><div> </div></div><div class="meta-list-item "></div><!--/ul--><!--/div--></div>
+			<div class="footerSponsorWrap">
+				<div class="footerMainSponsor">
+					<p class="oWhite">main sponsor</p>
+					<a href="https://www.wienerstaedtische.at" rel="extern" title="Wiener Städtische - Vienna Insurance Group"><img src="../../../_assets/content/logos/logo-wiener-staedtische.png" alt="Wiener St&auml;dische" class="WienerStdFooterLogo"></a>
+				</div>
+				<ul class="footerSponsor tarn">
+					<li><a href="https://www.wienholding.at" rel="extern" title="W!ienhold!ing"><img src="../../../_assets/content/logos/logo-wienholding-50jahre.jpg" alt="Wiener St&auml;dische" class=""></a></li>
+					<li><a href="https://www.wien.gv.at/kultur/abteilung" rel="extern" title="Wien Kultur"><img src="../../../_assets/content/logos/logo-wienkultur.png" alt="Wien Kultur" class="logo-wienkultur"></a></li>
+				</ul>
+			</div>
+			<div class="meta">
+				<div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Metanavigation unten</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100056  en">
+                        <a href="../../legal-notice.html" class="navigation_link nav__inner ">Legal Notice</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100057  en">
+                        <a href="../../terms-and-conditions.html" class="navigation_link nav__inner ">Terms &amp; Conditions</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100058  en">
+                        <a href="../../privacy-policy.html" class="navigation_link nav__inner ">Privacy Policy</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100059  en">
+                        <a href="../../contact-us.html" class="navigation_link nav__inner ">Contact us</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100061  en">
+                        <a href="../../help.html" class="navigation_link nav__inner ">Help</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+			</div>
+	</div>
+</div>
+</footer>
+<div id="mynlregister" class="overlaybox none nocontent">
+
+    <div class="relative">
+		<a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" class="closenlreg">close</a>
+			<iframe id="nlregisteriframe" data-regsrc="https://profile.musicalvienna.at/en/nlregister" data-editsrc="https://profile.musicalvienna.at/en/nlverwaltung" frameBorder="0" rel="nofollow"></iframe>
+	</div>
+
+</div>
+<div class="accountbox_wrap none">
+    <div class="accountbox">
+        <a href="ELISABETH-Konzertante-Auffuehrung-2024.html" class="closeaccountbox" title="close"><img src="../../../_assets/css/icon/close.svg" alt="X"></a>
+                <div class="loginoptions m0">
+                <iframe id="loginiframe" data-src="https://www.musicalvienna.at/en/account/login" frameBorder="0" rel="nofollow"></iframe>
+        </div>
+            </div>
+</div>
+
+
+    </body>
+</html>

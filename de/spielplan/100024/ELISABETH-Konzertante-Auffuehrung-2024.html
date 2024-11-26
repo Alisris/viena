@@ -1,0 +1,749 @@
+<!DOCTYPE html><html  lang="de"><head><script type="text/javascript" src="../../../_component/resources/jquery.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/htmlChange.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/components.js.php@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_custom/custom_func.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/collection_content/WTuser/WTuser.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)WTuser" ></script><script type="text/javascript" src="../../../_component/collection_content/footer/footer.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)footer" ></script><script type="text/javascript" src="../../../_component/collection_module/module_event/module_event.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsapFlipPlugin.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsap-3.12.5.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/stadthalle-multiselect.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_component/collection_content/extracontent/extracontent.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/swiper8.0.7.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/gmap-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_component/collection_content/navigation/navigation.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)navigation" ></script><script type="text/javascript" src="../../../_component/collection_content/page/page.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/click-visible-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/tab-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.template.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.lazyload.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.touchSwipe.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/respond.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/modernizr-2.8.3.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/slidenav.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/echonet.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page (content)extracontent (content)footer" ></script><link href="../../../_component/resources/components.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="BasicDependencyStack" ><link href="../../../_component/collection_content/WTuser/WTuser.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)WTuser" ><link href="../../../_component/collection_content/footer/footer.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)footer" ><link href="../../../_component/collection_module/module_event/module_event.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_assets/css/stadthalle-multiselect.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_component/collection_content/extracontent/extracontent.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)extracontent" ><link href="../../../_component/collection_content/navigation/navigation_main.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/navigation/navigation.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/page/page.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page" ><link href="../../../_assets/css/form1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/print1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="print" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/basics1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/responsive1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/basics-tmp.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" >
+	 <title>Musicals und Veranstaltungen - MusicalVienna</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="">
+    <meta name="expires" content="3600" />
+    <meta name="revisit-after" content="5 days" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="icon" href="../../../_assets/content/favicon.ico" type="image/ico" />
+	<meta charset="UTF-8">
+	  
+  
+	
+    <!-- TRUENDO Privacy Center -->    
+	 <script data-accessibility="true" id="truendoAutoBlock" type="text/javascript" src=https://cdn.priv.center/pc/truendo_cmp.pid.js data-siteid="4398b4cb-8669-4dd1-bd26-08a984506b42"></script>
+	 <!-- End TRUENDO Privacy Center --> 
+	  
+	  	
+  
+<link rel="alternate" href="https://musicalvienna.at/de-de/spielplan/100024" hreflang="de-de" />
+		
+  
+<link rel="alternate" href="https://musicalvienna.at/de-at/spielplan/100024" hreflang="de-at" />
+			<link rel="canonical" href="https://musicalvienna.at/de/spielplan/100024" />
+			  
+
+      
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500,
+});
+dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    //console.log(dataLayer);
+</script>
+<script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
+
+      // Load Tag Manager script.
+      var gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NJ5CZF';
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+        //console.log(firstScript);    
+        
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<!-- End Matomo -->
+    
+      
+<style>
+     :root {
+                                    
+                                    --font1: AkkuratWebBlack; 
+        --font2: AkkuratWebRegular; 
+        
+        --color1: #000000;; /* Farbe für Navigationspunkte & Buttons */
+        --color2: #FFFFFF;; /* Farbe für Verlauf */
+        --color3: #FFFFFF;; /* Farbe für Überschriften auf dunklem Hintergrund */
+        --color4: #FFFFFF;; /* Farbe für Umrandungen & Pfeilchen */
+        --color5: #FFFFFF;; /* Hintergrundfarbe statt weiß im Lightmode (dunkle schrift) */
+        --color6: #FFFFFF;; /* Farbe für Buttonbeschriftung */
+        --color7: #000000;; /* Farbe für Blockquotes */
+    } 
+
+
+	.button:not(.nobtn), 
+	button:not(.nobtn), 
+	[class*="button"]:not(.nobtn), 
+	[class*="Button"]:not(.nobtn), 
+	.enetButton:not(.nobtn), 
+	.utilities .cart span, 
+	.utilities .user.active::after,
+	 #nav .nav__list > .nav__element.active, 
+	 #nav .nav__list > .nav__element:hover { 
+		background-color: var(--color1);
+		color: var(--color6);
+	}
+	blockquote::before, blockquote::after, .bq::before, .bq::after{
+		color: var(--color7);
+	}
+
+	p > a:not([class*="button"]):not([class*="Button"]){ color: var(--color1) !important;}
+
+	.eventCustomNav a:hover, .eventCustomNav a:focus, .eventCustomNav a.active{ color: var(--color1); }
+	.dark { background-image: linear-gradient(15deg, var(--color2) 0%, #101010 40%, #101010 100%); }
+	.dark h1, .dark h2 { color: var(--color3); }
+	ul.merch li { border-color: var(--color4); }
+	.arrowSlider::after, .arrowSlider::before { background-color: var(--color4); }
+	.light, .eventAnchorNav, #nav, #nav .nav__sub-list, #nav > .navigation { background-color: var(--color5); }
+	.extracontent.hasSwiper.light::before { background-image: linear-gradient(90deg, var(--color5), transparent); }
+	.extracontent.hasSwiper.light::after { background-image: linear-gradient(90deg,transparent, var(--color5)); }
+
+	.eventCustomNav a, h1, h2, h3, h4, [class*="button"]:not(.nobtn), [class*="Button"]:not(.nobtn) { font-family: var(--font1) }
+	h5, h6, .h7, p, p a { font-family: var(--font2); }
+
+	.btnLikeHeadline.time, .buy .time{ background-color: var(--color1);}
+	.ticketcount .buy::before{ background-color: var(--color1); }
+
+	.viewlist .view.active, .viewlist .view:focus, .viewlist .view:hover{ background-color: var(--color1); border-color: var(--color1) !important; }
+
+	.module_event #content *:not(td):not(.view) {
+		border-color: var(--color4);
+	}
+	
+	table.wysiwygtable tbody tr:nth-child(odd){
+		background-color: color-mix(in srgb,var(--color4),#fff 50%);
+	}
+	table.wysiwygtable tbody tr:nth-child(even){
+		background-color: var(--color4);
+	}
+
+	#footer{
+		background-image: repeating-linear-gradient(200deg, #101010 0%, #101010 15%, var(--color2) 45%, #101010 70%);
+	}
+
+	@media only screen and (min-width: 1024px){
+		#footer{
+			background-image: linear-gradient(200deg, #101010 55%, var(--color2) 100%);
+		}
+	} 
+
+</style>
+      
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-dowhenconsent="googletagmanager" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5CZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      
+      <script type="text/javascript" src="../../../_assets/js/index.html@f=gaec-tracking.js&amp;recache=0"></script>
+      
+              <script type="text/javascript" src="../../../_component/resources/jquery.js"></script>
+          <script type="text/javascript" src="../../../_assets/js/magnificpopup-v1.1.0.js"></script>    
+        <script type="text/javascript" src="../../../_assets/js/magnificpopup.js"></script>
+      <script type="text/javascript" src="../../../_assets/js/jquery.autocomplete.min.js"></script>    
+        </head>
+    <body id="MusicalVienna" class="de module_event size4 default nohelp   module_event_detail " data-lang="de" data-site="1" data-nid="100009">
+    <div class="genericload none"><img src='../../../assets/content/icons/icon-spinner.svg' width='60' height='60' /></div>
+    <div id="parent" class="parent cfix">
+      <header id="header" class="header relative" role="banner">
+        <div class="inner">
+            
+			<div class="utilities desktop">
+                <div class="langnav">
+                    <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="../../../en/schedule/100024/ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                </div>
+				<button class="nobtn toMainsearch">
+					<img src="../../../_assets/css/icon/search.svg" alt="Suchen">
+				</button>
+				<a href="../../account/warenkorb.html" class="cart nobtn">
+					<img src="../../../_assets/css/icon/cart.svg" alt="Warenkorb">
+									</a>
+				<a href="ELISABETH-Konzertante-Auffuehrung-2024.html#myaccountbox" class="user nobtn ">
+					<img src="../../../_assets/css/icon/user.svg" alt="User">
+				</a>
+			</div>
+			<a href="../../home.html" title="Zur Startseite" accesskey="0" role="banner" class="url toLandingpage">
+				<img id="logo" src="../../../_media/_site_logo/1_WeAreMusicalLogo_2Lines.svg" alt="Logo" />
+			</a>
+                        <div class="eventCustomNavWrap">
+								<ul class="areas desktop tarn flex-jc-start eventCustomNav">
+				    														</ul>
+			</div>
+            			<button  id="navanchor" class="nobtn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu" data-menutxt="Menü">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			 <div id="nav" class="cfix noem fromTop" aria-describedby="Navigation">
+                <div class="utilities mobile">
+                    <div class="langnav">
+                        <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="../../../en/schedule/100024/ELISABETH-Konzertante-Auffuehrung-2024.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                    </div>
+					<div>
+						<button class="nobtn toMainsearch">
+							<img src="../../../_assets/css/icon/search.svg" alt="Suchen">
+						</button>
+						<a href="../../account/warenkorb.html" class="cart nobtn">
+							<img src="../../../_assets/css/icon/cart.svg" alt="Warenkorb"></a>
+						<a href="ELISABETH-Konzertante-Auffuehrung-2024.html#myaccountbox" class="user nobtn ">
+							<img src="../../../_assets/css/icon/user.svg" alt="Login User">
+						</a>
+					</div>
+				</div>
+								<div class="eventCustomNav mobile">
+										<ul class="areas tarn">
+																							</ul>
+				</div>
+								<div  class="navigation">
+                            <nav class="nav cfix">
+            <h2 class="nav__headline none">Hauptnavigation</h2>
+            <div class="nav__container" role="navigation">
+                <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="nav__element relative nav__element_depth0  n100009 active m58 subNavElement ">
+
+    <a href="../../spielplan-und-tickets/spielplan.html" class="navigation_link nav__inner relative active">Musicals und Veranstaltungen
+		                <span data-navigation-id="100009" class="nav__element_opener active"></span>
+            	</a>
+          <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" data-navigation-id="109" class="nav__element_opener active"><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100009">
+                <li class="nav__element relative nav__element_depth1  n100123  m3 ">
+
+    <a href="../zum-spielplan.html" class="navigation_link nav__inner relative ">Zum Spielplan
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100015  m122 ">
+
+    <a href="../archiv.html" class="navigation_link nav__inner relative ">Archiv
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100068  m117 ">
+
+    <a href="../gutscheine.html" class="navigation_link nav__inner relative ">Gutscheine
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100022  m123 ">
+
+    <a href="../../souvenirs.html" class="navigation_link nav__inner relative ">Souvenirs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100023  m49 ">
+
+    <a href="../../musicalclub.html" class="navigation_link nav__inner relative ">Musicalclub
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100018  m49 ">
+
+    <a href="../../creative-development.html" class="navigation_link nav__inner relative ">VBW Eigenproduktionen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100020  m49 subNavElement ">
+
+    <a href="../../we-are-musical/vbw-junges-musical.html" class="navigation_link nav__inner relative ">VBW JUNGES MUSICAL
+		                <span data-navigation-id="100020" class="nav__element_opener "></span>
+            	</a>
+          <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" data-navigation-id="56" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100020">
+                <li class="nav__element relative nav__element_depth1  n100076  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-freizeit.html" class="navigation_link nav__inner relative ">Für die Freizeit
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100079  m49 ">
+
+    <a href="../../we-are-musical/vbw-junges-musical/fuer-die-schule.html" class="navigation_link nav__inner relative ">Für die Schule
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100078  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-den-nachwuchs.html" class="navigation_link nav__inner relative ">Für den Nachwuchs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100158  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-zu-hause.html" class="navigation_link nav__inner relative ">Für zu Hause
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100073  m49 subNavElement ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns" class="navigation_link nav__inner relative ">Über uns
+		                <span data-navigation-id="100073" class="nav__element_opener "></span>
+            	</a>
+          <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" data-navigation-id="354" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100073">
+                <li class="nav__element relative nav__element_depth1  n100036  m49 ">
+
+    <a href="../../ueber-uns/raimund-theater.html" class="navigation_link nav__inner relative ">Raimund Theater
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100035  m49 ">
+
+    <a href="../../die-theater/ronacher.html" class="navigation_link nav__inner relative ">Ronacher
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100019  m49 ">
+
+    <a href="../../ueber-uns/orchester.html" class="navigation_link nav__inner relative ">Orchester
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100072  m3 ">
+
+    <a href="../../ueber-uns/team.html" class="navigation_link nav__inner relative ">Team
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100121  m3 ">
+
+    <a href="../../ueber-uns/presse.html" class="navigation_link nav__inner relative ">Presse
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100139  m49 ">
+
+    <a href="../../aktuelles/podcast.html" class="navigation_link nav__inner relative ">Podcast und Video
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100021  m49 ">
+
+    <a href="../../vertrieb.html" class="navigation_link nav__inner relative ">B2B &amp; Gruppen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100016  m49 ">
+
+    <a href="../../partner.html" class="navigation_link nav__inner relative ">Partner
+		    	</a>
+         </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+				<div class="navAd ">
+                                                                <div  data-componentname="extracontent"  class="extracontent  dark" id="tickets_100204"   data-id="100204" data-type="extracontent_event"><div class="extracontent_event modekachel  extracontent-inner setContentWidth"><div class="tcenter"><h2 style="text-align:center">Jetzt Tickets sichern:</h2><div> </div></div><ul class="tarn events  eventGrid   eventGridCenter "><li class="eventItem"><a href="../100004/DAS-PHANTOM-DER-OPER.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100011.jpg" alt="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited" title="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited"  /> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/c745x745/100011.webp"><source src="../../../_media/image/c745x745/100011.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/c745x745/100011.jpg" 
+     alt="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited"
+			  loading="lazy" 
+	 
+
+ title="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Raimund Theater</p><h2>DAS PHANTOM DER OPER</h2><!-- <h6>Andrew Lloyd Webbers Meisterwerk im Raimund Theater</h6> --><p class="eventDateIcon">15.03.2024 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li><li class="eventItem"><a href="../../lp/falco.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100013.jpg" alt="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien" title="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien"  /> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/c745x745/100013.webp"><source src="../../../_media/image/c745x745/100013.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/c745x745/100013.jpg" 
+     alt="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Ronacher</p><h2>ROCK ME AMADEUS - DAS FALCO MUSICAL</h2><!-- <h6>Eine Hommage an den österreichischen Ausnahmekünstler</h6> --><p class="eventDateIcon">07.10.2023 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li></ul><div class="swiper-button-prev nobtn arrowSlider left"></div><div class="swiper-button-next nobtn arrowSlider right"></div><div class="tcenter"></div></div></div>
+                                        				</div>
+			 </div>
+            <form id="mainsearch" action="https://www.musicalvienna.at/de/suche" method="get" aria-describedby="stichwortsuche-head" role="search" class=" none">
+                            <fieldset class="relative m0">
+								<button class="nobtn" type="submit" title="Suchen"><img src="../../../_assets/css/icon/search.svg" alt="Suchen"></button>
+                                <label for="suchbegriff" class="none">Suchbegriffe</label>
+                                <input class="mainsearch-input m0" type="search" id="suchbegriff" value="" title="Suchbegriffe eingeben" placeholder="Suchbegriff eingeben..." name="words" aria-required="true" required="">
+                                <a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" class="clearInput tdn" title="Suche ausblenden"><img src="../../../_assets/css/icon/close.svg" alt="x"></a>
+                            </fieldset>
+                            <input type="hidden" name="search" value="1">
+                        </form>
+        </div>
+        </header>
+      
+	  <div id="content" role="main" class="cfix content">
+                      
+		<div  class="module_event module_event_detail detail module"><div  class="module_event module_event_detail moduledetail"><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Header_100513"   data-id="100513" data-type="extracontent_header"><div class="extracontent_header "><!-- <canvas></canvas><script src="/_assets/js/feenstaub.js"></script> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/original/100530.webp"><source src="../../../_media/image/100530_1920x1080px_ELI-Konzert24_70__11_24.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/100530_1920x1080px_ELI-Konzert24_70__11_24.jpg" 
+     alt="Elisabeth Konzertant - Ehrenhof Schönbrunn 2024 © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Elisabeth Konzertant - Ehrenhof Schönbrunn 2024 © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Info_100514"   data-id="100514" data-type="extracontent_textonly"><div class="extracontent_textonly setContentWidth extracontent-inner"><div class="setBlockTextWidth"><p>Die VBW-Erfolgsproduktion ELISABETH fand aufgrund größter Beliebtheit auch 2024 zum vierten und leider auch letzten Mal als großes Konzert-Highlight im Ehrenhof von Schloss Schönbrunn statt. Von <strong>27. bis 29. Juni 2024</strong> wurde das erfolgreichste deutschsprachige Musical aller Zeiten ein letztes Mal in konzertanter Version vor der berühmten historischen Kulisse aufgeführt.</p><p>Die dramatische und berührende Geschichte über Leben, Wirken und Leiden der Kaiserin Elisabeth wird also auch im nächsten Sommer mit hochkarätigem Ensemble und dem Orchester der Vereinigten Bühnen Wien in großer Besetzung&nbsp;auf die Bühne gebracht.</p><p>Für die Inszenierung verantwortlich zeichnet abermals der renommierte Regisseur <strong>Gil Mehmert</strong>. Begleitet werden die Solist*innen und das Ensemble vom Orchester der Vereinigten Bühnen Wien in großer Besetzung unter der musikalischen Leitung von <strong>Carsten Paap</strong>.</p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Trailer_100503"   data-id="100503" data-type="extracontent_video"><div class="extracontent_video setContentWidth extracontent-inner"><ul class="videos tarn mb30 desktop "><li><div class="video-container"><iframe  src="https://cdn.priv.center/pc/placeholder/de/embedded.html"  data-src="https://player.vimeo.com/video/821178482?autoplay=0" data-trucookiecontrol="add_features" truendo="true" title="ELISABETH - Konzertante Aufführung 2023" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0" ></iframe></div></li></ul><div class="tcenter"></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Fotos_100517"   data-id="100517" data-type="extracontent_image"><div class="extracontent_image setContentWidth gallery-swiper-container extracontent-inner"><h3 class="tcenter">ELISABETH - Konzertante Aufführung 2024</h3><ul class="images tarn flex-jc-start swiper-wrapper"><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22934.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 001" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22934_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_001.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22934.webp"><source src="/_media/image/22934_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_001.jpg"><img 
+		 
+	
+
+	src="/_media/image/22934_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_001.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 001 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 001 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22935.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 002" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22935_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_003.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22935.webp"><source src="/_media/image/22935_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_003.jpg"><img 
+		 
+	
+
+	src="/_media/image/22935_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_003.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 002 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 002 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22936.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 003" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22936_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_005.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22936.webp"><source src="/_media/image/22936_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_005.jpg"><img 
+		 
+	
+
+	src="/_media/image/22936_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_005.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 003 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 003 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22937.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 004" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22937_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_009.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22937.webp"><source src="/_media/image/22937_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_009.jpg"><img 
+		 
+	
+
+	src="/_media/image/22937_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_009.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 004 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 004 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22938.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 005" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22938_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_010.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22938.webp"><source src="/_media/image/22938_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_010.jpg"><img 
+		 
+	
+
+	src="/_media/image/22938_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_010.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 005 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 005 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22939.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 006" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22939_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_011.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22939.webp"><source src="/_media/image/22939_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_011.jpg"><img 
+		 
+	
+
+	src="/_media/image/22939_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_011.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 006 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 006 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F22940.jpg&amp;height=510" alt="ELISABETH - Konzertante Aufführung 2024 007" title="&copy; Stefanie J. Steindl" loading="lazy" /><!-- /_media/image/22940_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_013.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/22940.webp"><source src="/_media/image/22940_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_013.jpg"><img 
+		 
+	
+
+	src="/_media/image/22940_VBW_Elisabeth_Schoenbrunn270624_StefanieJSteindl_013.jpg" 
+     alt="ELISABETH - Konzertante Aufführung 2024 007 © Stefanie J. Steindl"
+			  loading="lazy" 
+	 
+
+ title="ELISABETH - Konzertante Aufführung 2024 007 © Stefanie J. Steindl" 
+
+
+
+
+
+
+	/></picture> --></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Cast_100515"   data-id="100515" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">CAST</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/16.jpg" alt="Annemieke van Dam &copy; Nadine Poncioni" title="Annemieke van Dam &copy; Nadine Poncioni" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Annemieke van Dam</h4><p class="cast-title mt0 small">ELISABETH</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Annemieke van Dam</h2><h6 class="cast-title mt0 mb20">ELISABETH</h6><p><strong>Ausbildung</strong>: Musiktheater am Konservatorium in Tilburg (Niederlande) bei Antoinette Kouwenberg und Edward Hoepelman.</p><p><strong>Engagements</strong>: <em>Dornröschen</em> in DORNRÖSCHEN – DAS MUSICAL; Ensemble und Cover <em>Polly Baker</em> in CRAZY FOR YOU; Ensemble und Cover <em>Constance</em> in 3 MUSKETIERE; <em>Lisa Carew</em> in <em>Jekyll &amp; Hyde</em>; <em>Guinevere</em> in ARTUS – EXCALIBUR, <em>Florence</em> in CHESS, <em>Louise</em> in GYPSY, <em>Evita</em> in EVITA, <em>Mary Poppins</em> in MARY POPPINS, <em>Elisabeth</em> in ELISABETH, <em>Beatrice</em> und <em>Mrs. Danvers</em> in REBECCA und <em>Cynthia</em> in DEAR EVAN HANSEN.</p><ul class="socialmedia tarn"><li><a href="http://www.annemiekevandam.de/" rel="extern" title="Annemieke Van Dam Webseite (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/annemiekevandamofficial" rel="extern" title="Annemieke Van Dam Instagram Profil (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Gino Emnes</h4><p class="cast-title mt0 small">DER TOD</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Gino Emnes</h2><h6 class="cast-title mt0 mb20">DER TOD</h6><p><strong>Ausbildung</strong>: Lucia Marthas Institute for Performing Arts.</p><p><strong>Engagements</strong>: u.a. <em>Simba</em> in DER K&Ouml;NIG DER L&Ouml;WEN/Hamburg; <em>Lola</em> in KINKY BOOTS/Hamburg; <em>Apollo Creed</em> in ROCKY - DAS MUSICAL/Hamburg; <em>Ike Turner</em> in TINA; <em>Rum Tum Tugger</em> in CATS/ Niederlande; <em>Frank N. Furter</em> in ROCKY HORROR SHOW/Amstetten; <em>Black</em> in THE WILD PARTY/Amstetten; <em>Schwitze-Fritze</em> in SISTER ACT/Stuttgart u. Berlin; <em>Coalhouse Walker Jr.</em> in RAGTIME/Linz; <em>Martin Luther King</em> in MARTIN LUTHER KING/D-Tour; <em>Judas</em> in JESUS CHRIST SUPERSTAR, <em>John</em> in MISS SAIGON/Raimund Theater; <em>Burr</em> in HAMILTON/Hamburg.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/gino.emnes/" rel="extern" title="Instagram Emnes (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Riccardo Greco</h4><p class="cast-title mt0 small">Luigi Lucheni</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Riccardo Greco</h2><h6 class="cast-title mt0 mb20">Luigi Lucheni</h6><p><strong>Ausbildung</strong>: Joop van den Ende Academy Hamburg.</p><p><strong>Engagements</strong>: u.a.&nbsp;MAMMA MIA!/Berlin; GREASE/Tour; TANZ DER VAMPIRE, SISTER ACT, <em>Sam Wheat</em> in GHOST/Stage; DER BESUCH DER ALTEN DAME/Ronacher; ELISABETH/Raimund Theater; <em>Sonny Malone</em> in XANADU, <em>Nick Hurley</em> in FLASHDANCE/Amstetten; <em>Enjolras</em> in LES MIS&Eacute;RABLES, <em>Tommy</em> in THE WHO&#39;S TOMMY, <em>Hedwig</em> in HEDWIG AND THE ANGRY INCH, <em>Edna Turnblad</em> in HAIRSPRAY, <em>Tate</em> in RAGTIME/Linz; <em>George Berger</em> in HAIR/Bad Hersfeld; <em>Frank Abagnale Jr.</em> in CATCH ME IF YOU CAN/Darmstadt; <em>Jesus</em> in JESUS CHRIST SUPERSTAR/St. Gallen; <em>Galileo</em> in WE WILL ROCK YOU/Tour; <em>Christian</em> in MOULIN ROUGE/ Musical Dome K&ouml;ln.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Armin Kahl</h4><p class="cast-title mt0 small">KAISER FRANZ JOSEPH</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Armin Kahl</h2><h6 class="cast-title mt0 mb20">KAISER FRANZ JOSEPH</h6><p><strong>Ausbildung</strong>: Bayerische Theaterakademie August Everding M&uuml;nchen.</p><p><strong>Engagements</strong>: u.a. <em>Sky</em>/MAMMA MIA!; <em>Radames</em>/AIDA; <em>Tarzan</em>/TARZAN; <em>Zorro</em>/ZORRO (DEA); <em>Artus</em>/ARTUS EXCALIBUR; <em>Kardinal Richelieu</em>/3 MUSKETIERE; <em>Alfred Ill</em>/DER BESUCH DER ALTEN DAME; <em>Jesus</em>/<em>Herodes</em>/<em>Pilatus</em>/JESUS CHRIST SUPERSTAR; <em>Valmont</em>/GEF&Auml;HRLICHE LIEBSCHAFTEN (DEA); <em>Tick</em>/PRISCILLA - K&Ouml;NIGIN DER W&Uuml;STE, <em>Fritz Hagedorn</em>/DREI M&Auml;NNER IM SCHNEE; <em>Michael</em>/<em>Dorothy</em>/TOOTSIE (EEA); <em>Valjean</em>/LES MIS&Eacute;RABLES. Auszeichnungen: Bundeswettbewerb Gesang 2001 und 2003; Deutscher Musical Theater Preis 2019.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Helen Schneider</h4><p class="cast-title mt0 small">ERZHERZOGIN SOPHIE</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Helen Schneider</h2><h6 class="cast-title mt0 mb20">ERZHERZOGIN SOPHIE</h6><p><strong>Engagements</strong>: <em>Sally Bowles</em> und <em>MC</em> in CABARET/Berlin u.a.; <em>Norma Desmond</em> in SUNSET BOULEVARD/Wiesbaden u.a.; <em>Eva P&eacute;ron</em> in EVITA/Bad Hersfeld; <em>Frida Kahlo</em> in FRIDA - THE STORY OF FRIDA KAHLO/New York, Wien; <em>Hayah</em> in GHETTO/Broadway; <em>Madame Armfeldt</em> in A LITTLE NIGHT MUSIC und in SIDE BY SIDE BY SONDHEIM. Awards: Goldene Europa, Deutsche Phono-Akademie, DIVA. Fernsehen: &bdquo;Tatort&ldquo;, &bdquo;Ku&rsquo;damm 63&ldquo;. Kino: &ldquo;Eddie &amp; the Cruisers&rdquo;, &ldquo;Into The Beat&rdquo;, &ldquo;Electric Child&rdquo;. Musik: 25 Alben. Buch: &bdquo;The Colorful World of Frida Kato&ldquo;.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Moritz Mausser</h4><p class="cast-title mt0 small">ERZHERZOG RUDOLF</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Moritz Mausser</h2><h6 class="cast-title mt0 mb20">ERZHERZOG RUDOLF</h6><p>Moritz Mausser, in Wien geboren, wuchs in Baden bei Wien auf und kam schon in fr&uuml;her Kindheit durch Theaterbesuche mit der Familie in Kontakt mit Musicals. Im Alter von neun Jahren entdeckte er seine Leidenschaft f&uuml;r Gesang und Schauspiel und war ab 2011 &uuml;ber 10 Jahre lang Teil des Musical-Vereins teatro. Hier spielte er u. a. King John (ROBIN HOOD), Laurie Laurence (LITTLE WOMEN) und den Verr&uuml;ckten Hutmacher (ALICE IM WUNDERLAND). Ebenfalls wirkte er an Produktionen der B&uuml;hne Baden mit (u. a. PETER PAN). 2020 begann Moritz sein Studium im Fach Musikalisches Unterhaltungstheater an der MUK Wien und spielte hier in mehreren Produktionen (Dickon/Archibald in SECRET GARDEN, ELEGIES, PIPPIN). F&uuml;r seine Darstellung des Hutmachers erhielt er 2019 den 1. Preis bei den &bdquo;Papageno Awards&ldquo;, 2021 gewann er den &bdquo;Walter Jurmann Wettbewerb&ldquo;. Sein Profi-Deb&uuml;t feierte er als Erzherzog Rudolf in der semi-konzertanten Version von ELISABETH (2023) vor Schloss Sch&ouml;nbrunn. Im Rahmen der VBW-Workshops zu ROCK ME AMADEUS &ndash; DAS FALCO MUSICAL entwickelte er die Rolle des Hans, welche er nun in der Urauff&uuml;hrung verk&ouml;rpert.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Hans Neblung</h4><p class="cast-title mt0 small">HERZOG MAX IN BAYERN</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Hans Neblung</h2><h6 class="cast-title mt0 mb20">HERZOG MAX IN BAYERN</h6><p><strong>Ausbildung: </strong>D&uuml;sseldorf, Wien, New York.</p><p><strong>Engagements: </strong>u.a. <em>Munkustrap</em>, <em>Frank-N-Furter, Jekyll/Hyde</em>, <em>Prof. Higgins</em>, <em>Zaza</em>, <em>Graf Dracula</em>, <em>Chauvelin</em>, <em>Seymour</em>, <em>Zoser</em>, <em>Sir Percy</em>, <em>Max v. Meyerling</em>, <em>Richter Turpin</em>, <em>Robert Kincaid </em>- DIE BR&Uuml;CKEN AM FLUSS, <em>Santa Maria </em>&ndash; DER SCHUH DES MANITU, Alt. <em>Dumbledore </em>und <em>Amos Diggory </em>- HARRY POTTER UND DAS VERWUNSCHENE KIND, <em>Charlie Davenport </em>- ANNIE GET YOUR GUN; MARY POPPINS, DER BESUCH DER ALTEN DAME, LES MISERABLES, ELISABETH; Weihnachtskonzert Gro&szlig;e Kirche Bremerhaven 2024.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Bettina Mönch</h4><p class="cast-title mt0 small">HERZOGIN LUDOVIKA / FRAU WOLF</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Bettina Mönch</h2><h6 class="cast-title mt0 mb20">HERZOGIN LUDOVIKA / FRAU WOLF</h6><p><strong>Ausbildung</strong>: Musik und Kunst Privatuniversit&auml;t der Stadt Wien.</p><p><strong>Engagements</strong>: u.a. <em>Evita</em> in EVITA; <em>Ulla</em> in THE PRODUCERS/VBW; <em>Sally Bowles</em> in CABARET, <em>Hexe</em> in INTO THE WOODS, <em>Gloria</em> in AXEL AN DER HIMMELST&Uuml;R/Volksoper Wien; <em>Donna</em> in MAMMA MIA!/ M&ouml;rbisch; <em>Maureen</em> in RENT, <em>Lucy</em> in JEKYLL&amp;HYDE/Oper Dortmund; <em>Adelaide</em> in GUYS AND DOLLS, <em>Evita</em> in EVITA, <em>Lina</em> in SINGIN&rsquo; IN THE RAIN/Oper Graz; <em>Julie</em> in Tootsie, <em>Maria Magdalena</em> in JESUS CHRIST SUPERSTAR, <em>Sheila</em> in HAIR/G&auml;rtnerplatztheater M&uuml;nchen; <em>Amneris</em> in AIDA/Stage Entertainment.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Frederik Paap</h4><p class="cast-title mt0 small">RUDOLF ALS KIND</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Frederik Paap</h2><h6 class="cast-title mt0 mb20">RUDOLF ALS KIND</h6><p>Frederik wurde 2014 in M&ouml;dling geboren. Schon fr&uuml;h zeigte sich sein musikalisches Interesse. Nach der musikalischen Fr&uuml;herziehung begann er 2019 mit Klavierunterricht und wechselte 2020 zur Gitarre. 2022 und 2024 erhielt er beim Landeswettbewerb &bdquo;Prima La Musica&ldquo; einen ersten Platz mit Auszeichnung im Fach Gitarre. Nebenbei singt er im Chor und ist sportlich sehr aktiv.&nbsp; Im Kurs Musicaldance und bei Schulauff&uuml;hrungen hat er seine Leidenschaft f&uuml;r Tanz und Schauspiel entdeckt. Bereits 2023 durfte er in Sch&ouml;nbrunn in die Rolle des kleinen Rudolf schl&uuml;pfen.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Niklas Petzer</h4><p class="cast-title mt0 small">RUDOLF ALS KIND</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Niklas Petzer</h2><h6 class="cast-title mt0 mb20">RUDOLF ALS KIND</h6><p>Niklas besucht die 2. Klasse Gymnasium. Die Musik begleitet ihn von klein auf, er lernt Klavier und Klarinette. Seine gro&szlig;e Leidenschaft ist das Singen, Tanzen und Theaterspielen. Niklas hat bei den VBW bereits Rudolf als Kind im Musical ELISABETH gesungen. Zurzeit spielt er auch im Akademietheater in DIE JAGDGESELLSCHAFT.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Cast_100516"   data-id="100516" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Kristine Emde</h4><p class="cast-title mt0 small">Ensemble / Gräfin Sztáray</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Kristine Emde</h2><h6 class="cast-title mt0 mb20">Ensemble / Gräfin Sztáray</h6><p><strong>Ausbildung</strong>: Fontys Hogeschool voor de Kunsten, Tilburg.</p><p><strong>Engagements</strong>: u. a. <em>Cosette </em>in LES MIS&Eacute;RABLES/Konzert und Theater St. Gallen sowie G&auml;rtnerplatztheater M&uuml;nchen; alternierend <em>Marian </em>in ROBIN HOOD &ndash; DAS MUSICAL/Spotlight Musicals; DER MEDICUS/Deutsches Theater M&uuml;nchen; MITTERNACHTSBALL 2022/Sound of Music Concerts; <em>Solistin </em>in DIE NACHT DER MUSICALS; <em>Ivy </em>in BARE/Fontys Musiktheater.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Florine Schnitzel</h4><p class="cast-title mt0 small">Ensemble / HELENE VON WITTELSBACH</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Florine Schnitzel</h2><h6 class="cast-title mt0 mb20">Ensemble / HELENE VON WITTELSBACH</h6><p><strong>Ausbildung</strong>: Musik und Kunst Privatuniversit&auml;t der Stadt Wien.</p><p><strong>Engagements</strong>: u.a. <em>Julie Nichols</em> in TOOTSIE; <em>Margaretha Zelle</em> in MATA HARI; <em>Petra</em> in DAS L&Auml;CHELN EINER SOMMERNACHT; <em>Paquette</em> in CANDIDE; <em>Wally</em> in WALLY : EMILIE; <em>Ida</em> in DIE FLEDERMAUS; <em>Schwester Robert Anne</em> in NON(N)SENS; <em>Hanna</em> in ROCKIN&rsquo; ROSIE; <em>Kl&auml;rchen</em> in IM WEISSEN R&Ouml;SSL; <em>Rotk&auml;ppchen</em> in GRIMM!</p><p>&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/614.jpg" alt="Livia Wrede &copy; VBW/ Marco Sommer" title="Livia Wrede &copy; VBW/ Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Livia Wrede</h4><p class="cast-title mt0 small">Ensemble / Eine Hofdame</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Livia Wrede</h2><h6 class="cast-title mt0 mb20">Ensemble / Eine Hofdame</h6><p><strong>Ausbildung</strong>: Stage School Hamburg.</p><p><strong>Engagements</strong>: u.a. <em>Lisa</em> in MAMMA MIA!/Raimund Theater; <em>Wendy Jo</em> in FOOTLOOSE; JESUS CHRIST SUPERSTAR; MESSIAH ROCKS; HAIR; WEST SIDE STORY; SCHIKANEDER; Titelrolle <em>Johanna</em> in CINDERELLA PASST WAS NICHT; <em>Ali</em> in MAMMA MIA!, <em>Columbia</em> in ROCKY HORROR SHOW; Urauff&uuml;hrung KNOCKIN&acute;ON HEAVEN&acute;S DOOR; u.a. <em>Molly</em> in GHOST, <em>Marty</em> in GREASE und <em>Lorraine</em> in JERSEY BOYS beim Musical Sommer Amstetten. Zuletzt in REBECCA als Cover <em>Ich</em>. TV: GZSZ; &bdquo;Spotlight&ldquo;.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/liviawrede" rel="extern" title="Wrede Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Amelie Polak</h4><p class="cast-title mt0 small">Ensemble / MARY VETSERA</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Amelie Polak</h2><h6 class="cast-title mt0 mb20">Ensemble / MARY VETSERA</h6><p><strong>Ausbildung</strong>: Broadway Academy of Musical Theatre und Zahnmedizinstudium&nbsp;(Dr. med. dent.).</p><p><strong>Engagements</strong>: u.a. <em>Laura Schnabelstedt</em> / Cover <em>Lisi Schnabelstedt</em> in FACK JU G&Ouml;HTE (Tour: D, A , CH); <em>Iris</em> in WENN ROSENBL&Auml;TTER FALLEN (OFF Theater); <em>Grazia</em>/<em>P&uuml;nktchen</em>/<em>Komtesserl</em> in HONK! (Renaissance Theater Wien); <em>Nia</em> in LUNA (Theatercouch); <em>Chiffon</em> in DER KLEINE HORRORLADEN; <em>Soulgirl</em> in JESUS CHRIST SUPERSTAR; <em>Vampirbraut</em> in Dracula (Kulturgarage Wien); Solistin in MELODIENREISE (Burg Perchtoldsdorf).</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Caroline Zins</h4><p class="cast-title mt0 small">Ensemble / FANNY FEIFALIK</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Caroline Zins</h2><h6 class="cast-title mt0 mb20">Ensemble / FANNY FEIFALIK</h6><p><strong>Ausbildung</strong>: Musik und Kunst Privatuniversit&auml;t der Stadt Wien.</p><p><strong>Engagements</strong>: u.a. <em>Rhonda Graam</em> in TINA - Das Tina Turner Musical/Stage Apollo Theater Stuttgart; <em>&Auml;btissin von Kirkless</em> in ROBIN HOOD/Spotlight Musicals/Fulda, Hameln; <em>Ermengarde</em> in HELLO, DOLLY!/Stadtheater Baden; <em>Gudrun</em> in DIE P&Auml;PSTIN und <em>Agnes Cole</em> in DER MEDICUS/Spotlight Musicals; <em>Jessica</em> in SHYLOCK!/Theater Pforzheim; <em>Kate</em> in THE WILD PARTY, <em>Natalie</em> in FAST NORMAL, <em>Sheila</em> in HAIR, <em>Johanna</em> in SWEENEY TODD/Theater f&uuml;r Niedersachsen (Hildesheim).</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Janis Irene</h4><p class="cast-title mt0 small">Ensemble / GOUVERNANTE</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Janis Irene</h2><h6 class="cast-title mt0 mb20">Ensemble / GOUVERNANTE</h6><p>Janis Irene, geboren in Belgien, studierte 2017 an der Fontys School of the Arts in Tilburg Musiktheater, wo sie von Edward Hoepelman unterrichtet wurde. In ihrem letzten Ausbildungsjahr begann sie ihre Karriere mit Disneys DIE SCH&Ouml;NE UND DAS BIEST (Marmalade BE) im Ensemble. Eine Woche nach ihrer Abschlussfeier ging sie nach Deutschland, um bei TANZ DER VAMPIRE (Stage Entertainment DE) als Ensemble-Cover <em>Magda/Cover Rebecca </em>zu spielen. Danach spielt sie in COME FROM AWAY (medialane NL) als Standby <em>Beverly Bass</em>, <em>Janice Mosher </em>und <em>Bonnie Harris</em>. Swing in DIANA EN ZONEN (Medialane NL), Ensemble und Erstbesetzung <em>Frau Wolf </em>in ELISABETH&nbsp;(Bruxellon BE/FR), Ensemble in RED STAR LINE (Studio 100, BE) und in der Rolle der <em>Kaya </em>in dem belgischen Musical DAMIAAN (Historalia BE).</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21185.jpg" alt="Bianca Basler &copy; Bianca Basler" title="Bianca Basler &copy; Bianca Basler" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Bianca Basler</h4><p class="cast-title mt0 small">Ensemble / FRÄULEIN WINDISCH</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Bianca Basler</h2><h6 class="cast-title mt0 mb20">Ensemble / FRÄULEIN WINDISCH</h6><p><strong>Ausbildung</strong>: Musik und Kunst Privatuniversität der Stadt Wien.</p><p><strong>Engagements</strong>: u.a. <em>Cathy</em> in DIE LETZTEN FÜNF JAHRE/Kleines Theater Haar; <em>Kathi</em> in WOLF - DAS MYSTICAL/Seebühne Wolfgangsee; <em>Clarice</em> in REBECCA/Raimund Theater; Swing und Cover <em>Florika</em> in DER GLÖCKNER VON NOTRE DAME/Ronacher.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Esther Ardoin</h4><p class="cast-title mt0 small">Ensemble / GRÄFIN ESTERHÁZY</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Esther Ardoin</h2><h6 class="cast-title mt0 mb20">Ensemble / GRÄFIN ESTERHÁZY</h6><p><strong>Ausbildung</strong>: Stage School of Music, Dance and Drama (Hamburg).</p><p><strong>Engagements</strong>: <em>Wanda Koslowski</em> in FREAK OUT/Hamburg; <em>Miss Potiphar</em> in JOSEPH AND THE AMAZING TECHNICOLOR DREAMCOAT/Deutschlandtour; Swing/Cover <em>Ludovika</em>/<em>Frau Wolf</em>/<em>Sophie</em> in ELISABETH/Stuttgart, Berlin, Z&uuml;rich, Japan, Wien; Cover <em>Magda</em> in TANZ DER VAMPIRE/Stuttgart, Berlin; <em>Miss Lark</em>, Cover <em>Birdwoman</em>, <em>Miss Andrew</em>, <em>Miss Brill</em> in MARY POPPINS/Wien; S&auml;ngerin des GOLDEN YEARS DUOS/Abu Dhabi, VAE.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/20015.jpg" alt="Arvid Assarsson &copy; Arvid Assarsson" title="Arvid Assarsson &copy; Arvid Assarsson" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Arvid Assarsson</h4><p class="cast-title mt0 small">Ensemble / FÜRST SCHWARZENBERG</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Arvid Assarsson</h2><h6 class="cast-title mt0 mb20">Ensemble / FÜRST SCHWARZENBERG</h6><p><strong>Ausbildung</strong>: Musicalausbildung an der Ballettakademie in Göteborg.</p><p><strong>Engagements</strong>: DER ZAUBERER VON OZ, Cover <em>Rocky</em> in THE ROCKY HORROR SHOW/Gelsenkirchen; DAS PHANTOM DER OPER, HAIR/Göteborg Opera; <em>Bill Calhoun</em> in KISS ME, KATE/Staatstheater Darmstadt; Cover <em>Riff </em>und <em>Action </em>in WEST SIDE STORY/Theater Bonn; Ensemble und Cover <em>John</em> in MISS SAIGON, Cover <em>Jack Favell</em> in REBECCA/Raimund Theater; CANDIDE/Theater an der Wien.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/arvantaa/" rel="extern" title="Instagram Assarsson (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Jonathan Kügler</h4><p class="cast-title mt0 small">Ensemble / MAXIMILIAN VON MEXIKO</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Jonathan Kügler</h2><h6 class="cast-title mt0 mb20">Ensemble / MAXIMILIAN VON MEXIKO</h6><p><strong>Ausbildung</strong>: Musik und Kunst Privatuniversit&auml;t der Stadt Wien, MuK.</p><p><strong>Engagements</strong>: <em>Doug</em> und <em>Miles</em> in ELEGIES FOR ANGELS, PUNKS AND RAGING QUEENS/MuK; Ensemble in PIPPIN/MuK; <em>Randall</em> in BRING IT ON/MuK; Ensemble in ZORRO/ Felsenb&uuml;hne Staatz; <em>Cactus</em> und Cover <em>K&ouml;nig Kosmos</em> in DIE REISE ZUM MOND/Volksoper Wien; <em>Max</em> in CABARET/ Volksoper Wien; Cover <em>Connor Murphy</em> in DEAR EVAN HANSEN/Stadttheater Gmunden; <em>Peter</em> in JESUS CHRIST SUPERSTAR/Stadthalle Wien.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/207.jpg" alt="Robert David Marx &copy; VBW/ Sandra Kosel" title="Robert David Marx &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Robert David Marx</h4><p class="cast-title mt0 small">Ensemble / KARDINALERZBISCHOF RAUSCHER</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Robert David Marx</h2><h6 class="cast-title mt0 mb20">Ensemble / KARDINALERZBISCHOF RAUSCHER</h6><p><strong>Ausbildung</strong>: STELLA Academy &ndash; Stipendiat, Hamburg.</p><p><strong>Engagements</strong>: <em>Franz Joseph</em>, <em>Rudolf</em> - ELISABETH/Wien, Essen, Berlin, Triest; <em>Herbert</em>, <em>von Krolock</em> - TANZ DER VAMPIRE/Stuttgart, Berlin, Wien; <em>Jack Favell</em>, <em>Frank Crawley</em> &ndash; REBECCA/Wien, Magdeburg; <em>Dracula</em>, <em>van Helsing</em>, <em>Quincy Morris</em> &ndash; DRACULA/Wien, Graz, Stuttgart; <em>Andrassy, Franz Joseph</em> &ndash; RUDOLF/Wien; <em>Munkustrap</em> &ndash; CATS/Tour, <em>Raoul &ndash;</em> LIEBE STIRBT NIE/Hamburg; <em>Adam Hochberg</em><em>&ndash;</em> EIN AMERIKANER IN PARIS/Landgraf-Tour; <em>Bill</em>, <em>Harry</em> und <em>Sam</em><em>&ndash;</em> MAMMA MIA/Wien u. M&ouml;rbisch; <em>Tony</em><em>&ndash;</em>WEST SIDE STORY/Bozen; <em>Herodes</em><em>&ndash;</em> JESUS CHRIS SUPERSTAR/Wien; <em>Joe Gillis</em> SUNSET BLVD./Baden, W&uuml;rzburg, Bad Vilbel, Landgraf-Tour; <em>Fredrick Barrett</em><em>&ndash;</em> TITANIC/Baden.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/robertdavidmarx/" rel="extern" title="Marx Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/178.jpg" alt="Maximilian Klakow &copy; VBW/ Sandra Kosel" title="Maximilian Klakow &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Maximilian Klakow</h4><p class="cast-title mt0 small">Ensemble / EIN PROFESSOR</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Maximilian Klakow</h2><h6 class="cast-title mt0 mb20">Ensemble / EIN PROFESSOR</h6><p><strong>Ausbildung: </strong>Stage School Hamburg; Hochschule für Musik, Theater und Medien/Hannover.</p><p><strong>Engagements: </strong>u.a. <em>Frith</em> in REBECCA/Raimund Theater; Musikalische Leitung von ROMEO UND JULIA/ Musicalsommer Winzendorf; <em>Antonio </em>in FIGAROS HOCHZEIT, <em>Balu </em>in DSCHUNGELBUCH, <em>Zuniga </em>in CARMEN, <em>Lord Syndham </em>in ZAR UND ZIMMERMANN, AXEL AN DER HIMMELSTÜR/Volksoper Wien; MOZART!, MESSIAH ROCKS/Raimund Theater; Musikalische Leitung von DIE SCHATZINSEL, DIE PÄPSTIN, FRIEDRICH/Musicalsommer Fulda; 2. Dirigent WOLF – DAS MYSTICAL/Salzkammergut-Seebühne, Wolfgangsee.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/mklakow" rel="extern" title="Facebook Klakow (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/1432.jpg" alt="Gerben Grimmius &copy; Svetlana Gradwohl" title="Gerben Grimmius &copy; Svetlana Gradwohl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Gerben Grimmius</h4><p class="cast-title mt0 small">Ensemble / BARON HÜBNER</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Gerben Grimmius</h2><h6 class="cast-title mt0 mb20">Ensemble / BARON HÜBNER</h6><p><strong>Ausbildung</strong>: Studium Musiktheater am Fontys Conservatorium (Tilburg, Niederlande).</p><p><strong>Engagements</strong>: <em>Prins Maurice </em>in DOORNROOSJE; <em>James / Conférencier in </em>3 MUSKETIERE; <em>Nightmare Solo </em>in TANZ DER VAMPIRE; <em>Th</em><em>é</em><em>nardier </em>in LES MISÉRABLES; <em>Steward </em>/ <em>Fred </em>in ICH WAR NOCH NIEMALS IN NEW YORK; <em>Sir Bedevere </em>in SPAMALOT; <em>Schikaneder </em>in MOZART!; <em>Mary Sunshine </em>in CHICAGO; <em>Priester </em>in JESUS CHRIST SUPERSTAR; <em>Skimbleshanks </em>in CATS; <em>King Louis XI / Clopin </em>in DER GLÖCKNER VON NOTRE DAME; <em>Meneer Tijd </em>in CARO.</p><ul class="socialmedia tarn"><li><a href="http://gerbengrimmius.com/" rel="extern" title="Website Grimmius (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.facebook.com/gerben.grimmius" rel="extern" title="Grimmius Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/gerbengrimmius" rel="extern" title="Grimmius Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Konstantin Zander</h4><p class="cast-title mt0 small">Ensemble / BARON KEMPEN</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Konstantin Zander</h2><h6 class="cast-title mt0 mb20">Ensemble / BARON KEMPEN</h6><p><strong>Ausbildung</strong>: Musik und Kunst Privatuniversit&auml;t der Stadt Wien.</p><p><strong>Engagements</strong>: u.a. <em>Javert</em> in LES MISERABLES, <em>Paul</em> in COMPANY, <em>Cousin Kevin</em> in TOMMY, <em>Don Lockwood</em> in SINGIN&#39; IN THE RAIN/Landestheater Linz; <em>Billy</em> in DIRTY DANCING - Das Original live on Tour; <em>Charles</em> in TITANIC/Bad Hersfelder Festspiele; <em>Scarlett</em> in ROBIN HOOD/Fulda; <em>Wolfgang</em> in WOLF &ndash; DAS MYSTICAL/Salzkammergut-Seeb&uuml;hne am Wolfgangsee.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Michael Souschek</h4><p class="cast-title mt0 small">Ensemble / EIN UNGARISCHER ADLIGER</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Michael Souschek</h2><h6 class="cast-title mt0 mb20">Ensemble / EIN UNGARISCHER ADLIGER</h6><p><strong>Ausbildung</strong>: Konservatorium der Stadt Wien.</p><p><strong>Engagements</strong>: u.a. <em>Eddie</em> u. <em>Dr. Scott</em> in THE ROCKY HORROR SHOW; <em>Gonz&aacute;lo</em> in I FEEL LOVE/Bozen; <em>W. Murdoch</em> in TITANIC; <em>Bernardo</em> in WEST SIDE STORY, <em>Grantaire</em> und <em>Couferrac</em> in LES MIS&Eacute;RABLES/Linz, St. Gallen, M&uuml;nchen; <em>Curtis Jackson</em> in SISTER ACT u. <em>Richter Turpin</em> in SWEENEY TODD/Lausanne; <em>Berger</em> in HAIR/Amstetten; <em>Mariolino</em> in DON CAMILLO UND PEPPONE/Wien, St. Gallen; <em>Daphne</em> in MANCHE M&Ouml;GEN&rsquo;S HEISS/Thunerseespiele sowie <em>Luigi Lucheni</em> in ELISABETH/ Tournee.</p><p>&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Carl van Wegberg</h4><p class="cast-title mt0 small">Ensemble / GRAF GRÜNNE</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Carl van Wegberg</h2><h6 class="cast-title mt0 mb20">Ensemble / GRAF GRÜNNE</h6><p><strong>Ausbildung: </strong>Fontys Tanzakademie Musicaltheater/Tilburg.</p><p><strong>Engagements: </strong>u.a. Cover <em>Edward Lewis</em>, <em>Philip Stuckey </em>in PRETTY WOMAN/Hamburg; Walk In <em>Falco </em>in BAT OUT OF HELL/Oberhausen; <em>Polizist, Von Reibach </em>in MARY POPPINS/Stuttgart, Hamburg; <em>Colloredo </em>in MOZART!/Wien, Shanghai; Cover <em>Jack Favell </em>in REBECCA/Stuttgart; <em>Fiyero </em>in WICKED/Oberhausen; <em>Der Tod, Rudolf </em>in ELISABETH/D-Tour, Stuttgart; <em>Galahad</em>, <em>Lancelot</em>, <em>Bedevere </em>in SPAMALOT/K&ouml;ln; alt. <em>Galileo</em>, <em>Brit </em>in WE WILL ROCK YOU/Z&uuml;rich, Wien; <em>Herbert </em>in TANZ DER VAMPIRE/Stuttgart; Walk In <em>Reverend Shaw Moore</em> in Footloose/D-Tour.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Ivo Giacomozzi</h4><p class="cast-title mt0 small">Swing</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Ivo Giacomozzi</h2><h6 class="cast-title mt0 mb20">Swing</h6><p><strong>Ausbildung: </strong>Perfoming Academy/Wien.</p><p><strong>Engagements: </strong>u. a. Assistent des Choreographen in ELISABETH/ Sch&ouml;nbrunn; Assistant Choreographer/ Dance Captain in JESUS CHRIST SUPERSTAR/Ronacher; I AM FROM AUSTRIA/ Raimund Theater; WEST SIDE STORY/ Staatsoper Hannover; DAS WUNDER VON BERN/ Hamburg; EVITA/Ronacher; VBW-Jubil&auml;umsgala WE ARE MUSICAL 2015, MAMMA MIA!/Raimund Theater; CHICAGO, REBECCA/Theater St.Gallen; TANZ DER VAMPIRE/ Ronacher; Dance Captain Er&ouml;ffnungsgala/Raimund Theater.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/159.jpg" alt="Rebecca Soumagné &copy; Christian Ariel Heredia" title="Rebecca Soumagné &copy; Christian Ariel Heredia" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Rebecca Soumagné</h4><p class="cast-title mt0 small">Swing</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Rebecca Soumagné</h2><h6 class="cast-title mt0 mb20">Swing</h6><p><strong>Ausbildung</strong>: Hochschule Osnabr&uuml;ck.</p><p><strong>Engagements</strong>: u.a. <em>Josepha Weber</em> in MOZART!; Swing in SCHIKANEDER; Swing u. Cover <em>Beatrice</em> in REBECCA/Raimund Theater; <em>Sally</em> in CABARET/Steyr; <em>Regina</em> in ROCK OF AGES/Amstetten; <em>Ethel McCormack</em> in FOOTLOOSE/Chemnitz; <em>K&ouml;nigin Viktoria</em> in CINDERELLA/TDJ Wien; <em>Klara</em> in HEIDI, <em>Mina Murray</em> in DRACULA, <em>Maria Magdalena</em> in JESUS CHRIST SUPERSTAR, <em>Ronette</em> in DER KLEINE HORRORLADEN, <em>Fetisova</em> in DOKTOR SCHIWAGO, <em>Kate Murphy</em> in TITANIC/Baden. Werbe- und H&ouml;rbuchsprecherin.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/rebeccaanitasoumagne/" rel="extern" title="Soumagné Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div></div></div>
+	  </div>
+		
+		
+</div>
+<footer id="footer" role="contentinfo">
+	<div class="inner">
+		
+	<div class="relative">
+		<a href="https://vbw.at/de/home" aria-describedby="Vereinigte Bühnen Wien"><img src="../../../_assets/content/logos/Vbw_Logo.svg" alt="Vereinigte Bühnen Wien" class="vbwFooterLogo"></a>
+		<div class="getTickets">
+			<h6 class="mb0">Tickets bestellen unter</h6>
+			<h2 class="mt0"><a href="tel:+43 1 58885 - 111" class="tdn">+43 1 58885 - 111</a></h2>
+		</div>
+		 	<div  data-componentname="footer"  class="customFooter"><!--div class="footer-inner"--><!--ul  data-componentname="footer"  class="footer-block-info"--><div class="meta-list-item Follow us"><h4 class="uppercase">Follow us</h4><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.facebook.com/Musicalvienna">FACEBOOK</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.instagram.com/musicalviennavbw/">INSTAGRAM</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.youtube.com/user/musicalviennaVBW">YOUTUBE</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.tiktok.com/@musicalviennavbw">TIKTOK</a></span></p><p class="h7"> </p></div><div class="meta-list-item "><h4><a href="../../spielplan-und-tickets/spielplan.html">SPIELPLAN</a></h4><h4><a href="../gutscheine.html">GUTSCHEINE</a></h4><h4><a href="../../souvenirs.html">Souvenirs</a></h4><h4><a href="../../musicalclub.html">MUSICALCLUB</a></h4><h4><a href="https://www.vbw-international.at/">VBW International</a></h4><div> </div></div><div class="meta-list-item "><h4><a href="https://www.musicalvienna.at/de/ueber-uns">ÜBER UNS</a></h4><h4><a href="../../ueber-uns/raimund-theater.html">RAIMUND THEATER</a></h4><h4><a href="../../die-theater/ronacher.html">Ronacher</a></h4><h4><a href="../../aktuelles.1.html">NEWS</a></h4><h4><a href="https://vbw.at/de/unternehmen/jobs">JOBS</a></h4><div> </div></div><div class="meta-list-item "></div><!--/ul--><!--/div--></div>
+			<div class="footerSponsorWrap">
+				<div class="footerMainSponsor">
+					<p class="oWhite">Hauptsponsor</p>
+					<a href="https://www.wienerstaedtische.at" rel="extern" title="Wiener Städtische - Vienna Insurance Group"><img src="../../../_assets/content/logos/logo-wiener-staedtische.png" alt="Wiener Städische" class="WienerStdFooterLogo"></a>
+				</div>
+				<ul class="footerSponsor tarn">
+					<li><a href="https://www.wienholding.at" rel="extern" title="W!ienhold!ing"><img src="../../../_assets/content/logos/logo-wienholding-50jahre.jpg" alt="Wiener Städische" class=""></a></li>
+					<li><a href="https://www.wien.gv.at/kultur/abteilung" rel="extern" title="Wien Kultur"><img src="../../../_assets/content/logos/logo-wienkultur.png" alt="Wien Kultur" class="logo-wienkultur"></a></li>
+				</ul>
+			</div>
+			<div class="meta">
+				<div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Metanavigation unten</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100006  de">
+                        <a href="../../impressum.html" class="navigation_link nav__inner ">Impressum</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100007  de">
+                        <a href="../../agb.html" class="navigation_link nav__inner ">AGB</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100008  de">
+                        <a href="../../datenschutz-cookies.html" class="navigation_link nav__inner ">Datenschutz</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100024  de">
+                        <a href="../../kontakt.html" class="navigation_link nav__inner ">Kontakt</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100054  de">
+                        <a href="../../hilfe.html" class="navigation_link nav__inner ">Hilfe</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+			</div>
+	</div>
+</div>
+</footer>
+<div id="mynlregister" class="overlaybox none nocontent">
+
+    <div class="relative">
+		<a href="ELISABETH-Konzertante-Auffuehrung-2024.html#" class="closenlreg">schließen</a>
+			<iframe id="nlregisteriframe" data-regsrc="https://profile.musicalvienna.at/de/nlregister" data-editsrc="https://profile.musicalvienna.at/de/nlverwaltung" frameBorder="0" rel="nofollow"></iframe>
+	</div>
+
+</div>
+<div class="accountbox_wrap none">
+    <div class="accountbox">
+        <a href="ELISABETH-Konzertante-Auffuehrung-2024.html" class="closeaccountbox" title="schließen"><img src="../../../_assets/css/icon/close.svg" alt="X"></a>
+                <div class="loginoptions m0">
+                <iframe id="loginiframe" data-src="https://www.musicalvienna.at/de/account/login" frameBorder="0" rel="nofollow"></iframe>
+        </div>
+            </div>
+</div>
+
+
+    </body>
+</html>

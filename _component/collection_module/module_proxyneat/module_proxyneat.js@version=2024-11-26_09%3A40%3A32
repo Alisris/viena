@@ -1,0 +1,12 @@
+$(function(){
+    $('.tabsections-content-saalplan').removeClass('button');
+	$('.tabsections-content-bestplatzbuchung').removeClass('button');
+	$('.performancetitle').addClass('red');
+	$('.performancedatehouse').addClass('h3').addClass('redbar').addClass('leftbar');
+	$('td .performancedatehouse').removeClass('h3').removeClass('redbar').removeClass('leftbar');
+	$('.backlink').addClass('back-btn');
+	$('th').addClass('darkgrey');
+	$('#seatingplan-and-performanceinfo-container a').addClass('h4');
+	$('.content-main > .title').addClass('leftbar');
+    
+});

@@ -1,0 +1,86 @@
+var sizes={
+    windowWidth: window.innerWidth,
+    windowHeight: window.innerHeight
+}
+
+$(function(){
+	$(document).on('click','.view a',function(e){
+        e.preventDefault();
+        
+        $.ajax({
+            type: "POST",
+            url: window.location.href+$(this).attr('href'),
+            success: function(results){
+                $('.module_archive.module .eventOverview').replaceWith($(results).find('.module_archive.module .eventOverview'));
+            }
+        });
+    });
+    
+    
+    $(document).on('click','.areas a',function(e){
+        e.preventDefault();
+        
+        $.ajax({
+            type: "POST",
+            url: window.location.href+$(this).attr('href'),
+            success: function(results){
+                $('.module_archive.moduledetail').replaceWith($(results).find('.module_archive.moduledetail'));
+                //console.log($(results).find('ul.areas'));
+                $('ul.areas.desktop').replaceWith($(results).find('ul.areas.desktop'));
+                $('#nav').find('ul.areas').replaceWith($(results).find('#nav').find('ul.areas'));
+            }
+        });
+    });
+
+    if(sizes.windowWidth < 720){           
+        $('#content .eventGrid li > a').each(function(){
+            $(this).replaceWith($(this).children());
+        })
+    }
+
+
+    if ($('.module').hasClass('module_archive_overview_kachel') && window.innerWidth < 720) {
+
+
+        // setTimeout(() => {
+        //             loadJS(assets.path.js + assets.js.flip);
+        //             loadJS(assets.path.js + assets.js.gsap);       
+        // }, 1000);
+        
+        setTimeout(() => {
+            gsap.registerPlugin(Flip);
+            
+        }, 2000);
+
+        const eventGridHeight = $('.eventGrid').height();
+
+        $('.eventItem').on('click', function(e){
+            $('.eventGrid').css('height', (eventGridHeight + window.innerWidth + 200).toString() + 'px')
+            
+            e.preventDefault();
+
+            const state = Flip.getState($('.eventItem'))
+
+            $('.eventItem').removeClass('active')
+            $(this).addClass('active')
+
+            Flip.from(state, {
+                // duration: 50,
+                absolute: true
+            })
+
+        });
+
+
+    }
+
+    $(document).on('click', '.filtercats li', function(){
+        if ($(this).hasClass('showAll')) {
+            $('.filterItem').removeClass('none')
+        }else{
+            $('.filterItem').addClass('none');            
+            $(`.filterItem.${$(this).attr('data-id')}`).removeClass('none');
+        }        
+    })
+
+});

@@ -1,0 +1,81 @@
+@media print {
+/*
+Print CSS
+
+@site       	echo.at
+@author     	Sindre Wimberger // wimberger@echonet.at
+@copyright  	echonet communication gmbh
+							schottenfeldgasse 24, 1070 vienna
+							http://www.echonet.at
+@date       	13.09.2009
+@lastmodified 
+@version 			1.0 
+
+@sections   	=body
+							=base
+							=module
+							=snippets
+								=layout
+								=icon
+								=print
+								=downloads
+							=formulare
+*/
+/* @section =body
+-------------------------------------------------------------------*/
+html, body {height:auto;min-height:inherit;}
+ #footer, #header, .flappe { display: none !important; }
+/* @section =base
+-------------------------------------------------------------------*/
+#parent, #content {clear:none;float:none;min-width:100%;min-width:10px;padding:0;overflow:visible;position:static;width:100%;}
+
+/* @section =snippets
+-------------------------------------------------------------------*/
+/* ----- =layout ----- */
+#sitenav, #nav, #search, .v, .back {display: none; visibility:hidden;}
+pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+
+/* ----- =print ----- */
+body .content a[href^="http"], body .content a[href^="ftp"] {background-image:none;padding-right:0;}
+body .content a[href^="http"]:after {content: " (" attr(href) ") ";}
+body .content a[href^="http://echonet.at"], body .content a[href^="http://www.echonet.at"] {background-image:none;}
+body .content a[href^="http://echonet.at"]:after, body .content a[href^="http://www.echonet.at"]:after {content: "";}
+.page {page-break-after: always;} /* Inhalt beginnt auf einer neuen Seite  */
+	@page{ 
+		margin: 0; 
+		padding: 2cm
+
+	}
+tr, td, img { page-break-inside: avoid; break-inside: avoid;}
+
+/* ----- =icon ----- */
+.i, a.i:link, a.i:visited, a.i:focus, a.i:hover, a.i:active {background-image:none;padding-left:0;}
+
+/* ----- =downloads ----- */
+ul.downloads {list-style:square;margin-left:1.67em;}
+ul.downloads li {list-style:square;padding-left:0;}
+
+/* +formulare
+-------------------------------------------*/
+a.button:link, a.button:visited, a.button:focus, a.button:hover, a.button:active, button {background-image:none;border:1px solid #B00020;color:#B00020;}
+a.button span, button span {background-image:none;}
+
+/* ----- =tables ----- */
+thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+}
+th{ text-transform: uppercase}
+
+/* ----- =stadthalle Events ----- */
+.printheader{
+   top: 0;
+   width: 100%;
+   margin-top: 0;
+   position: sticky;
+   print-color-adjust: exact; 
+}
+.printheader .inner{
+   justify-content: space-between;
+   width: calc(100% - 50px);
+   text-align: center; 
+  padding: 15px 0 8px 0;
+}

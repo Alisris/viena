@@ -1,0 +1,916 @@
+<!DOCTYPE html><html  lang="de"><head><script type="text/javascript" src="../../../_component/resources/jquery.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/htmlChange.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/components.js.php@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_custom/custom_func.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/collection_content/WTuser/WTuser.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)WTuser" ></script><script type="text/javascript" src="../../../_component/collection_content/footer/footer.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)footer" ></script><script type="text/javascript" src="../../../_component/collection_module/module_event/module_event.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsapFlipPlugin.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsap-3.12.5.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/stadthalle-multiselect.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_component/collection_content/extracontent/extracontent.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/swiper8.0.7.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/gmap-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_component/collection_content/navigation/navigation.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)navigation" ></script><script type="text/javascript" src="../../../_component/collection_content/page/page.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/click-visible-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/tab-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.template.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.lazyload.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.touchSwipe.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/respond.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/modernizr-2.8.3.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/slidenav.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/echonet.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page (content)extracontent (content)footer" ></script><link href="../../../_component/resources/components.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="BasicDependencyStack" ><link href="../../../_component/collection_content/WTuser/WTuser.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)WTuser" ><link href="../../../_component/collection_content/footer/footer.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)footer" ><link href="../../../_component/collection_module/module_event/module_event.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_assets/css/stadthalle-multiselect.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_component/collection_content/extracontent/extracontent.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)extracontent" ><link href="../../../_component/collection_content/navigation/navigation_main.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/navigation/navigation.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/page/page.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page" ><link href="../../../_assets/css/form1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/print1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="print" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/basics1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/responsive1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/basics-tmp.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" >
+	 <title>Musicals und Veranstaltungen - MusicalVienna</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="">
+    <meta name="expires" content="3600" />
+    <meta name="revisit-after" content="5 days" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="icon" href="../../../_assets/content/favicon.ico" type="image/ico" />
+	<meta charset="UTF-8">
+	  
+  
+	
+    <!-- TRUENDO Privacy Center -->    
+	 <script data-accessibility="true" id="truendoAutoBlock" type="text/javascript" src=https://cdn.priv.center/pc/truendo_cmp.pid.js data-siteid="4398b4cb-8669-4dd1-bd26-08a984506b42"></script>
+	 <!-- End TRUENDO Privacy Center --> 
+	  
+	  	
+  
+<link rel="alternate" href="https://musicalvienna.at/de-de/spielplan/100015" hreflang="de-de" />
+		
+  
+<link rel="alternate" href="https://musicalvienna.at/de-at/spielplan/100015" hreflang="de-at" />
+			<link rel="canonical" href="https://musicalvienna.at/de/spielplan/100015" />
+			  
+
+      
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500,
+});
+dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    //console.log(dataLayer);
+</script>
+<script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
+
+      // Load Tag Manager script.
+      var gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NJ5CZF';
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+        //console.log(firstScript);    
+        
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<!-- End Matomo -->
+    
+      
+<style>
+     :root {
+                                    
+                                    --font1: AkkuratWebBlack; 
+        --font2: AkkuratWebRegular; 
+        
+        --color1: #000000;; /* Farbe für Navigationspunkte & Buttons */
+        --color2: #FFFFFF;; /* Farbe für Verlauf */
+        --color3: #FFFFFF;; /* Farbe für Überschriften auf dunklem Hintergrund */
+        --color4: #FFFFFF;; /* Farbe für Umrandungen & Pfeilchen */
+        --color5: #FFFFFF;; /* Hintergrundfarbe statt weiß im Lightmode (dunkle schrift) */
+        --color6: #FFFFFF;; /* Farbe für Buttonbeschriftung */
+        --color7: #FFFFFF;; /* Farbe für Blockquotes */
+    } 
+
+
+	.button:not(.nobtn), 
+	button:not(.nobtn), 
+	[class*="button"]:not(.nobtn), 
+	[class*="Button"]:not(.nobtn), 
+	.enetButton:not(.nobtn), 
+	.utilities .cart span, 
+	.utilities .user.active::after,
+	 #nav .nav__list > .nav__element.active, 
+	 #nav .nav__list > .nav__element:hover { 
+		background-color: var(--color1);
+		color: var(--color6);
+	}
+	blockquote::before, blockquote::after, .bq::before, .bq::after{
+		color: var(--color7);
+	}
+
+	p > a:not([class*="button"]):not([class*="Button"]){ color: var(--color1) !important;}
+
+	.eventCustomNav a:hover, .eventCustomNav a:focus, .eventCustomNav a.active{ color: var(--color1); }
+	.dark { background-image: linear-gradient(15deg, var(--color2) 0%, #101010 40%, #101010 100%); }
+	.dark h1, .dark h2 { color: var(--color3); }
+	ul.merch li { border-color: var(--color4); }
+	.arrowSlider::after, .arrowSlider::before { background-color: var(--color4); }
+	.light, .eventAnchorNav, #nav, #nav .nav__sub-list, #nav > .navigation { background-color: var(--color5); }
+	.extracontent.hasSwiper.light::before { background-image: linear-gradient(90deg, var(--color5), transparent); }
+	.extracontent.hasSwiper.light::after { background-image: linear-gradient(90deg,transparent, var(--color5)); }
+
+	.eventCustomNav a, h1, h2, h3, h4, [class*="button"]:not(.nobtn), [class*="Button"]:not(.nobtn) { font-family: var(--font1) }
+	h5, h6, .h7, p, p a { font-family: var(--font2); }
+
+	.btnLikeHeadline.time, .buy .time{ background-color: var(--color1);}
+	.ticketcount .buy::before{ background-color: var(--color1); }
+
+	.viewlist .view.active, .viewlist .view:focus, .viewlist .view:hover{ background-color: var(--color1); border-color: var(--color1) !important; }
+
+	.module_event #content *:not(td):not(.view) {
+		border-color: var(--color4);
+	}
+	
+	table.wysiwygtable tbody tr:nth-child(odd){
+		background-color: color-mix(in srgb,var(--color4),#fff 50%);
+	}
+	table.wysiwygtable tbody tr:nth-child(even){
+		background-color: var(--color4);
+	}
+
+	#footer{
+		background-image: repeating-linear-gradient(200deg, #101010 0%, #101010 15%, var(--color2) 45%, #101010 70%);
+	}
+
+	@media only screen and (min-width: 1024px){
+		#footer{
+			background-image: linear-gradient(200deg, #101010 55%, var(--color2) 100%);
+		}
+	} 
+
+</style>
+      
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-dowhenconsent="googletagmanager" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5CZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      
+      <script type="text/javascript" src="../../../_assets/js/index.html@f=gaec-tracking.js&amp;recache=0"></script>
+      
+              <script type="text/javascript" src="../../../_component/resources/jquery.js"></script>
+          <script type="text/javascript" src="../../../_assets/js/magnificpopup-v1.1.0.js"></script>    
+        <script type="text/javascript" src="../../../_assets/js/magnificpopup.js"></script>
+      <script type="text/javascript" src="../../../_assets/js/jquery.autocomplete.min.js"></script>    
+        </head>
+    <body id="MusicalVienna" class="de module_event size4 default nohelp   module_event_detail " data-lang="de" data-site="1" data-nid="100009">
+    <div class="genericload none"><img src='../../../assets/content/icons/icon-spinner.svg' width='60' height='60' /></div>
+    <div id="parent" class="parent cfix">
+      <header id="header" class="header relative" role="banner">
+        <div class="inner">
+            
+			<div class="utilities desktop">
+                <div class="langnav">
+                    <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="www.mark-seibert.com.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="../../../en/schedule/100015/ELISABETH-Konzertante-Auffuehrung-2022.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                </div>
+				<button class="nobtn toMainsearch">
+					<img src="../../../_assets/css/icon/search.svg" alt="Suchen">
+				</button>
+				<a href="../../account/warenkorb.html" class="cart nobtn">
+					<img src="../../../_assets/css/icon/cart.svg" alt="Warenkorb">
+									</a>
+				<a href="www.mark-seibert.com.html#myaccountbox" class="user nobtn ">
+					<img src="../../../_assets/css/icon/user.svg" alt="User">
+				</a>
+			</div>
+			<a href="../../home.html" title="Zur Startseite" accesskey="0" role="banner" class="url toLandingpage">
+				<img id="logo" src="../../../_media/_site_logo/1_WeAreMusicalLogo_2Lines.svg" alt="Logo" />
+			</a>
+                        <div class="eventCustomNavWrap">
+								<ul class="areas desktop tarn flex-jc-start eventCustomNav">
+				    														</ul>
+			</div>
+            			<button  id="navanchor" class="nobtn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu" data-menutxt="Menü">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			 <div id="nav" class="cfix noem fromTop" aria-describedby="Navigation">
+                <div class="utilities mobile">
+                    <div class="langnav">
+                        <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="www.mark-seibert.com.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="../../../en/schedule/100015/ELISABETH-Konzertante-Auffuehrung-2022.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                    </div>
+					<div>
+						<button class="nobtn toMainsearch">
+							<img src="../../../_assets/css/icon/search.svg" alt="Suchen">
+						</button>
+						<a href="../../account/warenkorb.html" class="cart nobtn">
+							<img src="../../../_assets/css/icon/cart.svg" alt="Warenkorb"></a>
+						<a href="www.mark-seibert.com.html#myaccountbox" class="user nobtn ">
+							<img src="../../../_assets/css/icon/user.svg" alt="Login User">
+						</a>
+					</div>
+				</div>
+								<div class="eventCustomNav mobile">
+										<ul class="areas tarn">
+																							</ul>
+				</div>
+								<div  class="navigation">
+                            <nav class="nav cfix">
+            <h2 class="nav__headline none">Hauptnavigation</h2>
+            <div class="nav__container" role="navigation">
+                <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="nav__element relative nav__element_depth0  n100009 active m58 subNavElement ">
+
+    <a href="../../spielplan-und-tickets/spielplan.html" class="navigation_link nav__inner relative active">Musicals und Veranstaltungen
+		                <span data-navigation-id="100009" class="nav__element_opener active"></span>
+            	</a>
+          <a href="www.mark-seibert.com.html#" data-navigation-id="109" class="nav__element_opener active"><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100009">
+                <li class="nav__element relative nav__element_depth1  n100123  m3 ">
+
+    <a href="../zum-spielplan.html" class="navigation_link nav__inner relative ">Zum Spielplan
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100015  m122 ">
+
+    <a href="../archiv.html" class="navigation_link nav__inner relative ">Archiv
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100068  m117 ">
+
+    <a href="../gutscheine.html" class="navigation_link nav__inner relative ">Gutscheine
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100022  m123 ">
+
+    <a href="../../souvenirs.html" class="navigation_link nav__inner relative ">Souvenirs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100023  m49 ">
+
+    <a href="../../musicalclub.html" class="navigation_link nav__inner relative ">Musicalclub
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100018  m49 ">
+
+    <a href="../../creative-development.html" class="navigation_link nav__inner relative ">VBW Eigenproduktionen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100020  m49 subNavElement ">
+
+    <a href="../../we-are-musical/vbw-junges-musical.html" class="navigation_link nav__inner relative ">VBW JUNGES MUSICAL
+		                <span data-navigation-id="100020" class="nav__element_opener "></span>
+            	</a>
+          <a href="www.mark-seibert.com.html#" data-navigation-id="56" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100020">
+                <li class="nav__element relative nav__element_depth1  n100076  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-freizeit.html" class="navigation_link nav__inner relative ">Für die Freizeit
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100079  m49 ">
+
+    <a href="../../we-are-musical/vbw-junges-musical/fuer-die-schule.html" class="navigation_link nav__inner relative ">Für die Schule
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100078  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-den-nachwuchs.html" class="navigation_link nav__inner relative ">Für den Nachwuchs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100158  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-zu-hause.html" class="navigation_link nav__inner relative ">Für zu Hause
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100073  m49 subNavElement ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns" class="navigation_link nav__inner relative ">Über uns
+		                <span data-navigation-id="100073" class="nav__element_opener "></span>
+            	</a>
+          <a href="www.mark-seibert.com.html#" data-navigation-id="354" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100073">
+                <li class="nav__element relative nav__element_depth1  n100036  m49 ">
+
+    <a href="../../ueber-uns/raimund-theater.html" class="navigation_link nav__inner relative ">Raimund Theater
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100035  m49 ">
+
+    <a href="../../die-theater/ronacher.html" class="navigation_link nav__inner relative ">Ronacher
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100019  m49 ">
+
+    <a href="../../ueber-uns/orchester.html" class="navigation_link nav__inner relative ">Orchester
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100072  m3 ">
+
+    <a href="../../ueber-uns/team.html" class="navigation_link nav__inner relative ">Team
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100121  m3 ">
+
+    <a href="../../ueber-uns/presse.html" class="navigation_link nav__inner relative ">Presse
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100139  m49 ">
+
+    <a href="../../aktuelles/podcast.html" class="navigation_link nav__inner relative ">Podcast und Video
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100021  m49 ">
+
+    <a href="../../vertrieb.html" class="navigation_link nav__inner relative ">B2B &amp; Gruppen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100016  m49 ">
+
+    <a href="../../partner.html" class="navigation_link nav__inner relative ">Partner
+		    	</a>
+         </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+				<div class="navAd ">
+                                                                <div  data-componentname="extracontent"  class="extracontent  dark" id="tickets_100204"   data-id="100204" data-type="extracontent_event"><div class="extracontent_event modekachel  extracontent-inner setContentWidth"><div class="tcenter"><h2 style="text-align:center">Jetzt Tickets sichern:</h2><div> </div></div><ul class="tarn events  eventGrid   eventGridCenter "><li class="eventItem"><a href="../100004/DAS-PHANTOM-DER-OPER.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100011.jpg" alt="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited" title="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited"  /> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/c745x745/100011.webp"><source src="../../../_media/image/c745x745/100011.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/c745x745/100011.jpg" 
+     alt="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited"
+			  loading="lazy" 
+	 
+
+ title="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Raimund Theater</p><h2>DAS PHANTOM DER OPER</h2><!-- <h6>Andrew Lloyd Webbers Meisterwerk im Raimund Theater</h6> --><p class="eventDateIcon">15.03.2024 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li><li class="eventItem"><a href="../../lp/falco.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100013.jpg" alt="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien" title="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien"  /> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/c745x745/100013.webp"><source src="../../../_media/image/c745x745/100013.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/c745x745/100013.jpg" 
+     alt="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Ronacher</p><h2>ROCK ME AMADEUS - DAS FALCO MUSICAL</h2><!-- <h6>Eine Hommage an den österreichischen Ausnahmekünstler</h6> --><p class="eventDateIcon">07.10.2023 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li></ul><div class="swiper-button-prev nobtn arrowSlider left"></div><div class="swiper-button-next nobtn arrowSlider right"></div><div class="tcenter"></div></div></div>
+                                        				</div>
+			 </div>
+            <form id="mainsearch" action="https://www.musicalvienna.at/de/suche" method="get" aria-describedby="stichwortsuche-head" role="search" class=" none">
+                            <fieldset class="relative m0">
+								<button class="nobtn" type="submit" title="Suchen"><img src="../../../_assets/css/icon/search.svg" alt="Suchen"></button>
+                                <label for="suchbegriff" class="none">Suchbegriffe</label>
+                                <input class="mainsearch-input m0" type="search" id="suchbegriff" value="" title="Suchbegriffe eingeben" placeholder="Suchbegriff eingeben..." name="words" aria-required="true" required="">
+                                <a href="www.mark-seibert.com.html#" class="clearInput tdn" title="Suche ausblenden"><img src="../../../_assets/css/icon/close.svg" alt="x"></a>
+                            </fieldset>
+                            <input type="hidden" name="search" value="1">
+                        </form>
+        </div>
+        </header>
+      
+	  <div id="content" role="main" class="cfix content">
+                      
+		<div  class="module_event module_event_detail detail module"><div  class="module_event module_event_detail moduledetail"><div class="eventAnchorNav"><ul class="tarn flex-jc-start"><li><a class="tdn" href="www.mark-seibert.com.html#Info_100413">Info</a></li><li><a class="tdn" href="www.mark-seibert.com.html#Trailer_100414">Trailer</a></li><li><a class="tdn" href="www.mark-seibert.com.html#Fotos_100410">Fotos</a></li><li><a class="tdn" href="www.mark-seibert.com.html#Cast_100415">Cast</a></li><li><a class="tdn" href="www.mark-seibert.com.html#Leading Team_100418">Leading Team</a></li></ul></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Header_100412"   data-id="100412" data-type="extracontent_header"><div class="extracontent_header "><!-- <canvas></canvas><script src="/_assets/js/feenstaub.js"></script> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/original/100472.webp"><source src="../../../_media/image/100472_1920x1080px_ELI-Konzert23_70__11_24.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/100472_1920x1080px_ELI-Konzert23_70__11_24.jpg" 
+     alt="Elisabeth konzertant © SCHLOSS SCHÖNBRUNN KULTUR- UND BETRIEBSGESMBH • FOTOGRAF ALEXANDER E. KOLLER | © VBW / ORIGINAL FÄCHER DER KAISERIN ELISABETH AUS DER SAMMLUNG MONIKA LEVAY"
+			  loading="lazy" 
+	 
+
+ title="Elisabeth konzertant © SCHLOSS SCHÖNBRUNN KULTUR- UND BETRIEBSGESMBH • FOTOGRAF ALEXANDER E. KOLLER | © VBW / ORIGINAL FÄCHER DER KAISERIN ELISABETH AUS DER SAMMLUNG MONIKA LEVAY" 
+
+
+
+
+
+
+	/></picture></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Info_100413"   data-id="100413" data-type="extracontent_textonly"><div class="extracontent_textonly setContentWidth extracontent-inner"><div class="setBlockTextWidth"><p>Der Welthit als großes Konzert-Highlight am Original-Schauplatz - die internationale VBW-Erfolgsproduktion ELISABETH aus der Feder des Erfolgsduos Michael Kunze &amp; Sylvester Levay als ganz großes Konzerterlebnis der Extra-Klasse im Ehrenhof des Schloss Schönbrunn! Die berühmte historische Kulisse bietet für die konzertante Version des Musicals, das die dramatische und berührende Geschichte über Leben, Wirken und Leiden von Kaiserin Elisabeth von Österreich erzählt, ein würdiges und einmaliges Ambiente.</p><p>Mit hochkarätigen Solisten und Ensemble, begleitet vom Orchester der Vereinigten Bühnen Wien in großer Besetzung wird die konzertante Fassung des erfolgreichsten deutschsprachigen Musicals aller Zeiten 2022 wieder am Original-Schauplatz ergreifend in Szene gesetzt.</p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Trailer_100414"   data-id="100414" data-type="extracontent_video"><div class="extracontent_video setContentWidth extracontent-inner"><ul class="videos tarn mb30 desktop "><li><div class="video-container"><iframe  src="https://cdn.priv.center/pc/placeholder/de/embedded.html"  data-src="https://player.vimeo.com/video/696895136?autoplay=0" data-trucookiecontrol="add_features" truendo="true" title="ELISABETH - Konzertante Aufführung 2022 Trailer" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0" ></iframe></div></li></ul><div class="tcenter"></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Fotos_100410"   data-id="100410" data-type="extracontent_image"><div class="extracontent_image setContentWidth gallery-swiper-container extracontent-inner"><h3 class="tcenter">Elisabeth - Konzertante Aufführung 2022 - Pressefotos</h3><ul class="images tarn flex-jc-start swiper-wrapper"><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21304.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21304_KunzeLevaySchlussapplaus_C_Schiffl.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21304.webp"><source src="/_media/image/21304_KunzeLevaySchlussapplaus_C_Schiffl.jpg"><img 
+		 
+	
+
+	src="/_media/image/21304_KunzeLevaySchlussapplaus_C_Schiffl.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21303.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21303_KunzeLevaySchloss_C_Schiffl.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21303.webp"><source src="/_media/image/21303_KunzeLevaySchloss_C_Schiffl.jpg"><img 
+		 
+	
+
+	src="/_media/image/21303_KunzeLevaySchloss_C_Schiffl.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21302.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21302_GrundnerMehmertEichenberger_Schlusspplaus_C_Schiffl.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21302.webp"><source src="/_media/image/21302_GrundnerMehmertEichenberger_Schlusspplaus_C_Schiffl.jpg"><img 
+		 
+	
+
+	src="/_media/image/21302_GrundnerMehmertEichenberger_Schlusspplaus_C_Schiffl.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21301.jpg&amp;height=510" alt="Elisabeth - Konzertante Aufführung 2022_Partner Peugeot" title="&copy; VBW" loading="lazy" /><!-- /_media/image/21301_FP5.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21301.webp"><source src="/_media/image/21301_FP5.jpg"><img 
+		 
+	
+
+	src="/_media/image/21301_FP5.jpg" 
+     alt="Elisabeth - Konzertante Aufführung 2022_Partner Peugeot © VBW"
+			  loading="lazy" 
+	 
+
+ title="Elisabeth - Konzertante Aufführung 2022_Partner Peugeot © VBW" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21297.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 014" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21297_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-15.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21297.webp"><source src="/_media/image/21297_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-15.jpg"><img 
+		 
+	
+
+	src="/_media/image/21297_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-15.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 014 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 014 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21295.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 012" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21295_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-13.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21295.webp"><source src="/_media/image/21295_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-13.jpg"><img 
+		 
+	
+
+	src="/_media/image/21295_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-13.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 012 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 012 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21294.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 011" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21294_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-12.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21294.webp"><source src="/_media/image/21294_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-12.jpg"><img 
+		 
+	
+
+	src="/_media/image/21294_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-12.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 011 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 011 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21293.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 010" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21293_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-11.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21293.webp"><source src="/_media/image/21293_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-11.jpg"><img 
+		 
+	
+
+	src="/_media/image/21293_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-11.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 010 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 010 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21292.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 009" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21292_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-10.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21292.webp"><source src="/_media/image/21292_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-10.jpg"><img 
+		 
+	
+
+	src="/_media/image/21292_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-10.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 009 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 009 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21291.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 008" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21291_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-09.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21291.webp"><source src="/_media/image/21291_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-09.jpg"><img 
+		 
+	
+
+	src="/_media/image/21291_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-09.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 008 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 008 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21290.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 007" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21290_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-07.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21290.webp"><source src="/_media/image/21290_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-07.jpg"><img 
+		 
+	
+
+	src="/_media/image/21290_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-07.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 007 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 007 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21289.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 006" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21289_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-06.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21289.webp"><source src="/_media/image/21289_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-06.jpg"><img 
+		 
+	
+
+	src="/_media/image/21289_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-06.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 006 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 006 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21288.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 005" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21288_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-05.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21288.webp"><source src="/_media/image/21288_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-05.jpg"><img 
+		 
+	
+
+	src="/_media/image/21288_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-05.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 005 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 005 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21286.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 003" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21286_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-03.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21286.webp"><source src="/_media/image/21286_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-03.jpg"><img 
+		 
+	
+
+	src="/_media/image/21286_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-03.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 003 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 003 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21284.jpg&amp;height=510" alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 001" title="&copy; Katharina Schiffl" loading="lazy" /><!-- /_media/image/21284_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-01.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21284.webp"><source src="/_media/image/21284_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-01.jpg"><img 
+		 
+	
+
+	src="/_media/image/21284_SHOW-FACTORY_Elisabeth-Das-Musical-2022_Pressefoto-01.jpg" 
+     alt="Pressefotos ELISABETH - Konzertante Aufführung 2022 001 © Katharina Schiffl"
+			  loading="lazy" 
+	 
+
+ title="Pressefotos ELISABETH - Konzertante Aufführung 2022 001 © Katharina Schiffl" 
+
+
+
+
+
+
+	/></picture> --></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Cast_100415"   data-id="100415" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">CAST</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Maya Hakvoort</h4><p class="cast-title mt0 small">Elisabeth</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Maya Hakvoort</h2><h6 class="cast-title mt0 mb20">Elisabeth</h6><p>Die geb&uuml;rtige Holl&auml;nderin Maya Hakvoort wurde am Konservatorium Maastricht in klassischem Gesang und in Amsterdam in Musical und Schauspiel ausgebildet.<br />
+Ihre Theaterarbeit begann sie 1989 mit CHICAGO in Belgien/Niederlande.<br />
+In &Ouml;sterreich feierte sie ihren Durchbruch 1994 als <em>Elisabeth</em> im gleichnamigen Musical. &Uuml;ber 1.000 mal stand sie als &Ouml;sterreichs Paradekaiserin auf der B&uuml;hne, unter anderem auch in Japan und Triest, wo sie gro&szlig;e Erfolge feierte.&nbsp;In den folgenden zweieinhalb Jahrzehnten spielte Maya Hakvoort zahlreiche Hauptrollen in internationalen Produktionen.</p><p>Seit 2004 produziert sie mit ihrer Firma &bdquo;Maya Hakvoort Music Productions&ldquo; erfolgreiche Konzertprogramme und sp&auml;ter dann auch Musicals.</p><p>2019 spielte Maya Hakvoort als <em>Die alte Belle</em> (F&uuml;rth) und <em>Norma Desmond</em> (Bozen) zwei grandiose Rollen in den Erfolgsmusicals LITTLE ME und SUNSET BOULEVARD. Sp&auml;ter stand sie als fanatische <em>Margret White</em> in dem Horrormusical CARRIE im First Stage Theater in Hamburg auf der B&uuml;hne.<br />
+Ab Ende 2021 ist sie als <em>Golde</em> im Musical ANATEVKA im Theater Baden zu sehen.</p><p>Im Jahr 2022 kehrt Maya Hakvoort zu ihrer Paraderolle als Kaiserin <em>Elisabeth</em> zur&uuml;ck und wird am Schloss Sch&ouml;nbrunn bei ELISABETH &ndash; LIVE IN CONCERT zu bewundern sein. Vorher jedoch wird sie noch als <em>Hexe</em> in ihrer Eigenproduktion INTO THE WOODS zu sehen sein, die im Sommer 2022 im Theater Bruno in Brunn am Gebirge auf dem Programm steht.<br />
+Maya Hakvoort wurde im April 2011 mit dem goldenen Verdienstzeichen der Republik &Ouml;sterreich ausgezeichnet, im Oktober 2016 mit dem goldenen Rathausmann der Stadt Wien und im November 2016 mit dem gro&szlig;en Ehrenzeichen f&uuml;r Verdienste um das Bundesland Nieder&ouml;sterreich. Seit dem Sommer 2021 betreut sie als Veranstalterin und k&uuml;nstlerische Leiterin die &bdquo;Floating Concerts&ldquo; auf der alten Donau.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/Maya.Hakvoort/" rel="extern" title="Facebook Hakvoort (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/164.jpg" alt="Abla Alaoui &copy; Svetlana Gradwohl" title="Abla Alaoui &copy; Svetlana Gradwohl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Abla Alaoui</h4><p class="cast-title mt0 small">Junge Elisabeth</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Abla Alaoui</h2><h6 class="cast-title mt0 mb20">Junge Elisabeth</h6><p>Abla Alaoui absolvierte ihre Ausbildung an der Joop van den Ende Academy und wurde noch vor ihrem Abschluss für die Rolle der&nbsp;<em>Mary Robert</em>&nbsp;in&nbsp;SISTER ACT engagiert. Es folgte ein Engagement für die Europapremiere von Frank Wildhorns&nbsp;BONNIE &amp; CLYDE, wo sie die Rolle der&nbsp;<em>Bonnie</em>&nbsp;kreierte. Daraufhin sah man sie in Hauptrollen in Stücken wie&nbsp;MOZART! und&nbsp;SUNSET BOULEVARD. Im Folgenden spielte sie unter anderem in Wien die Rolle der&nbsp;<em>Sarah</em>&nbsp;in&nbsp;TANZ DER VAMPIRE, sowie&nbsp;<em>Lisa</em>&nbsp;und <em>Sophie </em>(alternierend)&nbsp;in der D-A-CH-Tour von&nbsp;MAMMA MIA!. Als&nbsp;<em>Jenny</em>&nbsp;wirkte sie bei der österreichischen Erstaufführung von Andrew Lloyd Webbers&nbsp;ASPECTS OF LOVE&nbsp;in Wien mit. Daraufhin übernahm sie die Rolle der&nbsp;<em>Charlotte Buff</em> in der Uraufführung des Musicals&nbsp;GOETHE!. Zuletzt war sie im Raimund Theater Wien als&nbsp;<em>Ellen</em>&nbsp;im Musical&nbsp;MISS SAIGON zu sehen. Anfang 2023 erscheint ihr Debütroman „Bissle Spätzle, habibi?“ beim Verlag Ullstein.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/_ablaalaoui_/" rel="extern" title="Instagram Alaoui (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.ablaalaoui.com/" rel="extern" title="Website Alaoui (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/17335.jpg" alt="David JAKOBS &copy; Svetlana Gradwohl" title="David JAKOBS &copy; Svetlana Gradwohl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">David Jakobs</h4><p class="cast-title mt0 small">Luigi Lucheni</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">David Jakobs</h2><h6 class="cast-title mt0 mb20">Luigi Lucheni</h6><p>David Jakobs studierte Darstellende Künste an der Folkwang Universität und schloss sein Studium mit Diplom ab. Gleich im Anschluss folgten zahlreiche Hauptrollen, u. a. <em>Judas</em> in verschiedenen Inszenierungen von JESUS CHRIST SUPERSTAR. Er war in Hamburg als <em>Bruno Lubanski</em> bei der Uraufführung von DAS WUNDER VON BERN zu erleben und erhielt hierfür den Deutschen Musical Theater Preis als „Bester Nebendarsteller“. Weitere seiner Partien sind <em>Claude</em> (HAIR), <em>Roger</em> (RENT), <em>Wolf</em> (INTO THE WOODS), <em>Ché</em> (EVITA), <em>Enjolras</em> (LES MISÉRABLES), <em>Luigi Lucheni</em> (ELISABETH) und <em>Frank W. Abagnale Junior</em> (CATCH ME IF YOU CAN). Die Titelrolle <em>Quasimodo</em> in DER GLÖCKNER VON NOTRE DAME verkörperte David Jakobs bereits in Berlin, München und Stuttgart. Zuletzt war er einer der vier Hauptsolisten in SONGS FOR A NEW WORLD und spielte die Titelrolle im gleichnamigen Musical JEKYLL &amp; HYDE. Außerdem kreierte er die Rolle des <em>Freddy</em> in der Uraufführung des Musical-Erfolgs KU’DAMM 56 in Berlin.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/148.jpg" alt="Mark Seibert &copy; VBW/ Sandra Kosel" title="Mark Seibert &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Mark Seibert</h4><p class="cast-title mt0 small">Der Tod</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Mark Seibert</h2><h6 class="cast-title mt0 mb20">Der Tod</h6><p>Der geb&uuml;rtige Frankfurter erhielt seine Ausbildung am Lee Strasberg Theatre Institute New York und an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien. Schon w&auml;hrend der Ausbildung spielte er bei den VBW u. a. <em>Pygar </em>in BARBARELLA und <em>Tybalt </em>in ROMEO &amp; JULIA. Danach stand er als <em>Radames </em>in AIDA, <em>Fiyero </em>in WICKED &ndash; DIE HEXEN VON OZ, <em>Ranger </em>in DER SCHUH DES MANITU, sowie als <em>Galileo </em>in WE WILL ROCK YOU auf der B&uuml;hne. Er verk&ouml;rperte den <em>Tod </em>in ELISABETH in Wien und parallel dazu <em>Jesus </em>in JESUS CHRIST SUPERSTAR in Bonn und war als <em>Lanzelot </em>in der Welturauff&uuml;hrung von ARTUS &ndash; EXCALIBUR am Theater St.Gallen sowie erneut als <em>Tod </em>in ELISABETH in Shanghai und auf Tournee in Deutschland zu sehen. Es folgten <em>F&uuml;rsterzbischof Colloredo</em> in MOZART! und die Titelrolle in SCHIKANEDER am Raimund Theater. Als <em>Graf von Krolock</em> in TANZ DER VAMPIRE stand er in Berlin, Stuttgart und Wien auf der B&uuml;hne. In PRETTY WOMAN in Hamburg war er als <em>Edward Lewis</em> zu sehen. Zuletzt spielte er <em>Robin Hood</em> in ROBIN HOOD &ndash; DAS MUSICAL in Fulda und verk&ouml;rperte beim Konzert-Highlight ELISABETH in Sch&ouml;nbrunn 2022 &ndash; wie bereits 2019 &ndash; den <em>Tod</em>.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/mark.seibert/" rel="extern" title="Instagram Seibert (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="www.mark-seibert.com.html" rel="extern" title="Website Seibert (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">André Bauer</h4><p class="cast-title mt0 small">Kaiser Franz Joseph</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">André Bauer</h2><h6 class="cast-title mt0 mb20">Kaiser Franz Joseph</h6><p>Andr&eacute; Bauer begann 1987 sein Gesangsstudium an der Hochschule f&uuml;r Musik Carl Maria von Weber Dresden und machte in Frankfurt seinen Abschluss. In Luzern war er in seiner ersten Musicalrolle als Freddy in MY FAIR LADY zu sehen. Weiters war er in HAIR in Dortmund, bei der Deutschlandpremiere von LES MIS&Eacute;RABLES in Duisburg sowie in MISS SAIGON in Stuttgart zu erleben. In Berlin spielte er in Disneys DER GL&Ouml;CKNER VON NOTRE DAME (UA) u.a. Phoebus. Mit der Rolle Leopold Mozart in MOZART! deb&uuml;tierte er bei den Vereinigten B&uuml;hnen Wien und spielte sp&auml;ter Kaiser Franz Joseph in ELISBETH (Theater an der Wien / Essen) und Frank Crawley in REBECCA (Ronacher / St. Gallen). Im K&uuml;nstlerhaus Wien &uuml;bernahm er die Titelrolle in<br />
+GUSTAV KLIMT &ndash; DAS MUSICAL. Am Theater St. Gallen stand er bei der Weltpremiere von DER GRAF VON MONTE CHRISTO als Morrel und zuletzt in DON CAMILLO &amp; PEPPONE auf der B&uuml;hne.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Daniela Ziegler</h4><p class="cast-title mt0 small">Erzherzogin Sophie</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Daniela Ziegler</h2><h6 class="cast-title mt0 mb20">Erzherzogin Sophie</h6><p>Daniela Ziegler ist eine der bekanntesten Schauspielerinnen im deutschen Fernsehen, Theater &amp; Musical. Ihre Rollen reichen vom klassischen Fach, Helena/Faust, Elisabeth/Maria Stuart, Goneril/K&ouml;nig Lear oder Klyt&auml;mnestra/Elektra, bis zu Charakteren moderner Autoren wie Martha/Wer hat Angst vor Virginia Woolf? Christine/Trauer muss Elektra tragen oder Maria Callas/Meisterklasse u.a. in Hamburg, Berlin, Z&uuml;rich, M&uuml;nchen und Wien. Popul&auml;r wurde sie durch TV-Serien wie Gegen den Wind, Dr. Schwarz und Dr. Martin oder Der F&uuml;rst und das M&auml;dchen, diverse Rosamunde Pilcher-Verfilmungen sowie unz&auml;hlige Hauptrollen in Fernsehspielen. Ihre Musical-Ausbildung erhielt sie in New York. Ihre wichtigsten Rollen: <em>Eva P&eacute;ron</em>/EVITA (Wien, Berlin, M&uuml;nchen, Deutsche Erstauff&uuml;hrung), <em>Velma</em>/CHICAGO, <em>Jenny</em>/AUFSTIEG UND FALL DER STADT MAHAGONNY (Berlin), Titelrolle in VICTOR/VICTORIA (Deutsches Theater M&uuml;nchen), <em>Phyllis</em>/FOLLIES (Berlin), <em>Mutter</em><em>Oberin</em>/SISTER ACT (Hamburg) und 2016/17 Theater des Westens (Berlin), <em>Erzherzogin Sophie</em>/ELISABETH (Wien, Shanghai). In der deutschen Erstauff&uuml;hrung von SUNSET BOULEVARD spielte sie <em>Norma Desmond</em> unter der Regie von Trevor Nunn (&bdquo;IMAGE&ldquo; Internationaler Musical Award 1997 und &bdquo;Beste Darstellerin 1998&ldquo; der Zeitschrift &bdquo;musicals&ldquo;). 2016 war sie nochmal <em>Norma Desmond</em> bei den Frankenfestspielen in R&ouml;ttingen. Bis Ende April 2019 steht sie als <em>Zarenmutter</em> in der deutschen Urauff&uuml;hrung von ANASTASIA im Palladiumtheater in Stuttgart auf der B&uuml;hne. Sie war Jurymitglied f&uuml;r Musical-, Chanson- sowie Operettenwettbewerbe u.a. Bundeswettbewerb Gesang, internationaler Robert Stolz-Operettenwettbewerb, gab Konzerte mit Benatzky- und Weill-Programmen, leitete einen Kurt Weill-Meisterkurs (Weill-Festival Dessau) und ver&ouml;ffentlichte eine CD mit Benatzky-Chansons. Zuletzt drehte Daniela Ziegler u.a. die amerikanische Serie Berlin Station f&uuml;r Paramount (Netflix) und spielte die Hauptrolle in &bdquo;Eine kleine Sehnsucht im Caf&eacute; Keese&ldquo; (Staatsoper Berlin).</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Lukas Perman</h4><p class="cast-title mt0 small">Erzherzog Rudolf</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Lukas Perman</h2><h6 class="cast-title mt0 mb20">Erzherzog Rudolf</h6><p>Lukas Perman erhielt seine Ausbildung am Mozarteum Salzburg und am Konservatorium Wien, als Schauspieler und S&auml;nger. Bereits w&auml;hrend des Studiums deb&uuml;tierte er im Musical ELISABETH 2003 im Theater an der Wien. 2005 &uuml;bernahm er die Titelrolle in der deutschsprachigen Erstauff&uuml;hrung von ROMEO &amp; JULIA im Raimundtheater. Es folgten zahlreiche Engagements in Hauptrollen u.a. bei den Vereinigten B&uuml;hnen Wien (u.a. TANZ DER VAMPIRE, I AM FROM AUSTRIA) an der Wiener Volksoper, B&uuml;hne Baden etc. und UMEDA-Theater in Japan.</p><p>Ab Herbst 2021 wird er in &bdquo;Sound of Music&ldquo; am Salzburger Landestheater als <em>Kapit&auml;n von Trapp</em> zu sehen sein.</p><p>Neben seiner B&uuml;hnent&auml;tigkeit ver&ouml;ffentliche Lukas Perman zahlreiche CDs. Als Fernsehmoderator trat er wiederholt f&uuml;r LICHT INS DUNKEL im ORF in Erscheinung, zuletzt moderierte er die Kultursendung &bdquo;WIR SPIELEN F&Uuml;R &Ouml;STERREICH&ldquo; auf ORF III.</p><p>Von 2012 &ndash; 2015 absolvierte er berufsbegleitend ein MBA-Studium in General Management an der Donauuniversit&auml;t Krems. Seither ist er als Produzent und Veranstalter t&auml;tig.</p><p>F&uuml;r sein k&uuml;nstlerisches&nbsp;Wirken und vor allem f&uuml;r sein soziales Engagement f&uuml;r diverse nationale und internationale Hilfsorganisationen wurde Lukas Perman 2019 das &bdquo;Goldene Ehrenzeichen der Republik &Ouml;sterreich&ldquo; verliehen.</p><ul class="socialmedia tarn"><li><a href="https://www.lukas-perman.at/" rel="extern" title="Website Perman (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Hans Neblung</h4><p class="cast-title mt0 small">Herzog Max in Bayern</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Hans Neblung</h2><h6 class="cast-title mt0 mb20">Herzog Max in Bayern</h6><p><strong>Ausbildung: </strong>D&uuml;sseldorf, Wien, New York.</p><p><strong>Engagements: </strong>u.a. <em>Munkustrap</em>, <em>Frank-N-Furter, Jekyll/Hyde</em>, <em>Prof. Higgins</em>, <em>Zaza</em>, <em>Graf Dracula</em>, <em>Chauvelin</em>, <em>Seymour</em>, <em>Zoser</em>, <em>Sir Percy</em>, <em>Max v. Meyerling</em>, <em>Richter Turpin</em>, <em>Robert Kincaid </em>- DIE BR&Uuml;CKEN AM FLUSS, <em>Santa Maria </em>&ndash; DER SCHUH DES MANITU, Alt. <em>Dumbledore </em>und <em>Amos Diggory </em>- HARRY POTTER UND DAS VERWUNSCHENE KIND, <em>Charlie Davenport </em>- ANNIE GET YOUR GUN; MARY POPPINS, DER BESUCH DER ALTEN DAME, LES MISERABLES, ELISABETH; Weihnachtskonzert Gro&szlig;e Kirche Bremerhaven 2024.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Katja Berg</h4><p class="cast-title mt0 small">HERZOGIN LUDOVIKA / FRAU WOLF</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Katja Berg</h2><h6 class="cast-title mt0 mb20">HERZOGIN LUDOVIKA / FRAU WOLF</h6><p>Katja Berg studierte Musical an der UdK Berlin. Ihre Karriere begann sie als erste <em>Sophie </em>im Musical-Hit MAMMA MIA! in Hamburg. Sie spielte u.a. <em>Sally </em>in HARRY &amp; SALLY, <em>Magda </em>in TANZ DER VAMPIRE, <em>Scaramouche </em>in WE WILL ROCK YOU, <em>Sheila </em>in HAIR, Mdm. <em>Thenardier </em>in LES MISERABLES sowie Titelfiguren in SWEET CHARITY, DAS M&Auml;DCHEN ROSEMARIE, ROXY UND IHR WUNDERTEAM und EVITA. In HEXEN und QI stand sie als Hauptsolistin auf der B&uuml;hne des Friedrichstadt-Palasts Berlin. In ihrer Wahlheimat Wien spielte sie in NAT&Uuml;RLICH BLOND und DER BESUCH DER ALTEN DAME. Als <em>Amme </em>in ROMEO &amp; JULIA sah man sie bei den Schweizer Thuner Seespielen und an der Oper Graz verk&ouml;rperte sie Rollen wie <em>Svetlana </em>in CHESS, <em>Emma Goldman</em> in RAGTIME und <em>Kate/Lilly</em><em>Vanessi </em>in KISS ME KATE. F&uuml;r ihre Version der <em>Magenta </em>in der ROCKY HORROR SHOW gewann sie 2019 den BROADWAY WORLD AUSTRIA MUSICAL AWARD als Best Supporting Actress in a Musical. Sie verk&ouml;rperte Rollen wie <em>Milady de Winter</em> in DIE DREI MUSKETIERE, <em>Fanny Osbourne</em> in DIE SCHATZINSEL sowie <em>Roxie Hart</em> in CHICAGO. 2022&nbsp;feierte Katja Berg ihr Deb&uuml;t am Theater St.Gallen als<em> Anne Boleyn&acute;s Geist</em> in der Europa&nbsp;Premiere des Kunze-Levay-Musicals LADY BESS. Im Levay-Kunze-Klassiker ELISABETH IN CONCERT&nbsp;steht sie als <em>Ludovika/Frau Wolf</em> auf der B&uuml;hne vor dem Schloss Sch&ouml;nbrunn.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Philipp Gruber-Hirschbrich</h4><p class="cast-title mt0 small">Rudolf als Kind</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Philipp Gruber-Hirschbrich</h2><h6 class="cast-title mt0 mb20">Rudolf als Kind</h6><p>Philipp Gruber-Hirschbrich wurde 2010 in Wien geboren. Seit seinem zweiten Lebensjahr nimmt er Gesangs- und Klavier-, seit 2019 auch Tanz- und Schauspielunterricht. 2019 trat er erstmals als kleiner <em>Erzherzog Rudolf </em>im Musical ELISABETH auf und steht seither auch regelm&auml;&szlig;ig in der Volksoper Wien auf der B&uuml;hne. Ferner wirkte er bei Filmen mit. Zuletzt war er Solist bei den Wiener Festwochen (Mozart-Requiem) und spielte im Theater in der Josefstadt.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Niklas Petzer</h4><p class="cast-title mt0 small">Rudolf als Kind</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Niklas Petzer</h2><h6 class="cast-title mt0 mb20">Rudolf als Kind</h6><p>Niklas besucht die 2. Klasse Gymnasium. Die Musik begleitet ihn von klein auf, er lernt Klavier und Klarinette. Seine gro&szlig;e Leidenschaft ist das Singen, Tanzen und Theaterspielen. Niklas hat bei den VBW bereits Rudolf als Kind im Musical ELISABETH gesungen. Zurzeit spielt er auch im Akademietheater in DIE JAGDGESELLSCHAFT.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Cast_100416"   data-id="100416" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Eva Maria Bender</h4><p class="cast-title mt0 small">Fanny Feifalik</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Eva Maria Bender</h2><h6 class="cast-title mt0 mb20">Fanny Feifalik</h6><p>Eva Maria Bender absolvierte ihr Musicalstudium in Hamburg und Florida. Seitdem stand sie in zahlreichen Gro&szlig;produktionen auf der B&uuml;hne, u. a. als Donna und Rosie in MAMMA MIA!, als alternierende Grizabella, Gumbie/Jenny Fleckenreich, und Cover Jellylorum/Griddlebone in CATS, als Cover Madame Giry in DAS PHANTOM DER OPER, als Helene von Wittelsbach und Gr&auml;fin Esterh&aacute;zy in ELISABETH, als Madame in DISNEYS DER GL&Ouml;CKNER VON NOTRE DAME, in JEKYLL &amp; HYDE, als Schwester Bloody Mary in SISTER ACT, Madame Pottine und Madame de la Grande Bouche in in Disneys DIE SCH&Ouml;NE UND DAS BIEST, als Erz&auml;hlerin in JOSEPH AND THE AMAZING TECHNICOLOR DREAMCOAT, als Madame Th&eacute;nardier in LES MIS&Eacute;RABLES, Maria Magdalena in JESUS CHRIST SUPERSTAR und als Rebecca und Magda in TANZ DER VAMPIRE. Neben Auftritten in Film und TV ist Eva auch als Dozentin f&uuml;r Gesang und Liedinterpretation t&auml;tig, u. a. an der Universit&auml;t der K&uuml;nste Berlin.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Ulrike Figgener</h4><p class="cast-title mt0 small">Gouvernante</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Ulrike Figgener</h2><h6 class="cast-title mt0 mb20">Gouvernante</h6><p>Ausbildung: Vienna Konservatorium</p><p>Engagements: u.a. LADY BESS/St.Gallen; KNOCKIN&lsquo; ON HEAVEN&lsquo;S DOOR/F&uuml;rth; Marian in ROBIN HOOD/Baden; Teenage Girl in LAZARUS; Roxane in CYRANO; Betty Sch&auml;fer in SUNSET BOULEVARD; Jennifer Gabriel in DIE HEXEN VON EASTWICK/Bielefeld; Sofie in SOFIES WELT/Gmunden; Woman1 in SONGS FOR A NEW WORLD; Iris in WENN ROSENBL&Auml;TTER FALLEN/Wien; Anne Dindon in EIN K&Auml;FIG VOLLER NARREN; Jasmin in ALADDIN UND DIE WUNDERLAMPE/Baden; ROCKY HORROR SHOW/Magdeburg</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Oliver Floris</h4><p class="cast-title mt0 small">Baron Kempen</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Oliver Floris</h2><h6 class="cast-title mt0 mb20">Baron Kempen</h6><p>Oliver Floris absolvierte seine Musical-Ausbildung an der Bayerischen Theaterakademie August Everding in M&uuml;nchen. Bereits mit acht Jahren erhielt er professionellen Stepptanzunterricht und konnte noch vor Beginn seines Studiums erste B&uuml;hnenerfahrungen am Landestheater Coburg sammeln. Dort war er in CRAZY FOR YOU und CURTAINS (DEA) zu sehen. Es folgten Engagements am Staatstheater am G&auml;rtnerplatz (JESUS CHRIST SUPERSTAR) und am Salzburger Landestheater (THE SOUND OF MUSIC, Regie: Andreas Gergen/Christian Struppeck).Nach THE DROWSY CHAPERONE (Regie: Stefan Huber), wo er die Rolle des Feldzieg &uuml;bernahm, war er zuletzt in der Rolle des B&auml;ckers in Stephen Sondheims INTO THE WOODS im Deutschen Theater in M&uuml;nchen zu sehen.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Ivo Giacomozzi</h4><p class="cast-title mt0 small">Maximilian von Mexiko</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Ivo Giacomozzi</h2><h6 class="cast-title mt0 mb20">Maximilian von Mexiko</h6><p><strong>Ausbildung: </strong>Perfoming Academy/Wien.</p><p><strong>Engagements: </strong>u. a. Assistent des Choreographen in ELISABETH/ Sch&ouml;nbrunn; Assistant Choreographer/ Dance Captain in JESUS CHRIST SUPERSTAR/Ronacher; I AM FROM AUSTRIA/ Raimund Theater; WEST SIDE STORY/ Staatsoper Hannover; DAS WUNDER VON BERN/ Hamburg; EVITA/Ronacher; VBW-Jubil&auml;umsgala WE ARE MUSICAL 2015, MAMMA MIA!/Raimund Theater; CHICAGO, REBECCA/Theater St.Gallen; TANZ DER VAMPIRE/ Ronacher; Dance Captain Er&ouml;ffnungsgala/Raimund Theater.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Tristan Giovanoli</h4><p class="cast-title mt0 small">Ein Ungarischer Adliger</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Tristan Giovanoli</h2><h6 class="cast-title mt0 mb20">Ein Ungarischer Adliger</h6><p>Ausbildung: u.a. Universit&auml;t der K&uuml;nste/Berlin</p><p>Engagements: u.a. Jack in INTO THE WOODS/Vevey und Romont; Grimm in GRIMM!/Flensburg; Nasir in DRACHENHERZ/Berlin und Chemnitz; im Ensemble von SYLVESTER LEVAY &amp; FRIENDS/Shanghai; Autor in WENN JA, WIE VIELE?/Berlin; Prinz Paris in DIE SCH&Ouml;NE HELENA/Berlin; im Ensemble von LA REVUE DE CUCHE ET BARBEZAT FAIT SON CABARET/Neuch&acirc;tel&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Steffi Irmen</h4><p class="cast-title mt0 small">Gräfin Esterhazy</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Steffi Irmen</h2><h6 class="cast-title mt0 mb20">Gräfin Esterhazy</h6><p>Ausbildung: Stage School Hamburg</p><p>Engagements: u.a. Hannelore in HEISSE ECKE; Blondella in SCHMIDTS RITZ; Sabine in WIR-FAMILIE IST WAS MAN DRAUS MACHT/Schmidts Tivoli; Pat in KINKY BOOTS/Operettenhaus Hamburg; u.a. Cover Mary Patrick in SISTER ACT/Theater des Westens und Tour Entertainment&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/17707.jpg" alt="Denise JASTRAUNIG &copy; VBW/ Sandra Kosel" title="Denise JASTRAUNIG &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Denise Jastraunig</h4><p class="cast-title mt0 small">Swing</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Denise Jastraunig</h2><h6 class="cast-title mt0 mb20">Swing</h6><p>Die geb&uuml;rtige Nieder&ouml;sterreicherin absolvierte ihre Ausbildung an den Performing Arts Studios Vienna. 2011 tourte sie mit CATS durch Europa und gab ihr Musical- Deb&uuml;t als Swing, <em>Jellylorum/Griddlebone</em> und <em>Jenny Fleckenreich</em>. Es folgten REBECCA (Cover &bdquo;<em>Ich</em>&ldquo;) und MAMMA MIA! (<em>Ali</em> und <em>Sophie</em>) in Stuttgart. Bei SHREK &ndash; DAS MUSICAL war Denise Assistant Dance Captain, Swing und Cover <em>Fiona</em>, in Disneys TARZAN verk&ouml;rperte sie u. a. <em>Jane</em>. In Berlin war sie bei SISTER ACT u. a. als <em>Mary Robert</em> zu erleben und &uuml;berzeugte 2018 in Stuttgart in der Titelrolle von MARY POPPINS. In Hamburg stand sie bei KINKY BOOTS u. a als <em>Nicola </em>auf der B&uuml;hne. 2019 f&uuml;hrte ihr Weg in ihre Heimat, wo sie nach der konzertanten Auff&uuml;hrung von ELISABETH in Sch&ouml;nbrunn auch bei CATS als Swing, <em>Jellylorum/Griddlebone</em>, <em>Jenny Fleckenreich</em> und <em>Grizabella</em> zu erleben war.</p><ul class="socialmedia tarn"><li><a href="https://www.denise-jastraunig.at/" rel="extern" title="Jastraunig Website (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.facebook.com/DeniseJastraunigOfficialFanpage/" rel="extern" title="Jastraunig Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/denise__jastraunig/" rel="extern" title="Jastraunig Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.tiktok.com/@diefiesedenise" rel="extern" title="Jastraunig TikTok Tiktok" class="noextern"><img width="24" height="22" class="vmiddle" alt="" src="https://www.musicalvienna.at/_assets/css/icon/tiktok_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Charlotte Katzer</h4><p class="cast-title mt0 small">Gräfin Sztáray</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Charlotte Katzer</h2><h6 class="cast-title mt0 mb20">Gräfin Sztáray</h6><p>Ausbildung: Folkwang Universit&auml;t der K&uuml;nste/Essen</p><p>Engagements: u.a. Kate Monster &amp; Lucy die Schlampe in AVENUE Q/Gelsenkirchen; Conf&eacute;rencier in CABARET/Staatstheater Wiesbaden; LADY BESS/Theater St.Gallen; Maureen in RENT, Lauren in KINKY BOOTS und Marta in COMPANY/Hildesheim; THE PRODUCERS/Staatstheater Mainz; Rosalia in WEST SIDE STORY/Oper Dortmund; Frankie in KNOCKIN&lsquo; ON HEAVEN&rsquo;S DOOR; MY FAIR LADY/Bad Hersfelder Festspiele&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Maren Kern</h4><p class="cast-title mt0 small">Fräulein Windisch</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Maren Kern</h2><h6 class="cast-title mt0 mb20">Fräulein Windisch</h6><p>Ausbildung: Stage School Hamburg</p><p>Engagements: DRACULA, ROCK OF AGES, HAIR/Theater Ulm; GYPSY/Volksoper Wien; GO TRABI GO/Kom&ouml;die Dresden; CABARET/Musikfestival Steyr, Staatstheater am G&auml;rtnerplatz; CATCH ME IF YOU CAN/Staatsoperette Dresden, Theater in der Josefstadt; MOZART!/Tour; ICH WAR NOCH NIEMALS IN NEW YORK/Tour; ROXY UND IHR WUNDERTEAM/Oper Dortmund; FLASHDANCE/Musicalsommer Amstetten; CHICAGO/Le Th&eacute;atre; AIDA/Ettlingen.</p><p>&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/178.jpg" alt="Maximilian Klakow &copy; VBW/ Sandra Kosel" title="Maximilian Klakow &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Maximilian Klakow</h4><p class="cast-title mt0 small">Ein Professor</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Maximilian Klakow</h2><h6 class="cast-title mt0 mb20">Ein Professor</h6><p><strong>Ausbildung: </strong>Stage School Hamburg; Hochschule für Musik, Theater und Medien/Hannover.</p><p><strong>Engagements: </strong>u.a. <em>Frith</em> in REBECCA/Raimund Theater; Musikalische Leitung von ROMEO UND JULIA/ Musicalsommer Winzendorf; <em>Antonio </em>in FIGAROS HOCHZEIT, <em>Balu </em>in DSCHUNGELBUCH, <em>Zuniga </em>in CARMEN, <em>Lord Syndham </em>in ZAR UND ZIMMERMANN, AXEL AN DER HIMMELSTÜR/Volksoper Wien; MOZART!, MESSIAH ROCKS/Raimund Theater; Musikalische Leitung von DIE SCHATZINSEL, DIE PÄPSTIN, FRIEDRICH/Musicalsommer Fulda; 2. Dirigent WOLF – DAS MYSTICAL/Salzkammergut-Seebühne, Wolfgangsee.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/mklakow" rel="extern" title="Facebook Klakow (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Melanie Ortner-Stassen</h4><p class="cast-title mt0 small">Eine Hofdame</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Melanie Ortner-Stassen</h2><h6 class="cast-title mt0 mb20">Eine Hofdame</h6><p>Nach einer fr&uuml;hen Tanzausbildung in Klagenfurt absolvierte sie die Performing Arts Studios Vienna mit der B&uuml;hnenreifepr&uuml;fung in Gesang, Tanz und Schauspiel. Melanie erz&auml;hlte am Theater Akzent in Wien als Priscilla Presley das Leben von Elvis in ELVIS &ndash; Die Show. Im Musical Dome K&ouml;ln war sie im Ensemble von JEKYLL &amp; HYDE, In Stuttgart Swing und Dance Captain Assistent in MAMMA MIA!. Sie &uuml;bernahm dort die Hauptrolle der Sophie, die sie danach auch in Berlin verk&ouml;rperte.&nbsp;<br />
+Bei der live Sat1- Castingshow &bdquo;Ich Tarzan, du Jane&ldquo; stand sie vor einem Millionenpublikum vor der Kamera, um danach bei Disney&rsquo;s Musical TARZAN an der Neuen Flora, Hamburg u.a. Jane/Kala zu spielen.&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/100040.jpg" alt="Wolfgang Postlbauer &copy; Marco Sommer" title="Wolfgang Postlbauer &copy; Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Wolfgang Postlbauer</h4><p class="cast-title mt0 small">Swing</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Wolfgang Postlbauer</h2><h6 class="cast-title mt0 mb20">Swing</h6><p>Der geb&uuml;rtige Ober&ouml;sterreicher absolvierte seine Ausbildung an der Stage School of Music, Dance and Drama in Hamburg. Es folgten Engagements u. a. in JOSEPH AND THE AMAZING TECHNICOLOR DREAMCOAT, HAIR, sowie EVITA in einer Tourneeproduktion. Er war in ANYTHING GOES (Schlo&szlig;festspiele Ettlingen), ELISABETH &ndash; DIE LEGENDE EINER HEILIGEN (Landestheater Eisenach), AIDA, EVITA, JESUS CHRIST SUPERSTAR, ARTUS &ndash; EXCALIBUR, DAS DSCHUNGELBUCH, DON CAMILLO &amp; PEPPONE, DOKTOR SCHIWAGO (Freilichtspiele Tecklenburg), ANNA G&Ouml;LDI &ndash; DAS MUSICAL (Schaffhausen/Schweiz) und BLUTSBR&Uuml;DER zu sehen. Tourneeproduktionen von ELISABETH f&uuml;hrten ihn nach Shanghai, M&uuml;nchen,Essen und Linz, daneben war er auch bei der konzertanten Version des St&uuml;ckes vor dem Schloss Sch&ouml;nbrunn zu erleben. Bei den VBW stand er weiters in ICH WAR NOCH NIEMALS IN NEW YORK, ELISABETH, der konzertanten Version von JESUS CHRIST SUPERSTAR (Raimund Theater), DER BESUCH DER ALTEN DAME, DON CAMILLO &amp; PEPPONE (Ronacher) und zuletzt in REBECCA auf der B&uuml;hne.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Veronika Rivo</h4><p class="cast-title mt0 small">Helene von Wittelsbach</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Veronika Rivo</h2><h6 class="cast-title mt0 mb20">Helene von Wittelsbach</h6><p>Ausbildung: Konservatorium Wien</p><p>Engagements: u.a. Herr Xaver, Opa und Mutter in COSMO SUPERHELD/Dschungel Wien; JEKYLL &amp; HYDE/Theater Dortmund; Schwester Leo in NON(N)SENSE/Theater in der Kellergasse; Minki in KRAWUTZI KAPUTZI/Kabarett Simpl; ABC-B&auml;r/ORF; Irene in BLUTHAUS/Theater a. d. Wien, Wiener Festwochen; Cover Heidi in HEIDI/Museumsquartier; Margarethe in FAUST/Seegrotte Hinterbr&uuml;hl; Teil des Kabarett-Duos Rosabell.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Martin Rönnebeck</h4><p class="cast-title mt0 small">Kardinalerzbischof Rauscher</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Martin Rönnebeck</h2><h6 class="cast-title mt0 mb20">Kardinalerzbischof Rauscher</h6><p>Ausbildung: Stella Academy Hamburg; Stage School Hamburg</p><p>Engagements: u.a. TITANIC/Mecklenburgisches Staatstheater; MY FAIR LADY/Elbphilharmonie Hamburg; HEISSE ECKE, TSCH&Uuml;SSIKOWSKI, SIXTY SIXTY/Schmidts Tivoli Hamburg; SPRING AWAKENING, AVENUE Q/Theater Bielefeld; SPAMAOLT/Bremen; LIEBE STIRBT NIE/Hamburg; DAS PHANTOM DER OPER/Hamburg; DIE P&Auml;PSTIN/Fulda; TITANIC/Thunerseespiele; LES MIS&Eacute;RABLES/F&uuml;ssen; ELISABETH/Stuttgart, Berlin, Z&uuml;rich, Antwerpen, Japan; 42nd STREET/Stuttgart; MIAMI NIGHTS/D&uuml;sseldorf&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Lilly Rottensteiner</h4><p class="cast-title mt0 small">Mary Vetsera</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Lilly Rottensteiner</h2><h6 class="cast-title mt0 mb20">Mary Vetsera</h6><p>Die geb&uuml;rtige Steirerin Lilly Rottensteiner schloss ihr Studium 2022 an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien (MUK) mit Auszeichnung ab. Im Rahmen ihrer Ausbildung verk&ouml;rperte sie u. a. den Mikado in DER MIKADO und Mrs. White in CLUE im MUK.theater. Ihr professionelles Deb&uuml;t gab sie in der Rolle der Baronin Bomburst in TSCHITTI TSCHITTI B&Auml;NG B&Auml;NG am Staatstheater am G&auml;rtnerplatz. Seither stand sie als Frau Segstrom in DAS L&Auml;CHELN EINER SOMMERNACHT, als Herta und Luise in DREI M&Auml;NNER IM SCHNEE, sowie als Blumenm&auml;dchen und Stubenm&auml;dchen in MY FAIR LADY auf der B&uuml;hne des G&auml;rtnerplatztheaters. Am Theater der Jugend spielte sie Sara in der Urauff&uuml;hrung von LIZZY CARBON UND DER KLUB DER VERLIERER. Bei den VBW wirkte sie im Ensemble bei der semi-konzertanten Auff&uuml;hrung von JESUS CHRIST SUPERSTAR im Raimund Theater und bei ELISABETH im Ehrenhof vor Schloss Sch&ouml;nbrunn mit.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Stefan Tolnai</h4><p class="cast-title mt0 small">Fürst Schwarzenberg</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Stefan Tolnai</h2><h6 class="cast-title mt0 mb20">Fürst Schwarzenberg</h6><p>Ausbildung: New Stage Company</p><p>Engagements: u.a. F&uuml;rst Schwarzenberg ELISABETH Sch&ouml;nbrunn 2019; Babkak in DISNEYS ALADDIN/Europapremiere, Stage Theater Neue Flora/Hamburg; Solist der Formation MUSICAL GENTS; Papst und Ensemble in DIE P&Auml;PSTIN/Schlosstheater Fulda&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Wolfgang Türks</h4><p class="cast-title mt0 small">Baron Hübner</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Wolfgang Türks</h2><h6 class="cast-title mt0 mb20">Baron Hübner</h6><p>In M&ouml;nchengladbach geboren machte er 2004 sein Diplom als Musicaldarsteller an der Bayerischen Theaterakademie August Everding. Er spielte u.a. im Prinzregententheater in M&uuml;nchen, im Theater Erfurt, im Theater Dortmund und bei den Bregenzer Festspielen in St&uuml;cken wie ON THE TOWN, CITY OF ANGELS, LUCKY STIFF, &bdquo;King Arthur&ldquo;, &bdquo;Kommt ein Mann zur Welt&ldquo; und WEST SIDE STORY. 2005 erhielt er den 1. Preis im Bundeswettbewerb Gesang in der Sparte Chanson/Song. Von 2004 bis 2008 studierte er Schauspielregie am Max Reinhardt-Seminar in Wien. Seine erste Regiearbeit &bdquo;Sterben&ldquo; nach Arthur Schnitzler hatte im November 2008 am Theater Chemnitz Premiere.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Wietske van Tongeren</h4><p class="cast-title mt0 small">Walk-In Cover HERZOGIN LUDOVIKA / FRAU WOLF, ERZHERZOGIN SOPHIE</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Wietske van Tongeren</h2><h6 class="cast-title mt0 mb20">Walk-In Cover HERZOGIN LUDOVIKA / FRAU WOLF, ERZHERZOGIN SOPHIE</h6><p>Die geb&uuml;rtige Holl&auml;nderin startete 2004, direkt nach ihrer Ausbildung am Konservatorium in Tilburg, ihre Karriere am Theater an der Wien als Cover der Titelrolle in ELISABETH. Bereits 2006 war sie die Erstbesetzung <em>Elisabeth </em>in Stuttgart und, retour in Wien kreierte sie die Rolle der &bdquo;<em>Ich</em>&ldquo; f&uuml;r die Weltpremiere von REBECCA am Raimund Theater. Nach <em>Aschenputtel </em>in INTO THE WOODS in Bozen 2008 kehrte sie f&uuml;r die deutschsprachige Erstauff&uuml;hrung von RUDOLF &ndash; AFFAIRE MAYERLING ans Raimund Theater in der Rolle der <em>Stephanie </em>zur&uuml;ck. Sie verk&ouml;rperte u.a. <em>K&ouml;nigin Anna</em> in 3 MUSKETIERE (Tecklenburg, 2010), <em>Ellen </em>in MISS SAIGON (Klagenfurt, 2011), <em>Betty Schaefer</em> in SUNSET BOULEVARD (Bad Hersfeld, 2011; Dortmund, 2016; Bonn, 2017) und <em>Agn&eacute;s Duchamps</em> in MARIE ANTOINETTE (Tecklenburg, 2012). Als <em>Maria von Trapp</em> in THE SOUND OF MUSIC war sie von 2011 bis 2013 am Salzburger Landestheater zu sehen. F&uuml;r die Weltpremiere von ROCKY &ndash; DAS MUSICAL in Hamburg war sie als <em>Adrian </em>auf der B&uuml;hne und spielte diese anschlie&szlig;end auch in Stuttgart. 2018/19 war sie in der Theatercouch Wien in der One-Woman-Show BLEIB NOCH BIS ZUM SONNTAG und in NAMEN AN DER WAND sowie in Tecklenburg als <em>Tonia </em>in DR. SCHIWAGO zu erleben. Danach war sie in Wien als <em>Rose </em>in ASPECTS OF LOVE auf der B&uuml;hne. 2020/2021 war sie im Erfolgsmusical CATS in der Rolle der <em>Grizabella </em>im Ronacher zu sehen und gab 2021 in der deutschsprachigen Urauff&uuml;hrung von LADY BESS die <em>Mary Tudor</em> am Theater St.Gallen.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/wietskevantongeren.public/" rel="extern" title="Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Carl van Wegberg</h4><p class="cast-title mt0 small">Graf Grünne</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Carl van Wegberg</h2><h6 class="cast-title mt0 mb20">Graf Grünne</h6><p><strong>Ausbildung: </strong>Fontys Tanzakademie Musicaltheater/Tilburg.</p><p><strong>Engagements: </strong>u.a. Cover <em>Edward Lewis</em>, <em>Philip Stuckey </em>in PRETTY WOMAN/Hamburg; Walk In <em>Falco </em>in BAT OUT OF HELL/Oberhausen; <em>Polizist, Von Reibach </em>in MARY POPPINS/Stuttgart, Hamburg; <em>Colloredo </em>in MOZART!/Wien, Shanghai; Cover <em>Jack Favell </em>in REBECCA/Stuttgart; <em>Fiyero </em>in WICKED/Oberhausen; <em>Der Tod, Rudolf </em>in ELISABETH/D-Tour, Stuttgart; <em>Galahad</em>, <em>Lancelot</em>, <em>Bedevere </em>in SPAMALOT/K&ouml;ln; alt. <em>Galileo</em>, <em>Brit </em>in WE WILL ROCK YOU/Z&uuml;rich, Wien; <em>Herbert </em>in TANZ DER VAMPIRE/Stuttgart; Walk In <em>Reverend Shaw Moore</em> in Footloose/D-Tour.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Leading Team_100418"   data-id="100418" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">LEADING TEAM</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/100092.jpg" alt="Michael Kunze &copy; Alexander Ch. Wulz" title="Michael Kunze &copy; Alexander Ch. Wulz" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class="hasMobileSrc"  data-componentname="image"   style="background-image:url(/_media/image/mobile/100092_1200x848_RMA_PH-Bilder__Deen_van_Meer_10_23-9.jpg)"><source src="/_media/image/c270x400/100092.webp"><source src="/_media/image/c270x400/100092.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/100092.jpg" 
+     alt="Szenenfoto ROCK ME AMADEUS - DAS FALCO MUSICAL 2023 008 © Deen van Meer"
+			  loading="lazy" 
+	 
+
+ title="Szenenfoto ROCK ME AMADEUS - DAS FALCO MUSICAL 2023 008 © Deen van Meer" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Michael Kunze</h4><p class="cast-title mt0 small">Buch und Liedtexte</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Michael Kunze</h2><h6 class="cast-title mt0 mb20">Buch und Liedtexte</h6><p>Michael Kunze stammt aus einer &ouml;sterreichischen Familie, kam in Prag zur Welt und wuchs in Deutschland auf. Nach juristischem Studium und Promotion begann er als Liedertexter zu arbeiten. Als er mit der Produktion seiner Lieder unzufrieden war, produzierte er sie selbst. Rasch wurde er ein erfolgreicher Songwriter und ein international bekannter Pop-Producer. &Uuml;ber sechshundert Charterfolge, darunter zwei Nummer-1-Hits in Amerika, brachten ihm 79 Gold- und Platinschallplatten, einen Echo Lifetime Award und den US-amerikanischen Grammy ein. Daneben entwickelte er bleibende TV-Formate und schrieb unter anderem f&uuml;r den ORF die &bdquo;Peter Alexander Show&ldquo;. In den 80er-Jahren wechselte er vom Tonstudio ins Theater. Zun&auml;chst erarbeitete er die deutschen Adaptionen internationaler Musicalerfolge wie EVITA, CATS, DAS PHANTOM DER OPER, DISNEYS DER GL&Ouml;CKNER VON NOTRE DAME, DER K&Ouml;NIG DER L&Ouml;WEN, MAMMA MIA! und WICKED. Seit den 90er-Jahren entwickelt er Originalmusicals. Bereits mit seinem ersten Werk ELISABETH (Musik: Sylvester Levay) avancierte er zum international meistgespielten deutschsprachigen B&uuml;hnenautor. Auch seine nachfolgenden Werke TANZ DER VAMPIRE (Jim Steinman), MOZART!, REBECCA, LADY BESS, MARIE ANTOINETTE und BEETHOVEN&rsquo;S SECRET (alle von Sylvester Levay vertont) wurden internationale Erfolge. Er gilt als Sch&ouml;pfer des DramaMusicals, eines neuen Musiktheater-Genres. Als bisher einziger Librettist aus dem deutschen Sprachraum erreichte er den Broadway. Seine Poporatorien DIE ZEHN GEBOTE, LUTHER und BETHLEHEM (Musik: Dieter Falk) f&uuml;llen gro&szlig;e Hallen. Au&szlig;er Musical-Librettos hat er mehrere Sachb&uuml;cher, ein Theaterst&uuml;ck, politische Kabarett-Texte und das Buch f&uuml;r eine Oper verfasst. Michael Kunze ist auch Autor wissenschaftlicher Abhandlungen und B&uuml;cher rechtshistorischer Art. Die G&ouml;ttinger Akademie der Wissenschaften hat ihm daf&uuml;r die Br&uuml;der-Grimm-Medaille verliehen. Derzeit arbeitet er an einem Sachbuch mit dem Titel &bdquo;Das unsichtbare Recht&ldquo;. Michael Kunze ist Mitglied der US-amerikanischen Dramatists Guild, Inc.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/619.jpg" alt="Silvester Levay &copy; VBW" title="Silvester Levay &copy; VBW" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Sylvester Levay</h4><p class="cast-title mt0 small">Musik und Orchestrierung</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Sylvester Levay</h2><h6 class="cast-title mt0 mb20">Musik und Orchestrierung</h6><p>Sylvester Levay ist geb&uuml;rtiger Ungar und kam Anfang der 60er-Jahre nach Deutschland. Von 1963 bis 1972 arbeitete er mit verschiedenen Orchestern in ganz Europa zusammen. Er zog nach M&uuml;nchen und machte sich als Komponist, Dirigent, Pianist und Arrangeur einen Namen. W&auml;hrend seiner Arbeit mit Stars wie Udo J&uuml;rgens, Gitte Haenning, Katja Ebstein, Penny McLean und Donna Summer lernte er Michael Kunze kennen. Ihren gemeinsamen internationalen Durchbruch hatten sie 1975 mit dem Hit &bdquo;Fly, Robin, Fly&ldquo;, f&uuml;r den sie einen Grammy Award in der Kategorie &bdquo;Rhythm and Blues&ldquo; erhielten. Es folgten weitere Hits, wie &bdquo;Get Up And Boogie&ldquo; oder &bdquo;Lady Bump&ldquo;. Zwischen 1977 und 1980 komponierte und produzierte Sylvester Levay f&uuml;r international bekannte K&uuml;nstler wie Elton John, Donna Summer und Sister Sledge. Als neue Herausforderung konzentrierte er sich anschlie&szlig;end auf das Komponieren von Filmmusik. Seine klassische Musikausbildung und Erfahrung als Rock- und Pop- Komponist machten ihn innerhalb weniger Jahre zu einem gefragten Komponisten Hollywoods. Sylvester Levay lebte und arbeitete 20 Jahre lang in Hollywood. In dieser Zeit geh&ouml;rten Weltstars wie George Lucas, Steven Spielberg, Sylvester Stallone, Charlie Sheen oder Michael Douglas zu seinen Auftraggebern. Er ist Mitglied der National Academy of Recording Arts Sciences (NARAS) und der Academy of Television Arts &amp; Sciences (ATAS) und hielt an den amerikanischen Universit&auml;ten UCLA und USC Vorlesungen &uuml;ber Filmkomposition. In deutschen Fernsehproduktionen schrieb Sylvester Levay die Musik unter anderem f&uuml;r den &bdquo;Goldenen L&ouml;wen&rdquo;, den &bdquo;Deutschen Fernsehpreis&rdquo;, den &bdquo;Bambi&rdquo; oder die Fernsehserie &bdquo;Medicopter 117&ldquo;. In Hollywood vertonte er die Erfolgsserie &bdquo;Airwolf&ldquo;. Seit den 1990er-Jahren schuf er mit Michael Kunze die Musicals HEXEN HEXEN, ELISABETH und MOZART!. Erneut war er international erfolgreich, vor allem mit ELISABETH, das bisher in 14 L&auml;ndern aufgef&uuml;hrt wurde. Im Auftrag der japanischen Produktionsfirma TOHO schufen Sylvester Levay und Michael Kunze das Musical MARIE ANTOINETTE, das im November 2006 in Tokio Premiere hatte und 2009 in Bremen seine deutschsprachige Erstauff&uuml;hrung erlebte. Ebenfalls 2006 feierte REBECCA, basierend auf dem gleichnamigen Roman von Daphne du Maurier, gro&szlig;e Erfolge in Wien und war daraufhin in 12 L&auml;ndern zu sehen. Im April 2014 hatte seine neueste Zusammenarbeit mit Michael Kunze, das Musical LADY BESS in Tokio Premiere und 2016 folgte sein Pop-Musical THE CREST OF THE ROYAL FAMILY. Unter dem Titel SYLVESTER LEVAY &amp; HIS FRIENDS &ndash; THE MUSICALS OF KUNZE &amp; LEVAY IN CONCERT fanden im September 2019 eine Reihe von Galakonzerten mit den Songs von Sylvester Levay und Michael Kunze im Shanghai Culture Square Theatre in China statt. Am 19. Februar 2022 folgte die deutsche Erstauff&uuml;hrung von LADY BESS in St. Gallen.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Gil Mehmert</h4><p class="cast-title mt0 small">Regie</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Gil Mehmert</h2><h6 class="cast-title mt0 mb20">Regie</h6><p>Gil Mehmert begann zun&auml;chst ein Musikstudium in K&ouml;ln und absolvierte anschlie&szlig;end den Regiestudiengang bei August Everding an der Musikhochschule M&uuml;nchen. Seine Inszenierungen, die alle Genres im Musiktheater (Oper, Operette, Musical) und alle Variationen von Drama zur Kom&ouml;die im Schauspiel umspannen, entstanden an zahlreichen renommierten B&uuml;hnen u.a. in Berlin, Bochum, Hamburg, Leipzig, M&uuml;nchen, Z&uuml;rich und Wien.</p><p>Zu seinen Auszeichnungen geh&ouml;ren der Regiepreis des Impulse-Festivals 2001, der Stern des Jahres der M&uuml;nchner Abendzeitung 2001 und 2016, der Rosenstrau&szlig; des Jahres der M&uuml;nchner tz 2001, 2004 und 2016, der Preis f&uuml;r die beste Inszenierung bei den Bayerischen Theatertagen 2005, der Inthega-Preis 2006 und der Hamburger Rolf-Mares-Preis 2008. Sein Kino-Deb&uuml;t &bdquo;Aus der Tiefe des Raumes&ldquo; nach eigenem Drehbuch erhielt 2005 den STARTER-Preis der Stadt M&uuml;nchen und den Bayerischen Filmpreis f&uuml;r die beste Nachwuchs-Produktion. Von den Fachzeitschriften &bdquo;cast&ldquo; (2014) und &bdquo;Musicals&ldquo; (2015) wurde Gil Mehmert zum Regisseur des Jahres gew&auml;hlt. Zu seinen Arbeiten geh&ouml;ren insbesondere B&uuml;hnen-Bearbeitungen von Filmstoffen, aber auch aufwendige Open-Air-Produktionen, wie die jeweils von ZDF bzw. WDR live &uuml;bertragene Er&ouml;ffnungsshow und das Finale der RUHR.2010. Im Herbst 2014 hatte im eigens erbauten Theater an der Elbe in Hamburg das Ensuite-Musical DAS WUNDER VON BERN Premiere, bei dem Gil Mehmert f&uuml;r Buch und Regie verantwortlich war.<br /><br />
+Zu den j&uuml;ngsten Arbeiten geh&ouml;ren neben dem WUNDER VON BERN die aktuellen Produktionen LE NOZZE DI FIGARO an der Oper Leipzig, die Musicals EVITA in Bonn, WESTSIDE STORY in Dortmund, die deutschsprachige Erstauff&uuml;hrung von PRISCILLA &ndash; K&ouml;nigin der W&uuml;ste am Staatstheater am G&auml;rtnerplatz, HAIR bei den Festspielen in Bad Hersfeld und CATCH ME IF YOU CAN am Staatstheater N&uuml;rnberg. In &Ouml;sterreich inszenierte. Gil Mehmert zuletzt das Rockmusical TOMMY am Landestheater Linz. Zudem lehrt Gil Mehmert seit 2003 als Professor im Studiengang Musical an der Folkwang-Universit&auml;t der K&uuml;nste in Essen.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/590.jpg" alt="Simon Eichenberger &copy; VBW/ Jan Frankl" title="Simon Eichenberger &copy; VBW/ Jan Frankl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Simon Eichenberger</h4><p class="cast-title mt0 small">Choreographie</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Simon Eichenberger</h2><h6 class="cast-title mt0 mb20">Choreographie</h6><p>Ausbildung: Schweizer Kammerballett in Z&uuml;rich. Choreografien: u. a. DIE 13&frac12; LEBEN DES K&Auml;PT&rsquo;N BLAUB&Auml;R/Tour; SOUTH PACIFIC, INTO THE WOODS/Staatstheater Kassel; GIGI, POLNISCHE HOCHZEIT/ Oper Graz; KISS ME, KATE/Salzburger Landestheater; D&Auml;LLEBACH KARI, GOTTHELF &ndash; DAS MUSICAL, TITANIC (Co- Regie), DER BESUCH DER ALTEN DAME/ Thunerseespiele, Ronacher; DIE SCHWEIZERMACHER/Z&uuml;rich; REBECCA/St. Gallen, Stage Palladium Theater Stuttgart; CATCH ME IF YOU CAN, LA CAGE AUX FOLLES, WINTER WONDERETTES/Kammerspiele der Josefstadt; DINOSAURIER! &ndash; DAS MUSICAL, GRIMM!/Theater der Jugend; SEVEN IN HEAVEN (UA), SHOW BOAT, THE WHO&rsquo;S TOMMY, GRAND HOTEL (&Ouml;EA), IN 80 TAGEN UM DIE WELT (UA, Deutscher Musical Theater Preis 2017)/Landestheater Linz; CANDIDE/Staatsoper Hannover; DAS WUNDER VON BERN (UA, Deutscher Musical Theater Preis 2015)/ Stage Theater an der Elbe; DIE KOM&Ouml;DIE DER IRRUNGEN/Salzburger Festspiele; IO SENZA TE (UA)/Z&uuml;rich; VIKTORIA UND IHR HUSAR/Seefestspiele M&ouml;rbisch; WAHNSINN &ndash; DAS MUSICAL (UA)/Tour; DIE DREIGROSCHENOPER, DER MANN MIT DEM LACHEN (UA)/Staatsoperette Dresden. Regie und Choreografie: WEST SIDE STORY/Staatstheater Schwerin; ROCKY HORROR SHOW/Zwingenberger Schlossfestspiele; FOREVER YOUNG/Landestheater Linz; DAS DSCHUNGELBUCH (UA)/Luisenberg Festspiele; KNIE &ndash; DAS CIRCUS MUSICAL (UA)/Schweiz. Zuletzt Regie bei DER K&Ouml;NIG UND ICH/Seefestspiele M&ouml;rbisch.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Yan Tax</h4><p class="cast-title mt0 small">Kostüme</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Yan Tax</h2><h6 class="cast-title mt0 mb20">Kostüme</h6><p>Yan Tax studierte Modedesign an der Akademie f&uuml;r Bildende K&uuml;nste in Breda. In den niederl&auml;ndischen Theatern war sein Werk u.a. in CYRANO DE BERGERAC, JOE, ELISABETH, CISKE DE RAT und SUNSET BOULEVARD zu sehen. Er war f&uuml;r das Kost&uuml;mbild von ELISABETH, MOZART!, TITANIC, 3 MUSKETIERE und ICH WAR NOCH NIEMALS IN NEW YORK in Deutschland und &Ouml;sterreich zust&auml;ndig, sowie f&uuml;r jenes von TIM &amp; STRUPPI und DAENS in Belgien. Yan Tax entwarf Kost&uuml;me f&uuml;r Produktionen der Theatergruppe Amsterdam, der Nationaltheater in Br&uuml;ssel und Amsterdam, sowie f&uuml;r zahlreiche Opern in Paris, Berlin, Dresden, Bern, Z&uuml;rich, Florenz, Sydney, San Francisco, Wien, Frankfurt und Helsinki. Er betreute auch die Kost&uuml;me f&uuml;r niederl&auml;ndische TV-Serien wie WILLEM VAN ORANJE und WILHELMINA sowie f&uuml;r Filme wie WINGS OF FAME, SPETTERS, LEFT LUGGAGE, DISCOVERY OF HEAVEN und BLACKBOOK. In Belgien und Frankreich entwarf er Kost&uuml;me f&uuml;r DAENS, ELINE VERE, LE HUITI&Egrave;ME JOUR, MINA TANNENBAUM und LA CHAMELLE. F&uuml;r seine au&szlig;erordentliche Leistung bei CYRANO DE BERGERAC wurde Yan Tax in New York f&uuml;r den &bdquo;Tony Award&ldquo; nominiert, bekam den Preis &bdquo;Best Costume Designer&ldquo; des EuropaCinema und in den Jahren 2000, 2001, 2003 und 2004 erhielt er Preise f&uuml;r die besten Kost&uuml;me in ELISABETH, MOZART!, TITANIC &ndash; DAS MUSICAL und 3 MUSKETIERE in Deutschland. 2008 wurde er f&uuml;r BLACKBOOK f&uuml;r den deutschen Filmpreis nominiert. 2014 folgte der &Ouml;sterreichische Musiktheaterpreis f&uuml;r die Jubil&auml;umsproduktion von ELISABETH im Raimundtheater. Nach dem umjubelten ROSENKAVALIER bei den Salzburger Festspielen 2014 setzt Yan Tax seine Zusammenarbeit mit Harry Kupfer, neben MOZART!, mit PARSIFAL in Tokio, DIE MEISTERSINGER VON N&Uuml;RNBERG in Helsinki und EIN LEBEN F&Uuml;R DEN ZAREN in Frankfurt fort.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Michael Grundner</h4><p class="cast-title mt0 small">Lichtdesign</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Michael Grundner</h2><h6 class="cast-title mt0 mb20">Lichtdesign</h6><p>Ausbildung zum Lichtdesigner in Wien, London und New York. Lichtdesign bei zahlreichen Produktionen weltweit. Zuletzt f&uuml;r WEST SIDE STORY (Seefestspiele M&ouml;rbisch), GOETHE! (Bad Hersfelder Festspiele), ON YOUR FEET! und THE ROCKY HORROR SHOW (Musical Sommer Amstetten), SYLVESTER LEVAY &amp; HIS FRIENDS &ndash; THE MUSICALS OF KUNZE &amp; LEVAY IN CONCERT (Shanghai), SISTER ACT und PIAF (Landestheater Linz) sowie W&Uuml;STENBLUME, MATTERHORN und TANZ DER VAMPIRE am Theater St.Gallen. Au&szlig;erdem kreierte er das Lichtdesign f&uuml;r CABARET (Volksoper Wien), DER FREISCH&Uuml;TZ (Oper Kobe, Japan), DON CAMILLO &amp; PEPPONE (Ronacher) und f&uuml;r die Tournee von WAHNSINN &ndash; DIE NEUE SHOW MIT DEN HITS VON WOLFGANG PETRY. Auszeichnungen: &bdquo;Bestes Lichtdesign&ldquo; f&uuml;r FLASHDANCE (Musical Sommer Amstetten) 2014, GHOST &ndash; NACHRICHT VON SAM (Hamburg) 2018 sowie ELISABETH (VBW, Sch&ouml;nbrunn) 2019.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/610.jpg" alt="Michael Römer &copy; VBW" title="Michael Römer &copy; VBW" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Michael Römer</h4><p class="cast-title mt0 small">Musikalische Leitung</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Michael Römer</h2><h6 class="cast-title mt0 mb20">Musikalische Leitung</h6><p>Nach seinem Studium in Bremen, Hannover und New York war er als Musikerzieher, Kammermusiker, Konzertpianist und Dirigent tätig. Es folgten solistische Auftritte mit diversen Orchestern und als Partner in kammermusikalischen Besetzungen sowie Liederabende mit Solisten diverser Staatsopern; auch mit dem Schwerpunkt Moderne Musik (u. a. Zusammenarbeit mit Karlheinz Stockhausen). Als Dirigent und Korrepetitor arbeitete er bis jetzt an über 50 verschiedenen (Ur-)Aufführungen und Premieren in Wien und im Ausland mit. Zudem ist er zeitweilig Gastdozent an mehreren Musical- und Hochschulen. Seit der Saison 2000/2001 ist er fix als Dirigent bei den Vereinigten Bühnen Wien tätig und betreut dort bis heute die Einstudierungen zahlreicher Stücke sowie den laufenden Spielbetrieb. Dazu kommt die Arbeit als Pianist und Berater für viele nationale und internationale Auditions. Aktuell ist er Teil der Musikdirektion der VBW. Zuletzt war er Musikalischer Leiter von WE ARE MUSICAL, der Eröffnungsgala des Raimund Theater und den konzertanten Aufführungen von ELISABETH in Schönbrunn (2019 und 2022). Als Supervisor betreut er für die VBW u. a. die Versionen von ELISABETH, MOZART! und REBECCA in vielen Ländern. 2022/23 folgt die Musikalische Leitung von Disneys DER GLÖCKNER VON NOTRE DAME im Ronacher.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div></div></div>
+	  </div>
+		
+		
+</div>
+<footer id="footer" role="contentinfo">
+	<div class="inner">
+		
+	<div class="relative">
+		<a href="https://vbw.at/de/home" aria-describedby="Vereinigte Bühnen Wien"><img src="../../../_assets/content/logos/Vbw_Logo.svg" alt="Vereinigte Bühnen Wien" class="vbwFooterLogo"></a>
+		<div class="getTickets">
+			<h6 class="mb0">Tickets bestellen unter</h6>
+			<h2 class="mt0"><a href="tel:+43 1 58885 - 111" class="tdn">+43 1 58885 - 111</a></h2>
+		</div>
+		 	<div  data-componentname="footer"  class="customFooter"><!--div class="footer-inner"--><!--ul  data-componentname="footer"  class="footer-block-info"--><div class="meta-list-item Follow us"><h4 class="uppercase">Follow us</h4><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.facebook.com/Musicalvienna">FACEBOOK</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.instagram.com/musicalviennavbw/">INSTAGRAM</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.youtube.com/user/musicalviennaVBW">YOUTUBE</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.tiktok.com/@musicalviennavbw">TIKTOK</a></span></p><p class="h7"> </p></div><div class="meta-list-item "><h4><a href="../../spielplan-und-tickets/spielplan.html">SPIELPLAN</a></h4><h4><a href="../gutscheine.html">GUTSCHEINE</a></h4><h4><a href="../../souvenirs.html">Souvenirs</a></h4><h4><a href="../../musicalclub.html">MUSICALCLUB</a></h4><h4><a href="https://www.vbw-international.at/">VBW International</a></h4><div> </div></div><div class="meta-list-item "><h4><a href="https://www.musicalvienna.at/de/ueber-uns">ÜBER UNS</a></h4><h4><a href="../../ueber-uns/raimund-theater.html">RAIMUND THEATER</a></h4><h4><a href="../../die-theater/ronacher.html">Ronacher</a></h4><h4><a href="../../aktuelles.1.html">NEWS</a></h4><h4><a href="https://vbw.at/de/unternehmen/jobs">JOBS</a></h4><div> </div></div><div class="meta-list-item "></div><!--/ul--><!--/div--></div>
+			<div class="footerSponsorWrap">
+				<div class="footerMainSponsor">
+					<p class="oWhite">Hauptsponsor</p>
+					<a href="https://www.wienerstaedtische.at" rel="extern" title="Wiener Städtische - Vienna Insurance Group"><img src="../../../_assets/content/logos/logo-wiener-staedtische.png" alt="Wiener Städische" class="WienerStdFooterLogo"></a>
+				</div>
+				<ul class="footerSponsor tarn">
+					<li><a href="https://www.wienholding.at" rel="extern" title="W!ienhold!ing"><img src="../../../_assets/content/logos/logo-wienholding-50jahre.jpg" alt="Wiener Städische" class=""></a></li>
+					<li><a href="https://www.wien.gv.at/kultur/abteilung" rel="extern" title="Wien Kultur"><img src="../../../_assets/content/logos/logo-wienkultur.png" alt="Wien Kultur" class="logo-wienkultur"></a></li>
+				</ul>
+			</div>
+			<div class="meta">
+				<div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Metanavigation unten</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100006  de">
+                        <a href="../../impressum.html" class="navigation_link nav__inner ">Impressum</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100007  de">
+                        <a href="../../agb.html" class="navigation_link nav__inner ">AGB</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100008  de">
+                        <a href="../../datenschutz-cookies.html" class="navigation_link nav__inner ">Datenschutz</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100024  de">
+                        <a href="../../kontakt.html" class="navigation_link nav__inner ">Kontakt</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100054  de">
+                        <a href="../../hilfe.html" class="navigation_link nav__inner ">Hilfe</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+			</div>
+	</div>
+</div>
+</footer>
+<div id="mynlregister" class="overlaybox none nocontent">
+
+    <div class="relative">
+		<a href="www.mark-seibert.com.html#" class="closenlreg">schließen</a>
+			<iframe id="nlregisteriframe" data-regsrc="https://profile.musicalvienna.at/de/nlregister" data-editsrc="https://profile.musicalvienna.at/de/nlverwaltung" frameBorder="0" rel="nofollow"></iframe>
+	</div>
+
+</div>
+<div class="accountbox_wrap none">
+    <div class="accountbox">
+        <a href="www.mark-seibert.com.html" class="closeaccountbox" title="schließen"><img src="../../../_assets/css/icon/close.svg" alt="X"></a>
+                <div class="loginoptions m0">
+                <iframe id="loginiframe" data-src="https://www.musicalvienna.at/de/account/login" frameBorder="0" rel="nofollow"></iframe>
+        </div>
+            </div>
+</div>
+
+
+    </body>
+</html>

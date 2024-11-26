@@ -1,0 +1,32 @@
+
+$(function(){
+   $('.opener').click(function(){
+        $(this).parents('.listitem').toggleClass('open');
+        slideContent($(this).parents('.listitem'));
+    });
+    
+
+	if ($('.module_onepage > section:first-child').find('.extracontent.light').length > 0) {
+		$('#header').addClass('darkheader');
+		
+	}
+
+});
+
+function exchangeClass(elem, old_class, new_class){
+	elem.removeClass(old_class);
+	elem.addClass(new_class);
+}
+
+  
+function slideContent(elem){
+    if(elem.hasClass('open')){
+        elem.find('.cc').slideDown('slow','swing');
+    }else{
+        elem.find('.cc').slideUp('slow','swing');
+    }
+}
+
+
+
+

@@ -1,0 +1,877 @@
+<!DOCTYPE html><html  lang="de"><head><script type="text/javascript" src="../../../_component/resources/jquery.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/htmlChange.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/resources/components.js.php@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_custom/custom_func.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="../../../_component/collection_content/WTuser/WTuser.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)WTuser" ></script><script type="text/javascript" src="../../../_component/collection_content/footer/footer.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)footer" ></script><script type="text/javascript" src="../../../_component/collection_module/module_event/module_event.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsapFlipPlugin.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/gsap-3.12.5.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_assets/js/stadthalle-multiselect.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="../../../_component/collection_content/extracontent/extracontent.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/swiper8.0.7.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_assets/js/gmap-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="../../../_component/collection_content/navigation/navigation.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)navigation" ></script><script type="text/javascript" src="../../../_component/collection_content/page/page.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/click-visible-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/tab-jq.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.template.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.lazyload.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/jquery.touchSwipe.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/respond.min.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/modernizr-2.8.3.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/slidenav.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="../../../_assets/js/echonet.js@version=2024-11-26_09%253A40%253A32" data-dependentComponents="(content)page (content)extracontent (content)footer" ></script><link href="../../../_component/resources/components.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="BasicDependencyStack" ><link href="../../../_component/collection_content/WTuser/WTuser.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)WTuser" ><link href="../../../_component/collection_content/footer/footer.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)footer" ><link href="../../../_component/collection_module/module_event/module_event.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_assets/css/stadthalle-multiselect.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="../../../_component/collection_content/extracontent/extracontent.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)extracontent" ><link href="../../../_component/collection_content/navigation/navigation_main.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/navigation/navigation.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="../../../_component/collection_content/page/page.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page" ><link href="../../../_assets/css/form1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/print1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="print" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/basics1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/responsive1.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="../../../_assets/css/basics-tmp.css@version=2024-11-26_09%253A40%253A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" >
+	 <title>Musicals und Veranstaltungen - MusicalVienna</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<meta name="author" content="">
+    <meta name="expires" content="3600" />
+    <meta name="revisit-after" content="5 days" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="icon" href="../../../_assets/content/favicon.ico" type="image/ico" />
+	<meta charset="UTF-8">
+	  
+  
+	
+    <!-- TRUENDO Privacy Center -->    
+	 <script data-accessibility="true" id="truendoAutoBlock" type="text/javascript" src=https://cdn.priv.center/pc/truendo_cmp.pid.js data-siteid="4398b4cb-8669-4dd1-bd26-08a984506b42"></script>
+	 <!-- End TRUENDO Privacy Center --> 
+	  
+	  	
+  
+<link rel="alternate" href="https://musicalvienna.at/de-de/spielplan/100018" hreflang="de-de" />
+		
+  
+<link rel="alternate" href="https://musicalvienna.at/de-at/spielplan/100018" hreflang="de-at" />
+			<link rel="canonical" href="https://musicalvienna.at/de/spielplan/100018" />
+			  
+
+      
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500,
+});
+dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    //console.log(dataLayer);
+</script>
+<script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
+
+      // Load Tag Manager script.
+      var gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NJ5CZF';
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+        //console.log(firstScript);    
+        
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<!-- End Matomo -->
+    
+      
+<style>
+     :root {
+                                    
+                                    --font1: AkkuratSubBlack; 
+        --font2: AkkuratWebRegular; 
+        
+        --color1: #000000;; /* Farbe für Navigationspunkte & Buttons */
+        --color2: #FFFFFF;; /* Farbe für Verlauf */
+        --color3: #FFFFFF;; /* Farbe für Überschriften auf dunklem Hintergrund */
+        --color4: #FFFFFF;; /* Farbe für Umrandungen & Pfeilchen */
+        --color5: #FFFFFF;; /* Hintergrundfarbe statt weiß im Lightmode (dunkle schrift) */
+        --color6: #FFFFFF;; /* Farbe für Buttonbeschriftung */
+        --color7: #000000;; /* Farbe für Blockquotes */
+    } 
+
+
+	.button:not(.nobtn), 
+	button:not(.nobtn), 
+	[class*="button"]:not(.nobtn), 
+	[class*="Button"]:not(.nobtn), 
+	.enetButton:not(.nobtn), 
+	.utilities .cart span, 
+	.utilities .user.active::after,
+	 #nav .nav__list > .nav__element.active, 
+	 #nav .nav__list > .nav__element:hover { 
+		background-color: var(--color1);
+		color: var(--color6);
+	}
+	blockquote::before, blockquote::after, .bq::before, .bq::after{
+		color: var(--color7);
+	}
+
+	p > a:not([class*="button"]):not([class*="Button"]){ color: var(--color1) !important;}
+
+	.eventCustomNav a:hover, .eventCustomNav a:focus, .eventCustomNav a.active{ color: var(--color1); }
+	.dark { background-image: linear-gradient(15deg, var(--color2) 0%, #101010 40%, #101010 100%); }
+	.dark h1, .dark h2 { color: var(--color3); }
+	ul.merch li { border-color: var(--color4); }
+	.arrowSlider::after, .arrowSlider::before { background-color: var(--color4); }
+	.light, .eventAnchorNav, #nav, #nav .nav__sub-list, #nav > .navigation { background-color: var(--color5); }
+	.extracontent.hasSwiper.light::before { background-image: linear-gradient(90deg, var(--color5), transparent); }
+	.extracontent.hasSwiper.light::after { background-image: linear-gradient(90deg,transparent, var(--color5)); }
+
+	.eventCustomNav a, h1, h2, h3, h4, [class*="button"]:not(.nobtn), [class*="Button"]:not(.nobtn) { font-family: var(--font1) }
+	h5, h6, .h7, p, p a { font-family: var(--font2); }
+
+	.btnLikeHeadline.time, .buy .time{ background-color: var(--color1);}
+	.ticketcount .buy::before{ background-color: var(--color1); }
+
+	.viewlist .view.active, .viewlist .view:focus, .viewlist .view:hover{ background-color: var(--color1); border-color: var(--color1) !important; }
+
+	.module_event #content *:not(td):not(.view) {
+		border-color: var(--color4);
+	}
+	
+	table.wysiwygtable tbody tr:nth-child(odd){
+		background-color: color-mix(in srgb,var(--color4),#fff 50%);
+	}
+	table.wysiwygtable tbody tr:nth-child(even){
+		background-color: var(--color4);
+	}
+
+	#footer{
+		background-image: repeating-linear-gradient(200deg, #101010 0%, #101010 15%, var(--color2) 45%, #101010 70%);
+	}
+
+	@media only screen and (min-width: 1024px){
+		#footer{
+			background-image: linear-gradient(200deg, #101010 55%, var(--color2) 100%);
+		}
+	} 
+
+</style>
+      
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-dowhenconsent="googletagmanager" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5CZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      
+      <script type="text/javascript" src="../../../_assets/js/index.html@f=gaec-tracking.js&amp;recache=0"></script>
+      
+              <script type="text/javascript" src="../../../_component/resources/jquery.js"></script>
+          <script type="text/javascript" src="../../../_assets/js/magnificpopup-v1.1.0.js"></script>    
+        <script type="text/javascript" src="../../../_assets/js/magnificpopup.js"></script>
+      <script type="text/javascript" src="../../../_assets/js/jquery.autocomplete.min.js"></script>    
+        </head>
+    <body id="MusicalVienna" class="de module_event size4 default nohelp   module_event_detail " data-lang="de" data-site="1" data-nid="100009">
+    <div class="genericload none"><img src='../../../assets/content/icons/icon-spinner.svg' width='60' height='60' /></div>
+    <div id="parent" class="parent cfix">
+      <header id="header" class="header relative" role="banner">
+        <div class="inner">
+            
+			<div class="utilities desktop">
+                <div class="langnav">
+                    <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="../../../en/schedule/100018/JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                </div>
+				<button class="nobtn toMainsearch">
+					<img src="../../../_assets/css/icon/search.svg" alt="Suchen">
+				</button>
+				<a href="../../account/warenkorb.html" class="cart nobtn">
+					<img src="../../../_assets/css/icon/cart.svg" alt="Warenkorb">
+									</a>
+				<a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#myaccountbox" class="user nobtn ">
+					<img src="../../../_assets/css/icon/user.svg" alt="User">
+				</a>
+			</div>
+			<a href="../../home.html" title="Zur Startseite" accesskey="0" role="banner" class="url toLandingpage">
+				<img id="logo" src="../../../_media/_site_logo/1_WeAreMusicalLogo_2Lines.svg" alt="Logo" />
+			</a>
+                        <div class="eventCustomNavWrap">
+								<ul class="areas desktop tarn flex-jc-start eventCustomNav">
+				    														</ul>
+			</div>
+            			<button  id="navanchor" class="nobtn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu" data-menutxt="Menü">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			 <div id="nav" class="cfix noem fromTop" aria-describedby="Navigation">
+                <div class="utilities mobile">
+                    <div class="langnav">
+                        <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="../../../en/schedule/100018/JESUS-CHRIST-SUPERSTAR-2023.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                    </div>
+					<div>
+						<button class="nobtn toMainsearch">
+							<img src="../../../_assets/css/icon/search.svg" alt="Suchen">
+						</button>
+						<a href="../../account/warenkorb.html" class="cart nobtn">
+							<img src="../../../_assets/css/icon/cart.svg" alt="Warenkorb"></a>
+						<a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#myaccountbox" class="user nobtn ">
+							<img src="../../../_assets/css/icon/user.svg" alt="Login User">
+						</a>
+					</div>
+				</div>
+								<div class="eventCustomNav mobile">
+										<ul class="areas tarn">
+																							</ul>
+				</div>
+								<div  class="navigation">
+                            <nav class="nav cfix">
+            <h2 class="nav__headline none">Hauptnavigation</h2>
+            <div class="nav__container" role="navigation">
+                <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="nav__element relative nav__element_depth0  n100009 active m58 subNavElement ">
+
+    <a href="../../spielplan-und-tickets/spielplan.html" class="navigation_link nav__inner relative active">Musicals und Veranstaltungen
+		                <span data-navigation-id="100009" class="nav__element_opener active"></span>
+            	</a>
+          <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#" data-navigation-id="109" class="nav__element_opener active"><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100009">
+                <li class="nav__element relative nav__element_depth1  n100123  m3 ">
+
+    <a href="../zum-spielplan.html" class="navigation_link nav__inner relative ">Zum Spielplan
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100015  m122 ">
+
+    <a href="../archiv.html" class="navigation_link nav__inner relative ">Archiv
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100068  m117 ">
+
+    <a href="../gutscheine.html" class="navigation_link nav__inner relative ">Gutscheine
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100022  m123 ">
+
+    <a href="../../souvenirs.html" class="navigation_link nav__inner relative ">Souvenirs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100023  m49 ">
+
+    <a href="../../musicalclub.html" class="navigation_link nav__inner relative ">Musicalclub
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100018  m49 ">
+
+    <a href="../../creative-development.html" class="navigation_link nav__inner relative ">VBW Eigenproduktionen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100020  m49 subNavElement ">
+
+    <a href="../../we-are-musical/vbw-junges-musical.html" class="navigation_link nav__inner relative ">VBW JUNGES MUSICAL
+		                <span data-navigation-id="100020" class="nav__element_opener "></span>
+            	</a>
+          <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#" data-navigation-id="56" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100020">
+                <li class="nav__element relative nav__element_depth1  n100076  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-die-freizeit.html" class="navigation_link nav__inner relative ">Für die Freizeit
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100079  m49 ">
+
+    <a href="../../we-are-musical/vbw-junges-musical/fuer-die-schule.html" class="navigation_link nav__inner relative ">Für die Schule
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100078  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-den-nachwuchs.html" class="navigation_link nav__inner relative ">Für den Nachwuchs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100158  m49 ">
+
+    <a href="../../vbw-junges-musical/fuer-zu-hause.html" class="navigation_link nav__inner relative ">Für zu Hause
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100073  m49 subNavElement ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns" class="navigation_link nav__inner relative ">Über uns
+		                <span data-navigation-id="100073" class="nav__element_opener "></span>
+            	</a>
+          <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#" data-navigation-id="354" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100073">
+                <li class="nav__element relative nav__element_depth1  n100036  m49 ">
+
+    <a href="../../ueber-uns/raimund-theater.html" class="navigation_link nav__inner relative ">Raimund Theater
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100035  m49 ">
+
+    <a href="../../die-theater/ronacher.html" class="navigation_link nav__inner relative ">Ronacher
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100019  m49 ">
+
+    <a href="../../ueber-uns/orchester.html" class="navigation_link nav__inner relative ">Orchester
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100072  m3 ">
+
+    <a href="../../ueber-uns/team.html" class="navigation_link nav__inner relative ">Team
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100121  m3 ">
+
+    <a href="../../ueber-uns/presse.html" class="navigation_link nav__inner relative ">Presse
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100139  m49 ">
+
+    <a href="../../aktuelles/podcast.html" class="navigation_link nav__inner relative ">Podcast und Video
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100021  m49 ">
+
+    <a href="../../vertrieb.html" class="navigation_link nav__inner relative ">B2B &amp; Gruppen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100016  m49 ">
+
+    <a href="../../partner.html" class="navigation_link nav__inner relative ">Partner
+		    	</a>
+         </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+				<div class="navAd ">
+                                                                <div  data-componentname="extracontent"  class="extracontent  dark" id="tickets_100204"   data-id="100204" data-type="extracontent_event"><div class="extracontent_event modekachel  extracontent-inner setContentWidth"><div class="tcenter"><h2 style="text-align:center">Jetzt Tickets sichern:</h2><div> </div></div><ul class="tarn events  eventGrid   eventGridCenter "><li class="eventItem"><a href="../100004/DAS-PHANTOM-DER-OPER.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100011.jpg" alt="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited" title="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited"  /> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/c745x745/100011.webp"><source src="../../../_media/image/c745x745/100011.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/c745x745/100011.jpg" 
+     alt="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited"
+			  loading="lazy" 
+	 
+
+ title="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Raimund Theater</p><h2>DAS PHANTOM DER OPER</h2><!-- <h6>Andrew Lloyd Webbers Meisterwerk im Raimund Theater</h6> --><p class="eventDateIcon">15.03.2024 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li><li class="eventItem"><a href="../../lp/falco.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100013.jpg" alt="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien" title="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien"  /> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/c745x745/100013.webp"><source src="../../../_media/image/c745x745/100013.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/c745x745/100013.jpg" 
+     alt="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Ronacher</p><h2>ROCK ME AMADEUS - DAS FALCO MUSICAL</h2><!-- <h6>Eine Hommage an den österreichischen Ausnahmekünstler</h6> --><p class="eventDateIcon">07.10.2023 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li></ul><div class="swiper-button-prev nobtn arrowSlider left"></div><div class="swiper-button-next nobtn arrowSlider right"></div><div class="tcenter"></div></div></div>
+                                        				</div>
+			 </div>
+            <form id="mainsearch" action="https://www.musicalvienna.at/de/suche" method="get" aria-describedby="stichwortsuche-head" role="search" class=" none">
+                            <fieldset class="relative m0">
+								<button class="nobtn" type="submit" title="Suchen"><img src="../../../_assets/css/icon/search.svg" alt="Suchen"></button>
+                                <label for="suchbegriff" class="none">Suchbegriffe</label>
+                                <input class="mainsearch-input m0" type="search" id="suchbegriff" value="" title="Suchbegriffe eingeben" placeholder="Suchbegriff eingeben..." name="words" aria-required="true" required="">
+                                <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#" class="clearInput tdn" title="Suche ausblenden"><img src="../../../_assets/css/icon/close.svg" alt="x"></a>
+                            </fieldset>
+                            <input type="hidden" name="search" value="1">
+                        </form>
+        </div>
+        </header>
+      
+	  <div id="content" role="main" class="cfix content">
+                      
+		<div  class="module_event module_event_detail detail module"><div  class="module_event module_event_detail moduledetail"><div class="eventAnchorNav"><ul class="tarn flex-jc-start"><li><a class="tdn" href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#Info_100482">Info</a></li><li><a class="tdn" href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#Cast_100481">Cast</a></li><li><a class="tdn" href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#Leading Team_100480">Leading Team</a></li><li><a class="tdn" href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#Fotos_100479">Fotos</a></li></ul></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Header_100483"   data-id="100483" data-type="extracontent_header"><div class="extracontent_header "><!-- <canvas></canvas><script src="/_assets/js/feenstaub.js"></script> --><picture class=""  data-componentname="image"  ><source src="../../../_media/image/original/100513.webp"><source src="../../../_media/image/100513_1920x1080px_JCS23_70__11_24.jpg"><img 
+		 
+	
+
+	src="../../../_media/image/100513_1920x1080px_JCS23_70__11_24.jpg" 
+     alt="Jesus Christ Superstar 2023 © VBW"
+			  loading="lazy" 
+	 
+
+ title="Jesus Christ Superstar 2023 © VBW" 
+
+
+
+
+
+
+	/></picture></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Info_100482"   data-id="100482" data-type="extracontent_textonly"><div class="extracontent_textonly setContentWidth extracontent-inner"><div class="setBlockTextWidth"><h1>JESUS CHRIST SUPERSTAR – THE ROCK-MUSICAL IN CONCERT</h1><h2>DAS GROSSE VBW-OSTER-KONZERT-HIGHLIGHT 2023</h2><p> </p><p><strong>Die Vereinigten Bühnen Wien zeigten von 31. März bis 10. April 2023 Andrew Lloyd Webbers und Tim Rices weltberühmte Kult-Rockoper als beeindruckendes Konzert-Erlebnis im Raimund Theater!</strong></p><p> </p><p><strong>JESUS CHRIST SUPERSTAR</strong> begeistert seit über vier Jahrzehnten die Menschen auf der ganzen Welt. Die hoch emotionale und elektrisierende Partitur von <strong>Andrew Lloyd Webber</strong> und <strong>Tim Rice</strong> hat bis heute nichts an Aktualität verloren.&nbsp; Das „Rock-Musical in Concert“ kehrte in der legendären, in englischer Sprache gesungenen, konzertanten Fassung der VBW zu Ostern ans <strong>Raimund Theater </strong>zurück. Ein absolutes Konzert-Highlight in großer Orchesterbesetzung mit Musicalstar <strong>Drew Sarich</strong> in der Rolle des „Jesus“.&nbsp;</p><p> </p><p><strong>JESUS CHRIST SUPERSTAR</strong> erzählt die letzten sieben Tage des Lebens von Jesus in einzigartiger Weise aus der Sicht von Judas. Dabei geht es um das letzte Abendmahl, das Urteil Herodes und den Verrat von Judas der zum Kreuzweg und schlussendlich zu seinem Tod führt.</p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Cast_100481"   data-id="100481" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">Cast</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Drew Sarich</h4><p class="cast-title mt0 small">Jesus</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Drew Sarich</h2><h6 class="cast-title mt0 mb20">Jesus</h6><p>Drew Sarich wurde in St. Louis, Missouri geboren und kam 1999 f&uuml;r die Rolle des <em>Quasimodo </em>in der Urauff&uuml;hrung von Disneys DER GL&Ouml;CKNER VON NOTRE DAME nach Europa. Seit seinem Deb&uuml;t am Raimund Theater als <em>Berger</em> in HAIR war er bei den VBW auch als <em>Sun/Meister</em> der Schl&uuml;ssel in BARBARELLA, <em>Kronprinz Rudolf</em> in RUDOLF &ndash; AFFAIRE MAYERLING, <em>Curtis</em> in SISTER ACT, <em>Das Phantom</em> in LIEBE STIRBT NIE und <em>Che</em> in EVITA zu sehen. Er verk&ouml;rperte sowohl <em>Jesus</em> als auch <em>Judas</em> in zahlreichen Produktionen von JESUS CHRIST SUPERSTAR, die Titelrollen in JEKYLL &amp; HYDE in K&ouml;ln und DRACULA in St. Gallen und war in HEDWIG AND THE ANGRY INCH in Berlin sowie als <em>Cousin Kevin</em> in THE WHO&rsquo;S TOMMY beim Musical Sommer Amstetten zu sehen. Am Broadway kreierte er die Rolle des <em>Armand</em> in Elton Johns LESTAT und Off-Broadway spielte er in JAQUES BREL IS ALIVE AND WELL AND LIVING IN PARIS. Als <em>Jean Valjean</em> war Drew Sarich sowohl am West End als auch am Broadway in LES MIS&Eacute;RABLES zu sehen. In Wien und Berlin spielte Drew Sarich den <em>Graf von Krolock</em> in TANZ DER VAMPIRE und in Hamburg kreierte er die Titelrolle in ROCKY &ndash; DAS MUSICAL. An der Volksoper Wien war er als <em>Antonio Vivaldi</em> in der Urauff&uuml;hrung von VIVALDI &ndash; DIE F&Uuml;NFTE JAHRESZEIT zu sehen, wof&uuml;r er 2017 mit dem deutschen Musicalpreis in der Kategorie &bdquo;Bester Darsteller&ldquo; und dem Leserpreis der Kronen Zeitung ausgezeichnet wurde. Drew Sarich war au&szlig;erdem als <em>Molina</em> in KUSS DER SPINNENFRAU an der B&uuml;hne Baden zu sehen. Zuletzt spielte er wieder VIVALDI und war in der Rolle des <em>Robert Baker</em> in Leonard Bernsteins&nbsp;WONDERFUL TOWN&nbsp;an der Volksoper Wien zu erleben. Er war <em>Daddy Brubeck</em> in&nbsp;SWEET CHARITY&nbsp;und in der Premierenserie von&nbsp;INTO THE WOODS als <em>Wolf</em> und Aschenputtels Prinz an der Volksoper Wien zu sehen.&nbsp;Vor Kurzem verk&ouml;rperte er <em>Guido Contini </em>in der konzertanten Version der Musicalproduktion NEUN (NINE) an der B&uuml;hne Baden. Seine drei Alben &ldquo;Silent Symphony&rdquo;, &ldquo;Let Him Go&ldquo; und &ldquo;Hunting For Heaven&rdquo; sind auf Spotify und bei Apple Music erh&auml;ltlich.</p><ul class="socialmedia tarn"><li><a href="https://www.drew-sarich.com/" rel="extern" title="Website Sarich (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Alex Melcher</h4><p class="cast-title mt0 small">Judas</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Alex Melcher</h2><h6 class="cast-title mt0 mb20">Judas</h6><p>Seit seiner Schauspiel- und Gesangsausbildung in Hamburg ist Alex zu Gast auf deutschen und internationalen B&uuml;hnen. Unter der Regie von Roman Polanski spielte er den Alfred in TANZ DER VAMPIRE am Raimund Theater. In Deutschland war er als Mark in der Original-Produktion von RENT, am Theater St. Gallen in der Titelrolle von JESUS CHRIST SUPERSTAR zu sehen. In einer Holland-Tournee von THE WHO&rsquo;S TOMMY gastierte er in der Rolle des Cousin Kevin. Weiters spielte er u. a. den Magier in TABALUGA &amp; LILLI, Darryl van Horne in DIE HEXEN VON EASTWICK, Whizzer in FALSETTOS (EEA), Jon in der DSE von TICK, TICK &hellip; BOOM!, Brian Carr in ROCKVILLE (Amstetten, M&uuml;nchen), Hedwig in HEDWIG AND THE ANGRY INCH im MiR (Gelsenkirchen), Lucheni in ELISABETH (Essen) und Frederick Trumper in CHESS (Bielefeld). 2004 folgte er dem Ruf von Brian May und Roger Taylor und stand bis 2011 als Galileo im Queen-Musical WE WILL ROCK YOU auf der B&uuml;hne. Udo Lindenberg holte ihn f&uuml;r HINTERM HORIZONT nach Berlin und Hamburg. In Oberhausen spielte Alex den Falco in BAT OUT OF HELL. In Wien war er zuletzt im Raimund Theater als Judas in JESUS CHRIST SUPERSTAR zu erleben.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21209.jpg" alt="Nienke Latten &copy; VBW/ Sandra Kosel" title="Nienke Latten &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Nienke Latten</h4><p class="cast-title mt0 small">Maria Magdalena</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Nienke Latten</h2><h6 class="cast-title mt0 mb20">Maria Magdalena</h6><p>Nienke Latten stammt aus Voorburg in den Niederlanden. Seit fr&uuml;hesten Kindheitstagen gilt ihre gro&szlig;e Leidenschaft dem Tanz und dem Schauspiel. 2012 wurde sie als 17-J&auml;hrige f&uuml;r ein Vorbereitungsjahr am Konservatorium in Tilburg angenommen und begann dort nur ein Jahr sp&auml;ter ihr regul&auml;res Studium, welches sie im Mai 2017 mit einem Bachelor abschlie&szlig;en konnte. In Tilburg erhielt sie &ndash; neben vielen anderen Unterrichtsf&auml;chern &ndash; intensiven Gesangsunterricht von Edward Hoepelman und war schon w&auml;hrend ihrer Ausbildung in WEST SIDE STORY als <em>Maria </em>zu sehen. Nach der Ausbildung &uuml;bernahm Nienke Latten die Hauptrolle der <em>Tessa</em> in der niederl&auml;ndischen und belgischen Tour-Produktion von DER GESTIEFELTE KATER. Von 2018 bis 2021 war sie als <em>Jasmin</em> in Disneys ALADDIN in Hamburg und Stuttgart zu erleben. Zuletzt stand sie als Mira in ONE &ndash; DE MUSICAL in Amsterdam auf der B&uuml;hne.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Dennis Kozeluh</h4><p class="cast-title mt0 small">Kaiphas</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Dennis Kozeluh</h2><h6 class="cast-title mt0 mb20">Kaiphas</h6><p><strong>Ausbildung:</strong> Hochschule f&uuml;r Musik und darstellende Kunst Wien; University of Montana.</p><p><strong>Engagements:</strong> Roote in HOTHOUSE/Grand Theatre de Luxembourg, Mark Rothko in RED, Owl in DAS INSTITUT/beides Drachengasse, Wien; Scrooge in EINE WEIHNACHTSGESCHICHTE/Next Liberty, Graz; Frederick Fairlie in DIE FRAU IN WEISS/Gmunden, Arthur Birling in AN INSPECTOR CALLS/Open House Theater; Max in Bayern in ELISABETH/Wien, Graf Arco in MOZART/Wien, Hamburg; Judge Turpin, SWEENEY TODD/Wien; Gr&uuml;ndungsmitglied der English Lovers Improvisationsgruppe.&nbsp;&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Thomas Hohler</h4><p class="cast-title mt0 small">Simon</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Thomas Hohler</h2><h6 class="cast-title mt0 mb20">Simon</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Raphael Gross</h4><p class="cast-title mt0 small">Peter</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Raphael Gross</h2><h6 class="cast-title mt0 mb20">Peter</h6><p>Geboren in Nordrhein-Westfalen erhielt Raphael musikalische Fr&uuml;herziehung und im Alter von f&uuml;nf Jahren ersten Klavier Unterricht. In den darauffolgenden Jahren sang er im Kinderchor des Gospelprojekt-Ruhr e.V., wo er auch erste solistische B&uuml;hnenerfahrung sammeln konnte. Seine stimmliche Ausbildung begann er mit 9 Jahren und bekam seit 2011 Unterricht bei Prof. Michael David Mills (Folkwang Universit&auml;t der K&uuml;nste, Essen). Des Weiteren erhielt Raphael schon vor seinem Studium auch Tanz und Schauspielunterricht und besuchte die Summer School des Laine Theatre Arts College in London. Zus&auml;tzlich zu diversen B&uuml;hnen/Galaauftritten hat Raphael im Teenageralter u.a. bei Dein Song (2010/2011; KiKa/ZDF) auch TV Erfahrung sammeln k&ouml;nnen und stieg mit dem Compilation Album zur Sendung auf Platz 4 der deutschen Charts ein.&nbsp; Neben seiner Leidenschaft f&uuml;r die B&uuml;hne arbeitet er stets an eigenen musikalischen Projekten. Im Alter von 17 Jahren komponierte Raphael den gesamten Score f&uuml;r das Musical DIE SCHREIBMASCHINE &ndash; DAS ERBE DES RUPERT BLOOMFIELD und spielte die Hauptrolle u.a. im KatiElli Theater, Datteln. Seit 2015 studiert er Musical an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien. Den Gesangswettbewerb zu Ehren des &ouml;sterreichischen Komponisten Walter Jurmann gewann Raphael und war in Wien bereits in GRIMM! DIE WIRKLICH WAHRE GESCHICHTE VON ROTK&Auml;PPCHEN UND IHREM WOLF unter der Regie von Werner Sobotka auf der B&uuml;hne des Renaissance Theater als <em>Rex</em> zu sehen.</p><ul class="socialmedia tarn"><li><a href="https://facebook.com/grossraphi" rel="extern" title="Raphael Groß Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/raphigross/" rel="extern" title="Raphael Groß Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/19960.jpg" alt="James Park &copy; VBW/ Sandra Kosel" title="James Park &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">James Park</h4><p class="cast-title mt0 small">Pontius Pilatus</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">James Park</h2><h6 class="cast-title mt0 mb20">Pontius Pilatus</h6><p>James Park wurde in Korea geboren und studierte klassischen Gesang an der Robert Schumann Musikhochschule Düsseldorf. Nach seinem Studienabschluss wurde er Mitglied des Opernstudios Niederrhein des Theaters Krefeld-Mönchengladbach und wirkte in verschiedenen Opern- und Musicalproduktionen mit. Dazu zählen u. a. DER ROSENKAVALIER, PETER GRIMES, DER BARBIER VON SEVILLA, HOFFMANNS ERZÄHLUNGEN, die Operetten- Uraufführung von WÄR NUR DIE SEHNSUCHT NICHT SO GROSS, das Barockopern-Pasticcio THE GODS MUST BE CRAZY, das Krimi-Musical DAS GEHEIMNIS DES EDWIN DROOD, LEND ME A TENOR! (OTELLO DARF NICHT PLATZEN) und MY FAIR LADY. Für die Produktion DER GOLDENE DRACHE am Theater Krefeld wurde James für seine Rolle <em>Junger Asiat</em> von Opernwelt-Kritikerin Regine Müller in „Welt am Sonntag“ als NRWs bester Nachwuchssänger nominiert, in der vergangenen Spielzeit debütierte er in der selben Rolle an der Semperoper Dresden. Neben seiner Opernlaufbahn ist er solistisch im Konzertbereich, in Ensembles und Chorformationen zu hören. Zuletzt war er im Raimund Theater als <em>Thuy </em>in MISS SAIGON zu erleben.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/100032.jpg" alt="Timo Verse &copy; Marco Sommer" title="Timo Verse &copy; Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Timo Verse</h4><p class="cast-title mt0 small">Annas</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Timo Verse</h2><h6 class="cast-title mt0 mb20">Annas</h6><p>Timo Verse erhielt seine Ausbildung am Konservatorium Wien (MUK). Zuletzt stand er in REBECCA und als Annas in JESUS CHRIST SUPERSTAR im Raimund Theater auf der B&uuml;hne. Zuvor f&uuml;hrten ihn seine Engagements vom Ronacher, wo er u. a. als TJ in SISTER ACT sowie in EVITA zu sehen war, nach Klagenfurt zu ANNIE GET YOUR GUN und nach St. Gallen zur Urauff&uuml;hrung von MATTERHORN als Lord Francis Douglas. Mehrfach engagierte ihn die Volksoper, u. a. f&uuml;r DER ZAUBERER VON OZ, als Tobias in SWEENEY TODD und f&uuml;r HELLO, DOLLY!. Parallel dazu spielte er die Titelpartie in TIMM THALER in Darmstadt. Weiters war er in Thun in DER BESUCH DER ALTEN DAME, am Saarl&auml;ndischen Staatstheater in MARGUERITE, in Stockerau und Klagenfurt in A CHORUS LINE und in M&ouml;rbisch als Jancsi in VIKTORIA UND IHR HUSAR zu sehen.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/timo.verse" rel="extern" title="Verse Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/timo_verse/" rel="extern" title="Verse Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Christian Rey Marbella</h4><p class="cast-title mt0 small">Herodes</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Christian Rey Marbella</h2><h6 class="cast-title mt0 mb20">Herodes</h6><p>Christian Rey Marbella ist Musicaldarsteller, S&auml;nger und T&auml;nzer. Er war bereits in zahlreichen Musicalproduktionen in Asien, Gro&szlig;britannien und in den USA zu erleben, u. a. als <em>Engineer </em>und <em>Thuy </em>in MISS SAIGON, <em>Luntha </em>in THE KING AND I oder als <em>Apostel Peter</em> in JESUS CHRIST SUPERSTAR. Zu seinen weiteren Engagements z&auml;hlen Disneys BEAUTY AND THE BEAST, CINDERELLA, SHOWBOAT und THE FULL MONTY. Zudem wirkte Christian Rey Marbella in einigen original philippinischen Musicals mit, etwa in CALAMBA JOE in der Rolle des Nationalhelden <em>Dr. Jos&eacute; Rizal</em>, in der Produktion 1896 &ndash; THE MUSICAL als <em>Emilio Jacinto</em> und als <em>D&auml;mon Ravana</em> im Revival von RAMAHARI, 2012. Weiters war er bei der &bdquo;Ballet Philippines 50th Anniversary Season&ldquo; zu sehen.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/chuckmarbella" rel="extern" title="Instagram Marbella (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://twitter.com/chuckmarbella" rel="extern" title="Twitter Marbella (Twitter)" class="noextern"><img width="24" height="19" class="vmiddle" alt="" src="https://www.musicalvienna.at/_assets/css/icon/X_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21784.jpg" alt="Kaj-Louis Lucke &copy; VBW/ Marco Sommer" title="Kaj-Louis Lucke &copy; VBW/ Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Kaj-Louis Lucke</h4><p class="cast-title mt0 small">Priester</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Kaj-Louis Lucke</h2><h6 class="cast-title mt0 mb20">Priester</h6><p>Der geb&uuml;rtige Tiroler schloss nach seinem Schauspieldiplom (2014) seine Ausbildung an der MUK Wien 2018 ab. Es folgten Engagement am Theater der Jugend Wien, wo er u.a. als <em>Schweinchen Schlau</em> im Musical GRIMM!, als <em>Sheriff von Nottingham</em> in ROBIN HOOD, als <em>G&uuml;ldenstern </em>in Shakespeares HAMLET und als <em>Ritter Starkleib/Obadja Bommelkopf</em> in DER KLEINE DICKE RITTER zu sehen war. An der Felsenb&uuml;hne Staatz &uuml;bernahm Lucke 2018 die Rolle des <em>Grantaire </em>in LES MIS&Eacute;RABLES. 2019, 2022 und 2023 war Lucke Ensemblemitglied des Leh&aacute;r Festivals Bad Ischl, wo er als <em>Piccolo </em>im WEISSEN R&Ouml;SSL, <em>Fritz Steppke</em> in FRAU LUNA und als <em>Joseph Calicot</em> in MADAME POMPADOUR fungierte. Weitere Rollen und Engagements folgten, z.B. als <em>Leopold </em>in ProArtes IM WEISSEN R&Ouml;SSL und 2023 als <em>Priester/Ensemble</em> bei JESUS CHRIST SUPERSTAR am Raimund Theater. Lucke wurde &uuml;ber seine Engagements als Darsteller hinaus f&uuml;r sein Choreographie-Deb&uuml;t bei der Welturauff&uuml;hrung des Musicals ANNE AUF GREEN GABLES im Theater der Jugend f&uuml;r den Deutschen Musical Theater Preis 2022 in der Kategorie Beste Choreographie nominiert.&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Peter Kratochvil</h4><p class="cast-title mt0 small">Priester</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Peter Kratochvil</h2><h6 class="cast-title mt0 mb20">Priester</h6><p>Peter schloss seine B&uuml;hnen- Ausbildung am Konservatorium Wien (MUK) und am Beck Center of the Arts in Cleveland ab. Der geb&uuml;rtige Wiener hat einen Master in Kulturvermittlung, ist Regisseur und Preistr&auml;ger als Wienerlied-Interpret. Im Sprechtheater verk&ouml;rperte er u. a. Konstantin in DIE M&Ouml;WE, Max in ZUR SCH&Ouml;NEN AUSSICHT und Yvan in KUNST. Weitere Hauptrollen im Musiktheater u. a.: Leopold im WEISSEN R&Ouml;SSL, Armand in DER GRAF VON LUXEMBURG, Baron Kempten in SISSY, Njegus in DIE LUSTIGE WITWE, Gustl in LAND DES L&Auml;CHELNS, Alfred in DIE FLEDERMAUS. Bei den Vereinigten B&uuml;hnen Wien war er bei den Konzerten JESUS CHRIST SUPERSTAR und LOVE NEVER DIES sowie den Musicals SISTER ACT, NAT&Uuml;RLICH BLOND, DER BESUCH DER ALTEN DAME, EVITA und BODYGUARD im Ronacher zu sehen. Am Raimund Theater spielte er in der Urauff&uuml;hrung von SCHIKANEDER und als Harry in MAMMA MIA!.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Florian Resetarits</h4><p class="cast-title mt0 small">Priester</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Florian Resetarits</h2><h6 class="cast-title mt0 mb20">Priester</h6><p>Florian Resetarits absolvierte seine musikalische Ausbildung an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien, wo er im J&auml;nner 2017 sein Masterstudium abschloss. Seit seiner Kindheit steht der geb&uuml;rtige Burgenl&auml;nder bei Festivals, Kabarettabenden und Konzerten auf der B&uuml;hne. Bei den Festspielen Musical G&uuml;ssing verk&ouml;rperte er u.a. den <em>Conf&eacute;rencier </em>in CABARET, <em>Che </em>in EVITA, <em>Marius </em>in LES MIS&Eacute;RABLES und dieTitelrolle in JEKYLL &amp; HYDE. Er war als <em>Frank Rex</em> in SAISON IN SALZBURG und als <em>Armand Brissard</em> in DER GRAF VON LUXEMBURG beim Schlossfestival Wilfersdorf sowie als <em>Rudolph </em>in HALLO, DOLLY!, <em>Gaston </em>in GIGI, <em>Freddy </em>in MY FAIR LADY und <em>Dr. Blind</em> in DIE FLEDERMAUS beim Leh&aacute;r Festival Bad Ischl zu sehen. In Th&uuml;ringen gab er den Schmied in der Kammeroper DER KLEINE SCHMIED VON RUHLA und zuletzt spielte er in Duisburg und China <em>Fridolin Weber/Thorwart</em> in MOZART!. Im Sommer 2018 wird er als <em>Bob Alcorne</em> in der&ouml;sterreichischen Erstauff&uuml;hrung von BONNIE &amp; CLYDE an der B&uuml;hne Baden mitwirken.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/florianrestarits/" rel="extern" title="Resetarits Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/florianresetarits/" rel="extern" title="Resetarits Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="http://www.florianresetarits.com/" rel="extern" title="Resetarits Website (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Katharina Gorgi</h4><p class="cast-title mt0 small">Soul Girl</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Katharina Gorgi</h2><h6 class="cast-title mt0 mb20">Soul Girl</h6><p>Katharina Gorgi entdeckte ihre Liebe zur Musik im Alter von f&uuml;nf Jahren beim Erlernen der Violine. 2004 gelang der geb&uuml;rtigen Wienerin der Eintritt in die Musiktheaterwelt mit den Rollen <em>Brigitte</em> und <em>Louise</em> in THE SOUND OF MUSIC und <em>Liesl</em> in EIN WALZERTRAUM an der Volksoper Wien. Nach Absolvierung des Musikgymnasiums Wien folgte ab 2013 das Konzertfachstudium Violine an der Universit&auml;t f&uuml;r Musik und darstellende Kunst Wien (MDW) und ab 2014 die Musicalausbildung an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien (MUK), die sie 2018 mit Auszeichnung abschloss. W&auml;hrend der Ausbildung war Katharina u.a. als <em>Urleen</em> in FOOTLOOSE (Musical Sommer Amstetten), als <em>Schweinchen Wild</em> in GRIMM! im Theater der Jugend sowie in der Urauff&uuml;hrung von I AM FROM AUSTRIA (Ensemble und Cover <em>Emma Carter</em>) im Raimund Theater zu sehen. Anschlie&szlig;end spielte sie <em>Sophie</em> in MAMMA MIA! in der Stage Entertainment Tourproduktion sowie im Theater des Westens Berlin, <em>Rizzo</em> in GREASE beim Musical Sommer Amstetten und <em>Soulgirl</em> in JESUS CHRIST SUPERSTAR im Raimund Theater. 2023 erhielt sie den &Ouml;sterreichischen Musiktheaterpreis als beste Newcomerin f&uuml;r die Titelrolle in ROXY UND IHR WUNDERTEAM. Aktuell studiert Katharina Musiktherapie an der MDW und Psychomotorik an der Uni Wien.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Veronica Appeddu</h4><p class="cast-title mt0 small">Soul Girl / Dance Captain</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Veronica Appeddu</h2><h6 class="cast-title mt0 mb20">Soul Girl / Dance Captain</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Sophia Gorgi</h4><p class="cast-title mt0 small">Soul Girl</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Sophia Gorgi</h2><h6 class="cast-title mt0 mb20">Soul Girl</h6><p>Die Wienerin Sophia Gorgi absolvierte Ausbildungen in Tanz, Geige und Klavier und schloss 2012 ihr Musicalstudium mit Auszeichnung ab.&nbsp;</p><p>Bereits ab 2008 war sie Ensemblemitglied der Volksoper Wien und gab dort mit 16 Jahren ihr Deb&uuml;t als&nbsp;<em>Liesel</em>&nbsp;in THE SOUND OF MUSIC. Weitere Rollen waren die&nbsp;<em>Toni</em>&nbsp;in &bdquo;Das Land des L&auml;chelns&ldquo; und die&nbsp;<em>Liat</em>&nbsp;in der Neuproduktion von SOUTH PACIFIK.&nbsp;</p><p>Seit ihrem Abschluss spielte sie die&nbsp;<em>Maurin</em>&nbsp;in DER MANN VON LA MANCHA,&nbsp;<em>Lisa</em>&nbsp;in LEBEN OHNE CHRIS (&Ouml;EA),&nbsp;<em>Maggie</em>&nbsp;in A CHORUS LINE (Stockerau Open Air Festival),&nbsp;<em>Miriam</em>&nbsp;in der Urauff&uuml;hrung des Musicals MOSES am Theater St. Gallen, die Rolle der&nbsp;<em>Lady Lerche&nbsp;</em>in &bdquo;Winnifred oder Die Prinzessin auf der Erbse&ldquo; am Theater der Jugend in Wien sowie die&nbsp;<em>Lisa</em>&nbsp;in MAMMA MIA! am Raimund Theater<em>.</em>&nbsp;</p><p>Es folgte ICH WAR NOCH NIEMALS IN NEW YORK am Theater des Westens Berlin, wo sie u.a. die&nbsp;<em>Frau Menzel</em>&nbsp;verk&ouml;rperte. In Hamburg war sie ab 2015 als&nbsp;<em>Jasmin</em>&nbsp;in ALADDIN auf der B&uuml;hne der Neuen Flora zu sehen und spielte die&nbsp;<em>Candela</em>&nbsp;in FRAUEN AM RANDE DES NERVENZUSAMMENBRUCHS am Altonaer Theater.&nbsp;</p><p>Sophia Gorgi spielte die&nbsp;<em>Roxie Hart</em>&nbsp;in CHICAGO,&nbsp;<em>Cathy</em>&nbsp;in THE LAST FIVE YEARS am Staatstheater Braunschweig und am Oldenburgischen Staatstheater sowie zuletzt&nbsp;<em>Jeannie</em>&nbsp;in HAIR am Salzburger Landestheater.</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/262.jpg" alt="Anna Carina Buchegger &copy; Jan Frankl" title="Anna Carina Buchegger &copy; Jan Frankl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Anna Carina Buchegger</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Anna Carina Buchegger</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Anna Carina Buchegger absolvierte ihre Ausbildung an der Performing Academy in Wien. Nach der B&uuml;hnenreifepr&uuml;fung spielte sie die Mizzi Zimmermann in GUSTAV KLIMT &ndash; DAS MUSICAL im K&uuml;nstlerhaus Wien. Es folgten Engagements an den Vereinigten B&uuml;hnen Wien als Gabby und Cover Margot in NAT&Uuml;RLICH BLOND, Meg Giry in DAS PHANTOM DER OPER sowie bei LOVE NEVER DIES, der VBW-Jubil&auml;umsgala WE ARE MUSICAL und JESUS CHRIST SUPERSTAR als Soulgirl. Weiters war sie in DON CAMILLO &amp; PEPPONE sowohl in der Urauff&uuml;hrung am Theater St.Gallen als auch im Ronacher als Swing und Cover Gina zu sehen, au&szlig;erdem in I AM FROM AUSTRIA im Ensemble und als Cover Emma Carter. Sie spielte u. a. FLASHDANCE in Amstetten, Max und Cover Teen Fiona in SHREK &ndash; DAS MUSICAL bei der Mehr! Entertainment-Tour und Lily Hilton in ANNIE am Salzburger Landestheater. Zuletzt war sie bei CATS als Rumpelteazer im Ronacher zu sehen.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/ACBuchegger/" rel="extern" title="Buchegger Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/annacarinabuchegger" rel="extern" title="Buchegger Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/100014.jpg" alt="Jev Davis &copy; Marco Sommer" title="Jev Davis &copy; Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Jev Davis</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Jev Davis</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Jev Davis studierte bereits als Kind an der Jane Jarrett School of Dancing, bevor er seine Ausbildung an der Urdang Academy absolvierte. Dort &uuml;bernahm er die Rolle des Anatoly in CHESS und war danach bei Crystal Cruises und der THE SOUND OF MUSICAustralien- Tournee engagiert. Danach stand er als Cesar in SATURDAY NIGHT FEVER erstmals im deutschsprachigen Raum auf der B&uuml;hne. Es folgten Engagements als Cover Schwarzer Vampir in TANZ DER VAMPIRE, als Swing in ICH WAR NOCH NIEMALS IN NEW YORK und als Diesel in WEST SIDE STORY am Staatstheater N&uuml;rnberg. In &Ouml;sterreich war er erstmals 2020 als Rusty Charlie und Dance Captain in GUYS AND DOLLS an der Oper Graz zu erleben. Seit 2021 spielt er im Raimund Theater und war dort nach MISS SAIGON und JESUS CHRIST SUPERSTAR zuletzt in REBECCA als Robert und Cover Giles zu sehen.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/jevdavis/" rel="extern" title="Instagram Davis (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.jevdavis.com" rel="extern" title="Website Davis (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Peter Knauder</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Peter Knauder</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Geb&uuml;rtiger Steirer, Ausbildung Performing Academy in Wien. Disneys CAMP ROCK, SEUSSICAL, SIE SPIELEN UNSER LIED/Stockerau. Es folgte die Titelrolle in Disneys ALADDIN JR./Wiener Stadthalle, Paul in A CHORUS LINE/Stockerau, HELLO, DOLLY!/Bad Ischl, THE WIZ/Linz und M&uuml;nchen sowie IO SENZA TE/Z&uuml;rich. THE WHO&rsquo;S TOMMY/Linz, WUNDER VON BERN/TV, G&auml;rtnerplatztheater M&uuml;nchen und Darmstadt: HAIR, DER MEDICUS/Fulda, Theater an der Elbe ICH WAR NOCH NIEMALS IN NEW YORK/Hamburg. I AM FROM AUSTRIA im Raimund Theater, MAMMA MIA! als Eddie. KUSS DER SPINNENFRAU/Baden, PRETTY WOMAN &ndash; DAS MUSICAL in Hamburg, GOETHE!/Bad Hersfeld, MISS SAIGON im Raimund Theater, TANZ DER VAMPIRE in Stuttgart, CABARET/Hamburg, JESUS CHRIST SUPERSTAR im Raimund Theater. TV: DANCING STARS, EUROVISION, WENN DIE MUSI SPIELT etc.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/peterknauder/" rel="extern" title="Instagram Knauder (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/1436.jpg" alt="Shane Landers &copy; VBW/ Sandra Kosel" title="Shane Landers &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Shane Landers</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Shane Landers</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Shane Landers erhielt seine Ausbildung an der Laine Theatre Arts in London. Seine Engagements f&uuml;hrten ihn in den deutschsprachigen Raum, wo er u. a. als GI und Swing/Cross Swing bei MISS SAIGON, als <em>Big Deal</em> in WEST SIDE STORY am Staatstheater N&uuml;rnberg und als Swing in GHOST &ndash; DAS MUSICAL am Stage Palladium Theater und im Ensemble am Theater des Westens auf der B&uuml;hne stand. Weiters war er als Cross Swing in TANZ DER VAMPIRE am Theater des Westens, im Ensemble bei ICH WAR NOCH NIEMALS IN NEW YORK auf der Stage Entertainment Tour sowie im Theater an der Elbe, als Spirit of Fosse in CHICAGO am Theater des Westens und am Deutschen Theater M&uuml;nchen engagiert. Au&szlig;erdem war er Dance Captain der Produktion ALL MALE HMS PINAFORE und PIPE DREAM in London.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/smrpflanders" rel="extern" title="Facebook Landers (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/smrpflanders/" rel="extern" title="Instagram Landers (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Maria Pambori</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Maria Pambori</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Maria Pambori kommt aus der Mittelmeerinsel Zypern. Sie stammt aus einer Familie von T&auml;nzern und entdeckte bereits im Alter von 4 Jahren ihre Liebe zum Tanz. Mit 17 Jahren zog sie nach England und begann ihre Ausbildung am SLP College of Performing Arts, die sie 2019 abschloss. Am Ende ihrer Ausbildung wurde sie als&nbsp;<em>Swing/ Cover Wahrsagerin</em>&nbsp;in Disney&#39;s ALADDIN am Apollo Theater besetzt. Anschlie&szlig;end spielte sie im&nbsp;<em>Ensemble</em>&nbsp;in JESUS CHRIST SUPERSTAR am Wiener Raimund Theater und&nbsp;<em>Francine</em>&nbsp;in JERSEY BOYS beim Musical Sommer Amstetten. In der Spielzeit 2023/24 gastiert sie als&nbsp;<em>Anita</em>&nbsp;in WEST SIDE STORY an der Oper Kiel. Zuletzt war mit ROCK OF AGES als&nbsp;<em>Angel Destiny</em>&nbsp;auf Tournee.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Lilly Rottensteiner</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Lilly Rottensteiner</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Die geb&uuml;rtige Steirerin Lilly Rottensteiner schloss ihr Studium 2022 an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien (MUK) mit Auszeichnung ab. Im Rahmen ihrer Ausbildung verk&ouml;rperte sie u. a. den Mikado in DER MIKADO und Mrs. White in CLUE im MUK.theater. Ihr professionelles Deb&uuml;t gab sie in der Rolle der Baronin Bomburst in TSCHITTI TSCHITTI B&Auml;NG B&Auml;NG am Staatstheater am G&auml;rtnerplatz. Seither stand sie als Frau Segstrom in DAS L&Auml;CHELN EINER SOMMERNACHT, als Herta und Luise in DREI M&Auml;NNER IM SCHNEE, sowie als Blumenm&auml;dchen und Stubenm&auml;dchen in MY FAIR LADY auf der B&uuml;hne des G&auml;rtnerplatztheaters. Am Theater der Jugend spielte sie Sara in der Urauff&uuml;hrung von LIZZY CARBON UND DER KLUB DER VERLIERER. Bei den VBW wirkte sie im Ensemble bei der semi-konzertanten Auff&uuml;hrung von JESUS CHRIST SUPERSTAR im Raimund Theater und bei ELISABETH im Ehrenhof vor Schloss Sch&ouml;nbrunn mit.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Steven Seale</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Steven Seale</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Steven studierte an der Oklahoma City University und spielte danach in den USA u.a. in DAMN YANKEES sowie in der New York Radio City Music Hall. Engagements in Europa waren u.a. CATS, STARLIGHT EXPRESS, CABARET, ELISABETH (Theater an der Wien), ROMEO &amp; JULIA sowie ICH WAR NOCH NIEMALS IN NEW YORK (Raimund Theater), &bdquo;Gayle Tufts Rockt!&ldquo; und &bdquo;Some like it hei&szlig;!&ldquo; (Berlin). Unter der Regie von Kim Duddy trat er in FOOTLOOSE, CARMEN CUBANA, HAIR, ROCKVILLE und verk&ouml;rperte die Titelrollen in TOMMY und JESUS CHRIST SUPERSTAR.&nbsp;In der Kino-Neuverfilmung von &bdquo;Im Weissen R&ouml;ssl&ldquo; war er choreographischer Assistent, eine Funktion, die er auch bei THE WIZ (Landestheater Linz), &bdquo;We Are Musical&ldquo; (Raimund Theater), LA CAGE AUX FOLLES (Kammerspiele Wien), CARMEN CUBANA sowie DAS DSCHUNGELBUCH (Luisenburg Festspiele) aus&uuml;bte. &nbsp;Steven war in der Neuinszenierung von CABARET am Hansa Theater in Hamburg als Kit Kat Boy zu erleben und spielte beim Musical Sommer Fulda in den Produktionen DER MEDICUS, DIE P&Auml;PSTIN, DIE SCHATZINSEL sowie ROBIN HOOD.&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/159.jpg" alt="Rebecca Soumagné &copy; Christian Ariel Heredia" title="Rebecca Soumagné &copy; Christian Ariel Heredia" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Rebecca Soumagné</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Rebecca Soumagné</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p><strong>Ausbildung</strong>: Hochschule Osnabr&uuml;ck.</p><p><strong>Engagements</strong>: u.a. <em>Josepha Weber</em> in MOZART!; Swing in SCHIKANEDER; Swing u. Cover <em>Beatrice</em> in REBECCA/Raimund Theater; <em>Sally</em> in CABARET/Steyr; <em>Regina</em> in ROCK OF AGES/Amstetten; <em>Ethel McCormack</em> in FOOTLOOSE/Chemnitz; <em>K&ouml;nigin Viktoria</em> in CINDERELLA/TDJ Wien; <em>Klara</em> in HEIDI, <em>Mina Murray</em> in DRACULA, <em>Maria Magdalena</em> in JESUS CHRIST SUPERSTAR, <em>Ronette</em> in DER KLEINE HORRORLADEN, <em>Fetisova</em> in DOKTOR SCHIWAGO, <em>Kate Murphy</em> in TITANIC/Baden. Werbe- und H&ouml;rbuchsprecherin.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/rebeccaanitasoumagne/" rel="extern" title="Soumagné Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/1032.jpg" alt="Ariane Swoboda 2016 &copy; VBW/ Sandra Kosel" title="Ariane Swoboda 2016 &copy; VBW/ Sandra Kosel" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Ariane Swoboda</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Ariane Swoboda</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Ariane Swoboda absolvierte ihre Ausbildung an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien und am Studio Theater an der Wien. Seit 30 Jahren ist sie in VBW-Produktionen zu sehen, u. a. in GREASE, DIE SCH&Ouml;NE UND DAS BIEST, ELISABETH, TANZ DER VAMPIRE, JEKYLL &amp; HYDE, THE PRODUCERS, EVITA, JESUS CHRIST SUPERSTAR und I AM FROM AUSTRIA. Ebenso war sie an zahlreichen Stadttheater-Produktionen &ndash; vor allem in St. Gallen, Bregenz, Klagenfurt, Baden und an der Oper Graz &ndash; beteiligt, u. a. in ARTUS &ndash; EXCALIBUR, DER MANN VON LA MANCHA, ANATEVKA, HELLO, DOLLY!, HAIRSPRAY, SWEET CHARITY, XANADU, WEST SIDE STORY und ANYTHING GOES. Im Kabarett Simpl war sie in verschiedenen Revuen zu sehen. Seit einigen Jahren unterrichtet sie Liedinterpretation und hat f&uuml;r Student*innen das Buch &bdquo;Mein Audition-Journal&ldquo; als Leitfaden geschrieben.</p><ul class="socialmedia tarn"><li><a href="https://www.facebook.com/ariane.swoboda" rel="extern" title="Swoboda Facebook (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.instagram.com/ariane.swoboda" rel="extern" title="Swoboda Instagram (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.arianeswoboda.com/" rel="extern" title="Swoboda Webseite (Webseite)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/web_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/20031.jpg" alt="Yuri Yoshimura &copy; Jan Frankl" title="Yuri Yoshimura &copy; Jan Frankl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Yuri Yoshimura</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Yuri Yoshimura</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Die Wienerin mit japanischen Wurzeln erhielt ihre Tanzausbildung u. a. in Wien und am Broadway Dance Center Tokyo, ihre Gesangsausbildung am Hitsville Tokyo, ein Diplom als Musicaldarstellerin am Konservatorium Sunrise Studios Wien sowie einen B. A. in Hauptfach Geschichte an der Sophia University in Tokio. Erstes Engagement als Tänzerin beim ORF Kiddy Contest 2001. Auftritte in Österreich als Connie Wong in A CHORUS LINE, am Landestheater Linz als Frau Pleti/Ensemble in IN 80 TAGEN UM DIE WELT sowie als Gemina in A FUNNY THING HAPPENED ON THE WAY TO THE FORUM. In Deutschland Solistin in der Show SAYONARA TOKYO, später im Apollo Theater Stuttgart für DER GLÖCKNER VON NOTRE DAME. Luisenburg Festspiele: Marty in GREASE und MADAGASCAR. Weitere Auftritte in MISS SAIGON, DER GLÖCKNER VON NOTRE DAME und JESUS CHRIST SUPERSTAR in Wien. Parallel absolviert sie ein Fernstudium in Tontechnik &amp; Musikproduktion.</p><ul class="socialmedia tarn"><li><a href="https://www.instagram.com/yuriyoshimuraofficial/" rel="extern" title="Instagram Yoshimura (Instagram)" class="noextern"><img width="24" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/IG_icon.svg" loading="lazy"  /></a></li><li><a href="https://www.facebook.com/yuriyoshimuraofficial" rel="extern" title="Facebook Yoshimura (Facebook)" class="noextern"><img width="11" height="24" class="vmiddle" alt="" src="../../../_assets/css/icon/FB_icon.svg" loading="lazy"  /></a></li></ul></li><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/21787.jpg" alt="Anna Zagler &copy; VBW/ Marco Sommer" title="Anna Zagler &copy; VBW/ Marco Sommer" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Anna Zagler</h4><p class="cast-title mt0 small">Ensemble</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Anna Zagler</h2><h6 class="cast-title mt0 mb20">Ensemble</h6><p>Anna Zagler schloss 2021 ihre Musicalausbildung an der Performing Academy in Wien ab. Nach ihrem Abschluss wurde sie f&uuml;r das Fixensemble von Sipario in der Seestadt engagiert. Anfang 2022 spielte sie dort die Rolle der <em>Lucy</em> in DRACULA, <em>Crystal</em> in DER KLEINE HORRORLADEN und ein Soulgirl in JESUS CHRIST SUPERSTAR. W&auml;hrenddessen war sie ebenfalls als <em>Maid Marian</em> in ROBIN HOOD in einer Tourneeproduktion zu sehen. Anschlie&szlig;end folgte im Sommer 2022 ihr Hauptrollendebut: Beim Musicalsommer Winzendorf verk&ouml;rperte sie die Rolle der <em>Julia</em> in einer neuen Fassung von ROMEO &amp; JULIA. Im Herbst war sie dann als Vampirbraut und Cover <em>Mina</em> in DRACULA (Deutsches Theater M&uuml;nchen) zu sehen. Anfang 2023 ging sie als Swing, Cover <em>Laura</em>, Cover <em>Zeynep</em> und Cover <em>Gerster</em> auf Tournee mit FACK JU G&Ouml;HTE. Zu Ostern war sie bei JESUS CHRIST SUPERSTAR als Mitglied des Ensembles im Raimund Theater zu sehen. Im Sommer 2023 kann man sie im Ensemble von MAMMA MIA! bei den Seefestspielen in M&ouml;rbisch auf der B&uuml;hne erleben.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="Leading Team_100480"   data-id="100480" data-type="extracontent_cast"><div class="extracontent_cast setContentWidth extracontent-inner article-swiper-container"><div class="intro"><h2 style="text-align:center">Leading Team</h2></div><div class="tcenter"></div><ul class="casts tarn swiper-wrapper flex-jc-start mt20"><li class="swiper-slide cast fadingSlide"><img src="../../../_media/cast_image/c270x400/4667.jpg" alt="Herbert Pichler &copy; VBW/Maria Frodl" title="Herbert Pichler &copy; VBW/Maria Frodl" loading="lazy"/><div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div><!--<picture class=""  data-componentname="image"  ><source src="/_media/image/c270x400/.webp"><source src="/_media/image/c270x400/.jpg"><img 
+		 
+	
+
+	src="/_media/image/c270x400/.jpg" 
+     alt=""
+			  loading="lazy" 
+	 
+
+ title="" 
+
+
+
+
+
+
+	/></picture>--><div class="cast-descr tcenter"><h4 class="mb0">Herbert Pichler</h4><p class="cast-title mt0 small">Musikalische Leitung</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Herbert Pichler</h2><h6 class="cast-title mt0 mb20">Musikalische Leitung</h6><p>Herbert Pichler absolvierte die Universit&auml;t für Musik und Darstellende Kunst in Graz. Seit 1989 ist er in Wien als Künstler t&auml;tig und unterrichtet zudem am Institut für Popularmusik an der Universit&auml;t für Musik und Darstellende Kunst Wien. Er war musikalischer Leiter u. a. von MISS SAIGON, BARBARELLA, HAIR, MAMMA MIA! und BODYGUARD (alle VBW), der Neufassung von CABARET mit Maria Bill (Volkstheater Wien) und der TV-Show &bdquo;Ein Saitensprung&ldquo; mit Rainhard Fendrich. Als Dirigent war er u. a. bei DER BAUER ALS MILLION&Auml;R (Landestheater Linz), &bdquo;Musical!&ndash; Die Show&ldquo; (ORF 2007) und I AM FROM AUSTRIA (VBW) t&auml;tig. Seit der ersten Staffel der ORF-Show &bdquo;Dancing Stars&ldquo; ist er darüber hinaus Dirigent des Star Orchesters. Weitere Beispiele seiner vielseitigen musikalischen T&auml;tigkeit sind u. a. Orchesterprojekte mit Thomas Quasthoff, das mdw-Projekt CUBE, die musikalische Leitung des Nestroy-Theaterpreises, die Zusammenarbeit mit dem Mozarteum Kammerorchester und mehrere Projekte mit Herbert Pixner und dem Tonkünstler-Orchester. Als Arrangeur und Musiker arbeitete Herbert Pichler im Rahmen von CD-Produktionen und TV-Shows mit Künstler*innen wie Nina Hagen, Marianne Faithful und Chaka Khan, mit denen er gemeinsam die Er&ouml;ffnung der Wiener Festwochen 2005 erarbeitete, sowie mit The Supremes, Harry Belafonte, Patricia Kaas, Placido Domingo, den Wiener Symphonikern, dem Radio Symphonie Orchester Wien, Jos. Carreras, Luciano Pavarotti, Dave Stewart, Jim Steinman, Simply Red, Gloria Gaynor und vielen Musical-Stars zusammen.&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0"></h4><p class="cast-title mt0 small">Stellvertretende Musikalische Leitung</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0"></h2><h6 class="cast-title mt0 mb20">Stellvertretende Musikalische Leitung</h6></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Alex Balga</h4><p class="cast-title mt0 small">Regie</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Alex Balga</h2><h6 class="cast-title mt0 mb20">Regie</h6><p>Seine Ausbildung erhielt Alex Balga u. a. an der Musik und Kunst Privatuniversit&auml;t der Stadt Wien sowie am Tanz- Gesang-Studio Theater an der Wien. Nach Engagements u. a. bei GREASE (Raimund Theater), JOSEPH AND THE AMAZING TECHNICOLOR DREAMCOAT und LES MIS&Eacute;RABLES wechselte er ins Regiefach.&nbsp;Als K&uuml;nstlerischer Leiter war Alex Balga bei Mehr-Entertainment und bei Disneys TARZAN&nbsp;t&auml;tig. Er leitete einen Workshop von DER BLAUE ENGEL&nbsp;am New Yorker Broadway und ist Casting Director der deutschen Erstauff&uuml;hrung des internationalen Theater-Hits HARRY POTTER UND DAS VERWUNSCHENE KIND&nbsp;in Hamburg.&nbsp;Au&szlig;erdem inszenierte er etliche gro&szlig;e Produktionen u. a. GODSPELL, CABARET, MIAMI NIGHTS (auch Co-Autor), SATURDAY NIGHT FEVER, FAME, LAST CHRISTMAS, THAT&rsquo;S LIFE, FRANK WILDHORN &amp; FRIENDS, HAIR (Bozen, Musical Sommer Amstetten), die Urauff&uuml;hrung von Hape Kerkelings KEIN PARDON &ndash; DAS MUSICAL, die europ&auml;ische Erstauff&uuml;hrung MESSIAH ROCKS (Raimund Theater),&nbsp;VOM GEIST DER WEIHNACHT,&nbsp;die deutschsprachige Erstauff&uuml;hrung von 9 TO 5, DIRTY DANCING &ndash; LIVE ON TOUR, ROCK OF AGES, THE ROCKY HORROR SHOW, JESUS CHRIST SUPERSTAR in Concert (Ronacher, Raimund Theater), THE&nbsp; ROCKY HORROR SHOW, die deutschsprachige Erstauff&uuml;hrung von ON YOUR FEET und ROCK OF AGES, GREASE, Frank Wildhorns DRACULA,&nbsp;(Ulm, Deutsches Theater M&uuml;nchen) und 2021 die gro&szlig;e Er&ouml;ffnungsgala des neu renovierten Raimund Theaters in Wien. Seit 2019 ist er Intendant des Musical Sommers Amstetten, wo er im Sommer 2023 die deutschsprachige Erstauff&uuml;hrung des Broadway-Hits JERSEY BOYS&nbsp;auf die B&uuml;hne bringen wird.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Pascale-Sabine Chevroton</h4><p class="cast-title mt0 small">Choreographie</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Pascale-Sabine Chevroton</h2><h6 class="cast-title mt0 mb20">Choreographie</h6><p>Die Regisseurin und Choreographin studierte am Conservatoire de Besan&ccedil;on Tanz und Musik. Nach ihrem Abitur mit Auszeichnung studierte sie Tanz an der Musikhochschule K&ouml;ln und Psychologie an der Universit&auml;t von Reims. Nach vier festen Engagements arbeitete sie freiberuflich als T&auml;nzerin und Darstellerin, seit 1999 als Choreographin und Regisseurin. Zahlreiche Choreographien f&uuml;r Musiktheater und Schauspiel, u.a. f&uuml;r Wien (Ronacher, Volkstheater, Totales Theater, Porgy &amp; Bess), die Sommerfestspiele Melk, die Oper Klosterneuburg, in L&uuml;beck, Karlsruhe, Dresden, Erfurt, Augsburg, Heidelberg, Bern, St. Gallen, Catania, Nizza, Dublin und London folgten. Inszenierungen u.a. in L&uuml;beck, Bern, Montpellier, Wuppertal, Coburg, St. Gallen, Pforzheim, Erfurt, Wiesbaden, Heilbronn, Heidelberg, Melk, Klosterneuburg, Wien, W&uuml;rzburg, Nizza, Mannheim, M&uuml;nster, Neustrelitz, Klagenfurt und Hildesheim. Mit Irina Brook gestaltete sie Ibsens PEER GYNT f&uuml;r das Th&eacute;&acirc;tre National de Nice und das Th&eacute;&acirc;tre des Bouffes du Nord Paris. F&uuml;r die VBW choreographierte sie die konzertanten Auff&uuml;hrungen von JESUS CHRIST SUPERSTAR (seit 2018), DAS PHANTOM DER OPER (2012) und LOVE NEVER DIES (2013). Demn&auml;chst inszeniert sie GR&Auml;FIN MARIZA in Koblenz, GEF&Auml;HRLICHE LIEBSCHAFTEN in Kaiserslautern, LOVE NEVER DIES in Magdeburg und DOCTEUR MIRACLE an der HMT Leipzig.&nbsp;</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Elisabeth Blutsch</h4><p class="cast-title mt0 small">Associate Choreographie</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Elisabeth Blutsch</h2><h6 class="cast-title mt0 mb20">Associate Choreographie</h6><p>Elisabeth Blutsch schloss ihre Ausbildung zur professionellen Musicaldarstellerin an der Wiener Performing Academy ab. Sie erhielt bei internationalen Musical- und Showdance-Meisterschaften zahlreiche Preise und Auszeichnungen und stand sp&auml;ter auch f&uuml;r verschiedenste Musikvideos vor der Kamera. Sie war in Produktionen wie OLIVER! (Bad Leonfelden und Bad Hall), ALICE IM WUNDERLAND und ALADDIN (Wiener Stadthalle), RIGOLETTO (Oper Klosterneuburg), THE MAKING OF &Ouml;STERREICH (Museumsquartier Wien), FAUST (Tournee), KISS ME KATE (Oper Graz), EVITA (Stadttheater Klagenfurt und B&uuml;hnen Bern), DIE LUSTIGE WITWE und WIENER BLUT (Schlossfestival Weitra), ANNIE GET YOUR GUN (Stadttheater Klagenfurt) und SOFIES WELT (Theater f&uuml;r Niedersachsen) zu sehen. Als Choreografin wirkte sie au&szlig;erdem u. a. bei VICTOR/VICTORIA und ANTON (Stadttheater Klagenfurt), Nina Prolls VORSTADTLIEDER (Tournee), Uwe Kr&ouml;ger und Pia Douwes MUSICAL-HITS (Tournee), ROSEN IN TIROL, DIE FLEDERMAUS und ROCK MY SOUL (Wiener Metropol), diversen ORF- und ServusTV-Produktionen und beim Eurovision Song Contest 2015 mit.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Andrew Voller</h4><p class="cast-title mt0 small">Lichtdesign</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Andrew Voller</h2><h6 class="cast-title mt0 mb20">Lichtdesign</h6><p>F&uuml;r die Vereinigten B&uuml;hnen Wien zeichnete er als Lichtdesigner f&uuml;r I AM FROM AUSTRIA, EVITA, REBECCA, ROMEO &amp; JULIA, ELISABETH (2003), die Neuinszenierung von HAIR, die Jubil&auml;umsgala WE ARE MUSICAL sowie die konzertanten Auff&uuml;hrungen von JESUS CHRIST SUPERSTAR, MESSIAH ROCKS, LOVE NEVER DIES und DAS PHANTOM DER OPER verantwortlich. Zudem war Andrew Voller als Lichtdesigner f&uuml;r ROCK OF AGES, THE WHO&acute;S TOMMY, THE WILD PARTY, FOOTLOOSE, JESUS CHRIST SUPERSTAR, CARMEN CUBANA &ndash; A LATIN POP-OPERA, HAIR, AIDA und ROCKVILLE in Amstetten, sowie f&uuml;r PARSIFAL an der Finnischen Nationaloper t&auml;tig. Er war verantwortlich f&uuml;r die Lichtgestaltung von RIVERDANCE (Tournee zum 25. Jubil&auml;um), Hans Kloks Zaubershows FASTER THAN MAGIC und THE BEAUTY OF MAGIC (Las Vegas), KEIN PARDON &ndash; DAS MUSICAL (D&uuml;sseldorf), SATURDAY NIGHT FEVER und MIAMI NIGHTS (Deutschland-Tournee), ICH WAR NOCH NIEMALS IN NEW YORK (Hamburg, Wien, Stuttgart, Oberhausen, Z&uuml;rich und Tournee), ICH WILL SPASS!, BUDDY &ndash; DIE BUDDY HOLLY STORY (Essen), MOEDER, IK WIL BIJ DE REVUE (Utrecht), SHREK &ndash; DAS MUSICAL (Deutschland-Tournee und Internationale Tournee), LIFT (London), RENT und INTO THE WOODS (Guildford School of Acting), JASON AND THE ARGONAUTS (London School of Musical Theatre) und CATS (Thunerseespiele).</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Patrick Polly</h4><p class="cast-title mt0 small">Sounddesign</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Patrick Polly</h2><h6 class="cast-title mt0 mb20">Sounddesign</h6><p>Patrick Polly sammelte seine ersten Erfahrungen beim ORF und arbeitete danach als freiberuflicher Tontechniker. Seit 2008 ist er am Ronacher t&auml;tig und &uuml;bernahm dort 2011 die Leitung der Tontechnik. Als FOH-Operator betreute er bei den Vereinigten B&uuml;hnen Wien diverse Produktionen, u.a. THE PRODUCERS, TANZ DER VAMPIRE, NAT&Uuml;RLICH BLOND und MARY POPPINS. In der selben Funktion war er international mit WIEN MUSICAL CONCERT II auf Tournee und mit ELISABETH IN CONCERT in Japan. Er zeichnete auch bereits als Assistant Sounddesigner bei SISTER ACT und ICH WAR NOCH NIEMALS IN NEW YORK sowie als Associate Sounddesigner bei LOVE NEVER DIES und DER BESUCH DER ALTEN DAME verantwortlich. Ehrenamtlich&nbsp; unterst&uuml;tzt er seit 2002 den Verein &bdquo;Tonvoll&ldquo; in allen tontechnischen Belangen.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Nicole Panagl</h4><p class="cast-title mt0 small">Kostüm</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Nicole Panagl</h2><h6 class="cast-title mt0 mb20">Kostüm</h6><p>Nicole Panagl wurde in Wien geboren. Nach langj&auml;hriger T&auml;tigkeit als Kost&uuml;mbildnerin in den Bereichen Theater, Film und Werbung in &Ouml;sterreich und Italien, ist sie seit 2011 Leiterin der Kost&uuml;mabteilung Musical der Vereinigten B&uuml;hnen Wien. Hier stattete sie bereits mehrmals JESUS CHRIST SUPERSTAR sowie MESSIAH ROCKS, LOVE NEVER DIES und DAS PHANTOM DER OPER (jeweils in konzertanter Fassung) aus. Daneben zeichnete sie auch bei der VBW-Jubil&auml;umsgala WE ARE MUSICAL 2015 f&uuml;r das Kost&uuml;mbild verantwortlich.</p></li><li class="swiper-slide cast fadingSlide"><div class="cast-descr tcenter"><h4 class="mb0">Sam Madwar</h4><p class="cast-title mt0 small">Videodesign</p></div></li><li class="swiper-slide cast-expand slideToExpand"><button class="nobtn closeTile"><img src="../../../_assets/css/icon/close.svg" alt="X" title="schließen"></button><h2 class="m0">Sam Madwar</h2><h6 class="cast-title mt0 mb20">Videodesign</h6><p>Darsteller, Autor, Regisseur, &Uuml;bersetzer, Licht- und Projektionsdesigner, zuletzt aber haupts&auml;chlich B&uuml;hnenbildner. An der Wiener Volksoper Ausstattungen f&uuml;r FRAU LUNA, GUYS AND DOLLS und HELLO DOLLY, und zuletzt AXEL AN DER HIMMELST&Uuml;R. Am Theater der Jugend KARLSSON VOM DACH, EMIL UND DIE DETEKTIVE, KALLE BLOMQUIST LEBT GEF&Auml;HRLICH, und zuletzt CINDERELLA PASST WAS NICHT. Bei der B&uuml;hne Baden h&auml;ufiger Gast, u.a. mit DIE BAJADERE, EINE NACHT IN VENEDIG, DIE SCH&Ouml;NE WASSILISSA, SWEET CHARITY, ZWEI HERZEN IM DREIVIERTELTAKT, ANNIE, LAND DES L&Auml;CHELNS und VICTOR/VICTORIA. Sein Fantasy-B&uuml;hnenbild f&uuml;r das Musical DIE 13 1/2 LEBEN DES K&Auml;PT&lsquo;N BLAUB&Auml;R war 2008/09 auf gro&szlig;er Tour durch Deutschland. Sein B&uuml;hnenbild f&uuml;r SHREK war nach Premiere in D&uuml;sseldorf auf Tournee &uuml;ber die Schweiz bis nach Wien und wurde in Folge f&uuml;r eine Welttournee &uuml;bernommen. Weitere Ausstattungen in &Ouml;sterreich: Stadttheater Klagenfurt, Wiener Stadthalle, Musical Festival Graz, Kammerspiele Wien, Stadttheater M&ouml;dling/Scala Wien, Theatersommer Haag, Wachaufestspiele Wei&szlig;enkirchen u.v.m., vergangenen Sommer erstmals in Amstetten mit einer gefeierten Produktion von HAIR. In Deutschland zuletzt Kom&ouml;die am Ku&rsquo;damm Berlin, Schmidt-Theater Hamburg, Prinzregententheater M&uuml;nchen, Staatstheater Oldenburg und Stadttheater Chemnitz. Regie: LUCKY STIFF 2002 in Klagenfurt und Wien, COCCINELLA im Dschungel Wien, Neil Simons SIE SPIELEN UNSER LIED und zuletzt SCHMETTERLINGE SIND FREI. St&uuml;cke: WENN DER WIND WEHT und Liedtexte zu FIGARO, verlegt bei Felix Bloch Erben, RUHE AM SET! &ndash; DIE MARX BROTHERS bei Whalsesongs, Hamburg.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="Fotos_100479"   data-id="100479" data-type="extracontent_image"><div class="extracontent_image setContentWidth gallery-swiper-container extracontent-inner"><h3 class="tcenter">JESUS CHRIST SUPERSTAR Szenenfotos 2023</h3><ul class="images tarn flex-jc-start swiper-wrapper"><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21867.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 001" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21867_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer__2_.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21867.webp"><source src="/_media/image/21867_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer__2_.jpg"><img 
+		 
+	
+
+	src="/_media/image/21867_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer__2_.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 001 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 001 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21868.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 002" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21868_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21868.webp"><source src="/_media/image/21868_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21868_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 002 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 002 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21869.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 003" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21869_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Nienke_Latten__Maria_Magdalena___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21869.webp"><source src="/_media/image/21869_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Nienke_Latten__Maria_Magdalena___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21869_JESUS_CHRIST_SUPERSTAR_Alex_Melcher__Judas__Nienke_Latten__Maria_Magdalena___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 003 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 003 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21870.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 004" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21870_JESUS_CHRIST_SUPERSTAR_Christian_Rey_Marbella__Herodes__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21870.webp"><source src="/_media/image/21870_JESUS_CHRIST_SUPERSTAR_Christian_Rey_Marbella__Herodes__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21870_JESUS_CHRIST_SUPERSTAR_Christian_Rey_Marbella__Herodes__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 004 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 004 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21871.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 005" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21871_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21871.webp"><source src="/_media/image/21871_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21871_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 005 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 005 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21872.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 006" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21872_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__James_Park__Pontius_Pilatus___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21872.webp"><source src="/_media/image/21872_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__James_Park__Pontius_Pilatus___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21872_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__James_Park__Pontius_Pilatus___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 006 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 006 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21873.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 007" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21873_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Nienke_Latten__Maria_Magdalena__Alex_Melcher__Judas___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21873.webp"><source src="/_media/image/21873_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Nienke_Latten__Maria_Magdalena__Alex_Melcher__Judas___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21873_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus__Nienke_Latten__Maria_Magdalena__Alex_Melcher__Judas___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 007 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 007 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21874.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 008" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21874_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21874.webp"><source src="/_media/image/21874_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21874_JESUS_CHRIST_SUPERSTAR_Drew_Sarich__Jesus___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 008 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 008 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21875.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 009" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21875_JESUS_CHRIST_SUPERSTAR_Katharina_Gorgi__Soul_Girl__Alex_Melcher__Judas__Sophia_Gorgi__Soul_Girl___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21875.webp"><source src="/_media/image/21875_JESUS_CHRIST_SUPERSTAR_Katharina_Gorgi__Soul_Girl__Alex_Melcher__Judas__Sophia_Gorgi__Soul_Girl___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21875_JESUS_CHRIST_SUPERSTAR_Katharina_Gorgi__Soul_Girl__Alex_Melcher__Judas__Sophia_Gorgi__Soul_Girl___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 009 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 009 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21876.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 010" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21876_JESUS_CHRIST_SUPERSTAR_Nienke_Latten__Maria_Magdalena__Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21876.webp"><source src="/_media/image/21876_JESUS_CHRIST_SUPERSTAR_Nienke_Latten__Maria_Magdalena__Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21876_JESUS_CHRIST_SUPERSTAR_Nienke_Latten__Maria_Magdalena__Drew_Sarich__Jesus__Ensemble__VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 010 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 010 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li><li class="swiper-slide fadingSlide"><img src="../../../_tools/imager/imager.php@file=%252F_media%252Fimage%252Foriginal%252F21877.jpg&amp;height=510" alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 011" title="&copy; VBW/ Herwig Prammer" loading="lazy" /><!-- /_media/image/21877_JESUS_CHRIST_SUPERSTAR_Timo_Verse__Annas__Alex_Melcher__Judas__Dennis_Kozeluh__Kaiphas___VBW_Herwig_Prammer.jpg --><!-- <picture class=""  data-componentname="image"  ><source src="/_media/image/original/21877.webp"><source src="/_media/image/21877_JESUS_CHRIST_SUPERSTAR_Timo_Verse__Annas__Alex_Melcher__Judas__Dennis_Kozeluh__Kaiphas___VBW_Herwig_Prammer.jpg"><img 
+		 
+	
+
+	src="/_media/image/21877_JESUS_CHRIST_SUPERSTAR_Timo_Verse__Annas__Alex_Melcher__Judas__Dennis_Kozeluh__Kaiphas___VBW_Herwig_Prammer.jpg" 
+     alt="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 011 © VBW/ Herwig Prammer"
+			  loading="lazy" 
+	 
+
+ title="JESUS CHRIST SUPERSTAR - Szenenfotos 2023 011 © VBW/ Herwig Prammer" 
+
+
+
+
+
+
+	/></picture> --></li></ul><div class="swiper-button-prev nobtn arrowSlider left"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach links schieben"> --></div><div class="swiper-button-next nobtn arrowSlider right"><!-- <img class="" src="/_assets/css/icon/arrowSlider.svg" alt="nach rechts schieben"> --></div></div></div><!-- data-caldate="202501" --></div></div></div>
+	  </div>
+		
+		
+</div>
+<footer id="footer" role="contentinfo">
+	<div class="inner">
+		
+	<div class="relative">
+		<a href="https://vbw.at/de/home" aria-describedby="Vereinigte Bühnen Wien"><img src="../../../_assets/content/logos/Vbw_Logo.svg" alt="Vereinigte Bühnen Wien" class="vbwFooterLogo"></a>
+		<div class="getTickets">
+			<h6 class="mb0">Tickets bestellen unter</h6>
+			<h2 class="mt0"><a href="tel:+43 1 58885 - 111" class="tdn">+43 1 58885 - 111</a></h2>
+		</div>
+		 	<div  data-componentname="footer"  class="customFooter"><!--div class="footer-inner"--><!--ul  data-componentname="footer"  class="footer-block-info"--><div class="meta-list-item Follow us"><h4 class="uppercase">Follow us</h4><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.facebook.com/Musicalvienna">FACEBOOK</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.instagram.com/musicalviennavbw/">INSTAGRAM</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.youtube.com/user/musicalviennaVBW">YOUTUBE</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.tiktok.com/@musicalviennavbw">TIKTOK</a></span></p><p class="h7"> </p></div><div class="meta-list-item "><h4><a href="../../spielplan-und-tickets/spielplan.html">SPIELPLAN</a></h4><h4><a href="../gutscheine.html">GUTSCHEINE</a></h4><h4><a href="../../souvenirs.html">Souvenirs</a></h4><h4><a href="../../musicalclub.html">MUSICALCLUB</a></h4><h4><a href="https://www.vbw-international.at/">VBW International</a></h4><div> </div></div><div class="meta-list-item "><h4><a href="https://www.musicalvienna.at/de/ueber-uns">ÜBER UNS</a></h4><h4><a href="../../ueber-uns/raimund-theater.html">RAIMUND THEATER</a></h4><h4><a href="../../die-theater/ronacher.html">Ronacher</a></h4><h4><a href="../../aktuelles.1.html">NEWS</a></h4><h4><a href="https://vbw.at/de/unternehmen/jobs">JOBS</a></h4><div> </div></div><div class="meta-list-item "></div><!--/ul--><!--/div--></div>
+			<div class="footerSponsorWrap">
+				<div class="footerMainSponsor">
+					<p class="oWhite">Hauptsponsor</p>
+					<a href="https://www.wienerstaedtische.at" rel="extern" title="Wiener Städtische - Vienna Insurance Group"><img src="../../../_assets/content/logos/logo-wiener-staedtische.png" alt="Wiener Städische" class="WienerStdFooterLogo"></a>
+				</div>
+				<ul class="footerSponsor tarn">
+					<li><a href="https://www.wienholding.at" rel="extern" title="W!ienhold!ing"><img src="../../../_assets/content/logos/logo-wienholding-50jahre.jpg" alt="Wiener Städische" class=""></a></li>
+					<li><a href="https://www.wien.gv.at/kultur/abteilung" rel="extern" title="Wien Kultur"><img src="../../../_assets/content/logos/logo-wienkultur.png" alt="Wien Kultur" class="logo-wienkultur"></a></li>
+				</ul>
+			</div>
+			<div class="meta">
+				<div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Metanavigation unten</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100006  de">
+                        <a href="../../impressum.html" class="navigation_link nav__inner ">Impressum</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100007  de">
+                        <a href="../../agb.html" class="navigation_link nav__inner ">AGB</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100008  de">
+                        <a href="../../datenschutz-cookies.html" class="navigation_link nav__inner ">Datenschutz</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100024  de">
+                        <a href="../../kontakt.html" class="navigation_link nav__inner ">Kontakt</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100054  de">
+                        <a href="../../hilfe.html" class="navigation_link nav__inner ">Hilfe</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+			</div>
+	</div>
+</div>
+</footer>
+<div id="mynlregister" class="overlaybox none nocontent">
+
+    <div class="relative">
+		<a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html#" class="closenlreg">schließen</a>
+			<iframe id="nlregisteriframe" data-regsrc="https://profile.musicalvienna.at/de/nlregister" data-editsrc="https://profile.musicalvienna.at/de/nlverwaltung" frameBorder="0" rel="nofollow"></iframe>
+	</div>
+
+</div>
+<div class="accountbox_wrap none">
+    <div class="accountbox">
+        <a href="../../spielplan-und-tickets/spielplan/production/1060/JESUS-CHRIST-SUPERSTAR-2023.html" class="closeaccountbox" title="schließen"><img src="../../../_assets/css/icon/close.svg" alt="X"></a>
+                <div class="loginoptions m0">
+                <iframe id="loginiframe" data-src="https://www.musicalvienna.at/de/account/login" frameBorder="0" rel="nofollow"></iframe>
+        </div>
+            </div>
+</div>
+
+
+    </body>
+</html>

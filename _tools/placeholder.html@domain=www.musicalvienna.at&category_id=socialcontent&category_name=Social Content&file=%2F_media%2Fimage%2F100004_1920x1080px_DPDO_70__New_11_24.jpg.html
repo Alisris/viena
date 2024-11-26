@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Vimeo Placeholder Truendo</title>
+
+    <style>
+        body, html
+        {
+            margin: 0; padding: 0; height: 100%; overflow: hidden;
+        }
+        body {  background-repeat: no-repeat; background-size: contain; background-position: center; }
+    </style>
+</head>
+<body>
+
+    <script>
+        let language, serviceName, domain, serviceID;
+
+        function getParams() {
+            const curParam = new URLSearchParams(new URL(window.location).search);
+            const pathFrags = window.location.pathname.split('/');
+            /*language = pathFrags[pathFrags.length - 2] || 'en';
+            
+            categoryName = curParam.get('category_name');
+            categoryID = curParam.get('category_id');*/
+            domain = curParam.get('domain') || 'localhost';
+            file  = curParam.get('file');
+            // console.log(file);
+            //console.log(document.getElementsByTagName('body'));
+            document.getElementsByTagName('body')[0].setAttribute('style',"background-image:url('https://"+domain+file+"')");
+        }
+
+        (function() {
+            getParams();
+        })();
+    </script>
+</div>
+</body>
+</html>

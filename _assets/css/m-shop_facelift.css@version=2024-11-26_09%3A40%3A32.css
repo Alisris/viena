@@ -1,0 +1,1357 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "AkkuratSubRegular";
+  src: url("fonts/Akkurat/AkkuratSub/AkkuratLLSub-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratSubBold";
+  src: url("fonts/Akkurat/AkkuratSub/AkkuratLLSub-Bold.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratSubBlack";
+  src: url("fonts/Akkurat/AkkuratSub/AkkuratLLSub-Black.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratWebRegular";
+  src: url("fonts/Akkurat/AkkuratWeb/AkkuratLLWeb-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratWebBold";
+  src: url("fonts/Akkurat/AkkuratWeb/AkkuratLLWeb-Bold.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratWebBlack";
+  src: url("fonts/Akkurat/AkkuratWeb/AkkuratLLWeb-Black.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamUltra";
+  src: url("fonts/GothamUltra/gothamUltra.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Trajan";
+  src: url("fonts/Trajan/trajan.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Oxide";
+  src: url("fonts/OxidePro.woff2") format("woff2");
+  font-weight: normal;
+}
+/* Color Pallete */
+/* Custom Color Pallete */
+/* coloring */
+/* filter */
+/* Fonts */
+/* Headlines */
+/* paragraph */
+/* Lists */
+/* Measure */
+/* 1090 */
+/* Icons */
+/*
+Shop CSS
+
+@site       	wien-ticket.at
+@author     	Martina Hack // hack@echonet.at
+@copyright  	echonet communication gmbh
+@date       	04.2023
+*/
+/* general styling */
+/*html { overflow-y:hidden; } */
+#parentwrapper {
+  overflow: hidden;
+}
+
+.module_proxyneat #parentwrapper {
+  overflow: auto;
+}
+
+body {
+  display: block !important;
+}
+body.module_proxyneat {
+  font: 16px/1.231 "AkkuratSubRegular", helvetica, aria, clean, sans-serif;
+  padding-top: 0 !important;
+}
+body.module_proxyneat #footer .nav {
+  display: block !important;
+}
+body.module_proxyneat #footer a {
+  text-decoration: none;
+  font-size: var(--16px);
+  display: inline-block;
+  margin: 5px 0;
+  font-weight: normal;
+  color: var(--darkgrey);
+}
+body.module_proxyneat #footer a:hover {
+  color: #C91846 !important;
+}
+
+#content .sapshopneat .facelift-flex-nav li a {
+  color: #231F21 !important;
+}
+.content-main {
+  padding: 0 !important;
+}
+
+.button,
+button:not(.nobtn),
+[class*=button]:not(.nobtn),
+[class*=Button]:not(.nobtn),
+.enetButton {
+  border-radius: 9px !important;
+  border: none;
+}
+
+.sapshopneatNavLink, #content .sapshopneat .nav-item .nav-tabs a, #content .sapshopneat .nav-tabs .nav-item a, #content .sapshopneat .nav-tabs .nav-item.show .nav-link,
+#content .sapshopneat .nav-tabs .nav-item.show a, #content .sapshopneat .nav-tabs .nav-link {
+  color: #727272 !important;
+  border: none;
+  border-radius: 0;
+}
+
+.sapshopneatNavActivelink, #content .nav-item .nav-tabs a.active, #content .nav-tabs .nav-item a.active, #content .nav-tabs .nav-item.show .nav-link,
+#content .nav-tabs .nav-item.show a, #content .nav-tabs .nav-link.active {
+  color: #C91846 !important;
+}
+
+.saperror,
+.saperror_overlay {
+  display: block !important;
+}
+
+.saperror_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.saperror {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  background-color: #fff;
+  z-index: 999999999;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  text-align: center;
+}
+.saperror a {
+  width: auto !important;
+}
+.saperror h2 {
+  color: #ca1846;
+}
+
+.module_proxyneat #parentwrapper {
+  background-color: #fafafa;
+}
+.module_proxyneat #content {
+  background-color: #fff;
+}
+.module_proxyneat #sidebar {
+  background-color: #fff;
+}
+.module_proxyneat .container.wrapper {
+  height: auto !important;
+}
+.module_proxyneat .noclick {
+  pointer-events: none !important;
+}
+.module_proxyneat .content-inner a:not(.btn):link, .module_proxyneat .content-inner a:not(.btn):hover, .module_proxyneat .content-inner a:not(.btn):focus, .module_proxyneat .content-inner a:not(.btn):active {
+  color: #C91846 !important;
+}
+.module_proxyneat .content-inner a.active:not(.btn) {
+  color: #C91846 !important;
+}
+.container.wrapper {
+  max-width: none;
+  padding: 0;
+}
+.container.wrapper.shipmentaddress {
+  overflow-y: auto;
+}
+
+h1#logo img {
+  vertical-align: inherit;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.sapshopneat {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+.sapshopneat [class*=button]:not(.btn):not(#dataStorageButton),
+.sapshopneat [class*=Button]:not(.btn):not(#dataStorageButton) {
+  cursor: auto;
+  background-color: transparent;
+  color: transparent;
+  box-shadow: none !important;
+}
+.sapshopneat a {
+  color: #C91846 !important;
+}
+.sapshopneat a.btn.performanceInfoDateButton {
+  padding-left: 60px;
+  background-color: #C91846 !important;
+  background-image: url("icon/btnIcons/calendar.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 15px center;
+  font-size: 1em;
+  float: none;
+  margin-top: 10px;
+}
+.sapshopneat .btn {
+  margin: 0;
+}
+.sapshopneat .btn i::before {
+  color: #fff;
+}
+.sapshopneat .text-primary {
+  color: #C91846 !important;
+}
+.sapshopneat .text-primary * {
+  color: #C91846 !important;
+}
+.sapshopneat button.close {
+  color: #727272;
+  opacity: 1;
+}
+.sapshopneat button.addtobasket {
+  padding-left: 60px !important;
+  background-image: url("icon/btnIcons/cart.svg");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px center;
+  width: auto;
+}
+.sapshopneat button.focuslogin {
+  font-size: 1rem !important;
+}
+.sapshopneat .btn-outline-danger {
+  background-color: #797979 !important;
+  border-color: #797979 !important;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.8em 1em;
+  /*font-size: 1em;*/
+  color: #fff !important;
+  width: 100%;
+}
+.sapshopneat .btn-outline-danger:hover {
+  background-color: #dc0d0e !important;
+  border-color: #dc0d0e !important;
+}
+.sapshopneat .btn-seating .fa {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sapshopneat .btn-seating .fa::before {
+  content: "" !important;
+}
+.sapshopneat .btn-seating .fa-search {
+  background-image: url(../../assets/content/icons/icon-position.png) !important;
+}
+.sapshopneat .facelift-flex-nav li.active {
+  background-color: #ECECEC !important;
+  font-weight: 700;
+}
+.sapshopneat .nav-tabs {
+  border: none;
+  border-radius: 0;
+}
+.sapshopneat #basket {
+  margin-bottom: 50px;
+  padding: 0 !important;
+}
+.sapshopneat #basket div.dark, .sapshopneat #basket div.light {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  padding: 10px 0;
+}
+.sapshopneat #basket div.light {
+  background: #f6f6f6;
+}
+.sapshopneat #basket div.dark {
+  background: #ECECEC;
+}
+.sapshopneat #basket div.dark * {
+  color: #231F21;
+}
+.sapshopneat #basket h1.page-header {
+  padding: 30px;
+  background-color: #ECECEC;
+  font-weight: 700;
+  font-size: 2.611em;
+}
+.sapshopneat #basket form {
+  margin: 0 !important;
+}
+.sapshopneat #basket .basketinner {
+  flex-direction: row-reverse;
+}
+.sapshopneat #basket .fa-user {
+  display: block;
+  margin: 10px 0 0 0;
+}
+.sapshopneat #basket .card {
+  border: none;
+  border-radius: 0;
+}
+.sapshopneat #basket .card .form-check {
+  padding-left: 2rem;
+}
+.sapshopneat #basket .card .form-check-label {
+  margin: 10px 0;
+  width: 100%;
+}
+.sapshopneat #basket .card .form-check-label span.fright {
+  font-weight: 700;
+  max-width: 40%;
+}
+.sapshopneat #basket .card .form-check-label span:first-of-type {
+  max-width: 60%;
+}
+.sapshopneat #basket .card .form-check-input {
+  margin-top: 0;
+  margin-left: -2rem;
+}
+.sapshopneat #basket .card .form-group {
+  margin: 0;
+  display: inline-block;
+  width: calc(100% - 50px);
+}
+.sapshopneat #basket .card button[name=actioncode] {
+  display: inline-block;
+  margin: -1px 0 0 -5px;
+  width: 50px;
+  height: 50px;
+  padding: 0 !important;
+}
+.sapshopneat #basket .form-check {
+  padding-left: 1.6em !important;
+}
+.sapshopneat #basket .form-check-input {
+  margin-left: -1.6rem !important;
+  border: 1px solid #727272 !important;
+  background-color: transparent;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  min-height: unset;
+  margin-top: 0;
+}
+.sapshopneat #basket .card-header strong, .card-header .sapshopneat #basket h3 strong,
+.sapshopneat #basket .card-header small,
+.card-header .sapshopneat #basket h3 small {
+  color: #C91846 !important;
+}
+.sapshopneat #basket .card-body {
+  padding-top: 0;
+}
+.sapshopneat #basket input[type=checkbox].form-check-input {
+  border-radius: 0;
+}
+.sapshopneat #basket table {
+  border: none !important;
+}
+.sapshopneat #basket table th {
+  border: none !important;
+  background-color: #fff;
+}
+.sapshopneat #basket table tr {
+  border: none !important;
+}
+.sapshopneat #basket table tr:nth-of-type(even) {
+  background-color: #ececec;
+}
+.sapshopneat #basket table tr:nth-of-type(odd) {
+  background-color: #f6f6f6;
+}
+.sapshopneat #basket .personalisation-button {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 !important;
+}
+.sapshopneat #basket .personalisation-button a {
+  color: #fff !important;
+  width: 100%;
+}
+.sapshopneat #basket .checkout {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 !important;
+}
+.sapshopneat #basket .extra-price-row {
+  display: block;
+}
+.sapshopneat #basket .extra-price-row div {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  max-width: none;
+  vertical-align: middle;
+}
+.sapshopneat #basket .extra-price-row button {
+  width: calc(100% - 45px);
+  margin: 0 0 0 -5px;
+}
+.sapshopneat #basket .extra-price-row button.btn-sm i {
+  display: none;
+}
+.sapshopneat #basket .extra-price-row a.btn-sm {
+  padding-left: 0;
+}
+.sapshopneat #seat-select {
+  padding: 0 !important;
+}
+.sapshopneat #seat-select h1.facelift-event-heading {
+  padding: 30px;
+  background-color: #ECECEC;
+  font-weight: 700;
+  font-size: 2.611em;
+  margin: 0;
+}
+.sapshopneat #seat-select h1.facelift-event-heading * {
+  color: #C91846 !important;
+  margin: 0;
+}
+.sapshopneat #seat-select .facelift-event-text {
+  background-color: #ECECEC;
+  padding: 0 30px 30px 30px;
+  width: 100%;
+}
+.sapshopneat h1.invoice-title {
+  font-weight: 700;
+  color: #C91846 !important;
+}
+.sapshopneat table.basket th {
+  color: #fff !important;
+}
+.sapshopneat #sector-add-seats-list {
+  color: #fff !important;
+}
+.sapshopneat .bubble {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  font-weight: bold;
+  line-height: 58px;
+  overflow: hidden;
+  background: #C91846;
+  color: #fff;
+  text-align: center;
+  white-space: normal;
+}
+.sapshopneat .bubble::after {
+  content: "EUR";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  height: auto;
+  border-width: 0px;
+  font-size: 18px;
+  line-height: 44px;
+}
+.sapshopneat #slider-tool .bubble {
+  font-size: 30px !important;
+}
+.sapshopneat #slider-tool .seatselect {
+  margin: 0 5px;
+}
+.sapshopneat #slider-tool .btn-secondary.seatselect_change {
+  padding: 0.6em 1em !important;
+}
+.sapshopneat .bestprice-item .seatselect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  min-width: 70px;
+  height: 50px !important;
+  border: 0 none;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  background-color: #FFFFFF;
+  width: auto;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  float: none;
+}
+
+.card-header, .card-header h3, .sapshopneat #basket .card-header h3, .card-header .sapshopneat #basket h3, .sapshopneat #basket .card-header {
+  color: #727272 !important;
+  border: none !important;
+  background-color: transparent !important;
+  font-weight: 700 !important;
+}
+.seating-btn-secondary, .sapshopneat .btn-seating.btn-secondary, .sapshopneat .btn-seating.btn-secondary:hover, .sapshopneat .btn-seating.btn-secondary:focus, .sapshopneat .btn-seating.btn-secondary:active {
+  background-color: transparent !important;
+  padding: 0;
+}
+
+.btn {
+  border-radius: 0 !important;
+  font-weight: normal !important;
+}
+.btn.btn-primary.tocrm {
+  color: #fff;
+}
+
+.btn-primary,
+a.btn-primary,
+.btn-outline-primary {
+  background-color: #C91846 !important;
+  border-color: #C91846 !important;
+  border-radius: 9px !important;
+  text-decoration: none;
+  padding: 0.8em 1em !important;
+  color: #fff !important;
+}
+
+.btn-secondary, button.btn-secondary, a.btn-secondary:link, a.btn-secondary:hover, a.btn-secondary:focus, a.btn-secondary:active, a.btn-secondary.active, a.btn-secondary {
+  border-radius: 9px !important;
+  border: none;
+}
+.btn-secondary:not(.infolink):not(.seatselect_change) {
+  background-color: #C91846 !important;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.infolink {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.fa-info-circle {
+  width: 15px;
+  height: 20px;
+  margin-right: 4px;
+  filter: invert(15%) sepia(73%) saturate(3721%) hue-rotate(331deg) brightness(102%) contrast(97%);
+}
+.fa-info-circle::before {
+  content: "" !important;
+  background-image: url(icon/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.btn-success, .btn-success:hover, .btn-success:focus, .btn-success:visited {
+  background-color: #C91846 !important;
+  border-color: #C91846 !important;
+  padding: 15px 20px !important;
+  text-decoration: none !important;
+}
+
+.alert-danger {
+  color: #856404 !important;
+  background-color: #fff3cd !important;
+  border-color: #ffeeba !important;
+}
+
+ins {
+  border: none;
+  float: right;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.facelift-flex-nav-wrapper {
+  position: static !important;
+}
+
+.fa-shopping-cartTmp, .facelift-flex-nav .fa, .fa-shopping-cart {
+  vertical-align: middle;
+  width: 30px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fa-shopping-cartTmp::before, .facelift-flex-nav .fa::before, .fa-shopping-cart::before {
+  content: "" !important;
+}
+
+.fa-shopping-cart {
+  background-image: url(icon/cart.svg) !important;
+}
+button .fa-shopping-cart {
+  background-image: url(icon/btnIcons/cart.svg) !important;
+}
+
+/* flexshop_3_navigation */
+.facelift-flex-nav ul {
+  /* Steps Veranstaltungen und Bezahlen ausblednen */
+}
+.facelift-flex-nav ul li {
+  background-color: #F6F6F6 !important;
+  color: #797979 !important;
+  border: none !important;
+  padding: 10px !important;
+}
+.facelift-flex-nav ul li:first-of-type, .facelift-flex-nav ul li:last-of-type {
+  display: none;
+}
+.facelift-flex-nav ul li:nth-last-of-type(3) {
+  margin: 0 10px;
+}
+.facelift-flex-nav .fa::before {
+  content: "" !important;
+}
+
+#seatingplan-container .nav-item {
+  margin: 0 10px;
+}
+#seatingplan-container .nav-item a {
+  border-bottom: 2px solid !important;
+}
+
+.fa-ticket {
+  background-image: url(icon/ticket.svg) !important;
+}
+
+.fa-th::before {
+  content: none !important;
+}
+
+.fa-paper-plane::before,
+.fa-send::before {
+  content: none !important;
+}
+
+.fa-money {
+  background-image: url(../../assets/content/icons/icon_coin_bw.svg) !important;
+}
+
+.facelift-shopping-cart-fixed {
+  display: none;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+h2[id]::before,
+h3[id]::before {
+  content: none !important;
+}
+
+.card, .module_proxyneat .card {
+  border-radius: 0 !important;
+  border: none !important;
+}
+.card b, .module_proxyneat .card b,
+.card strong,
+.module_proxyneat .card strong,
+.card thead strong {
+  color: #727272 !important;
+}
+.card.order_summary thead strong {
+  color: #fff !important;
+}
+.card b, .module_proxyneat .card b,
+.card tbody *,
+.module_proxyneat .card tbody * {
+  color: #727272 !important;
+}
+
+label.form-check-label {
+  width: auto;
+  margin: 0;
+}
+
+input[type=checkbox]:checked, input[type=radio]:checked {
+  background-color: #C91846 !important;
+}
+
+.bootstrap-datetimepicker-widget table,
+.table {
+  color: #727272 !important;
+}
+
+.facelift-event-heading small {
+  display: none;
+}
+
+#svg-plan text {
+  visibility: hidden;
+}
+
+#sector-add-seats-list-big th {
+  color: #fff !important;
+}
+
+.shipmentaddress {
+  background: #fff;
+}
+.shipmentaddress h1 {
+  padding: 0 1.25rem;
+}
+.shipmentaddress .card {
+  display: inline-block;
+  width: 100%;
+}
+.shipmentaddress .col-md-8,
+.shipmentaddress .col-md-4 {
+  max-width: none;
+  flex: unset;
+  text-align: left !important;
+}
+.shipmentaddress button {
+  width: 100%;
+  max-width: none;
+  margin: 10px 0;
+}
+
+#personalize {
+  background: #fff;
+  overflow-y: auto;
+}
+#personalize .col-12 {
+  max-width: none;
+  flex: none;
+}
+
+#desktop-basket-timeout-wrapper {
+  margin: 0;
+  max-width: none;
+}
+
+.container-timeout {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+select.form-control {
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  -webkit-select: auto;
+}
+
+address,
+dl,
+ol,
+ul {
+  margin-bottom: 0 !important;
+}
+
+.fadeInDown {
+  animation: none !important;
+  top: 0 !important;
+}
+
+.othershippingaddress {
+  white-space: normal !important;
+}
+
+.panel-heading-sub .fa:not(:first-of-type) {
+  margin: 0 0 0 10px;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  background-color: #ECECEC;
+  border-color: transparent;
+  color: #555;
+}
+
+.box-address a.btn {
+  padding-left: 60px;
+  background-image: url("icon/btnIcons/route.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 20px center;
+  width: 100%;
+  text-align: left;
+}
+
+.fa-trash-o {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 24px;
+}
+.fa-trash-o:hover {
+  color: #6E0607;
+}
+
+/*.fa-trash-o:before, .fa-remove:before { content: '' !important;  }*/
+.fa-remove::before {
+  color: #C91846 !important;
+}
+
+a.btn .fa,
+button .fa {
+  font-size: 20px;
+}
+
+.slider .slider-handle.custom::before {
+  background-color: #C91846 !important;
+}
+.slider .slider-selection {
+  background: #C91846 !important;
+}
+
+#text-event-additional .col-lg-6 {
+  margin: 10px 0;
+}
+
+/*#desktop-slider-tool-wrapper button,*/
+#mobile-slider-tool-wrapper button {
+  height: 100%;
+}
+
+#seats-selected {
+  background-color: #ECECEC !important;
+  border-radius: 0;
+}
+
+#desktop-slider-tool-wrapper .seatselect_change,
+#mobile-slider-tool-wrapper .seatselect_change {
+  display: inline-block;
+  /*padding: 5px 15px;font-size: 2em;*/
+}
+
+.seatselect_change {
+  width: 50px !important;
+}
+
+#slider-tool {
+  font-size: 18px !important;
+}
+#slider-tool * {
+  font-size: 18px !important;
+}
+#slider-tool .font-weight-bold {
+  color: #C91846;
+  font-size: 1.222em !important;
+}
+
+.slider-price-range {
+  font-weight: normal !important;
+}
+
+#panel-heading-sub {
+  font-size: 0.8em;
+}
+
+.page-header .focuslogin {
+  /*font-size: initial;line-height: initial;*/
+  display: none;
+}
+
+.focuslogin {
+  width: 100% !important;
+}
+
+#basket_fieldset .title {
+  display: none !important;
+}
+
+#my-seats * {
+  stop-color: #000;
+}
+
+/* bestplatzbuchung */
+.bestprice-item-header {
+  border: none !important;
+  font-weight: 700;
+  background-color: #fff !important;
+}
+
+.bestprice-item {
+  margin: 0 !important;
+  border: none !important;
+  padding: 15px !important;
+}
+.bestprice-item:nth-of-type(odd) {
+  background-color: #ececec;
+}
+.bestprice-item:nth-of-type(even) {
+  background-color: #f6f6f6;
+}
+.bestprice-item .select-wrapper {
+  justify-content: flex-end;
+}
+.bestprice-item div.category {
+  white-space: normal;
+}
+.bestprice-item div.reduction {
+  white-space: normal;
+}
+.bestprice-item div.reduction span {
+  white-space: normal;
+}
+
+/* modal */
+.modal-backdrop {
+  display: none !important;
+}
+
+.modal.show {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  min-width: 90% !important;
+  height: 80vh;
+  z-index: 99999999;
+  margin: 0 !important;
+}
+
+.modal-content {
+  height: 100%;
+  border-radius: 0;
+  overflow-y: auto;
+}
+
+.modal-header .close {
+  width: auto;
+}
+
+.modal-body img {
+  position: static !important;
+  max-width: 100% !important;
+}
+
+/* bestätigungsseite */
+#print_order {
+  display: inline-block !important;
+  text-align: left !important;
+  cursor: pointer;
+}
+
+.form-invoice-button {
+  display: none !important;
+}
+
+.confirmation .infotxt {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: 20px 0;
+}
+.confirmation .order_summary {
+  margin: 20px 0 0 0;
+}
+.confirmation .order_summary tr {
+  border: none !important;
+}
+.confirmation .order_summary .card-header, .confirmation .order_summary .sapshopneat #basket .card-header, .sapshopneat #basket .confirmation .order_summary .card-header, .confirmation .order_summary .card-header h3, .card-header .confirmation .order_summary h3, .confirmation .order_summary .sapshopneat #basket .card-header h3, .sapshopneat #basket .card-header .confirmation .order_summary h3, .confirmation .order_summary .card-header .sapshopneat #basket h3, .card-header .sapshopneat #basket .confirmation .order_summary h3 {
+  display: none;
+}
+.confirmation .card-body,
+.confirmation .card-header,
+.confirmation .sapshopneat #basket .card-header,
+.sapshopneat #basket .confirmation .card-header,
+.confirmation .card-header h3,
+.card-header .confirmation h3,
+.confirmation .sapshopneat #basket .card-header h3,
+.sapshopneat #basket .card-header .confirmation h3,
+.confirmation .card-header .sapshopneat #basket h3,
+.card-header .sapshopneat #basket .confirmation h3 {
+  padding: 0;
+}
+.confirmation .card.billed_to {
+  border-top: 1px solid #ddd !important;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.confirmation .card.payment_method {
+  border-bottom: 1px solid #ddd !important;
+  padding-bottom: 20px;
+}
+.confirmation .ticket-data {
+  padding-left: 1rem !important;
+  line-height: 0;
+}
+.confirmation .ticket-data a.btn {
+  color: #fff !important;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 0 0 20px;
+  line-height: initial;
+  border-radius: 9px !important;
+}
+.confirmation .btn-primary .fa-print {
+  margin: 0 10px 0 0;
+}
+.confirmation > .row:nth-child(2) > .col-lg-3 {
+  display: block;
+  max-width: unset;
+}
+
+/* payment */
+.payment-table input,
+.payment-table select {
+  border-radius: 0;
+  height: 50px;
+}
+
+#row-expiry :not(#label_expiryMonth) {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#label_expiryMonth {
+  display: block;
+}
+
+/* chunks */
+#bundleChunkSearch .form-control {
+  height: 51px;
+}
+#bundleChunkSearch .fa {
+  vertical-align: middle;
+}
+
+#chunk table tr td .popover {
+  display: none !important;
+}
+
+#bundleWithChunks .chunks-time-slot-wrapper,
+#chunk .chunks-time-slot-wrapper {
+  flex: 1 1 0px;
+  max-width: 160px;
+}
+
+@media screen and (max-width: 479px) {
+  #sector-wrapper .col-3 {
+    max-width: 50%;
+  }
+  #chunk table tr td:first-child,
+  #chunk table tr th:first-child {
+    display: none;
+  }
+  .sapshopneat #basket .card-header, .sapshopneat #basket .card-header h3, .card-header .sapshopneat #basket h3, .sapshopneat #basket .card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .sapshopneat button {
+    white-space: wrap;
+  }
+  .confirmation > .row:nth-child(2) .col-5,
+  .confirmation > .row:nth-child(2) .col-7 {
+    max-width: unset !important;
+    flex: unset !important;
+  }
+  .confirmation .ticket-data {
+    padding: 0.3rem 0 !important;
+  }
+  .no-more-tables td::before {
+    left: 0 !important;
+  }
+}
+@media (min-width: 576px) {
+  .bestprice-item .d-none.d-sm-block {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 719px) {
+  .sapshopneat #basket h1.page-header,
+  .sapshopneat #seat-select h1.facelift-event-heading {
+    font-size: 2.125em;
+    line-height: 1em;
+  }
+  .col,
+  .col-1,
+  .col-10,
+  .col-11,
+  .col-12,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-auto,
+  .col-lg,
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-auto,
+  .col-md,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-auto,
+  .col-sm,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-auto,
+  .col-xl,
+  .col-xl-1,
+  .col-xl-10,
+  .col-xl-11,
+  .col-xl-12,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-auto {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media screen and (min-width: 720px) {
+  input,
+  select,
+  textarea,
+  form li ol,
+  form li ul {
+    float: none;
+  }
+  .sapshopneat #basket .personalisation-button,
+  .sapshopneat #basket .checkout {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    padding: 0 !important;
+  }
+  .sapshopneat #basket .personalisation-button {
+    margin: 0 10px 0 0;
+  }
+  .sapshopneat #basket .checkout {
+    margin: 0 0 0 10px;
+  }
+  .sapshopneat #basket .checkout * {
+    margin: 0 !important;
+  }
+  .sapshopneat #basket .extra-price-row div {
+    width: auto;
+  }
+  .sapshopneat #seat-select .facelift-event-text div {
+    max-width: calc(100% - 250px);
+    float: left;
+  }
+  .sapshopneat a.btn.performanceInfoDateButton {
+    float: right;
+    margin: 0;
+  }
+  .sapshopneat .btn-outline-danger {
+    width: 50%;
+  }
+  .sapshopneat h1.invoice-title {
+    font-size: 2.611em;
+  }
+  .focuslogin {
+    width: 50% !important;
+  }
+}
+@media (max-width: 767px) {
+  #bestseat-tab .col-6 {
+    display: block;
+    max-width: none;
+    flex: none;
+    margin: 15px 0;
+  }
+  #bestseat-tab .col-6 .btn-secondary {
+    width: 100%;
+  }
+  .page-header.d-flex {
+    display: block !important;
+  }
+  #basket_fieldset .card {
+    background-color: #ccc;
+    border-radius: 0;
+    padding: 10px;
+  }
+  .price-select-wrapper .price {
+    flex-grow: 0.5 !important;
+  }
+  #chunk .arrowleft {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+  }
+  #chunk .month {
+    display: inline-block;
+    width: calc(100% - 40px);
+    padding: 0;
+  }
+  #chunk .arrowright {
+    display: inline-block;
+    width: 20px;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-2 {
+    max-width: none !important;
+  }
+  .modal-dialog {
+    min-width: unset !important;
+  }
+  .confirmation td {
+    padding: 10px 0;
+  }
+  .confirmation .ticket-data {
+    padding: 10px 20px 10px 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  .orderdetails.text-right {
+    text-align: left !important;
+  }
+  .container-timeout > .alert {
+    margin-bottom: 10px !important;
+  }
+  /* ------ saalplan3 ------ */
+  .sapshopneat #seatingplan-container #saalplan3 {
+    height: 400px;
+    width: 90%;
+    left: 5%;
+  }
+}
+@media (min-width: 992px) {
+  .orderdetails.text-right {
+    text-align: left !important;
+  }
+  .content-main .alert {
+    margin: 0 0 1.5rem 0 !important;
+  }
+  .sapshopneat #basket .col-lg-9 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  .sapshopneat #basket .col-lg-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .sapshopneat .btn-outline-danger {
+    width: 50%;
+  }
+  .facelift-flex-nav ul li {
+    text-align: left !important;
+  }
+  #text-event-additional .col-lg-6 {
+    flex: none !important;
+    max-width: none !important;
+  }
+  #chunk .flex-lg-column {
+    flex-direction: unset !important;
+  }
+  #chunk .col-lg-6 {
+    flex: none !important;
+    max-width: none !important;
+  }
+  #desktop-basket-submit-wrapper .col-lg-4.mb-4 {
+    width: 100%;
+    max-width: none;
+    flex: unset;
+  }
+  .focuslogin {
+    width: auto !important;
+  }
+  .container-timeout {
+    height: auto !important;
+  }
+  .container-timeout > .alert {
+    position: static !important;
+  }
+}
+@media (min-width: 1160px) {
+  .sapshopneat #basket .col-lg-3 {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  .sapshopneat #basket .col-lg-9 {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+  .form-check-label {
+    position: relative;
+  }
+  .form-check-label .form-check-input {
+    position: absolute;
+    left: 0;
+  }
+  .form-check-label span:first-of-type {
+    float: left;
+  }
+  /*.form-check-label .fa-question-circle { float: left; }*/
+}
+@media screen and (min-width: 1320px) {
+  .sapshopneat #basket .col-lg-3 {
+    max-width: 41.1764705882%;
+    flex: 0 0 41.1764705882%;
+  }
+  .sapshopneat #basket .col-lg-9 {
+    flex: 0 0 58.8235294118%;
+    max-width: 58.8235294118%;
+  }
+}

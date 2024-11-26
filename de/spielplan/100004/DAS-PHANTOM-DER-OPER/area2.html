@@ -1,0 +1,572 @@
+<!DOCTYPE html><html  lang="de"><head><script type="text/javascript" src="https://www.musicalvienna.at/_component/resources/jquery.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/resources/htmlChange.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/resources/components.js.php@version=2024-11-26_09%3A40%3A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_custom/custom_func.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="BasicDependencyStack" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/collection_content/WTuser/WTuser.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)WTuser" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/collection_content/footer/footer.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)footer" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/collection_module/module_event/module_event.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/gsapFlipPlugin.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/gsap-3.12.5.min.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/stadthalle-multiselect.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(module)module_event" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/collection_content/extracontent/extracontent.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/swiper8.0.7.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/gmap-jq.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)extracontent" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/collection_content/navigation/navigation.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)navigation" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_component/collection_content/page/page.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/click-visible-jq.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/tab-jq.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/jquery.template.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/jquery.lazyload.min.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/jquery.touchSwipe.min.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/respond.min.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/modernizr-2.8.3.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/slidenav.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page" ></script><script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/echonet.js@version=2024-11-26_09%3A40%3A32" data-dependentComponents="(content)page (content)extracontent (content)footer" ></script><link href="https://www.musicalvienna.at/_component/resources/components.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="BasicDependencyStack" ><link href="https://www.musicalvienna.at/_component/collection_content/WTuser/WTuser.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)WTuser" ><link href="https://www.musicalvienna.at/_component/collection_content/footer/footer.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)footer" ><link href="https://www.musicalvienna.at/_component/collection_module/module_event/module_event.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="https://www.musicalvienna.at/_assets/css/stadthalle-multiselect.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(module)module_event" ><link href="https://www.musicalvienna.at/_component/collection_content/extracontent/extracontent.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)extracontent" ><link href="https://www.musicalvienna.at/_component/collection_content/navigation/navigation_main.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="https://www.musicalvienna.at/_component/collection_content/navigation/navigation.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)navigation" ><link href="https://www.musicalvienna.at/_component/collection_content/page/page.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page" ><link href="https://www.musicalvienna.at/_assets/css/form1.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="https://www.musicalvienna.at/_assets/css/print1.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="print" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="https://www.musicalvienna.at/_assets/css/basics1.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="https://www.musicalvienna.at/_assets/css/responsive1.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="screen" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" ><link href="https://www.musicalvienna.at/_assets/css/basics-tmp.css@version=2024-11-26_09%3A40%3A32.css" rel="stylesheet" type="text/css" media="all" data-dependentComponents="(content)page (content)navigation (content)extracontent (module)module_event (content)footer (content)WTuser" >
+	 <title>DAS PHANTOM DER OPER | Tickets & Informationen | phantom.musicalvienna.at - Musicals und Veranstaltungen - MusicalVienna</title>
+    <meta name="keywords" content="Das Phantom der Oper, Musical, Tickets, Wien, Raimund Theater" />
+    <meta name="description" content="Sichern Sie sich jetzt Tickets für DAS PHANTOM DER OPER im Raimund Theater in Wien! Erfahren Sie mehr über das berühmte Musical, die großartige Musik, die beeindruckende neue Inszenierung und den Spielort." />
+	<meta name="author" content="">
+    <meta name="expires" content="3600" />
+    <meta name="revisit-after" content="5 days" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="robots" content="index, follow" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="icon" href="../../../../_assets/content/favicon.ico" type="image/ico" />
+	<meta charset="UTF-8">
+	  
+  
+	
+    <!-- TRUENDO Privacy Center -->    
+	 <script data-accessibility="true" id="truendoAutoBlock" type="text/javascript" src=https://cdn.priv.center/pc/truendo_cmp.pid.js data-siteid="4398b4cb-8669-4dd1-bd26-08a984506b42"></script>
+	 <!-- End TRUENDO Privacy Center --> 
+	  
+	  	
+  
+<link rel="alternate" href="https://musicalvienna.at/de-de/spielplan/100004" hreflang="de-de" />
+		
+  
+<link rel="alternate" href="https://musicalvienna.at/de-at/spielplan/100004" hreflang="de-at" />
+			<link rel="canonical" href="https://musicalvienna.at/de/spielplan/100004" />
+			  
+
+      
+<!-- Google Tag Manager -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('consent', 'default', {
+'ad_user_data': 'denied',
+'ad_personalization': 'denied',
+'ad_storage': 'denied',
+'analytics_storage': 'denied',
+'wait_for_update': 500,
+});
+dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    //console.log(dataLayer);
+</script>
+<script>
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
+
+      // Load Tag Manager script.
+      var gtmScript = document.createElement('script');
+      gtmScript.async = true;
+      gtmScript.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-NJ5CZF';
+
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(gtmScript,firstScript);
+        //console.log(firstScript);    
+        
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Matomo -->
+<!-- End Matomo -->
+    
+      
+<style>
+     :root {
+                                    
+                                    --font1: Trajan; 
+        --font2: AkkuratWebRegular; 
+        
+        --color1: #AF272F;; /* Farbe für Navigationspunkte & Buttons */
+        --color2: #7A2322;; /* Farbe für Verlauf */
+        --color3: #F1DC7E;; /* Farbe für Überschriften auf dunklem Hintergrund */
+        --color4: #C7C6BE;; /* Farbe für Umrandungen & Pfeilchen */
+        --color5: #EEEDE3;; /* Hintergrundfarbe statt weiß im Lightmode (dunkle schrift) */
+        --color6: #FFFFFF;; /* Farbe für Buttonbeschriftung */
+        --color7: #FFFFFF;; /* Farbe für Blockquotes */
+    } 
+
+
+	.button:not(.nobtn), 
+	button:not(.nobtn), 
+	[class*="button"]:not(.nobtn), 
+	[class*="Button"]:not(.nobtn), 
+	.enetButton:not(.nobtn), 
+	.utilities .cart span, 
+	.utilities .user.active::after,
+	 #nav .nav__list > .nav__element.active, 
+	 #nav .nav__list > .nav__element:hover { 
+		background-color: var(--color1);
+		color: var(--color6);
+	}
+	blockquote::before, blockquote::after, .bq::before, .bq::after{
+		color: var(--color7);
+	}
+
+	p > a:not([class*="button"]):not([class*="Button"]){ color: var(--color1) !important;}
+
+	.eventCustomNav a:hover, .eventCustomNav a:focus, .eventCustomNav a.active{ color: var(--color1); }
+	.dark { background-image: linear-gradient(15deg, var(--color2) 0%, #101010 40%, #101010 100%); }
+	.dark h1, .dark h2 { color: var(--color3); }
+	ul.merch li { border-color: var(--color4); }
+	.arrowSlider::after, .arrowSlider::before { background-color: var(--color4); }
+	.light, .eventAnchorNav, #nav, #nav .nav__sub-list, #nav > .navigation { background-color: var(--color5); }
+	.extracontent.hasSwiper.light::before { background-image: linear-gradient(90deg, var(--color5), transparent); }
+	.extracontent.hasSwiper.light::after { background-image: linear-gradient(90deg,transparent, var(--color5)); }
+
+	.eventCustomNav a, h1, h2, h3, h4, [class*="button"]:not(.nobtn), [class*="Button"]:not(.nobtn) { font-family: var(--font1) }
+	h5, h6, .h7, p, p a { font-family: var(--font2); }
+
+	.btnLikeHeadline.time, .buy .time{ background-color: var(--color1);}
+	.ticketcount .buy::before{ background-color: var(--color1); }
+
+	.viewlist .view.active, .viewlist .view:focus, .viewlist .view:hover{ background-color: var(--color1); border-color: var(--color1) !important; }
+
+	.module_event #content *:not(td):not(.view) {
+		border-color: var(--color4);
+	}
+	
+	table.wysiwygtable tbody tr:nth-child(odd){
+		background-color: color-mix(in srgb,var(--color4),#fff 50%);
+	}
+	table.wysiwygtable tbody tr:nth-child(even){
+		background-color: var(--color4);
+	}
+
+	#footer{
+		background-image: repeating-linear-gradient(200deg, #101010 0%, #101010 15%, var(--color2) 45%, #101010 70%);
+	}
+
+	@media only screen and (min-width: 1024px){
+		#footer{
+			background-image: linear-gradient(200deg, #101010 55%, var(--color2) 100%);
+		}
+	} 
+
+</style>
+      
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe data-dowhenconsent="googletagmanager" data-src="https://www.googletagmanager.com/ns.html?id=GTM-NJ5CZF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      
+      <script type="text/javascript" src="https://www.musicalvienna.at/_assets/js/index.html@f=gaec-tracking.js&amp;recache=0"></script>
+      
+              <script type="text/javascript" src="../../../../_component/resources/jquery.js"></script>
+          <script type="text/javascript" src="../../../../_assets/js/magnificpopup-v1.1.0.js"></script>    
+        <script type="text/javascript" src="../../../../_assets/js/magnificpopup.js"></script>
+      <script type="text/javascript" src="../../../../_assets/js/jquery.autocomplete.min.js"></script>    
+        </head>
+    <body id="MusicalVienna" class="de module_event size4 default nohelp   module_event_detail " data-lang="de" data-site="1" data-nid="100009">
+    <div class="genericload none"><img src='../../../../assets/content/icons/icon-spinner.svg' width='60' height='60' /></div>
+    <div id="parent" class="parent cfix">
+      <header id="header" class="header relative" role="banner">
+        <div class="inner">
+            
+			<div class="utilities desktop">
+                <div class="langnav">
+                    <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="https://www.musicalvienna.at/en/schedule/100004/DAS-PHANTOM-DER-OPER.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                </div>
+				<button class="nobtn toMainsearch">
+					<img src="../../../../_assets/css/icon/search.svg" alt="Suchen">
+				</button>
+				<a href="https://www.musicalvienna.at/de/account/warenkorb.html" class="cart nobtn">
+					<img src="../../../../_assets/css/icon/cart.svg" alt="Warenkorb">
+									</a>
+				<a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#myaccountbox" class="user nobtn ">
+					<img src="../../../../_assets/css/icon/user.svg" alt="User">
+				</a>
+			</div>
+			<a href="https://www.musicalvienna.at/de/home.html" title="Zur Startseite" accesskey="0" role="banner" class="url toLandingpage">
+				<img id="logo" src="../../../../_media/_site_logo/1_WeAreMusicalLogo_2Lines.svg" alt="Logo" />
+			</a>
+                        <div class="eventCustomNavWrap">
+				<img id="eventlogo" class="baseTransition" src="../../../../_media/logo/6_DPDO_Logo.png" alt="Logo" />				<ul class="areas desktop tarn flex-jc-start eventCustomNav">
+				    <li><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area1.html" title="Das Musical" class="tdn ">Das Musical</a></li>					<li><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" title="Termine &amp; Tickets" class="tdn active">Termine &amp; Tickets</a></li>					<li><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area3.html" title="Besuchsinfo" class="tdn ">Besuchsinfo</a></li>				</ul>
+			</div>
+            			<button  id="navanchor" class="nobtn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="menu" data-menutxt="Menü">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			 <div id="nav" class="cfix noem fromTop" aria-describedby="Navigation">
+                <div class="utilities mobile">
+                    <div class="langnav">
+                        <div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Sprache</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100002 active de">
+                        <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="navigation_link nav__inner active">DE</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100012  en">
+                        <a href="https://www.musicalvienna.at/en/schedule/100004/DAS-PHANTOM-DER-OPER.html" class="navigation_link nav__inner ">EN</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+                    </div>
+					<div>
+						<button class="nobtn toMainsearch">
+							<img src="../../../../_assets/css/icon/search.svg" alt="Suchen">
+						</button>
+						<a href="https://www.musicalvienna.at/de/account/warenkorb.html" class="cart nobtn">
+							<img src="../../../../_assets/css/icon/cart.svg" alt="Warenkorb"></a>
+						<a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#myaccountbox" class="user nobtn ">
+							<img src="../../../../_assets/css/icon/user.svg" alt="Login User">
+						</a>
+					</div>
+				</div>
+								<div class="eventCustomNav mobile">
+					<img id="eventlogo" src="../../../../_media/logo/6_DPDO_Logo.png" alt="Logo" />					<ul class="areas tarn">
+						<li><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area1.html" title="Das Musical" class="tdn eventCustomNavLink ">Das Musical</a></li>						<li><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" title="Termine &amp; Tickets" class="tdn eventCustomNavLink active">Termine &amp; Tickets</a></li>						<li><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area3.html" title="Besuchsinfo" class="tdn eventCustomNavLink ">Besuchsinfo</a></li>					</ul>
+				</div>
+								<div  class="navigation">
+                            <nav class="nav cfix">
+            <h2 class="nav__headline none">Hauptnavigation</h2>
+            <div class="nav__container" role="navigation">
+                <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="nav__element relative nav__element_depth0  n100009 active m58 subNavElement ">
+
+    <a href="https://www.musicalvienna.at/de/spielplan-und-tickets/spielplan.html" class="navigation_link nav__inner relative active">Musicals und Veranstaltungen
+		                <span data-navigation-id="100009" class="nav__element_opener active"></span>
+            	</a>
+          <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#" data-navigation-id="109" class="nav__element_opener active"><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100009">
+                <li class="nav__element relative nav__element_depth1  n100123  m3 ">
+
+    <a href="https://www.musicalvienna.at/de/spielplan/zum-spielplan.html" class="navigation_link nav__inner relative ">Zum Spielplan
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100015  m122 ">
+
+    <a href="https://www.musicalvienna.at/de/spielplan/archiv.html" class="navigation_link nav__inner relative ">Archiv
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100068  m117 ">
+
+    <a href="https://www.musicalvienna.at/de/spielplan/gutscheine.html" class="navigation_link nav__inner relative ">Gutscheine
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100022  m123 ">
+
+    <a href="https://www.musicalvienna.at/de/souvenirs.html" class="navigation_link nav__inner relative ">Souvenirs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100023  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/musicalclub.html" class="navigation_link nav__inner relative ">Musicalclub
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100018  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/creative-development.html" class="navigation_link nav__inner relative ">VBW Eigenproduktionen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100020  m49 subNavElement ">
+
+    <a href="https://www.musicalvienna.at/de/we-are-musical/vbw-junges-musical.html" class="navigation_link nav__inner relative ">VBW JUNGES MUSICAL
+		                <span data-navigation-id="100020" class="nav__element_opener "></span>
+            	</a>
+          <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#" data-navigation-id="56" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100020">
+                <li class="nav__element relative nav__element_depth1  n100076  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/vbw-junges-musical/fuer-die-freizeit.html" class="navigation_link nav__inner relative ">Für die Freizeit
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100079  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/we-are-musical/vbw-junges-musical/fuer-die-schule.html" class="navigation_link nav__inner relative ">Für die Schule
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100078  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/vbw-junges-musical/fuer-den-nachwuchs.html" class="navigation_link nav__inner relative ">Für den Nachwuchs
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100158  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/vbw-junges-musical/fuer-zu-hause.html" class="navigation_link nav__inner relative ">Für zu Hause
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100073  m49 subNavElement ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns" class="navigation_link nav__inner relative ">Über uns
+		                <span data-navigation-id="100073" class="nav__element_opener "></span>
+            	</a>
+          <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#" data-navigation-id="354" class="nav__element_opener "><span class="nav__element_opener_icon"></span></a>
+           <ul class="nav__sub-list tarn nav__sub-list_depth0" data-navigation-id="100073">
+                <li class="nav__element relative nav__element_depth1  n100036  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns/raimund-theater.html" class="navigation_link nav__inner relative ">Raimund Theater
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100035  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/die-theater/ronacher.html" class="navigation_link nav__inner relative ">Ronacher
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100019  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns/orchester.html" class="navigation_link nav__inner relative ">Orchester
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100072  m3 ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns/team.html" class="navigation_link nav__inner relative ">Team
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100121  m3 ">
+
+    <a href="https://www.musicalvienna.at/de/ueber-uns/presse.html" class="navigation_link nav__inner relative ">Presse
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth1  n100139  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/aktuelles/podcast.html" class="navigation_link nav__inner relative ">Podcast und Video
+		    	</a>
+         </li>
+            </ul>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100021  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/vertrieb.html" class="navigation_link nav__inner relative ">B2B &amp; Gruppen
+		    	</a>
+         </li>
+<li class="nav__element relative nav__element_depth0  n100016  m49 ">
+
+    <a href="https://www.musicalvienna.at/de/partner.html" class="navigation_link nav__inner relative ">Partner
+		    	</a>
+         </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+				<div class="navAd ">
+                                                                <div  data-componentname="extracontent"  class="extracontent  dark" id="tickets_100204"   data-id="100204" data-type="extracontent_event"><div class="extracontent_event modekachel  extracontent-inner setContentWidth"><div class="tcenter"><h2 style="text-align:center">Jetzt Tickets sichern:</h2><div> </div></div><ul class="tarn events  eventGrid   eventGridCenter "><li class="eventItem"><a href="https://www.musicalvienna.at/de/spielplan/100004/DAS-PHANTOM-DER-OPER.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100011.jpg" alt="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited" title="Das Phantom der Oper 1080x1080 &copy; Cameron Mackintosh Limited"  /> --><picture class=""  data-componentname="image"  ><source src="../../../../_media/image/c745x745/100011.webp"><source src="../../../../_media/image/c745x745/100011.jpg"><img 
+		 
+	
+
+	src="../../../../_media/image/c745x745/100011.jpg" 
+     alt="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited"
+			  loading="lazy" 
+	 
+
+ title="Das Phantom der Oper 1080x1080 © Cameron Mackintosh Limited" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Raimund Theater</p><h2>DAS PHANTOM DER OPER</h2><!-- <h6>Andrew Lloyd Webbers Meisterwerk im Raimund Theater</h6> --><p class="eventDateIcon">15.03.2024 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li><li class="eventItem"><a href="https://www.musicalvienna.at/de/lp/falco.html" class="goToEvent tdn"><div class="inner"><!-- <img src="/_media/image/c360x360/100013.jpg" alt="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien" title="Rock Me Amadeus - Das Falco Musical 1080x1080 &copy; Vereinigte Bühnen Wien"  /> --><picture class=""  data-componentname="image"  ><source src="../../../../_media/image/c745x745/100013.webp"><source src="../../../../_media/image/c745x745/100013.jpg"><img 
+		 
+	
+
+	src="../../../../_media/image/c745x745/100013.jpg" 
+     alt="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Rock Me Amadeus - Das Falco Musical 1080x1080 © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture><div class="eventShortInfo"><p class="h7 darkGreyEnetBtn noEvents">Ronacher</p><h2>ROCK ME AMADEUS - DAS FALCO MUSICAL</h2><!-- <h6>Eine Hommage an den österreichischen Ausnahmekünstler</h6> --><p class="eventDateIcon">07.10.2023 - 28.06.2025</p><button class="button">zum Event</button></div></div></a></li></ul><div class="swiper-button-prev nobtn arrowSlider left"></div><div class="swiper-button-next nobtn arrowSlider right"></div><div class="tcenter"></div></div></div>
+                                        				</div>
+			 </div>
+            <form id="mainsearch" action="https://www.musicalvienna.at/de/suche" method="get" aria-describedby="stichwortsuche-head" role="search" class=" none">
+                            <fieldset class="relative m0">
+								<button class="nobtn" type="submit" title="Suchen"><img src="../../../../_assets/css/icon/search.svg" alt="Suchen"></button>
+                                <label for="suchbegriff" class="none">Suchbegriffe</label>
+                                <input class="mainsearch-input m0" type="search" id="suchbegriff" value="" title="Suchbegriffe eingeben" placeholder="Suchbegriff eingeben..." name="words" aria-required="true" required="">
+                                <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#" class="clearInput tdn" title="Suche ausblenden"><img src="../../../../_assets/css/icon/close.svg" alt="x"></a>
+                            </fieldset>
+                            <input type="hidden" name="search" value="1">
+                        </form>
+        </div>
+        </header>
+      
+	  <div id="content" role="main" class="cfix content">
+                      
+		<div  class="module_event module_event_detail detail module"><div  class="module_event module_event_detail moduledetail"><div class="eventAnchorNav"><ul class="tarn flex-jc-start"><li><a class="tdn" href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#kalender_100074">Kalender</a></li><li><a class="tdn" href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#discounts_100088">Ermäßigungen</a></li><li><a class="tdn" href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#backstage_100094">Führung</a></li><li><a class="tdn" href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#vip_100073">VIP Pakete</a></li></ul></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  lazy-background  light" id="cta_100470" style="background-image:url(../../../../_media/image/100497_Background_White_1920x1080.jpg) !important; background-position:center; background-size: cover;" data-bg="url(/_media/image/100497_Background_White_1920x1080.jpg)"  data-id="100470" data-type="extracontent_textonly"><div class="extracontent_textonly setContentWidth extracontent-inner"><div class="setBlockTextWidth"><h3 style="text-align:center">Wählen Sie den von Ihnen gewünschten Tag und die Uhrzeit aus:</h3></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light ec_calendar" id="kalender_100074"   data-id="100074" data-type="extracontent_calendar"><div class="eventCalendarContainer setContentWidth" data-view="calendar" data-reduction=""><div class="legends"><p class="h7 dbhouse lightGreyEnetBtn noEvents locationLeftIcon"><strong>Raimund Theater</strong></p><h2 class="eventTitle">DAS PHANTOM DER OPER</h2><ul class="viewlist tarn"><li class="view active" data-view="calendar"  data-eid="100074"><a title="Kalenderansicht"><img src="../../../../_assets/css/icon/calendar.svg" alt="kalender" loading="lazy" ></a></li><li class="view " data-view="list"  data-eid="100074"><a title="Listenansicht"><img src="../../../../_assets/css/icon/list.svg" alt="Liste" loading="lazy" ></a></li></ul><ul class="ticketcount tarn desktop"><li class="h7 buy">Tickets</li><li class="h7 few">Restkarten</li><li class="h7 soldout">Keine Kontingente</li></ul><p>Termine anhand verf&uuml;gbarer Erm&auml;&szlig;igung filtern</p><ul class="tarn reductionslegend"><li id="reduction_3" class="versal inactive" style="background-color: #0E84C9; border-color: #0E84C9;"><span style="background-color: #0E84C9;"></span>Senioren ab 60 -20%</li><li id="reduction_2" class="versal inactive" style="background-color: #29e310; border-color: #29e310;"><span style="background-color: #29e310;"></span>3+1 Gratis</li><li id="reduction_4" class="versal inactive" style="background-color: #f38b2b; border-color: #f38b2b;"><span style="background-color: #f38b2b;"></span>Junior-Ticket bis 16 -35%</li><li id="reduction_10" class="versal inactive" style="background-color: #E50000; border-color: #E50000;"><span style="background-color: #E50000;"></span>Black Week Aktion 2024</li></ul><ul class="tarn links desktop"><li class=""><a href="https://www.musicalvienna.at/de/vertrieb.html" title="Gruppentickets" class="enetbutton 19">Gruppentickets</a></li><li class=""><a href="https://www.travelcircus.de/das-phantom-der-oper-wien-int/date-time?partner-referral=247d940714fbc627&amp;utm_campaign=das-phantom-der-oper-wien-int&amp;utm_source=PhantomderOper&amp;utm_medium=travelcircus-affiliate" title="Tickets &amp; Hotel" class="enetbutton 43">Tickets &amp; Hotel</a></li></ul></div><div class="eventDatesAndTickets"><div class="monthPaginationAboveTable"><!----><div class="custom-select-wrapper changemonthselect-wrap"><select class="changemonthselect" name="changemonthselect"><option data-eid="100074" data-month="202411">November 2024</option><option data-eid="100074" data-month="202412">Dezember 2024</option><option data-eid="100074" data-month="202501">Jänner 2025</option><option data-eid="100074" data-month="202502">Februar 2025</option><option data-eid="100074" data-month="202503">März 2025</option><option data-eid="100074" data-month="202504">April 2025</option><option data-eid="100074" data-month="202505">Mai 2025</option><option data-eid="100074" data-month="202506">Juni 2025</option></select><div class="custom-select-cal"><div class="custom-select__trigger"><span class="currmonth"                                  data-currmonth="202411"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                >
+                                                                November 2024                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </span><div class="arrow"></div></div><div class="custom-options"><div class="custom-option-cal selected"
+                                     data-value="202411" data-eid="100074" data-month="202411" ><span class="text">November 2024</span></div><div class="custom-option-cal "
+                                     data-value="202412" data-eid="100074" data-month="202412" ><span class="text">Dezember 2024</span></div><div class="custom-option-cal "
+                                     data-value="202501" data-eid="100074" data-month="202501" ><span class="text">Jänner 2025</span></div><div class="custom-option-cal "
+                                     data-value="202502" data-eid="100074" data-month="202502" ><span class="text">Februar 2025</span></div><div class="custom-option-cal "
+                                     data-value="202503" data-eid="100074" data-month="202503" ><span class="text">März 2025</span></div><div class="custom-option-cal "
+                                     data-value="202504" data-eid="100074" data-month="202504" ><span class="text">April 2025</span></div><div class="custom-option-cal "
+                                     data-value="202505" data-eid="100074" data-month="202505" ><span class="text">Mai 2025</span></div><div class="custom-option-cal "
+                                     data-value="202506" data-eid="100074" data-month="202506" ><span class="text">Juni 2025</span></div></div></div></div><!-- <a href="#" class="nextmonth changemonth" data-eid="100074" rel="nofollow" title="Dezember 2024" data-month="2024-12"><img src="/_assets/css/icon/arrowMore.svg" alt="nächster Monat" loading="lazy" ></a> --></div><table border="0" cellspacing="3" cellpadding="0" class="eventcalendar notfloatingweekdays " summary="Monatskalender November 2024"><thead><tr><th class="versal" scope="col" abbr="Montag">Mo</th><th class="versal" scope="col" abbr="Dienstag">Di</th><th class="versal" scope="col" abbr="Mittwoch">Mi</th><th class="versal" scope="col" abbr="Donnerstag">Do</th><th class="versal" scope="col" abbr="Freitag">Fr</th><th class="versal" scope="col" abbr="Samstag">Sa</th><th class="versal" scope="col" abbr="Sonntag">So</th></tr></thead><tbody><tr class=""><td class="" id="day20241028"><strong><span class="daynr">28</span></strong></td><td class="" id="day20241029"><strong><span class="daynr">29</span></strong></td><td class="" id="day20241030"><strong><span class="daynr">30</span></strong></td><td class="" id="day20241031"><strong><span class="daynr">31</span></strong></td><td class="currmonthitem" id="day20241101"><strong><span class="daynr">01</span></strong></td><td class="currmonthitem" id="day20241102"><strong><span class="daynr">02</span></strong></td><td class="currmonthitem" id="day20241103"><strong><span class="daynr">03</span></strong></td></tr><tr class=""><td class="currmonthitem" id="day20241104"><strong><span class="daynr">04</span></strong></td><td class="currmonthitem" id="day20241105"><strong><span class="daynr">05</span></strong></td><td class="currmonthitem" id="day20241106"><strong><span class="daynr">06</span></strong></td><td class="currmonthitem" id="day20241107"><strong><span class="daynr">07</span></strong></td><td class="currmonthitem" id="day20241108"><strong><span class="daynr">08</span></strong></td><td class="currmonthitem" id="day20241109"><strong><span class="daynr">09</span></strong></td><td class="currmonthitem" id="day20241110"><strong><span class="daynr">10</span></strong></td></tr><tr class=""><td class="currmonthitem" id="day20241111"><strong><span class="daynr">11</span></strong></td><td class="currmonthitem" id="day20241112"><strong><span class="daynr">12</span></strong></td><td class="currmonthitem" id="day20241113"><strong><span class="daynr">13</span></strong></td><td class="currmonthitem" id="day20241114"><strong><span class="daynr">14</span></strong></td><td class="currmonthitem" id="day20241115"><strong><span class="daynr">15</span></strong></td><td class="currmonthitem" id="day20241116"><strong><span class="daynr">16</span></strong></td><td class="currmonthitem" id="day20241117"><strong><span class="daynr">17</span></strong></td></tr><tr class=""><td class="currmonthitem" id="day20241118"><strong><span class="daynr">18</span></strong></td><td class="currmonthitem" id="day20241119"><strong><span class="daynr">19</span></strong></td><td class="currmonthitem" id="day20241120"><strong><span class="daynr">20</span></strong></td><td class="currmonthitem" id="day20241121"><strong><span class="daynr">21</span></strong></td><td class="currmonthitem" id="day20241122"><strong><span class="daynr">22</span></strong></td><td class="currmonthitem" id="day20241123"><strong><span class="daynr">23</span></strong></td><td class="currmonthitem" id="day20241124"><strong><span class="daynr">24</span></strong></td></tr><tr class=""><td class="currmonthitem" id="day20241125"><strong><span class="daynr">25</span></strong></td><td class="currmonthitem" id="day20241126"><strong><span class="daynr">26</span></strong></td><td class=" hasEvents currmonthitem" id="day20241127"><strong><span class="daynr">27</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_3 reduction_2"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="44"><span>18:30</span><span class="tooltip">ab 49,00&euro;</span></li></ul></td><td class=" hasEvents currmonthitem" id="day20241128"><strong><span class="daynr">28</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_3 reduction_2"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="47"><span>19:30</span><span class="tooltip">ab 49,00&euro;</span></li></ul></td><td class=" hasEvents currmonthitem" id="day20241129"><strong><span class="daynr">29</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy "><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="48"><span>19:30</span><span class="tooltip">ab 59,00&euro;</span></li></ul></td><td class=" hasEvents currmonthitem" id="day20241130"><strong><span class="daynr">30</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_4"><ul class="tarn reductions"><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="53"><span>15:00</span><span class="tooltip">ab 49,00&euro;</span></li><li class=" calendarEvent  buy "><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="55"><span>19:30</span><span class="tooltip">ab 59,00&euro;</span></li></ul></td><td class=" hasEvents " id="day20241201"><strong><span class="daynr">01</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_4"><ul class="tarn reductions"><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="56"><span>14:00</span><span class="tooltip">ab 49,00&euro;</span></li></ul></td></tr><tr class="infos day20241127 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">27</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Mittwoch</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_3 reduction_2"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="44">
+                                                18:30                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241128 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">28</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Donnerstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_3 reduction_2"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="47">
+                                                19:30                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241129 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">29</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Freitag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem "><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="48">
+                                                19:30                                            </a><p>ab 59,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241130 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">30</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Samstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_4"><ul class="tarn reductions"><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="53">
+                                                15:00                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241130 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">30</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Samstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem "><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="55">
+                                                19:30                                            </a><p>ab 59,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241201 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">01</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Sonntag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_4"><ul class="tarn reductions"><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="56">
+                                                14:00                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class=""><td class="" id="day20241202"><strong><span class="daynr">02</span></strong></td><td class=" hasEvents " id="day20241203"><strong><span class="daynr">03</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_3 reduction_2 reduction_4"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="59"><span>18:30</span><span class="tooltip">ab 49,00&euro;</span></li></ul></td><td class=" hasEvents " id="day20241204"><strong><span class="daynr">04</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_3 reduction_2"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="61"><span>18:30</span><span class="tooltip">ab 49,00&euro;</span></li></ul></td><td class=" hasEvents " id="day20241205"><strong><span class="daynr">05</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_3 reduction_4"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="64"><span>19:30</span><span class="tooltip">ab 49,00&euro;</span></li></ul></td><td class=" hasEvents " id="day20241206"><strong><span class="daynr">06</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_2"><ul class="tarn reductions"><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="65"><span>19:30</span><span class="tooltip">ab 59,00&euro;</span></li></ul></td><td class=" hasEvents " id="day20241207"><strong><span class="daynr">07</span></strong><ul class="tarn calendarEvents"><li class=" calendarEvent  buy  reduction_4"><ul class="tarn reductions"><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="70"><span>15:00</span><span class="tooltip">ab 59,00&euro;</span></li><li class=" calendarEvent  buy "><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="72"><span>19:30</span><span class="tooltip">ab 59,00&euro;</span></li></ul></td><td class="" id="day20241208"><strong><span class="daynr">08</span></strong></td></tr><tr class="infos day20241203 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">03</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Dienstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_3 reduction_2 reduction_4"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="59">
+                                                18:30                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241204 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">04</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Mittwoch</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_3 reduction_2"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="61">
+                                                18:30                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241205 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">05</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Donnerstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_3 reduction_4"><ul class="tarn reductions"><li class="reduction_3" style="background-color: #0E84C9;" title="Senioren ab 60 -20%"></li><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="64">
+                                                19:30                                            </a><p>ab 49,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241206 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">06</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Freitag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_2"><ul class="tarn reductions"><li class="reduction_2" style="background-color: #29e310;" title="3+1 Gratis"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="65">
+                                                19:30                                            </a><p>ab 59,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241207 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">07</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Samstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem  reduction_4"><ul class="tarn reductions"><li class="reduction_4" style="background-color: #f38b2b;" title="Junior-Ticket bis 16 -35%"></li></ul><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="70">
+                                                15:00                                            </a><p>ab 59,00 &euro;
+                                            </p></div></div></td></tr><tr class="infos day20241207 buy" colspan="7"><td class="hasEvents"><div><h1 class="m0">07</h1><p class="m0"><strong>November 2024</strong></p><p class="m0">Samstag</p></div><div><p class="h7 m0">DAS PHANTOM DER OPER</p><p class="m0">Raimund Theater</p><div class="flex filteritem "><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="date btnLikeHeadline h7 time shoplink_ajax" data-shoplinkid="72">
+                                                19:30                                            </a><p>ab 59,00 &euro;
+                                            </p></div></div></td></tr></tbody></table><div class="monthPaginationBelowTable relative"><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#" class="nextmonth changemonth h7 tdn m0" data-eid="100074" rel="nofollow" title="Dezember 2024" data-month="2024-12"><strong>Dezember 2024</strong></a></div></div><ul class="ticketcount tarn mobile"><li class="h7 buy">Tickets</li><li class="h7 few">Restkarten</li><li class="h7 soldout">Keine Kontingente</li></ul><ul class="tarn links mobile"><li class=""><a href="https://www.musicalvienna.at/de/vertrieb.html" title="Gruppentickets" class="enetbutton 19">Gruppentickets</a></li><li class=""><a href="https://www.travelcircus.de/das-phantom-der-oper-wien-int/date-time?partner-referral=247d940714fbc627&amp;utm_campaign=das-phantom-der-oper-wien-int&amp;utm_source=PhantomderOper&amp;utm_medium=travelcircus-affiliate" title="Tickets &amp; Hotel" class="enetbutton 43">Tickets &amp; Hotel</a></li></ul><div class="placeholder100074 none"></div><script>
+            $(function(){
+                getshoplinks();
+            });
+        </script></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="discounts_100088"   data-id="100088" data-type="extracontent_tileoverview"><div class="extracontent_tiles extracontent-inner setContentWidth mode_chessboard"><div class="intro"><h3 style="text-align:center">Ermäßigungen</h3></div><ul class="tarn expandInfo none"><li class="gridInfoItem1 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">3+1 Gratis</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p>Buchbar für ausgewählte Vorstellungen (gekennzeichnet mit einem hellgrünen Punkt) in den Kategorien A-D (max.&nbsp;4 Karten pro Buchung).</p><p><a class="button" href="https://www.musicalvienna.at/de/lp/3plus1gratis.html">mehr Informationen</a></p></p></div></li><li class="gridInfoItem2 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">Senioren-Ticket</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p>Senioren*innen ab 60 Jahre erhalten eine Ermäßigung von 20% für ausgewählte Vorstellungen (gekennzeichnet mit einem blauen Punkt) in den Kategorien VIP-D (max. 2 Karten buchbar pro Person, beide müssen die Voraussetzung für die Seniorenermäßigung erfüllen - stichprobenartige Kontrolle am Tag der Vorstellung bzgl. Altersbegrenzung).</p><p><a class="button" href="https://www.musicalvienna.at/de/lp/senioren-ticket.html">mehr Informationen</a></p></p></div></li><li class="gridInfoItem3 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">Junior-Ticket</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p>Kinder und Jugendliche bis zum 16. Geburtstag erhalten, in Begleitung von mindestens einem Erwachsenen, für ausgewählte Vorstellungen (gekennzeichnet mit einen orangefarbenen Punkt) eine Ermäßigung von 35% in den Kategorien VIP-D. Das Junior-Ticket kann von maximal 3 Kindern in Begleitung eines Erwachsenen in Anspruch genommen werden. Die Ermäßigung ist auch in Kombination mit einem ermäßigten Erwachsenen-Ticket buchbar.</p><p><a class="button" href="https://www.musicalvienna.at/de/lp/junior-ticket.html">mehr Informationen</a></p></p></div></li><li class="gridInfoItem4 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">Menschen mit Behinderung</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p><span style="font-family:AkkuratWebBold">Rollstuhl und Begleitung:</span></p><p>Buchbar an den VBW-Tageskassen und telefonisch bei WIEN-TICKET unter +43 1 58885 - 111 bis spätestens 1 Woche vor der Vorstellung und nach Verfügbarkeit um € 10,- für den Rollstuhlplatz, die Begleitung erhält 50% Ermäßigung auf den jeweiligen Kartenpreis. Diese Ermäßigung ist für die Kategorien A-D verfügbar.</p><p> </p><p><span style="font-family:AkkuratWebBold">Menschen mit Behinderung (ohne Bedarf eines Rollstuhlplatzes):</span></p><p>50% Ermäßigung gegen Vorlage des Behindertenpasses. Eingetragene Begleitpersonen (B, Begleitperson erforderlich) erhalten ebenfalls die 50% Ermäßigung. Eine Ermäßigung für nicht eingetragene Begleitpersonen ist nicht möglich. Diese Ermäßigung ist für die Kategorien VIP Gold-D verfügbar.</p></p></div></li><li class="gridInfoItem5 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">EDUTICKET</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p>€ 20,- Tickets für Schüler*innen, Student*innen, Lehrlinge, Präsenz- und Zivildiener*innen (mit entsprechendem Berechtigungsnachweis - wird vor Ort kontrolliert!).</p><p>Buchbar:</p><ul><li>ab zwei Stunden bis eine Stunde vor Vorstellungsbeginn unter <a href="https://www.musicalvienna.at/de/lp/eduticket.html">edu.musicalvienna.at</a></li><li>ab einer Stunde vor Vorstellungsbeginn an der Abendkasse</li></ul><div> </div><div>Gültig bis zum vollendeten 27. Lebensjahr in den Kategorien A-D (max. 1 Ticket pro Person).</div></p></div></li><li class="gridInfoItem6 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">Musicalclub</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p>Davon profitieren unsere Clubmitglieder:</p><p> </p><p>10% Ermäßigung ab Vorverkaufsstart der VBW&nbsp;<br />
+(in den Kategorien VIP-D, max. 4 Tickets)</p><p> </p><p>20% Ermäßigung innerhalb von 10 Tagen vor dem gewünschten Vorstellungstermin&nbsp;<br />
+(in den Kategorien VIP-D, max. 2 Tickets)</p><p> </p><p>50% Ermäßigung auf verfügbare Restkarten am Tag der Vorstellung&nbsp;<br />
+(in den Kategorien VIP-D, max. 2 Tickets)<br />
+Für 14:00 Uhr Nachmittagsvorstellungen ab 10:00 Uhr<br />
+Für Abendvorstellungen ab 14:00 Uhr</p><p> </p><p>Restkarten um € 22,-&nbsp;<br />
+(in den Kategorien A-D, nach Verfügbarkeit max. 2 Tickets) &nbsp;<br />
+Online ab zwei Stunden vor Vorstellungsbeginn<br />
+An der Abendkasse Raimund Theater &amp; Ronacher ab einer Stunde vor Vorstellungsbeginn</p><p>&nbsp;<br />
+Ermäßigte Backstage-Führung<br />
+€ 7,- statt regulär € 9,- (max. 2 Tickets)</p><p> </p><p>Alle Informationen zum Musicalclub finden Sie hier:</p><p><a class="button" href="https://www.musicalvienna.at/de/musicalclub.html">mehr Informationen</a></p></p></div></li><li class="gridInfoItem7 tilesItem"><button class="nobtn showGrid"><img class="icon" src="../../../../_assets/css/icon/grid.svg" alt="grid" loading="lazy"></button><div class="titleWrap relative"><div class="title"><h5 class="mt0">Gruppentickets</h5></div><a class="close" title="schließen"></a></div><div class="inner"><p><p>Bei Buchungen ab 11 Personen steht Ihnen das VBW Sales Team gerne Montag bis Freitag von 09:00 – 17:00 Uhr telefonisch unter +43 1 588 30 - 1440 und per E-Mail an&nbsp;<a href="mailto:sales@vbw.at?subject=Anfrage%20Gruppenbuchung">sales@vbw.at</a>&nbsp;mit Rat und Tat zur Seite.&nbsp;Für konkrete Buchungsanfragen können Sie gleich unser Kontaktformulare verwenden:</p><p><a class="button" href="https://www.musicalvienna.at/de/vertrieb/gruppen.html">Gruppen &amp; Reiseveranstalter</a></p><p><a class="button" href="https://www.musicalvienna.at/de/vertrieb/schulen.html">Schulen</a></p></p></div></li></ul><ul class="tilesGrid tarn"><li class="gridItem1"><h4 class="mt0 center">3+1 Gratis</h4><a class="openInfo" title="zur Beschreibung"></a></li><li class="gridItem2"><h4 class="mt0 center">Senioren-Ticket</h4><a class="openInfo" title="zur Beschreibung"></a></li><li class="gridItem3"><h4 class="mt0 center">Junior-Ticket</h4><a class="openInfo" title="zur Beschreibung"></a></li><li class="gridItem4"><h4 class="mt0 center">Menschen mit Behinderung</h4><a class="openInfo" title="zur Beschreibung"></a></li><li class="gridItem5"><h4 class="mt0 center">EDUTICKET</h4><a class="openInfo" title="zur Beschreibung"></a></li><li class="gridItem6"><h4 class="mt0 center">Musicalclub</h4><a class="openInfo" title="zur Beschreibung"></a></li><li class="gridItem7"><h4 class="mt0 center">Gruppentickets</h4><a class="openInfo" title="zur Beschreibung"></a></li></ul><div class="outro"><p><sub>Für alle Ermäßigungen &amp; Aktionen gilt: Bei missbräuchlicher Verwendung wird die Ausgabe von ermäßigten Karten seitens der VBW abgelehnt. Ausgabe von ermäßigten Karten nicht zu gewerblichen Zwecken. Nicht mit anderen Aktionen kombinierbar, keine Barablöse möglich, Karten nach Verfügbarkeit, bestehende Buchungen ausgenommen, Änderungen vorbehalten.</sub></p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="backstage_100094"   data-id="100094" data-type="extracontent_textimage"><div class="extracontent_textimage txtre"><div class="tril"><!-- <img src="/_media/image/100165_1920x1080_RTH_20210530-_MG_3205.jpg" /> --><picture class="hasMobileSrc"  data-componentname="image"   style="background-image:url(../../../../_media/image/mobile/100165_1080x1080_RAIMUND_THEATER_8_21_016.jpg)"><source src="../../../../_media/image/original/100165.webp"><source src="../../../../_media/image/100165_1920x1080_RTH_20210530-_MG_3205.jpg"><img 
+		 
+	
+
+	src="../../../../_media/image/100165_1920x1080_RTH_20210530-_MG_3205.jpg" 
+     alt="Raimund Theater 1920x1080 © Sandra Kosel"
+			  loading="lazy" 
+	 
+
+ title="Raimund Theater 1920x1080 © Sandra Kosel" 
+
+
+
+
+
+
+	/></picture><div class="inner"><div class="txt"><p class="h7">Backstage-Führung Raimund Theater</p><h3>Werfen Sie einen Blick hinter die Kulissen!</h3><p>Im Rahmen einer Backstage-Führung erfahren Sie einiges über die Geschichte des Hauses, betreten die Bühne und werfen einen Blick auf die sonst nur verborgenen aufwendigen technischen Einrichtungen. Machen Sie sich gemeinsam mit uns auf den Weg durch unser Haus, wechseln Sie die Perspektive und lassen Sie sich durch die spannende Welt des Theaterbetriebs begeistern.</p><p class="h7">Wichtige Hinweise:</p><ul><li>Unsere Führungen dauern etwa eine Stunde und haben keine Pause.</li><li>Die Führungen werden in deutscher Sprache abgehalten. Englische Führungen werden momentan nicht angeboten.</li><li>Die Teilnehmeranzahl ist aus Sicherheitsgründen auf maximal 25 Personen beschränkt.</li><li>Der Backstagebereich ist nicht barrierefrei.</li><li>Die Führungen starten beim Haupteingang des Theaters in der&nbsp;Wallgasse 18-20, 1060 Wien.</li><li>Gerne organisieren wir individuelle Führungen für Sie und Ihre Gruppe. Bitte richten Sie Ihre Anfrage hierfür an Sandra Swoboda:&nbsp;<a href="mailto:sandra.swoboda@vbw.at" tabindex="0">sandra.swoboda@vbw.at</a></li></ul><div> </div><div><a class="button" href="https://musicalvienna.at/de/spielplan/100008/Fuehrungen-im-Raimund-Theater#tickets_100096">FÜHRUNG BUCHEN</a></div></div></div></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="vip_100073"   data-id="100073" data-type="extracontent_tileoverview"><div class="extracontent_tiles extracontent-inner setContentWidth mode_slider"><div class="intro"><p class="h7" style="text-align:center">Als VIP ins Theater</p><h2 style="text-align:center">Damit Ihr Musical-Besuch ein unvergesslicher Abend wird!</h2><div> </div><p style="text-align:center">Für DAS PHANTOM DER OPER im Raimund Theater bieten wir Ihnen ein ganz besonderes Vergnügen:</p></div><div class="article-swiper-container"><ul class="tiles tarn swiper-wrapper  "><li class="swiper-slide tile fadingSlide"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/16_firstRow.svg" alt="First Row &copy; Setyo Ari Wibowo" title="First Row &copy; Setyo Ari Wibowo" loading="lazy"  /></div><h4>Musical hautnah erleben</h4><p>Erleben Sie unser Musical hautnah in den ersten Reihen (VIP) oder sogar in der ersten Reihe fußfrei (VIP GOLD).</p></li><li class="swiper-slide tile fadingSlide"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/27_magazine.svg" alt="Magazine &copy; Weltenraser" title="Magazine &copy; Weltenraser" loading="lazy"  /></div><h4>Programmheft am Platz</h4><p>Unser Publikumsdienst bringt Ihnen persönlich Ihr Programmheft* zum Platz.</p></li><li class="swiper-slide tile fadingSlide"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/1_drink.svg" alt="Drink &copy; echonet communication GmbH" title="Drink &copy; echonet communication GmbH" loading="lazy"  /></div><h4>Gutschein für ein Glas Sekt</h4><p>Für Ihr Glas Sekt in der Pause finden Sie einen Gutschein* auf Ihrem Ticket.</p></li></ul><div class="swiper-button-prev nobtn arrowSlider left"></div><div class="swiper-button-next nobtn arrowSlider right"></div><div class="swiper-scrollbar"></div></div><div class="outro"><p style="text-align:center">Wir wünschen Ihnen ein einzigartiges Theatererlebnis bei dem Sie selbst der Star sind!</p><p style="text-align:center"><a class="button" href="https://musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2">Jetzt buchen</a></p><p style="text-align:center"><sub>* für das Programmheft sowie den Gutschein für ein Glas Sekt ist keine Barablöse möglich</sub></p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  lazy-background  dark" id="sesselpatenschaft_100033" style="background-image:url(../../../../_media/image/100080_black_background_1920x1080.jpg) !important; background-position:center; background-size: cover;" data-bg="url(/_media/image/100080_black_background_1920x1080.jpg)"  data-id="100033" data-type="extracontent_textimage"><div class="extracontent_textimage txtli"><div class="tlir"><div class="inner"><div class="txt"><p class="h7">Sesselpatenschaft</p><h2>WERDEN SIE UNSERE STARBESETZUNG IM RAIMUND THEATER!</h2><p> </p><p>Zeigen Sie Ihre Verbundenheit durch eine Sesselpatenschaft und unterstützen Sie das Raimund Theater.</p><p><a class="button" href="https://www.musicalvienna.at/de/ueber-uns/raimund-theater/sesselpatenschaft.html">mehr erfahren</a></p></div></div><!-- <img src="/_media/image/100012_Sesselpatenschaft_RaimundTheater.jpg" /> --><picture class=""  data-componentname="image"  ><source src="../../../../_media/image/original/100012.webp"><source src="../../../../_media/image/100012_Sesselpatenschaft_RaimundTheater.jpg"><img 
+		 
+	
+
+	src="../../../../_media/image/100012_Sesselpatenschaft_RaimundTheater.jpg" 
+     alt="Sesselpatenschaft Raimund Theater © Vereinigte Bühnen Wien"
+			  loading="lazy" 
+	 
+
+ title="Sesselpatenschaft Raimund Theater © Vereinigte Bühnen Wien" 
+
+
+
+
+
+
+	/></picture></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  dark" id="aktion_100322"   data-id="100322" data-type="extracontent_tileoverview"><div class="extracontent_tiles extracontent-inner setContentWidth mode_slider"><div class="intro"><p class="h7" style="text-align:center"><a href="https://www.casinos.at/company/verantwortung/sponsoring"><img alt="" src="../../../../_media/image/100480_casinos_austria_logo.png" style="height:86px; width:200px" /></a></p><p class="h7" style="text-align:center"> </p><h2 style="text-align:center">REIHENWEISE GLÜCKSMOMENTE: Der 13. zahlt sich aus!</h2><div> </div><p style="text-align:center"><a href="https://www.casinos.at/company/verantwortung/sponsoring">Casinos Austria</a>, langjähriger Partner der Vereinigten Bühnen Wien, sorgt nicht nur in seinen 12 Casinos, sondern auch im Raimund Theater für reihenweise Glücksmomente: denn die Musical-Besucher*innen erwartet in der 13. Reihe am 13. jedes Monats eine besondere Überraschung von Casinos Austria!</p><p style="text-align:center"> </p><h4 style="text-align:center">Unter dem Motto „Der 13. zahlt sich aus“ erhalten Besucher*innen am 13. jedes Monats mit einem Sitzplatz in der 13. Reihe vor Ort:</h4></div><div class="article-swiper-container"><ul class="tiles tarn swiper-wrapper  "><li class="swiper-slide tile fadingSlide"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/27_magazine.svg" alt="Magazine &copy; Weltenraser" title="Magazine &copy; Weltenraser" loading="lazy"  /></div><h4>ein Gratis-Programmheft</h4></li><li class="swiper-slide tile fadingSlide"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/1_drink.svg" alt="Drink &copy; echonet communication GmbH" title="Drink &copy; echonet communication GmbH" loading="lazy"  /></div><h4>einen Gutschein für einen Soft Drink (einzulösen am Pausenbuffet)</h4></li></ul></div><div class="outro"><p style="text-align:center">Sichern Sie sich jetzt Ihr Ticket in der 13. Reihe für den 13. des Monats:</p><p style="text-align:center"><a class="button" href="https://musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2">Jetzt buchen</a></p></div></div></div><!-- data-caldate="202501" --></div><div class="ecwrapper"><div  data-componentname="extracontent"  class="extracontent  light" id="sprungmarken_100477"   data-id="100477" data-type="extracontent_tileoverview"><div class="extracontent_tiles extracontent-inner setContentWidth mode_slider"><div class="article-swiper-container"><ul class="tiles tarn swiper-wrapper  "><li class="swiper-slide tile fadingSlide"><a href="https://www.musicalvienna.at/de/spielplan/100004/DAS-PHANTOM-DER-OPER.html" class="haslink tdn" title="/de/spielplan/100004/DAS-PHANTOM-DER-OPER" aria-describedby="/de/spielplan/100004/DAS-PHANTOM-DER-OPER"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/40_stage.svg" alt="Stage &copy; Hermawan" title="Stage &copy; Hermawan" loading="lazy"  /></div><h4>Infos zum Musical</h4><img class="icon arrowMore" src="../../../../_assets/css/icon/arrowMore.svg" alt="mehr erfahren" loading="lazy"  /></a></li><li class="swiper-slide tile fadingSlide"><a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area3.html" class="haslink tdn" title="/de/spielplan/100004/DAS-PHANTOM-DER-OPER/area3" aria-describedby="/de/spielplan/100004/DAS-PHANTOM-DER-OPER/area3"><div class="alignIcons"><img class="icon" src="../../../../_media/icon/23_info.svg" alt="Info &copy; echonet communication GmbH" title="Info &copy; echonet communication GmbH" loading="lazy"  /></div><h4>Infos zum Besuch</h4><img class="icon arrowMore" src="../../../../_assets/css/icon/arrowMore.svg" alt="mehr erfahren" loading="lazy"  /></a></li></ul></div><div class="outro"></div></div></div><!-- data-caldate="202501" --></div></div></div>
+	  </div>
+		
+		
+</div>
+<footer id="footer" role="contentinfo">
+	<div class="inner">
+		
+	<div class="relative">
+		<a href="https://vbw.at/de/home" aria-describedby="Vereinigte Bühnen Wien"><img src="../../../../_assets/content/logos/Vbw_Logo.svg" alt="Vereinigte Bühnen Wien" class="vbwFooterLogo"></a>
+		<div class="getTickets">
+			<h6 class="mb0">Tickets bestellen unter</h6>
+			<h2 class="mt0"><a href="tel:+43 1 58885 - 111" class="tdn">+43 1 58885 - 111</a></h2>
+		</div>
+		 	<div  data-componentname="footer"  class="customFooter"><!--div class="footer-inner"--><!--ul  data-componentname="footer"  class="footer-block-info"--><div class="meta-list-item Follow us"><h4 class="uppercase">Follow us</h4><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.facebook.com/Musicalvienna">FACEBOOK</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.instagram.com/musicalviennavbw/">INSTAGRAM</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.youtube.com/user/musicalviennaVBW">YOUTUBE</a></span></p><p class="h7"><span style="font-family:AkkuratSubRegular"><a href="https://www.tiktok.com/@musicalviennavbw">TIKTOK</a></span></p><p class="h7"> </p></div><div class="meta-list-item "><h4><a href="https://www.musicalvienna.at/de/spielplan-und-tickets/spielplan.html">SPIELPLAN</a></h4><h4><a href="https://www.musicalvienna.at/de/spielplan/gutscheine.html">GUTSCHEINE</a></h4><h4><a href="https://www.musicalvienna.at/de/souvenirs.html">Souvenirs</a></h4><h4><a href="https://www.musicalvienna.at/de/musicalclub.html">MUSICALCLUB</a></h4><h4><a href="https://www.vbw-international.at/">VBW International</a></h4><div> </div></div><div class="meta-list-item "><h4><a href="https://www.musicalvienna.at/de/ueber-uns">ÜBER UNS</a></h4><h4><a href="https://www.musicalvienna.at/de/ueber-uns/raimund-theater.html">RAIMUND THEATER</a></h4><h4><a href="https://www.musicalvienna.at/de/die-theater/ronacher.html">Ronacher</a></h4><h4><a href="https://www.musicalvienna.at/de/aktuelles.1.html">NEWS</a></h4><h4><a href="https://vbw.at/de/unternehmen/jobs">JOBS</a></h4><div> </div></div><div class="meta-list-item "></div><!--/ul--><!--/div--></div>
+			<div class="footerSponsorWrap">
+				<div class="footerMainSponsor">
+					<p class="oWhite">Hauptsponsor</p>
+					<a href="https://www.wienerstaedtische.at" rel="extern" title="Wiener Städtische - Vienna Insurance Group"><img src="../../../../_assets/content/logos/logo-wiener-staedtische.png" alt="Wiener Städische" class="WienerStdFooterLogo"></a>
+				</div>
+				<ul class="footerSponsor tarn">
+					<li><a href="https://www.wienholding.at" rel="extern" title="W!ienhold!ing"><img src="../../../../_assets/content/logos/logo-wienholding-50jahre.jpg" alt="Wiener Städische" class=""></a></li>
+					<li><a href="https://www.wien.gv.at/kultur/abteilung" rel="extern" title="Wien Kultur"><img src="../../../../_assets/content/logos/logo-wienkultur.png" alt="Wien Kultur" class="logo-wienkultur"></a></li>
+				</ul>
+			</div>
+			<div class="meta">
+				<div  class="navigation">
+                        <nav class="nav cfix">
+        <h2 class="nav__headline none">Metanavigation unten</h2>
+        <div class="nav__container" role="navigation">
+            <ul class="nav__list cfix noem tarn" aria-describedby="Navigation">
+                    <li class="test nav__element nav__element_depth0  n100006  de">
+                        <a href="https://www.musicalvienna.at/de/impressum.html" class="navigation_link nav__inner ">Impressum</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100007  de">
+                        <a href="https://www.musicalvienna.at/de/agb.html" class="navigation_link nav__inner ">AGB</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100008  de">
+                        <a href="https://www.musicalvienna.at/de/datenschutz-cookies.html" class="navigation_link nav__inner ">Datenschutz</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100024  de">
+                        <a href="https://www.musicalvienna.at/de/kontakt.html" class="navigation_link nav__inner ">Kontakt</a>
+    </li>
+    <li class="test nav__element nav__element_depth0  n100054  de">
+                        <a href="https://www.musicalvienna.at/de/hilfe.html" class="navigation_link nav__inner ">Hilfe</a>
+    </li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+
+			</div>
+	</div>
+</div>
+</footer>
+<div id="mynlregister" class="overlaybox none nocontent">
+
+    <div class="relative">
+		<a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html#" class="closenlreg">schließen</a>
+			<iframe id="nlregisteriframe" data-regsrc="https://profile.musicalvienna.at/de/nlregister" data-editsrc="https://profile.musicalvienna.at/de/nlverwaltung" frameBorder="0" rel="nofollow"></iframe>
+	</div>
+
+</div>
+<div class="accountbox_wrap none">
+    <div class="accountbox">
+        <a href="https://www.musicalvienna.at/de/spielplan/100004/Das-Phantom-der-Oper/area2.html" class="closeaccountbox" title="schließen"><img src="../../../../_assets/css/icon/close.svg" alt="X"></a>
+                <div class="loginoptions m0">
+                <iframe id="loginiframe" data-src="https://www.musicalvienna.at/de/account/login" frameBorder="0" rel="nofollow"></iframe>
+        </div>
+            </div>
+</div>
+
+
+    </body>
+</html>

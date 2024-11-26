@@ -1,0 +1,111 @@
+/* -------------------------------------------------------- Martina -------------------------------------------*/
+
+
+/* in m-shop_facelift.css */
+/* .sapshopneat button.focuslogin { font-size: 1rem !important; }
+.sapshopneat [class*="button"]:not(.btn), .sapshopneat [class*="Button"]:not(.btn) { cursor: auto;background-color: transparent;color: transparent;box-shadow: none !important; }
+.sapshopneat .btn i:before { color:#fff; }
+.sapshopneat a.btn.performanceInfoDateButton, .sapshopneat button.addtobasket { background-size: 25px; }
+.confirmation .ticket-data a.btn, .btn-primary, a.btn-primary, .btn-outline-primary { border-radius: 9px !important; } */
+
+/* in basics1.css */
+/* Abschnitt module_invoicedata */
+/* #invoicelist { width: 100%; }
+#invoicelist tr { border-bottom:1px solid #333; }
+#invoicelist td { padding: 10px 0; } */
+
+/*.mode_slider .alignIcons { position: relative; }
+.mode_slider .tiles.swiper-wrapper .tile .icon { bottom: inherit; height: 40px !important; }*/
+
+
+/* .eventcalendar td { opacity: 0.3; }
+.eventcalendar td.currmonthitem { opacity: 1; } */
+
+/* .eventcalendar tr.infos td { opacity: 1; } */
+
+/* #mynlregister {
+  border-top: 5px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  width: 93%;
+  max-width: 450px;
+  background-color: #fff0ec;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 11;
+}
+
+#mynlregister .closenlreg {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-indent: -999em;
+}
+#mynlregister .closenlreg::before {
+  transform: rotate(45deg);
+}
+#mynlregister .closenlreg::before, #mynlregister .closenlreg::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 10px;
+  left: 0;
+  background: #fff0ec;
+}
+             
+#mynlregister .closenlreg::after {
+  transform: rotate(-45deg);
+} */
+
+
+@media screen and (min-width: 1024px) {
+  /* .extracontent_header .enetbutton:nth-last-of-type(3) {
+    bottom: 170px;
+  }
+  .extracontent_header .enetbutton:nth-last-of-type(4) {
+    bottom: 230px;
+  }
+  .extracontent_header .enetbutton:nth-last-of-type(5) {
+    bottom: 290px;
+  } */
+}
+
+
+/* erledigt */
+/*bei klick auf anchor in event detailseite smooth scolling. kann ruhig aufs gesamte html angewendet werden.*/
+/* html {
+	scroll-behavior: smooth; 
+} */
+
+/* erledigt */
+/* @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+} */
+
+/* geändert auf media min width 1024 */
+/* .module:not(.module_onepage) {
+  margin-top: 80px !important;
+} */
+
+/* row-reverse: weil mobil der der anchornav auf der rechten Seite, desktop auf der linken Seite ist; utilities ist mobil anders platziert als Desktop, das war meine Lösung, bin aber offen für andere Ideen */
+/*.langnav ul, .langnav li { display: inline-block !important; }*/ /* ich hab versucht die sprachnavigation im header einzubauen, war mir nicht möglich. hab michim styling nicht wirklich ausgekannt. warum display flex, warom row reverse? warum gibt es sowias wie die utilities und anderes doppelt? kann man das nicht so stylen dass man die html struktur nur einmal braucht? redundanter content ist immer problematisch zB für screenreader oder so... */
+
+/* haben wir im Meeting besprochen, dass die Kacheln nun komplett klickbar sind */
+/*.eventGrid .eventItem { cursor: auto !important;}*/ /* warum cursor pointer auf die gesamte fläche wenn nur der btuton klickbar ist??? entweder nur auf dem button cursor pointer oder die gesamte fläche innerhalb von einem a href und klickbar machen */ 
+
+
+/* laut Styleguide ist das ein btn, bei den Spielstätten hab ichs rausgenommen */
+/* warum sind die speilstääten (kann auch eine eventkategorie sein wenn keine spielstätte zugewiesen ist) bei den event extracontents im detail modus mit cursor pointer versehen? warum ist das ein button? soll das wo hin führen?  */
+
+
+
+/* -------------------------------------------------------- Erin -------------------------------------------*/

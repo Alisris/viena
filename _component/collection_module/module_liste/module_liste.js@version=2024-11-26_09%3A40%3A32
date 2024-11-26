@@ -1,0 +1,38 @@
+/*
+$(function(){
+    $('.opener').click(function(){
+        $(this).parents('.listitem').toggleClass('open');
+        slideContent($(this).parents('.listitem'));
+    });
+    
+        
+    $('.listitem').each(function(){
+        slideContent($(this));
+    })
+});
+    
+function slideContent(elem){
+    if(elem.hasClass('open')){
+        elem.find('.cc').slideDown('slow','swing');
+    }else{
+        elem.find('.cc').slideUp('slow','swing');
+    }
+	
+}
+*/
+
+$(function(){
+
+	$('.accordion-title').on('click', function(){
+		console.log($(this));
+		
+		$(this).toggleClass('active');
+		$(this).siblings().slideToggle();
+	});
+	
+
+
+
+  
+});
+	

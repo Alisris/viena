@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "AkkuratSubRegular";
+  src: url("fonts/Akkurat/AkkuratSub/AkkuratLLSub-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratSubBold";
+  src: url("fonts/Akkurat/AkkuratSub/AkkuratLLSub-Bold.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratSubBlack";
+  src: url("fonts/Akkurat/AkkuratSub/AkkuratLLSub-Black.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratWebRegular";
+  src: url("fonts/Akkurat/AkkuratWeb/AkkuratLLWeb-Regular.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratWebBold";
+  src: url("fonts/Akkurat/AkkuratWeb/AkkuratLLWeb-Bold.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "AkkuratWebBlack";
+  src: url("fonts/Akkurat/AkkuratWeb/AkkuratLLWeb-Black.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamUltra";
+  src: url("fonts/GothamUltra/gothamUltra.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Trajan";
+  src: url("fonts/Trajan/trajan.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Oxide";
+  src: url("fonts/OxidePro.woff2") format("woff2");
+  font-weight: normal;
+}
+/* Color Pallete */
+/* Custom Color Pallete */
+/* coloring */
+/* filter */
+/* Fonts */
+/* Headlines */
+/* paragraph */
+/* Lists */
+/* Measure */
+/* 1090 */
+/* Icons */
+form .error-msg {
+  border: 1px solid;
+  clear: both;
+  margin: 0.69em 0;
+  padding: 0.5em 1em;
+  background-color: #ffc8c8;
+  border-color: #d90000;
+  border-left: 3px solid #d90000;
+}
+form .error-msg legend {
+  border: 1px solid;
+  padding: 0.2em 0.5em;
+  margin: 0;
+  background-color: #d90000;
+  color: #fff;
+}
+form .error-msg ul {
+  list-style-type: square;
+  margin-left: 20px;
+  overflow: visible;
+}
+form .error-msg ul li {
+  clear: both;
+  float: none;
+  list-style-image: none;
+  padding: 2px 0;
+  width: auto;
+}
+form .error-msg label {
+  float: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #231F21;
+}
+form li.error input,
+form li.error select,
+form li.error textarea {
+  font-weight: normal;
+}
+form li.error label {
+  color: #d90000;
+}
+form .colorederror-msg {
+  background-color: #FEFFFF;
+  border-color: #e66b2e;
+}
+
+form li.error input,
+form li.error select,
+form li.error textarea {
+  border-color: #d90000;
+}
+
+fieldset {
+  border: none;
+  position: relative;
+  padding: 0;
+}
+
+.form-li {
+  margin: 20px 0;
+}
+
+label {
+  position: relative;
+  font-weight: bold;
+}
+label > * {
+  display: inline-block;
+}
+label:not(.radiotxt) {
+  font-size: 0.875em;
+  color: #231F21;
+}
+label.checktxt, label.radiotxt {
+  padding-left: 35px;
+  cursor: pointer;
+  color: black;
+  display: block;
+}
+label.checktxt::before, label.radiotxt::before {
+  content: "";
+  color: #fff;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: #E9E8E9;
+  transition: all 0.25s ease-in-out;
+  background-position: center;
+  background-size: calc(100% - 10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+label.checktxt::before {
+  border-radius: 4px;
+}
+label.radiotxt::before, label.radiotxt::after {
+  border-radius: 50%;
+}
+label.radiotxt::after {
+  width: 1em;
+  height: 1em;
+  background-color: #C91846;
+  position: absolute;
+  top: 0.75em;
+  left: 5px;
+  transform: translateY(-50%);
+}
+
+input {
+  width: 100%;
+  font-size: 1em;
+  min-height: 40px;
+  transition: 0.3s ease;
+}
+input::-moz-placeholder {
+  font-size: 1em;
+}
+input::placeholder {
+  font-size: 1em;
+}
+input[type=checkbox] {
+  cursor: pointer;
+}
+input[type=checkbox]:checked + label.checktxt::before {
+  background-image: url("icon/checkmarkWhite.svg");
+  background-color: #C91846;
+}
+input[type=radio]:checked + label.radiotxt::after {
+  content: "";
+}
+
+input,
+textarea {
+  background-color: #E9E8E9;
+  border-radius: 7px;
+  position: relative;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  padding: 16px 20px;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #b1b1b1;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
+
+.radio-item {
+  margin: 5px 0;
+}
+
+#formmail li {
+  margin: 20px 0;
+}
+
+select {
+  display: none;
+}
+
+.custom-select {
+  background-color: #E9E8E9;
+  border-radius: 7px;
+  position: relative;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  padding: 16px 20px;
+}
+.custom-select.open {
+  border: 1px solid #B1B1B1;
+  border-radius: 7px 7px 0 0;
+}
+
+.custom-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.custom-select__trigger .arrow {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  background: url("icon/arrowSlider.svg") no-repeat center;
+  background-size: contain;
+  filter: var(--filter-red);
+  transform: rotate(90deg);
+  transition: 0.3s ease;
+}
+
+.custom-select.open .arrow {
+  transform: rotate(270deg);
+}
+
+.custom-options {
+  position: absolute;
+  display: none;
+  top: 51px;
+  left: -1px;
+  right: 0;
+  width: calc(100% + 2px);
+  background-color: #FEFFFF;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+  padding: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  border: 1px solid #B1B1B1;
+  border-radius: 0 0 7px 7px;
+}
+
+.custom-option {
+  position: relative;
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.custom-option:hover {
+  color: var(--red);
+}
+
+.custom-select.open .custom-options {
+  display: block;
+  pointer-events: all;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.control {
+  margin: 0 0 25px 0;
+}
+
+a.showImg {
+  cursor: pointer;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url(icon/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+a.showImg img {
+  width: 0;
+  height: 0;
+  transition: 1s ease-in-out;
+}
+a.showImg.active {
+  opacity: 0;
+  animation: fade-in 1s forwards 0.3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-image: url(icon/btnIcons/close.svg);
+  background-size: 20px;
+  background-position: top right;
+  width: 90vw;
+  max-width: 800px;
+  height: calc(100dvh - 200px);
+  border-radius: 0;
+  padding-top: 30px;
+}
+a.showImg.active img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .module_formmail #breadcrumbNav {
+    left: 6px;
+  }
+  li.half {
+    float: none;
+    display: inline-block;
+    width: calc(50% - 2px);
+  }
+  /*li.half:nth-of-type{margin: 20px 11px !important}*/
+}
+@media screen and (max-width: 1023px) {
+  #form-description * {
+    text-align: left !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .module_formmail > .inner {
+    width: 53vw;
+    margin-inline: auto;
+  }
+  #formmail > fieldset:first-child {
+    margin-top: 25px;
+  }
+  .control {
+    margin: 0 0 50px 0;
+  }
+}

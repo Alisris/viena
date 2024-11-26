@@ -1,0 +1,15 @@
+
+
+/* .nav__element_opener {
+  display: block;
+  height: 48px;
+  padding: 0 !important;
+  position: absolute;
+  top: 0;
+  width: 40px;
+  z-index: 999;
+}
+
+.nav__element_opener_icon {display:block;top:22px;left:15px;position:absolute;text-indent:-999em;width:10px;height:10px; }
+.nav__element_opener:not(.open):hover .nav__element_opener_icon { background-position:0 -10px; }
+.open .nav__element_opener_icon { background-position:0 -20px; } */

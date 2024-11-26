@@ -1,0 +1,427 @@
+/*
+Standard CSS
+
+@site       	stadthalle.com
+@copyright  	echonet communication gmbh
+				http://www.echonet.at
+@date       	16.02.2023
+
+*/
+
+/* @section =base
+-------------------------------------------------------------------*/
+.module_shopproxy ul{list-style-type: none}
+.module_shopproxy table{width: 100%}
+.module_shopproxy thead{background-color: transparent}
+.module_shopproxy thead tr,.module_shopproxy thead tr th  {background-color: transparent!important;}
+.module_shopproxy tbody tr{
+	background-color: transparent !important;
+	border: 1px solid var(--grey);
+	border-right: none;
+	min-height: 80px;
+}
+.module_shopproxy td{border-right: none !important }
+table.basket{margin: 0}
+table.basket.addtableRowClasses { border-bottom:2px solid #000; }
+table.basket tr.row-ticket-performance{
+	border: none;
+}
+table.basket td.col-ticket-performance{padding: 0}
+table.basket th, table.basket td{font-size: 1em}
+#seatingplan-and-performanceinfo-container{
+	border-top: 6px solid var(--red);;
+	position: relative;
+	max-width: 1600px;
+	margin: 0 auto !important;
+	float: none !important;
+}
+table.basket tr{border-left: none}
+table.basket thead tr{
+	border-top: none;
+	border-bottom: 2px solid black;
+}
+table.basket tbody{border:none; }
+
+table.basket .col-seat * { font-weight: normal; }
+
+#seatingplan-and-performanceinfo-container > .tabsections-tabs{
+	display: flex;
+}
+#seatingplan-and-performanceinfo-container a{
+	/*text-decoration: none;*/
+	padding: 0;
+	/*color: var(--darkgrey);*/
+}
+#seatingplan-and-performanceinfo-container .active a{color: var(--red);}
+#seatingplan-and-performanceinfo-container .tabsections-tabs li:first-of-type{
+	border-right: 1px solid var(--darkgrey);
+	padding-right: 10px;
+}
+#seatingplan-and-performanceinfo-container .tabsections-tabs li:last-of-type{
+	margin-left: 10px
+}
+.performancetitle, h1{margin-bottom: 20px !important}
+.sapshop .shopcontent{padding: 0}
+.tabsections-content-saalplan::after, .tabsections-content-bestplatzbuchung::before{content: none}
+.tabsections-tabs{border-bottom: none}
+#sapshop .col-md-12{padding: 0 !important}
+.tabsections-tabs li{margin: 10px 0 0 0}
+.tabsections-tabs a { text-decoration:none; }
+.module_shopproxy .row{
+	max-width: 100%;
+	margin: 0 auto !important
+}
+.sapshop td{border-bottom: none}
+.sapshop .title{margin-top: 20px; margin-bottom: 0 !important}
+
+.sapshop tr.basket-extras { border: none !important;}
+.sapshop .basket-extras td { padding: 15px!important; }
+.sapshop tr.row-extra-booked { display: table;width: 100%; }
+.sapshop .row-extra-booked td { width: 50% !important; }
+.sapshop .basket-extras td.extra-price { padding-right: 0 !important;padding-left: 0 !important;text-align: right; }
+
+.sapshop.defstep7 .checkbox-row.agb-row { border: none !important; }
+.sapshop td.col-info img { vertical-align: middle !important; }
+.sapshop.defstep7 .buttons-row { margin-top: 20px !important;line-height: 0;display: block; }
+
+.sapshop .back-btn { margin:30px 0 !important; }
+#sapshop hr { margin: 0 !important; }
+
+/*****/
+.module_shopproxy header.header {z-index: 930!important;}
+.module_shopproxy aside.flappe {z-index: 920;}
+body {background-color: var(--lightgrey)!important;}
+.module_shopproxy #breadcrumbNav {margin-left: 30px; margin-top: 40px;}
+
+.sapshop .basketnav {top: 60px;  margin: 0 auto; text-align: center;border:none !important;background-color: #ececec !important;}
+.sapshop .basketnav .basketnav-item  { border:none !important;width:auto !important;margin-left:10px; margin-right:10px; }
+.sapshop .basketnav .basketnav-item a:link, .sapshop .basketnav .basketnav-item a:hover, .sapshop .basketnav .basketnav-item a:focus, .sapshop .basketnav .basketnav-item a:visited, .sapshop .basketnav .basketnav-item a:active, .sapshop .basketnav .basketnav-item a.active { text-decoration: none; text-transform: none !important; border-lef:none !important; border-right: none !important;background-color: #ececec !important;padding-left:10px !important; padding-right:10px !important; }
+.sapshop .basketnav .basketnav-item a:not(.active):active, .sapshop .basketnav .basketnav-item a:not(.active):hover, .sapshop .basketnav .basketnav-item a:not(.active):focus { border-color: #ececec !important; }
+.sapshop .basketnav .basketnav-item a:link, .sapshop .basketnav .basketnav-item a:hover, .sapshop .basketnav .basketnav-item a:focus, .sapshop .basketnav .basketnav-item a:visited, .sapshop .basketnav .basketnav-item a:active { border-color: #ececec !important; }
+.sapshop .basketnav .basketnav-item a.active { border-color:var(--red) !important; }
+
+
+
+.sapshop.defstep7 {padding-top: 0px;}
+
+.button {font-size: 1em;}
+
+
+.sapshop .box.infobox { margin:0 !important; }
+.sapshop .box.infobox a { color: var(--red) !important; }
+.module_shopproxy .sapshop .content-main .box.infobox { padding: 015px !important; margin: 10px 0 !important; background: none !important; color: var(--red);border: 1px solid #D3D3D3 !important;  border-left: none !important;  border-right: none !important;  font-size: var(--18px);line-height: var(--22px); }
+.module_shopproxy .sapshop .content-main .box.infobox .h4 { font-size: var(--18px) !important;line-height: var(--22px) !important; }
+.module_shopproxy .row.seatingplan-inpage-row { margin-top:30px !important; }
+
+.module_shopproxy .defstep10 h2 { margin: 1em 0 0.5em 0; }
+.module_shopproxy .defstep10 h2:before { content: none !important; }
+.module_shopproxy .defstep10 table.basket { margin: 20px 0 0 0; }
+.module_shopproxy .defstep10 table.basket tr:first-of-type { border: none; }
+.module_shopproxy .defstep10 table.basket th { background-color: var(--red) !important;color:#fff !important; }
+.module_shopproxy .defstep10 table.basket th * { color:#fff !important; }
+.module_shopproxy .defstep10 table.basket th, .module_shopproxy .defstep10 table.basket td { padding: 10px 20px; }
+.module_shopproxy .defstep10 table.basket .sum-row td { padding: 0 !important; }
+
+#tabsections-content-bestplatzbuchung table.booking { margin-top: 20px !important; }
+#tabsections-content-bestplatzbuchung button.button { line-height: 1.2em;padding: 15px 30px; }
+.seatselect { border: 1px solid #000;appearance: auto;background: transparent; }
+
+.module_shopproxy .basket .ticketrow a.button { 
+	margin: 0 !important;
+	text-align: center !important;
+	line-height: 2em !important;
+}
+.module_shopproxy .buttons-row a.button { display:inline-block;margin: 10px 0 40px 0 !important; }
+
+
+.sapshop a.button {margin-bottom: 10px;}
+.sapshop a.button.ticketstobasket {height: 40px;}
+.sapshop a.button.ticketstobasket .iconwrap {vertical-align: baseline;}
+
+.sapshop .box {background: var(--red);}
+.sapshop .basket .performancedatehouse, .sapshop .buylist .performancedatehouse{color: #000;}
+.sapshop .basket .performancename {font-size: 1em;}
+#sapshop .form-control{border: hidden!important; box-shadow: none!important; font-size: 1em!important; background-color: transparent!important;}
+#sapshop select.form-control:after {content: '';display: inline-block;width: 8px;height: 8px;position: absolute;top: 50%;right: 10px;margin-top: -8px;border: 2px solid var(--red);border-right: 0px;border-bottom: 0px;-webkit-transform: rotate(225deg);-ms-transform: rotate(225deg);transform: rotate(225deg);transition: all 0.2s ease-in-out;}
+
+table.basket td, .sapshop td {border-bottom: none!important;}
+
+.basketbottom-inner {border: none!important; padding-left: 0px!important; padding-right: 0px!important;}
+.basketbottom-inner li.checkbox-row {border:none; padding-top: 30px;}
+.basketbottom-inner li.agb-row input { display: none; }
+.basketbottom-inner ol {list-style-type: none; display: block;}
+.basketbottom-inner ol li {max-width: 100%!important; width: 100%!important;}
+.basketbottom-inner ol li.buttons-row {margin-top: 20px!important; display: block;justify-content: flex-end;}
+.basketbottom-inner ol li.buttons-row .iframe-popup { text-align: center; }
+.basketbottom-inner ol li.buttons-row .basketbtn {font-size: 1em;}
+.basketbottom-inner ol li.buttons-row .iframe-popup, .basketbottom-inner ol li.buttons-row .basketbtn { margin: 10 0 !important;  line-height: 2;  padding: 10px; }
+
+/*.sapshop .buttons-row .iframe-popup {position: absolute; top: 50px;}*/
+.basketbottom-inner ol .checkbox-row.agb-row label.radiotxt {margin-top: 10px;}
+.basketbottom-inner li.basketsumrow { border-bottom: 2px solid #000; }
+.sapshop .shopcontainer .basketbottom .basketbottom-inner .basketsumrow ul {max-width: 100%; width: 100%; display: flex; justify-content: space-between;}
+.sapshop .shopcontainer .basketbottom .basketbottom-inner .basketsumrow ul li.sum-name {text-transform: uppercase; font-weight: bold; padding-left: 20px!important;}
+.sapshop .shopcontainer .basketbottom {padding: 30px 0px 80px 0px!important; background-color: transparent;}
+.shopsidebar-box-address p.addressdata {font-weight: bold;}
+
+.shopsidebar p.m0 {font-size: var(--16px);color: var(--darkgrey);}
+.shopsidebar ul.chooselist {display: flex; flex-direction: column;}
+.sapshop .chooselist input[checked="checked"] + label.radiotxt::before {background-color: transparent;border-color: var(--darkgrey); border-width: 2px;}
+.sapshop .chooselist input + label.radiotxt::before {background-color: transparent;border-color: var(--darkgrey); border-width: 2px;}
+.sapshop .chooselist label {font-weight: bold!important;}
+.sapshop .chooselist label.radiotxt { width: 100% !important; }
+.sapshop .shopsidebar .shopsidebar-box-address a{width: 100% !important; max-width: 425px;}
+.sapshop .shopsidebar .shopsidebar-box {padding-top: 30px;}
+
+.sapshop fieldset.actioncode-fset button {top: 0; position: static !important; width: 30% !important;margin: 0 0 0 15px;}
+.sapshop .shopsidebar button {font-size: 1em;}
+.sapshop fieldset.actioncode-fset #inputactioncode {width:60%!important;}
+
+.sapshop td.col-price .basketdelete {margin-left: 0px;}
+
+#sapshop .alert-danger { background-color: #D9422D !important;color: #fff !important;position: relative;margin: 30px 0 !important;border: none !important; border-radius: 0 !important; }
+#sapshop .alert-warning { background-color: #fcf8e3 !important;color: #000 !important;position: relative;margin: 30px 0 !important;border: none !important; border-radius: 0 !important; }
+#sapshop .alert-danger *:not(.fa),#sapshop .alert-warning *:not(.fa) { padding: 0 0 0 65px;font-family:'TTChocolatesRegular',arial,sans-serif; }
+#sapshop .alert-danger li, #sapshop .alert-warning li { padding: 0 !important; }
+#sapshop .alert-danger .title, #sapshop .alert-warning .title { font-size: 1em;font-weight: bold; }
+#sapshop .alert-danger i, #sapshop .alert-warning i { height: calc(100% - 30px);position: absolute;width: 50px; }
+#sapshop .alert-danger i:before, #sapshop .alert-warning i:before , #sapshop .alert-warning i:before, #sapshop .alert-warning i:before { left: 50%;position: absolute;transform: translate(-50%,0);top: 5px; }
+#sapshop label{color: black}
+
+/*td.col-reduction::after {content: '';display: block;width: 0;height: 0;border-left: 3px solid transparent;border-right: 3px solid transparent;border-top: 6px solid #333333;position: absolute;top: 50%;right: 20px;}*/
+#basketticketlist td.col-reduction::after {/*content: '';*/display: inline-block;width: 8px;height: 8px;position: absolute;top: 53%;right: 10px;margin-top: -8px;border: 2px solid var(--red);border-right: 0px;border-bottom: 0px;-webkit-transform: rotate(225deg);-ms-transform: rotate(225deg);transform: rotate(225deg);transition: all 0.2s ease-in-out;}
+#basketticketlist td.col-reduction select { 
+	/*width: auto !important;
+	height: auto !important;*/
+	max-width: none!important ;
+	appearance: auto !important;
+	border-radius: 0;
+	border-bottom: 2px solid var(--darkgrey) !important;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+.shopcontainer .shopcontent, .sapshop, .content-main { background-color: var(--lightgrey)!important; margin-bottom: 0px;}
+
+body.module_shopproxy footer .inner {margin-top: 0px!important;}
+
+.sapshop td:before {left: -75%;top: 25px; color: var(--darkgrey); padding-right: 0px!important;}
+table.basket tbody tbody tr td {width: 50%;position: relative;right: 0px;left: 40%;}
+
+/*  warenkorb */
+.onlyshowwhenbaskethasitemsfromdifferentplattforms, .onlyshowwhenbaskethasitems { display: none !important; }
+.sapshop button { margin: 0; }
+
+.col-seating a > img { display: block !important; }
+
+/*  saalplan popup im wk */
+.mfp-wrap .overlaybox {  background: #FFF; border-top: 4px solid var(--red); padding: 25px; text-align: left; max-width: 540px; margin: 50px auto; position: relative; }
+.mfp-wrap .overlaybox.seatingoverlay { color: #333;max-width: 90%; text-align: center; }
+.mfp-zoom-out.mfp-ready .mfp-with-anim {  opacity: 1; transform: scale(1); }
+
+.mfp-wrap .mfp-content .overlaybox .mfp-close, .mfp-wrap .mfp-content .requestblock .mfp-close { top: -50px; height: 50px; color: #fff; opacity: 1; font-size: 40px; }
+button.mfp-close, button.mfp-arrow { overflow: visible; cursor: pointer; background: transparent !important; border: 0; -webkit-appearance: none; display: block; outline: none; padding: 0; z-index: 1046; -webkit-box-shadow: none; box-shadow: none;	margin: 0 !important;}
+.mfp-close {  cursor: pointer !important;  width: 44px;  height: 50px;  line-height: 44px;  position: absolute;  right: 0;  top: 0;  text-decoration: none;  text-align: center;  opacity: 0.65;  padding: 0 0 18px 10px;  color: white;  font-style: normal;  font-size: 40px;  font-family: Arial, Baskerville, monospace;}
+.mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {  -webkit-user-select: none;  -moz-user-select: none;  user-select: none;}
+
+/* saaltplan platzwahl */
+#sapshop .row.top-15 { margin-top: 15px !important; }
+#sector-add-seats-list th, #sector-add-seats-list-big th { color:#000 !important }
+#svg-color-legend .categoryprice { font-size: 0.7em !important; } 
+.back-to-stadium { background-color: #333 !important; margin: 15px 0 0 0 !important;  }
+#sapshop #svg-color-legend { text-align: center; }
+#seatingplan-and-performanceinfo-container > .tabsections-tabs { margin: 15px 0 30px 0; }
+#seatingplan-and-performanceinfo-container > .tabsections-tabs * { font-size:var(--18px) !important; }
+#seatingplan-and-performanceinfo-container .tabsections-tabs li:first-of-type { border-right: 2px solid var(--darkgrey) !important; }
+.sapshop.defstep5 .performancedatehouse, .sapshop.defstep3 .performancedatehouse { margin: 15px 0;display: inline-block;color: #000 !important; }
+#seatingplan-and-performanceinfo-container #sector-add-seats-list-big button:not(.btn-seat-select):not(.btn-fast-pass), #seatingplan-and-performanceinfo-container #sector-add-seats button:not(.btn-seat-select):not(.btn-fast-pass), #seatingplan-and-performanceinfo-container #sector-buttons button:not(.btn-seat-select):not(.btn-fast-pass) { font-size: var(--18px) !important; line-height: var(--40px) !important; border-radius: 0px !important;background-color: #000 !important; }
+#seatingplan-and-performanceinfo-container #sector-add-seats-list-big button:not(.btn-seat-select):not(.btn-fast-pass):hover, #seatingplan-and-performanceinfo-container #sector-add-seats button:not(.btn-seat-select):not(.btn-fast-pass):hover, #seatingplan-and-performanceinfo-container #sector-buttons button:not(.btn-seat-select):not(.btn-fast-pass):hover { background-color: var(--red) !important; text-decoration: none;color: #fff !important; }
+#sector-add-seats-list-big { margin-top:30px !important; }
+
+/*saalplan */
+.slider-price-range { text-transform: none !important; }
+#sapshop .blockoverview-labels .label { width:100%;padding: 8px 10px !important;margin: 4px 0 !important; border-radius: 5px !important; }
+.module_shopproxy #sapshop .bubble { color: #000 !important;background-color: transparent !important;background: none !important; font-weight: bold;font-size: 25px !important; width: 110px !important; }
+#sapshop .bubble::after { content: none !important; }
+#slider-tool div {  padding: 0 !important;}
+#sapshop .number-spinner { display: inline-block !important; }
+#sapshop .number-spinner button { margin:0;padding: 0;border-radius: 50% !important;height: 25px;font-weight: normal; }
+#sapshop .number-spinner input { font-weight: bold;padding: 0; }
+#sapshop .number-spinner span,#sapshop .number-spinner input { display: inline-block !important;width: 25px !important;float: none !important; }
+#sapshop .col-md-7 { float: left !important; }
+#sapshop .slider.slider-horizontal .slider-track { height: 2px !important;background: #D3D3D3; }
+#sapshop .slider .slider-selection { height:4px !important; }
+#sapshop .slider-handle { top:-3px !important; }
+#sapshop .slider-handle:before { content: "" !important;background-color: var(--red);width: 20px !important;height: 20px !important;display: block;border-radius: 50%; }
+#sapshop .col-md-6 { float: left !important; }
+#sapshop .col-md-6.text-right { float: right !important; }
+#sapshop .col-sm-3 { width:100% !important; }
+#sapshop .col-sm-3,#sapshop .col-xs-12 { padding: 0 !important; }
+/*#svg-plan svg { width:100% !important; }*/
+.fa-plus::before, .fa-minus::before { line-height: 25px; }
+#seatingplan-wrapper .popover.bottom > .arrow::after { border-bottom-color: #ececec; }
+#seatingplan-wrapper .popover-content { background-color: #ececec; }
+#seatingplan-wrapper .popover-content button { border-radius: 0px; }
+#saalplanbuchung #sector-wrapper { padding: 10px; }
+#saalplanbuchung #sector-title { margin: 0 0 30px 0; }
+.sapshop table.table-condensed th { border-bottom:1px solid var(--darkgrey) !important; }
+
+/* bestplatzbuchung */
+.sapshop.defstep5 a.button.ticketstobasket:link, .sapshop.defstep5 a.button.ticketstobasket:hover, .sapshop.defstep5 a.button.ticketstobasket:focus, .sapshop.defstep5 a.button.ticketstobasket:visited, .sapshop.defstep5 a.button.ticketstobasket:active { background-color: var(--red) !important; border-radius: 50% !important; }
+.sapshop td.col-price, .sapshop td.extra-price { font-weight: normal;  }
+table.booking th,table.booking td { padding:10px 10px 10px 45% !important; }
+.sapshop td.col-pricegroup { border-top:none !important;position: static !important;/*border-left-width:4px;*/ }
+#sapshop i.fa.ticket-category { display: block !important;position: absolute;top: 0;left: 0;right: 0;bottom: 0; }
+.fa-square::before { content: "" !important;  width: 4px;  height: 100%;  display: block;  position: absolute;  background: currentColor;top: 0;left: 0;right: 0;bottom: 0; }
+.sapshop tr { position: relative !important; }
+.sapshop .col-xs-12.mt button { float: none !important;width: 100% !important; }
+
+/* warenkorbübersicht */
+table.basket th { background-color: transparent !important;color: var(--darkgrey) !important; }
+div.overlaybox:not(.flappe-basket) table.basket th, div.overlaybox:not(.flappe-basket) table.basket td { padding: 30px 10px 20px 10px !important; }
+
+/* ticket personalisierung */
+.sappopuphtml .sapshop.defstep8 { background: #fff !important; }
+.sappopuphtml .sapshop.defstep8 .box { background: var(--red) !important; }
+#personalize { background: none; }
+#personalize .content-main { background-color: #fff !important; }
+#personalize .page-header { margin: 20px 0 0 0 !important; }
+#personalize h1 { border-bottom: none !important; }
+#personalize .csHint { margin: 10px 0; }
+#personalize table, #personalize tbody { width:100% !important; }
+#personalize tbody { display: block; }
+#personalize table tr { background-color: transparent !important;width: 100%;padding: 10px 0; }
+#personalize table td { padding: 0 !important;width: 100% !important; }
+#personalize table, #personalize table tr, #personalize table td { border: none !important;}
+#personalize select { display:block !important;background: transparent;border-top: none;border-bottom: 2px solid var(--darkgrey);border-right: none;border-left: none;appearance: auto !important;padding: 10px;max-width: none !important; }
+#personalize .cSHeader { padding: 20px 10px; border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin: 10px 0; }
+#personalize .cSHeader_place { font-weight: bold; }
+#personalize label:not(.radiotxt):not(.checktxt) { font-weight: bold; }
+#personalize input { max-width: none !important; }
+
+@media screen and (max-width: 479px){
+	.sapshop .chooselist * { font-size: var(--16px); }
+	.sapshop .chooselist input + label.radiotxt::after { font-size: var(--22px); }
+}
+
+@media screen and (max-width: 719px){
+	table.booking td.col-pricegroup { padding:30px 10px 10px 45% !important; }
+	table.booking td.col-pieces { padding:10px 10px 30px 45% !important; }
+	.sapshop table.booking td::before { top:10px !important; left: 10px !important; }
+	table.booking td.col-pricegroup::before { top:30px !important;  }
+	table.booking td.col-pieces::before { top:17px !important; }
+	table.basket tbody tbody tr td { left:45% !important;padding: 15px 10px 15px 10px !important;width:60% !important; }
+	.sapshop table.basket td::before { top:15px !important; }
+	.basketbottom-inner ol li.buttons-row .basketbtn, .basketbottom-inner ol li.buttons-row .basketbtn { width:100% !important; }
+	.basketbottom-inner ol li.buttons-row .basketbtn.focuslogin { margin:  0 !important; }
+	
+	#sapshop .visible-xs.pull-right { float: none !important; max-width:320px;margin: 15px auto; }
+	#sapshop .visible-xs.pull-right button { border-radius: 0px;line-height: 35px;font-size: var(--18px) !important; }
+	
+
+}
+
+@media screen and (min-width: 720px){
+	
+	table.basket tbody tbody tr td {width: 0;position: static;}
+	td.col-reduction { position: relative !important; left: unset!important; }
+	.module_shopproxy #breadcrumbNav {margin-top: 0px;}
+	.basketbottom-inner li.checkbox-row {padding-top: 30px!important; }
+	.sapshop .shopcontainer .basketbottom .basketbottom-inner .basketsumrow {padding-bottom: 30px;}
+	
+	.basketbottom-inner ol li.buttons-row .basketbtn.focuslogin { margin:  0 !important; }
+	
+	#sapshop i.fa.ticket-category { position: static; width:0; height:0; }
+	.fa-square::before { display:none; }
+	table.booking th, table.booking td { padding: 10px 20px !important; }
+	.sapshop .col-xs-12.mt button { float: right !important;width: auto !important; }
+	#sapshop .col-md-12#seatingplan-and-performanceinfo-container { padding: 30px 0 0 0 !important; }
+	.sapshop.defstep7 .buttons-row { padding: 0 !important; }
+	
+	
+	#personalize table, #personalize table tr, #personalize table td { display: inline-block !important; }
+	#personalize table tr { ;width: 49%; }
+	#personalize table tr:nth-of-type(even) td { padding: 0 0 0 5px !important; }
+	#personalize table tr:nth-of-type(odd)  td{ padding: 0 5px 0 0 !important; }
+}
+
+@media screen and (min-width: 720px)and (max-width: 959px){
+	#sapshop .saalplan-viewtype-rangoverview .seatingplan-inpage-col { max-width: none !important;  }
+	#sapshop .col-sm-9 { width: 100% !important; }
+}
+
+@media screen and (min-width: 768px){
+	#seatingplan-and-performanceinfo-container > .tabsections-tabs{
+		position: absolute;
+		right: 0;
+	}
+	.performancetitle{max-width: 50%}
+	.basketbottom-inner ol li.buttons-row {top: 0px;position: relative;}
+	
+	#sapshop .col-sm-3,#sapshop .col-xs-12 { padding: 0 10px !important; }
+}
+
+@media screen and (min-width: 768px){
+	.module_shopproxy #sapshop.defstep10 { max-width: 1100px;margin: 0 auto; }
+}
+
+@media screen and (max-width: 959px){
+	.saalplan-viewtype-rangdetail #performance-data {  visibility: hidden !important;  position: fixed !important;  left: -1000px;  top: -1000px;}
+}
+
+@media screen and (min-width: 960px){
+	#sapshop .col-sm-3 { width: 25% !important; }
+	#sapshop .top-10 { width:100% !important; float: none !important;  }
+	#sapshop .top-10 #price-value { float: none !important; }
+	
+}
+
+@media screen and (max-width: 1279px){
+	.sapshop .shopsidebar .shopsidebar-box-loginbtn { display: none; }
+	#sapshop .shopcontainer .basketbottom { padding:30px 0px 0px 0px !important; }
+	.sapshop .shopsidebar { padding: 0 0 30px 0 !important; }
+}
+
+@media screen and (min-width: 1280px){
+	
+	.sapshop .shopcontainer { display:flex;padding: 0; }
+	.shopcontainer .shopsidebar {width: 40% !important; background-color: white; padding: 0px 50px !important; padding-top: 140px !important; }
+	.shopcontainer .shopcontent:not(.nosidebar) {width: 60% !important; padding: 0px 50px !important; }
+	
+	.sapshop.defstep7 .buttons-row, .sapshop.defstep7 .checkbox-row.agb-row { float: none;display: inline-block;width: 100% !important;/*padding: 0 !important;*/margin: 20px 0 0 0 !important;vertical-align: middle; }
+	.sapshop.defstep7 .buttons-row { text-align: left; }
+	.sapshop.defstep7 .buttons-row * { text-align: center; }
+	.basketbottom-inner ol li.buttons-row .basketbtn { width:auto !important;margin-right: 0 !important;float: none !important; }
+	.basketbottom-inner ol li.buttons-row .iframe-popup { width:auto !important;margin-left: 0 !important;float: none !important;margin-right:10px !important; }
+	.basketbottom-inner ol li.buttons-row .iframe-popup, .basketbottom-inner ol li.buttons-row .basketbtn { padding: 10px 15px; }
+	
+	#sapshop .top-10 { width:50% !important;float: left !important; }
+	#sapshop .top-10 #price-value { float: right !important; }
+	
+	
+}
+
+@media screen and (min-width: 1400px){
+	
+	div.module_shopproxy{width: auto!important;}
+	
+	#seatingplan-and-performanceinfo-container > .tabsections-tabs{
+		position: absolute;
+		right: 0;
+	}
+	.performancetitle{max-width: 50%}
+	.basketbottom-inner ol li.buttons-row {top: 0px;position: relative;}
+	
+	.basketbottom {padding-bottom: 0px!important;}
+	
+	.sapshop .shopcontainer {display: flex;}
+	.shopcontainer .shopcontent {width: 60%; padding: 0px 50px;}
+	.shopcontainer .shopsidebar {width: 40%; background-color: white; padding: 0px 50px; padding-top: 245px; }
+	
+}
+
+@media screen and (min-width: 1960px){
+	.basketbottom-inner ol li.buttons-row .basketbtn:not(.focuslogin) { float: right !important; }
+}
+

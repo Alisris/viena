@@ -1,0 +1,76 @@
+#sapshop { max-width: 1600px; }
+
+
+.baskethasnoitems .onlyshowwhenbaskethasitems { display: none; }
+.baskethasnoitemsfromdifferentplattforms .onlyshowwhenbaskethasitemsfromdifferentplattforms { display: none; }
+
+.module_allshopproxy #breadcrumbNav {margin-left: 30px;}
+
+aside.flappe{overflow-y: auto;}
+/*.error-msg .button, .basketsection .button, .flappe-basket .button {padding-top: 10px!important;}*/
+/*****/
+table.basketoverview {margin: 0; width: 100%; border: none; border-collapse: collapse; padding: 0;}
+table.basketoverview thead {background-color: transparent;}
+table.basketoverview thead tr {border-top: none; border-bottom: 2px solid black;}
+table.basketoverview thead th {color: var(--grey); }
+table.basketoverview tr {border-left: none;}
+table.basketoverview tr.row-performance {font-weight: bold;}
+table.basketoverview tbody tr {background-color: transparent !important;border: 1px solid var(--grey);border-right: none;border-left: none;min-height: 80px;}
+
+
+.module_allshopproxy table.basketoverview thead {display: none;}
+.module_allshopproxy table.basketoverview tbody * {border-left: none; border-right: none; border-top: none;}
+.module_allshopproxy table.basketoverview tr {display: flex;flex-direction: column; position: relative; min-height: 0px;}
+.module_allshopproxy table.basketoverview tr td.col-price {position: absolute; bottom: 0px; right: 0px;}
+.module_allshopproxy table.basketoverview tr td {padding: 0px 0px; border: none;}
+
+/*-----------------------FLAPPE---------------------*/
+
+.flappe-basket .module_allshopproxy table.basketoverview { margin: 20px 0 0 0; }
+.flappe-basket .module_allshopproxy table.basketoverview thead {display: none;}
+
+.flappe-basket .module_allshopproxy table.basketoverview tbody * {border-left: none; border-right: none; border-top: none;}
+.flappe-basket .module_allshopproxy table.basketoverview tr {display: inherit !important;flex-direction: column; position: relative;}
+.flappe-basket .module_allshopproxy table.basketoverview tr.row-ticket{
+	 padding: 8px 0;
+	border: none !important;
+}
+.flappe-basket .module_allshopproxy table.basketoverview tr.row-ticket.tableRowEven { border-bottom: 1px solid #989898 !important; }
+.flappe-basket .module_allshopproxy table.basketoverview tr.row-ticket.tableRowEven td { padding: 0 0 20px 0; }
+.flappe-basket .module_allshopproxy table.basketoverview tr.row-ticket td.col-reduction { width:75%;}
+.flappe-basket .module_allshopproxy table.basketoverview tr.row-ticket td.col-price { width:25%; }
+.flappe-basket .module_allshopproxy table.basketoverview tr.row-performance{border:none !important;}
+
+.flappe-basket .module_allshopproxy table.basketoverview tr td.col-performanceinfo span.performancename {color: var(--red);}
+.flappe-basket .module_allshopproxy table.basketoverview tr td.col-info span.performancename {color: var(--red);}
+.flappe-basket .module_allshopproxy table.basketoverview tr td.col-price {position: static; bottom: 0px; right: 0px;}
+.flappe-basket .module_allshopproxy table.basketoverview tr td {padding: 5px 0; border: none; vertical-align: top}
+
+.flappe-basket .module_allshopproxy table.basketoverview .col-performanceinfo { padding: 20px 0 0 0; }
+
+.flappe-basket .module_allshopproxy a.button {transition: all 0.2s ease-in-out; border: 2px solid white;}
+.flappe-basket .module_allshopproxy a.button:hover {border-color: var(--red);}
+
+.flappe-basket button, .flappe-basket a.button { width:100%; text-align: center; }
+.flappe-basket .wkinner { max-height: 65vh;overflow-y: auto; }
+
+.flappe .row-ticket .performancename { display: none !important; }
+
+.flappe .module_allshopproxy { margin: 0 !important; width: 100% !important; }
+.flappe .module_allshopproxy td.col-position,.flappe .module_allshopproxy td.col-row, .flappe .module_allshopproxy td.col-seat { display: none !important; }
+
+
+@media screen and (max-width: 719px){
+	.basketoverview tr{
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 720px){
+	.module_allshopproxy table.basketoverview thead {display: table-header-group;}
+	.module_allshopproxy table.basketoverview tr {display: table-row; position: static;}
+	.module_allshopproxy table.basketoverview tr td.col-price {position: static;}
+	.module_allshopproxy table.basketoverview tr td {padding: 10px 20px; border: none;}
+}
+
+@media screen and (min-width: 860px){}
